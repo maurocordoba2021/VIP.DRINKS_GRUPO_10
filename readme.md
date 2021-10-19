@@ -7,7 +7,7 @@ Mi nombre es Mauro Echeverria, tengo 24 años, me gustan los simpsons.
 
 
 
-Vamos a realizar un E-Commers de bebidas. Nuestroi público objetivo son hombres y mujeres mayores de 18 años con un nivel socioeconómico ABC 1, caracterizados por consumir marcas premium e importadas. Personas que les guste salir a divertirse, juntarse con amigos y también fanáticos del fútbol.
+Vamos a realizar un E-Commers de bebidas. Nuestro público objetivo son hombres y mujeres mayores de 18 años con un nivel socioeconómico ABC 1, caracterizados por consumir marcas premium e importadas. Personas que les guste salir a divertirse, juntarse con amigos y también fanáticos del fútbol.
 
 
 Nuestras referencias son:

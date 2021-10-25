@@ -16,16 +16,29 @@ Vamos a realizar un E-Commers de bebidas. Nuestro público objetivo son hombres 
 
 
 Nuestras referencias son:
-https://www.jagermeister.com/es-ES/ ( estetica )
-https://www.absolut.com/ar/ (estetica,funcionalidad,)
-https://luigibosca.com/ (estetica)
-https://www.skyyvodka.com/( variedad de productos,header )
-https://www.jackdaniels.com/es/our-products (background,recetas,estilo y diseño)
-https://havana-club.com/es/ (animacion de boton de compra )
-https://www.bacardi.com/lm/es/  (productos)
-https://www.cervezapatagonia.com.ar/
-https://www.chivas.com/es-AR?gclid=CjwKCAjwk6-LBhBZEiwAOUUDpzdSXqzB8zFGYfKyzMZMF5LGgUE93TCnqcr_9i_o4vLhItB6K0FDOxoC4MIQAvD_BwE&gclsrc=aw.ds
-https://barman.news/las-20-marcas-de-bebidas-alcoholicas-mas-vendidas/
-https://www.puroescabio.com.ar/
+https://www.jagermeister.com/es-ES/ 
+De Jagger nos gusto la estética y adoptamos de su web los tonos oscuros y la temática.
 
-Elegimos estas paginas como inspiracion de nuestro sitio web ya que consideramos que contienen los estilos,caracteristicas,funcionalidades para llevar a cabo nuetros proyecto integrador
+https://www.absolut.com/ar/ 
+Nos gustó por la estetica, la paleta de colores y lafuncionalidad fluida del sitio.
+
+https://luigibosca.com/ (estetica)
+
+
+https://www.skyyvodka.com/
+Una página que tomamos como referente por los productos que ofrece y cómo se los exibe. De aquí nos inspiramos para el header del sitio.
+
+https://www.jackdaniels.com/es/our-products
+Nos gustó el background oscuro, de acá sacamos la idea sobre recetas, el estilo y  el diseño.
+
+
+https://havana-club.com/es/ 
+De Habana Club nos traemos la animación de los productos destacados y el botón de compra que sigue el scrol del usuario.
+
+https://www.bacardi.com/lm/es/  (productos)
+
+
+https://www.puroescabio.com.ar/
+Tomamos esta pagina para la estructura general del formulario de registro.
+
+Elegimos estas páginas como inspiración de nuestro sitio web ya que consideramos que cumplen con nuestro modelo de comercio, la meta, la experiencia de usuario, las caracteristicas y funcionalidades que deseamos implementar en nuestro proyecto.

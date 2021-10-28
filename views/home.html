@@ -2,32 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/public/css/styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-Mobile</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https: //fonts.googleapis.com/css2? family = Anton & display = swap "rel =" stylesheet ">
+
 </head>
+
 <body>
-<header>
-    <h1> Proyecto I </h1>
-<nav>
-    <ul>
+<header class = "global-header">
+<nav class="header-nav">
+    <div class="container">
+
+    <a class="logo" href="">
+        <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;" > logo</font></font></a>
+    <!--Acá tenemos que formar la nav como barra horizontal-->
+    <ul type= "none" class="nav d-block">
         <li> <a href=""> Menú </a></li>
-        <li> <a href=""> Inicio (Logo)</a></li>  
+        <li> <a href=""> Inicio </a></li>  
         <li> <a href=""> Búsqueda </a></li>
         <li> <a href=""> Carrito </a></li>
     </ul>
+
+</div>
 </nav>
 </header>
 
+
 <main>
-<section class="productosDestacados">
+<section class="productos-destacados">
     <article>
         <img src="/images/vodka-Trump.jpeg" alt="Vodka Trump">
         <p> Descripción del Producto </p>
         <p> <a href="/views/metodosDePago"> $333.333 </a></p>
         <p><a href="/views/carrito.html">  Comprar </a></p>
 </article>
+
 <article>
         <img src="/images/champagne-Krug.jpeg" alt="Champagne Krug">
              <!--Acá tenemos que hacer que se pasen las fotos así agregamos las 5 que van en cada artículo-->
@@ -81,7 +94,7 @@ se vea una imagen a la vez < > -->
 
 <footer>
 <nav>
-    <ul>    
+    <ul type= "none">    
         <li><a href="/views/home.html"><img src="/public/images/Logo.png" alt="Logo"></a></li>
         <li> <a href="/views/productos.html"> Productos</a></li>
         <li><a href="/views/novedades.html"> Novedades</a></li>

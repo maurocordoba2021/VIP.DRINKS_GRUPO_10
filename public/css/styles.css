@@ -1,8 +1,9 @@
+*  { box-sizing: border-box;
+}
+
 body{
     font-family: 'Anton', sans-serif;
     font-weight: normal;
-    line-height: 1.3;
-    font-size: 16px;
     background-image: url("../images/fondo-de-prueba-3.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,16 +14,24 @@ body{
     font-size: x-large;
     background-image: url("../images/fondo-nav-dorado.jpg");
     text-transform: uppercase;
-    text-decoration-color: goldenrod;
+    color: black;
     text-align: center;
 }
 
 .productos-destacados{
    font-family: 'Anton', sans-serif ;
    background-color: transparent;
-   color: white;
+
    font-weight: bold;
    font-size: x-large; 
+}
+
+.descripcion-del-producto {
+    display: inline-block;
+    padding: 10%;
+    font-size: x-large ;
+    line-height: 38 px;
+    color: goldenrod;
 }
 
 footer{

@@ -32,7 +32,21 @@ footer{
     text-transform: uppercase;
     text-align: center;
 }
+/* barra horizontal con flex*/
+.nav.d-block{
+    display: flex;
+    justify-content: center;
+}
 
-
+/* espacio entre los elementos de la ul*/
+.container ul li a{
+    margin: 8px;
+    text-decoration: none;
+    color: black;
+}
+/* efecto de pasar sobre el elemento se puede sacar si no gusta */
+a:hover{
+    background-color: blue;
+}
 
 

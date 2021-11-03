@@ -33,14 +33,6 @@ footer{
     text-align: center;
 }
 
-/* aca deje la barra en horizontal */
-.container ul li{
-    display: inline-block;
-}
-.container ul li a{
-    color: black;
-    text-decoration: none; 
-}
 
 
 

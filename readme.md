@@ -6,7 +6,7 @@ Nos presentamos:
 
 --> Mi nombre es Agustín Mestroni, tengo 24 años, soy fanático de Gimnasia Esgrima La Plata y me gusta tocar la guitarra.
 
---> Yo soy Celeste Troccayoli, tengo 25 y me gusta leer.
+--> Yo soy Celeste Troccayoli, tengo 25 y GitHub me odia, no nos llevamos bien todavía. 
 
 --> Mi nombre es Mauro Echeverria, tengo 24 años, me gustan los simpsons.
 

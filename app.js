@@ -18,5 +18,7 @@ app.get("/register", (req, res) => {
 app.get("/detalle-de-productos", (req, res) =>{
     res.sendFile(path.resolve(__dirname, "./views/detalle-de-productos.html"))
 });
-
+app.get("/Ingreso", (req, res) =>{
+    res.sendFile(path.resolve(__dirname, "./views/fecha-de-nacimiento.html"))
+});
 

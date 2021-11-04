@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles-edad.css">
+    <title>¿Eres mayor?</title>
+</head>
+<body>
+    <!--ESTA PÁGINA TIENE QUE SER EMERGENTE AL ENTRAR A LA PÁG POR PRIMERA VEZ-->
+    <input type="date" name="fecha-de-nac">
+    <p>
+        <input type="button" >
+    </p>
+
+    <section class="container-fecha">
+    <form action="resultado.html" method="POST">
+        <label>Elegí el mes de tu cumpleaños</label>
+<select name="mes">
+  <option value="1">Enero</option>
+  <option value="2">Febrero</option>
+  <option value="3">Marzo</option>
+  <option value="4">Abril</option>
+  <option value="5">Mayo</option>
+  <option value="6">Junio</option> 
+  <option value="7">Julio</option>
+  <option value="8">Agosto</option>
+  <option value="9">Septiembre</option>
+  <option value="10">Octubre</option>
+  <option value="11">Noviembre</option>
+ <option value="12">Diciembre</option>
+</select>
+</section>
+<!--Probando formularios-->
+
+<form action="resultado.html" method="POST">
+    <label>Dejanos tu comentario</label>
+    <textarea>Lorem impsum</textarea>
+<button type="reset">Borrar</button>
+<button type="submit">Enviar</button>
+
+</form>
+<!--FORMULARIO de ejercitación-->
+
+<form action="/crear-producto" method="POST" class="create-form">
+    <div class="control-formulario">
+        <label for="">Nombre del producto</label>
+        <input type="text" name="nombre" class="control">
+    </div>
+    <div class="control-formulario">
+        <label for="">Precio</label>
+        <input type="number" name="precio" placeholder="123.456" class="control">
+    </div>
+    <div class="control-formulario">
+        <label for="">Categoría</label>
+        <select name="categoria"  class="control">
+            <option value="hogar">Hogar</option> 
+            <option value="electro">Electro</option>
+            <option value="indumentaria">Indumentaria</option>
+        </select>
+    </div>
+    <div class="control-formulario">
+        <label for="">Ciudad</label>
+        <select name="categoria"  class="control">
+            <option value="baires">Buenos Aires</option> 
+            <option value="rosario">Rosario</option>
+            <option value="mendoza">Mendoza</option>
+        </select>
+    </div>
+    <div class="control-formulario">
+        <label for="">Está en oferta</label>
+        <input type="radio" name="enOferta">
+    </div>
+    <div>
+        <label for="descripcion">Descripción del producto</label>
+        <textarea name="descripcion"  class="control"></textarea>
+    </div>
+    
+        <button type="reset" class="button-form">Borrar</button>
+        <button type="submit" class="button-form">Guardar</button>
+</form>
+<!--ACÁ TERMINA EL EJERCICIO DE PG-->
+<!--EJERCICIO DE LA CLASE DE HOY-->
+
+<form method="POST" action="/perfil.html" class="clase-15">
+    <div>
+        <label for="Nombre"></label>
+       <input type="text" nombre="nombre-y-apellido" placeholder="Nombre y apellido">
+    </div>
+    <div>
+       <label for="Nombre-de-Usuario"></label>
+         <input type="text" name="nombre-de-usuario" placeholder="Nombre de usuario">
+    </div>
+    <div>
+        <label for="email"></label>
+        <input type="email" nombre="email" placeholder="E-mail">
+    </div>
+    <div>
+        <label for="fecha-de-nacimiento"></label>
+        <input type="date" name="fecha-de-nacimiento">
+    </div>
+    <div>
+        <label for="direccion"></label>
+        <input type="text" name="direccion" placeholder="Domicilio">
+    </div>
+
+    <div class="cont-perfil-selec">
+        <label for="perfil-del-usuario">Perfil del usuario</label>
+        <label for="perfil-del-usuario">
+         <input type="radio" name="perfil-del-usuario" value="comprador">
+         Comprador
+        </label>
+        <label for="perfil-del-usuario">
+         <input type="radio" name="perfil-del-usuario" value="vendedor">
+         Vendedor
+        </label>
+    </div>
+    <div>
+        <label for="intereses">Intereses</label>
+
+        <label for="intereses">
+            <input type="checkbox" name="intereses" value="electro">
+            Electro
+        </label>
+        <label for="intereses">
+            <input type="checkbox" name="intereses" value="moda">
+            Moda
+        </label>
+        <label for="intereses">
+            <input type="checkbox" name="intereses" value="jugueteria">
+            Juguetería
+        </label>
+        <label for="intereses">
+            <input type="checkbox" name="intereses" value="hogar">
+            Hogar
+        </label>
+        <label for="intereses">
+            <input type="checkbox" name="intereses" value="vida-sana">
+            Vida sana    
+        </label>
+    </div>
+
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    background-color: whitesmoke;
+    max-width: 100%;
+}
+
+.create-form{
+    padding: 20px 10px;
+}
+.control-formulario{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control{
+width: 100px;
+padding: 8px;
+}
+.button-form{
+    background-color: #39b54a;
+    font-size: 20px;
+    border: none;
+    color: white;
+    padding: 5;
+    border-radius: 5%;
+}
+/* ESTO ES PARA LA CLASE DE HOY*/
+.clase-15{
+    display: block;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: gainsboro;
+    width: 100%;
+    padding: 2%;
+}
+.container-form{
+    display: block;
+    padding: 3%;
+}

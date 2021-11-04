@@ -59,21 +59,47 @@ img.logo-home{
 
 .navbar-tablet{
 display: flex;
+width: 100%;
+justify-content: space-between;
+margin: 0%;
+margin-top: 10%;
+}
 
+ul.nav-center{
+display: flex;
+margin: 10px;
+justify-content: space-between;
+}
+
+ul.nav-center li,
+ul.nav-rigth li{
+    display: inline-block;
+    padding-right: 25px;
+    text-align: center;
+    margin: 10px;
 }
 
 .navbar-tablet ul {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
+    display: flex;
 }
 
 .navbar-tablet ul li a{
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
     color:whitesmoke;
 }
+
+.navbar-tablet ul li i{
+    font-size: 30px;
+    color: whitesmoke;
+    margin: 10px;
+}
+
+
 section.contain-articles{
     display: flex;
     justify-content: space-around;
@@ -112,6 +138,13 @@ border-radius: 10px;
     display: flex;
 
 }
+
+.container-description{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
 .container-description h3{
     font-size: 30px;
     text-align: center;

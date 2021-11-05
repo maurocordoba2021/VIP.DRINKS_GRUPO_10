@@ -6,7 +6,7 @@ Nos presentamos:
 
 --> Mi nombre es Agustín Mestroni, tengo 24 años, soy fanático de Gimnasia Esgrima La Plata y me gusta tocar la guitarra.
 
---> Yo soy Celeste Troccayoli, tengo 25 y GitHub me odia, no nos llevamos bien todavía. 
+--> Yo soy Celeste Troccayoli, tengo 25 y GitHub me odia, no nos llevamos bien todavía. MI REPO PARA MANDARME CAGADAS Y APRENDER ES ESTE : https://github.com/celestroccayoli/manos-en-la-masa.git
 
 --> Mi nombre es Mauro Echeverria, tengo 24 años, me gustan los simpsons.
 

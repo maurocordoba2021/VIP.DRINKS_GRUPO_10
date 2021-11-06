@@ -1,125 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Mobile</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
-<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-<link href = "https: //fonts.googleapis.com/css2? family = Anton & display = swap "rel =" stylesheet ">
-
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles-home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+     <title>Home</title>
 </head>
+<body class="block">
+<header>
+    <nav class="global-nav">
+    <div class="contain-navbar-scroll">
 
-    <body class="block">
-        <header>
-            <nav class="global-nav">
-            <div class="contain-navbar-scroll">
-                <div class="contain hamburguer-menu">
-                    <i class="fas fa-bars"></i>
-                </div> 
-                <div class="contain logo-home">
-                        <img src="/images/logo-home.png" class="logo-home">
-                </a>
-                </div>
-                <div class="contain logo-instagram">
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </div>
-                <div class="navbar-tablet">
-                    <ul class="nav-center">
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Novedades</a></li>
-                    <li><a href="#">Recetas</a></li>
-                    </ul>
-                    <ul class="nav-rigth">
-                <li><i class="fas fa-search"></i></li>
-                <li><i class="fas fa-user"></i></li>
-                <li><i class="fas fa-shopping-cart"></i></li>
-                    </ul> 
-                </div>
-            
-            </nav>
-        </header>
+<!--ACÁ EMPIEZA EL MENÚ EMERGENTE-->
 
+        <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">x</a>
+                    <a href="/registro">Registrarse</a>
+                    <a href="/login">Ingresar</a>
+                    <a href="/novedades">Novedades</a>
+                    <a href="/detalle-de-productos">Productos</a>
+                    <a href="/recetas"> Recetas</a>
+                </div>
+         <div id="main" class="open-btn hamburguer-menu" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+<script>
+function openNav(){
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav(){
+    document.getElementById("mySidebar").style.width = "0"
+    document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+<!-- ACÁ TERMINA EL BOTON DE MENU EMERGENTE-->           
+
+        <div class="contain logo-home">
+             <a href="/"><img src="/images/logo-home.png" class="logo-home"></a> 
+        </div>
+        <div class="contain logo-instagram">
+           <a href="https://www.instagram.com">
+            <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+        <div class="navbar-tablet">
+            <ul class="nav-center">
+            <li><a href="/productos">Productos</a></li>
+            <li><a href="/novedades">Novedades</a></li>
+            <li><a href="/recetas">Recetas</a></li>
+            </ul>
+            <ul class="nav-rigth">
+        <li><a href=""><i class="fas fa-search"></i></a></li>
+        <li><a href="/perfil"><i class="fas fa-user"></i></a></li>
+        <li><a href="/carrito-de-compras"><i class="fas fa-shopping-cart"></a></i></li>
+            </ul> 
+        </div>
+    
+    </nav>
+</header>
 
 <main>
 <section class="productos-destacados">
     <article>
         <img src="/images/vodka-Trump.jpeg" alt="Vodka Trump">
-        <p> <a href="./detalle-de-productos.html"></a> Descripción del Producto </p>
-        <p> <a href="/views/metodosDePago"> $333.333 </a></p>
-        <p><a href="/views/carrito.html">  Comprar </a></p>
+        <h4><a href="/detalle-de-productos">VODKA TRUMP</a></h4>
+        <p><a href="/metodos-de-pago">$280.000</a></p>
+        <p><a href="/carrito-de-compras">Comprar</a></p>
 </article>
 
 <article>
         <img src="/images/champagne-Krug.jpeg" alt="Champagne Krug">
              <!--Acá tenemos que hacer que se pasen las fotos así agregamos las 5 que van en cada artículo-->
-        <p> Descripción del Producto </p>
-        <p> <a href="/views/metodosDePago.html"> $44.444 </a></p>
-        <p> <a href="/views/carrito.html"> Comprar </a> </p>
+             <h4><a href="/detalle-de-productos">CHAMPAGNE KRUG</a></h4>
+        <p><a href="/metodos-de-pago">$250.000</a></p>
+        <p><a href="/carrito-de-compras">Comprar</a></p>
 </article>
 
 <article>
         <img src="/images/champagne-Louis-Roederer.webp" alt="Champagne Louis Roederer">
                <!--Acá tenemos que hacer que se pasen las fotos así agregamos las 5 que van en cada artículo-->
-        <p> Descripción del Producto  </p>
-        <p><a href="/views/metodosDepago.html"> $55.5555 </a></p>
-        <p><a href="/views/carrito.html"> Comprar </a></p>
+               <h4><a href="/detalle-de-productos">CHAMPAGNE LOUIS ROEDERER</a></h4>
+        <p><a href="/metodos-de-pago"> $150.000</a></p>
+        <p><a href="/carrito-de-compras">Comprar</a></p>
 </article>
 
 <article>
     <img src="/images/whisky-Highland-Park-A.jpeg" alt="Whisky Highland Park">
            <!--Acá tenemos que hacer que se pasen las fotos así agregamos las 5 que van en cada artículo-->
-    <p> Descripción del Producto  </p>
-    <p><a href="/views/metodosDepago.html"> $66.666 </a></p>
-    <p><a href="/views/carrito.html"> Comprar </a></p>
+           <h4><a href="/detalle-de-productos">WHISKY HIGHLAND PARK</a></h4>
+    <p><a href="/metodos-de-pago"> $200.000</a></p>
+        <p><a href="/carrito-de-compras">Comprar</a></p>
 </article>
 
 <article>
      <img src="/images/whisky-LouisXIII-A.jpeg" alt="Whisky Louis XIII ">
           <!--Acá tenemos que hacer que se pasen las fotos así agregamos las 5 que van en cada artículo-->
-    <p> Descripción del Producto  </p>
-    <p><a href="/views/metodosDepago.html"> $77.777 </a></p>
-    <p><a href="/views/carrito.html"> Comprar </a></p>
+          <h4><a href="/detalle-de-productos">WHISKY LOUIS XIII</a></h4>
+       <p><a href="/metodos-de-pago"> $200.000</a></p>
+    <p><a href="/carrito-de-compras">Comprar</a></p>
 </article>
 </section>
 
-<section>
-    <article>
+<section class="contain-banners">
+    <article class="banner-novelties">
 <!--Acá va el carrusel con las Novedades 
 cada imagen nos llevará al link de la receta-->
-<img src="/images/NovedadA" alt="Novedad A">   
+<img src="/images/nolvelties-banner.jpeg" class="nolvelties-banner">
+<a href="/novedades"><h3 class="banner">Novedades</h3></a>  
 </article>
-</section>
 
-<section>
-    <article> 
+
+
+    <article class="banner-recipes"> 
 <!--Acá va el carrusel con las Recetas, entonces 
 tenemos que buscarla manera para que en pantalla 
 se vea una imagen a la vez < > -->
-<img src="/images/RecetaB" alt="Imagen de la Receta B">
+<img src="/images/recipes-whisky.jpeg" class="recipes-whisky">
+<a href="/recipes"><h3 class="banner">Recetas</h3></a>  
     </article>
 </section>
 </main>
 
 <footer>
-<nav>
-    <ul type= "none">    
-        <li><a href="/views/home.html"><img src="/public/images/Logo.png" alt="Logo"></a></li>
-        <li> <a href="/views/productos.html"> Productos</a></li>
-        <li><a href="/views/novedades.html"> Novedades</a></li>
-        <li><a href="/views/Recetas.html"> Recetas </a></li>
+    <section class="container-footer">
+    <div class="container-logo">
+     <a href="/"><img src="/images/logo-home.png" class="logo-home"></a>
+    </div>  
+
+<div class="nav-footer">
+<div class="nav-footer-column">       
+<h2 class="header-links"><a href="/productos">Productos</h2></a>
+    <ul class="footer-tablet">  
+        <li><a href="#" class="link">Procucto A</a></li>
+        <li><a href="#" class="link">Producto B</a></li>
+        <li><a href="#" class="link">Producto C</a></li>
+        <li><a href="#" class="link">Producto D</a></li>
     </ul>
+</div>
+<div class="nav-footer-column"> 
+    <h2 class="header-links"><a href="/productos">Recetas</h2></a>
+    <ul class="footer-tablet">      
+        <li><a href="#" class="link">Receta A</a></li>
+        <li><a href="#" class="link">Receta B</a></li>
+        <li><a href="#" class="link">Receta C</a></li>
+        <li><a href="#" class="link">Receta D</a></li>
+        <li><a href="#" class="link">Receta E</a></li>
+    </ul>
+</div>    
+<div  class="nav-footer-column">
+<h2 class="header-links"><a href="/contacto">Contacto</h2></a>
+    <ul class="footer-tablet">
+        <li><a href="#" class="link">Enlace A</a></li>
+        <li><a href="#" class="link">Enlace B</a></li>
+        <li><a href="#" class="link">Enlace C</a></li>
+        <li><a href="#" class="link">Enlace D</a></li>
+    </ul>
+</div>
 
-<!--
-Acá van los enlaces a las Redes Sociales 
-ingresando desde los logos
--->
-    <a href="/views/terminosYcondiciones.html"> Términos y condiciones</a>
-</nav>
+<div class="nav-footer-column">
+<h2 class="header-links"><a href="/nosotros">Nosotros</a></h2>
+    <ul class="footer-tablet">
+         <li><a href="#" class="link">Enlace A</a></li>
+         <li><a href="#" class="link">Enlace B</a></li>
+         <li><a href="#" class="link">Enlace C</a></li>
+         <li><a href="#" class="link">Enlace D</a></li>
+    </ul>
+</div>
 
+</div>     
+
+<div class="contain-redes-sociales">
+    <a href="https://www.instagram.coml">
+    <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/">
+    <i class="fab fa-facebook-square"></i>
+    </a>
+    <a href="/images/gatito-wsp.jpeg">
+    <i class="fab fa-whatsapp-square"></i>
+    </a>
+    <a href="https://twitter.com">
+    <i class="fab fa-twitter-square"></i>
+    </a>
+</div>
+    </section>   
+    <a href="/terminos-y-condiciones" class="terminos-y-condiciones">Términos y condiciones</a>
 </footer>
 
 </body>

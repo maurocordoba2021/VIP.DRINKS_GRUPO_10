@@ -1,25 +1,16 @@
 {
-  "name": "proyecto-integrador-dh",
+  "name": "manos-en-la-masa",
   "version": "1.0.0",
-  "description": "E-commers de Bebidas Alcoholicas",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/maurocordoba2021/Proyecto-Integrador-DH.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/maurocordoba2021/Proyecto-Integrador-DH/issues"
-  },
-  "homepage": "https://github.com/maurocordoba2021/Proyecto-Integrador-DH#readme",
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.14"
-  },
-  "devDependencies": {},
-  "keywords": []
+  }
 }

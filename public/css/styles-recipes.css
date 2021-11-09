@@ -276,7 +276,14 @@ main section article ul li{
     margin-top: 15px;
 }
 
-
+main section article p{
+    padding-left: 30px;
+}
+main section article img{
+    display: flex;
+    justify-content: center;
+    padding-right: 25px;
+}
 /* ACÁ COMIENZAN LAS MEDIA QUERIES */
 
 
@@ -330,6 +337,7 @@ main section article ul li{
     }
     main section img{
         width: 100%;
+        padding-left: 90px;
     }
 
 
@@ -349,12 +357,14 @@ main section article ul li{
     }
     main section article ol{
         padding: 0 180px;
+        padding-left: 220px;
         margin: 15px;
     }
 
     main section img{
-        width: 20%;
-        align-items: center;
+        width: 30%;
+        padding-right: 100px;
+        padding-left: 50px;
     }
 
 }

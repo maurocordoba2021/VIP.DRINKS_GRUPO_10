@@ -190,6 +190,26 @@ ul.nav-rigth li{
 
 /* ACÁ TERMINA LA NAVBAR BOTTOM QUE SE ABRE EN TABLET*/
 
+/* ACÁ COMIENZA EL MAIN*/
+
+section.productos-destacados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

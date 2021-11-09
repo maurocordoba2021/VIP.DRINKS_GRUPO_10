@@ -237,9 +237,11 @@ main.login-form{
     margin-bottom: 15%;
 }
 
-form.section-login{
+form.section-login,
+form.section-registro{
     display: flex;
     justify-content: center;
+    max-width: 95%;
 }
 
 /* ACÁ TERMINA EL FORMULARIO*/

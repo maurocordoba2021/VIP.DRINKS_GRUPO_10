@@ -257,6 +257,9 @@ main{
     color:whitesmoke;
 }
 
+section.main-recetas{
+margin-top: 25%;
+}
 
 main section article{
     display:flex;

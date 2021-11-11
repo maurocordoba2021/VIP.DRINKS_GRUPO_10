@@ -2,6 +2,8 @@
 *{
     box-sizing: border-box;
     flex-wrap: wrap;
+    padding: 0;
+    margin: 0;  
 }
 /* UNIVERSAL*/
 
@@ -252,6 +254,101 @@ a.link{
 }
 
 /* ACÁ TERMINA EL FOOTER */
+
+/* estilos aplicados al boddy*/
+
+table{
+    background-color: whitesmoke;
+    color: black;
+    border: solid 3px black;
+    width: 95%;
+    text-align: center;
+    margin: 0px 10px;
+    border: radius 5px;;
+}
+td.centrar{
+    text-align: center;
+}
+
+img.img-producto{
+    max-width: 100px;
+    max-height: 100px;
+    border:  solid 1px black;
+}
+
+td{
+    border: solid 1px black;
+}
+
+div.Cantidad{
+    text-align: center;
+}
+
+button.boton-borrar{
+    width:28px;
+    height: 28px;
+    
+}
+
+i.far fa-trash-alt{
+    text-align: center;
+}
+
+div.eliminar{
+    text-align: center;
+}
+
+h2.nommbre-producto{
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+div.detalle.de.compra{
+    
+    border: black solid 2px;
+    color: black;
+    background-color:whitesmoke;
+    width: 95%;
+    margin: 0px 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.compra{
+    background-color: red;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    width: 30%;
+}
+
+.interes{
+    color: white;
+    text-align: center;
+    text-decoration: underline
+}
+.carrusel{
+    height: 400px;
+    width: 95%;
+    margin: 0px 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    
+}
+
+.carrusel img {
+    width: 100%;
+    height: 100%
+}
+
+
+
+
+
+
+
+
 
 
 

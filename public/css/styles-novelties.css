@@ -25,9 +25,7 @@ a{
     text-decoration: none;
     color: whitesmoke;
 }
-img{
-    width: 95vw;
-}
+
 li{
     text-decoration: none;
 }
@@ -190,7 +188,58 @@ ul.nav-rigth li{
 
 /* ACÁ TERMINA LA NAVBAR BOTTOM QUE SE ABRE EN TABLET*/
 
+/* ACA COMIENZA EL MAIN */
 
+main section.combos-destacados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25% auto 0%;
+    margin-bottom: 150px;
+}
+
+main section article.combo-main{
+width: 90%;
+display: flex;
+margin: 5px;
+padding: 5px;
+flex-direction: column;
+background:rgba(0,0,0,0.7);
+border: solid 3px black;
+}
+
+.detalles-combos{
+    color:whitesmoke;
+}
+div.button-shopp{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+button.button-shopp{
+display: inline-block;
+align-self: flex-start;
+font-size: 24px;
+font-weight: bolder;
+background-color: gold;
+border-radius: 20px;
+}
+button.button-shopp a{
+    color: black;
+    position: relative;
+}
+.titulo-combos{
+    text-align: center; 
+    width: 100%; 
+    display: block; 
+    margin-bottom: 80px;
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+/* ACA TERMINA EL MAIN*/ 
 
 
 
@@ -276,16 +325,19 @@ a.link{
     }
 }
 
-@media(max-height: 450px){
+@media(max-height: 425px){
     .sidebar{
         padding-top: 15px;
     }
     .sidebar a{
         font-size: 18px;;
     }
+    div ul.nav-center{
+        display: none;
+    }
 }
 
-@media(min-width: 769px){
+@media(min-width: 768px){
      .navbar-tablet{
         display: flex;
     }
@@ -297,6 +349,18 @@ a.link{
     .contain-navbar-scroll{
         padding-top: 0%;
     }
+    main section article.combo-main{
+        width: 40%;
+    }
+
+
+
+}
+@media (min-width: 1440px){
+    main section article.combo-main{
+        width: 20%;
+    }
+    
 
 
 }

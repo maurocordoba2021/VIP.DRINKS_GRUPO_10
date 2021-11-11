@@ -25,9 +25,7 @@ a{
     text-decoration: none;
     color: whitesmoke;
 }
-img{
-    width: 95vw;
-}
+
 li{
     text-decoration: none;
 }
@@ -366,8 +364,8 @@ a.link{
 
 
 }
-
-
-
-
-
+@media (min-width: 1440px){
+    .imagen-p{
+        display: none;
+    }
+}

@@ -365,8 +365,8 @@ a.link{
 
 
 }
-
-
-
-
-
+@media (min-width: 1440px){
+    img{
+        width: 45vw;
+    }
+}

@@ -193,6 +193,7 @@ ul.nav-rigth li{
     margin: 10px;
 }
 
+
 /*MAIN*/
 
 main{
@@ -285,150 +286,171 @@ section.interese article{
 
 
 
+/*SECCION INTERESES,SE ABRE EN DESKTOP 1440*/
+section.intereses{
+    border-top: solid goldenrod 1px;
+    display: flex;
+    justify-content: space-around;
+}
+section.intereses article{
+    max-width: 20%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 10px;
+}
+section.intereses article img{
+    width: 200px;
+}
+section.intereses h3{
+    width: 100%;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
 /* ACÁ COMIENZA EL FOOTER */
 
 footer{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0%;
-    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0%;
+   width: 100%;
+   position: relative;
+   border-top: 1px goldenrod solid;
 }
 
 footer img.logo-footer{
-    width: 70px;
-    position: absolute;
+   width: 70px;
+   position: absolute;
 }
 
 section.container-footer{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    text-align: center;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   text-align: center;
 }
 
 footer article{
-    align-items: baseline;
-    display: flow-root;
-    color: whitesmoke;
+   align-items: baseline;
+   display: flow-root;
+   color: whitesmoke;
+   padding: 1% 5%;
+   border-radius: 30px;
+   margin: 1%;
 }
 
 footer i{
-    font-size: 2em;
-    color: whitesmoke;
+   font-size: 2em;
+   color: whitesmoke;
 }
 
 .contain-redes-sociales{
-    display: flex;
-    justify-content: space-around;
-    color: whitesmoke;
-    width: 100%;
-    margin: 0 10px;
-    font-size: 10px;
+   display: flex;
+   justify-content: space-around;
+   color: whitesmoke;
+   width: 100%;
+   margin: 0 10px;
+   font-size: 10px;
 }
 
 h2.header-links{
-    color: whitesmoke;
-    display: inline-block;
-    margin: 8%;
+   color: whitesmoke;
+   display: inline-block;
+   margin: 8%;
 }
 
 img.logo-home{
-    width: 120px;
-    display: inline-block;
+   width: 120px;
+   display: inline-block;
 }
 
 footer ul{
-    list-style-type: none;
+   list-style-type: none;
 }
 
 a.link{
-    color: goldenrod;
-    text-align: center;
-    margin: 0 5px;
-    display: inline-block;
+   color: goldenrod;
+   text-align: center;
+   margin: 0 5px;
+   display: inline-block;
 }
 .terminos-y-condiciones{
-    color: whitesmoke;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 1%;
-    border-top: gold solid 1px;
+   color: whitesmoke;
+   font-size: 20px;
+   text-decoration: none;
+   display: inline-flex;
+   width: 100%;
+   justify-content: center;
+   margin-bottom: 1%;
+   border-top: gold solid 1px;
 }
 
 /* ACÁ TERMINA EL FOOTER */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ACÁ COMIENZAN LAS MEDIA QUERIES */
 
 @media(min-width: 0px){
-    .navbar-tablet{
-        display: none;
-    }
-    ul.footer-tablet{
-        display: none;
-    }
+   .navbar-tablet{
+       display: none;
+   }
+   ul.footer-tablet{
+       display: none;
+   }
+   section.intereses{
+       display: none;
+   }
 }
 
 @media(min-height: 450px){
-    .sidebar{
-        padding-top: 15px;
-    }
-    .sidebar a{
-        font-size: 18px;;
-    }
+   .sidebar{
+       padding-top: 15px;
+   }
+   .sidebar a{
+       font-size: 18px;;
+   }
 }
 
 @media(min-width: 768px){
-    .contain-navbar-scroll{
-        display: flex;
-        padding: 0% 1%;
-        background:rgba(0, 0, 0, 0.7); 
-        width: 100%;
-        position: relative;
-    }
+   .contain-navbar-scroll{
+       display: flex;
+       padding: 0% 1%;
+       background:rgba(0, 0, 0, 0.7); 
+       width: 100%;
+       position: relative;
+   }
 
-     .navbar-tablet{
-        display: flex;
-        margin-top: 0%;
-        background: rgba(0, 0, 0, 0.7); 
-    }
-    
-    ul.footer-tablet{
-        display: flex;
-        justify-content: space-around;
-    }
+    .navbar-tablet{
+        padding: 20px;
+       display: flex;
+       background: rgba(0, 0, 0, 0.7); 
+   }
+   
+   ul.footer-tablet{
+       display: flex;
+       justify-content: space-around;
+   }
 
-    footer article{
-        max-width: 28%;
-    }
-    footer p.text {
-        font-size: 0.8em;
-    }
+   footer article{
+       max-width: 28%;
+   }
+   footer p.text {
+       font-size: 0.8em;
+   }
 }
 @media(min-width: 1024px){
-   .contain-navbar-scroll{
-       display: none;
-   }
-   img.logo-nav{
-    display: inline-block;
-    width: 50px;
-    position: absolute;
-    top: 5px;
-    left: 50%;
+  .contain-navbar-scroll{
+      display: none;
+  }
+   .navbar-tablet{
+       padding: 0%;
+   margin-top: 0%;
+}
+footer article{
+   max-width: 30%;
+}
+section.intereses{
+    display: flex;
 }
 }

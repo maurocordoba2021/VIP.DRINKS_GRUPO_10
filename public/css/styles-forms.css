@@ -12,10 +12,10 @@ div{
 }
 body{
     display: block;
-    font-family: 'Bebas Neue', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0%;
-    background-image: url("/images/background.jpg");
-    background-size: contain;
+    background-image: url("/images/background.png");
+    background-size: auto;
 }
 main{
     display: block;
@@ -59,12 +59,6 @@ border-radius: 5%;
 background-color: transparent;
 }
 
-.logo-instagram{
-    display: inline-block;
-    font-size: 40px;
-    color: whitesmoke;
-}
-
 img.logo-home{
   width: 80px;
 }
@@ -80,7 +74,7 @@ img.logo-home{
     z-index: 1;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, transparent);
+    background: black;
     overflow: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -151,7 +145,6 @@ display: flex;
 width: 100%;
 justify-content: space-between;
 margin: 0%;
-margin-top: 10%;
 }
 
 ul.nav-center{
@@ -207,7 +200,7 @@ ul.nav-rigth li{
     width: 500px;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 130px;
     border-radius: 4px;
     color:white;
 }
@@ -242,9 +235,32 @@ form.section-registro{
     display: flex;
     justify-content: center;
     max-width: 95%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
 }
 
 /* ACÁ TERMINA EL FORMULARIO*/
+
+/*SECCION INTERESES,SE ABRE EN DESKTOP 1440*/
+ section.intereses{
+     border-top: solid goldenrod 1px;
+     display: flex;
+     justify-content: space-around;
+ }
+ section.intereses article{
+     max-width: 20%;
+     background: rgba(0, 0, 0, 0.7);
+     border-radius: 20px;
+     padding: 10px;
+ }
+ section.intereses article img{
+     width: 200px;
+ }
+ section.intereses h3{
+     width: 100%;
+     color: whitesmoke;
+     font-size: 30px;
+ }
 
 /* ACÁ COMIENZA EL FOOTER */
 
@@ -253,6 +269,8 @@ footer{
     flex-wrap: wrap;
     margin: 0%;
     width: 100%;
+    position: relative;
+    border-top: 1px goldenrod solid;
 }
 
 footer img.logo-footer{
@@ -271,6 +289,9 @@ footer article{
     align-items: baseline;
     display: flow-root;
     color: whitesmoke;
+    padding: 1% 5%;
+    border-radius: 30px;
+    margin: 1%;
 }
 
 footer i{
@@ -321,6 +342,8 @@ a.link{
 
 /* ACÁ TERMINA EL FOOTER */
 
+
+
 /* ACÁ COMIENZAN LAS MEDIA QUERIES */
 
 @media(min-width: 0px){
@@ -351,6 +374,7 @@ a.link{
     }
 
      .navbar-tablet{
+         padding: 20px;
         display: flex;
         background: rgba(0, 0, 0, 0.7); 
     }
@@ -371,11 +395,11 @@ a.link{
    .contain-navbar-scroll{
        display: none;
    }
-   img.logo-nav{
-    display: inline-block;
-    width: 50px;
-    position: absolute;
-    top: 5px;
-    left: 50%;
+    .navbar-tablet{
+        padding: 0%;
+    margin-top: 0%;
+}
+footer article{
+    max-width: 30%;
 }
 }

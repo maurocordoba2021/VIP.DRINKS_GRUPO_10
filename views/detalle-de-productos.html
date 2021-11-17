@@ -15,13 +15,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
 <title>Detalle de producto</title>
 </head>
-<body class="block">
+<body>
     <header>
         <nav class="global-nav">
         <div class="contain-navbar-scroll">
-
-<!--ACÁ EMPIEZA EL MENÚ EMERGENTE-->
-
+    
+    <!--ACÁ EMPIEZA EL MENÚ EMERGENTE-->
+    
             <div id="mySidebar" class="sidebar">
                         <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">x</a>
                         <a href="/registro">Registrarse</a>
@@ -33,8 +33,8 @@
              <div id="main" class="open-btn hamburguer-menu" onclick="openNav()">
                 <i class="fas fa-bars"></i>
             </div>
-
-<script>
+    
+    <script>
     function openNav(){
         document.getElementById("mySidebar").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
@@ -43,10 +43,10 @@
         document.getElementById("mySidebar").style.width = "0"
         document.getElementById("main").style.marginLeft = "0";
     }
-</script>
-
-<!-- ACÁ TERMINA EL BOTON DE MENU EMERGENTE-->           
-
+    </script>
+    
+    <!-- ACÁ TERMINA EL BOTON DE MENU EMERGENTE-->           
+    
             <div class="contain logo-home">
                  <a href="/"><img src="/images/logo-home.png" class="logo-home"></a> 
             </div>
@@ -56,9 +56,12 @@
                 </a>
             </div>
         </div>
+        <div class="logo-nav">
+            <a href="/"><img src="/images/logo-home.png" class="logo-nav"></a> 
+       </div>
             <div class="navbar-tablet">
                 <ul class="nav-center">
-                <li><a href="/productos">Productos</a></li>
+                <li><a href="/productos"> Productos</a></li>
                 <li><a href="/novedades">Combos</a></li>
                 <li><a href="/recetas">Recetas</a></li>
                 </ul>
@@ -71,8 +74,8 @@
         
         </nav>
     </header>
-
-    <main>
+    
+<main>
             <div class="button-shopp">
       
             <button type="submit" class="button-shopp"><a href="./carrito-de-compras">Comprar</a></button>

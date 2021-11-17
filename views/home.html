@@ -8,15 +8,11 @@
         <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/styles-home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
      <title>Home</title>
 </head>
-<body class="block">
+<body>
 <header>
     <nav class="global-nav">
     <div class="contain-navbar-scroll">
@@ -57,6 +53,9 @@ function closeNav(){
             </a>
         </div>
     </div>
+    <div class="logo-nav">
+        <a href="/"><img src="/images/logo-home.png" class="logo-nav"></a> 
+   </div>
         <div class="navbar-tablet">
             <ul class="nav-center">
             <li><a href="/productos"> Productos</a></li>
@@ -74,161 +73,154 @@ function closeNav(){
 </header>
 
 <main>
-<section class="productos-destacados">
+    <div class="products">
+    <h3>Tus productos favoritos</h3>
+    <section class="featured">
     <article>
-        <div class="img-art">
-        <img src="/images/vodka-Trump.png" alt="Vodka Trump">
-    </div>
-        <h4><a href="/detalle-de-productos">VODKA TRUMP</a></h4>
-        <p><a href="/metodos-de-pago">$280.000</a></p>
-        <button type="submit" class="button-shopp"><a href="./carrito-de-compras">Comprar</a></button>
-    </div>
-</article>
-</article>
-
-<article>
-    <div class="img-art">
-        <img src="/images/champagne-Krug.png" alt="Champagne Krug">
-    </div>   
-        <!--Acá tenemos que hacer que se pasen las fotos así agregamos las 5 que van en cada artículo-->
-             <h4><a href="/detalle-de-productos">CHAMPAGNE KRUG</a></h4>
-        <p><a href="/metodos-de-pago">$250.000</a></p>
-        <button type="submit" class="button-shopp"><a href="./carrito-de-compras">Comprar</a></button>
-    </div>
-</article>
-</article>
-
-<article>
-    <div class="img-art">
-        <img src="/images/champagne-Louis-Roederer.png" alt="Champagne Louis Roederer">
+        <img src="/images/tequila-Ley-925.png" alt="tequila-Ley-925">    
+        <div class="main-article"><i class="fas fa-plane"></i>
+        <p class="price">$188.000</p>
+        <p class="shipping">Envío Global Gratuito</p> 
+        <h4 class="description">Tequila Ley 924</h4>  
+        <form action="/" method="post">
+        <button class="buy" type="submit">Comprar</button>
+        </form>
     </div> 
-        <!--Acá tenemos que hacer que se pasen las fotos así agregamos las 5 que van en cada artículo-->
-               <h4><a href="/detalle-de-productos">CHAMPAGNE LOUIS ROEDERER</a></h4>
-        <p><a href="/metodos-de-pago"> $150.000</a></p>
-        <button type="submit" class="button-shopp"><a href="./carrito-de-compras">Comprar</a></button>
+    </article> 
+        
+    <article>
+        <img src="/images/vodka-Trump.png" alt="vodka-Trump">
+        <div class="main-article"><i class="fas fa-plane"></i>
+        <p class="price">$250.000</p>
+        <p class="shipping">Envío Global Gratuito</p> 
+        <h4 class="description">Vodka Trump</h4>
+        <form action="/" method="post">
+            <button class="buy" type="submit">Comprar</button>
+            </form>
     </div>
-</article>
-</article>
+    </article> 
 
-<article>
-    <div class="img-art">
-    <img src="/images/whisky-Highland-Park.png" alt="Whisky Highland Park">
-</div>
-   <!--Acá tenemos que hacer que se pasen las fotos así agregamos las 5 que van en cada artículo-->
-           <h4><a href="/detalle-de-productos">WHISKY HIGHLAND PARK</a></h4>
-    <p><a href="/metodos-de-pago"> $200.000</a></p>
-    <button type="submit" class="button-shopp"><a href="./carrito-de-compras">Comprar</a></button>
-</div>
-</article>
-</article>
-
-<article>
-    <div class="img-art"><img src="/images/whisky-Louis-XIII.png" alt="Whisky Louis XIII ">
+    <article>
+        <img src="/images/whisky-Highland-Park.png" alt="whisky-Highland-Park">
+        <div class="main-article"><i class="fas fa-plane"></i>
+        <p class="price">$255.000</p>
+        <p class="shipping">Envío Global Gratuito</p> 
+        <h4 class="description">whisky Highland Park</h4>
+        <form action="/" method="post">
+            <button class="buy" type="submit">Comprar</button>
+            </form>
     </div>
-      <!--Acá tenemos que hacer que se pasen las fotos así agregamos las 5 que van en cada artículo-->
-          <h4><a href="/detalle-de-productos">WHISKY LOUIS XIII</a></h4>
-       <p><a href="/metodos-de-pago"> $200.000</a></p>
-       <button type="submit" class="button-shopp"><a href="./carrito-de-compras">Comprar</a></button>
-    </div>
-</article>
-</article>
-<article>
-    <div class="img-art"><img src="/images/tequila-Ley-925.png" alt="Tequila Ley 925">
-    </div>
-      <!--Acá tenemos que hacer que se pasen las fotos así agregamos las 5 que van en cada artículo-->
-          <h4><a href="/detalle-de-productos">TEQUILA LEY 925</a></h4>
-       <p><a href="/metodos-de-pago"> $300.000</a></p>
-       <div class="button-shopp">
-        <button type="submit" class="button-shopp"><a href="./carrito-de-compras">Comprar</a></button>
+    </article> 
+   
+    <article>
+        <img src="/images/whisky-Louis-XIII.png" alt="whisky-Louis-XIII">
+        <div class="main-article"><i class="fas fa-plane"></i>
+        <p class="price">$230.000</p>
+        <p class="shipping">Envío Global Gratuito</p> 
+         <h4 class="description">Whisky Louis XIII</h4>
+         <form action="/" method="post">
+            <button class="buy" type="submit">Comprar</button>
+            </form>
         </div>
-</article>
+        </article>
 </section>
 
-<section class="contain-banners">
-    <article class="banner-novelties">
-<!--Acá va el carrusel con las Novedades 
-cada imagen nos llevará al link de la receta-->
-<img src="/images/nolvelties-banner.jpeg" class="nolvelties-banner">
-<a href="/novedades"><h3 class="banner">Novedades</h3></a>  
-</article>
+<h3>Novedades</h3>
+<section class="novelties">
+                <article>
+                 <img src="/images/champagne-Krug.png" alt="champagne-Krug">
+                 <div class="main-article"><i class="fas fa-plane"></i>
+                 <p class="price">$120.000</p>
+                 <p class="discount">40% OFF</p>
+                 <h4 class="description">champagne Krug</h4>  
+                 <form action="/" method="post">
+                    <button class="buy" type="submit">Comprar</button>
+                    </form>    
+                </div>
+                </article> 
+            
+             <article>
+                 <img src="/images/champagne-Louis-Roederer.png" alt="champagne-Louis-Roederer">
+                 <div class="main-article"><i class="fas fa-plane"></i>
+                 <p class="price">$148.000</p>
+                 <p class="discount">20% OFF</p>
+                 <h4 class="description">Champagne Louis Roederer</h4>
+                 <form action="/" method="post">
+                    <button class="buy" type="submit">Comprar</button>
+                    </form>  
+                </div>
+                </article> 
+    
+              <article>
+                 <img src="/images/sake-Jumai.png" alt="sake-Jumai">
+                 <div class="main-article"><i class="fas fa-plane"></i>
+                 <p class="price">$11.500</p>
+                 <p class="discount">10% OFF</p>
+                  <h4 class="description">Sake Jumai</h4>
+                  <form action="/" method="post">
+                    <button class="buy" type="submit">Comprar</button>
+                    </form>  
+                </div>
+                </article> 
+       
+              <article>
+                  <img src="/images/ron-Habana-club.jpg" alt="ron-Habana-club">
+                  <div class="main-article"><i class="fas fa-plane"></i>
+                  <p class="price">$105.200</p>
+                  <p class="discount">5% OFF</p>
+                  <h4 class="description">Ron Habana Club</h4>
+                  <form action="/" method="post">
+                    <button class="buy" type="submit">Comprar</button>
+                    </form>  
+                </div>
+                </article>
 
-
-
-    <article class="banner-recipes"> 
-<!--Acá va el carrusel con las Recetas, entonces 
-tenemos que buscarla manera para que en pantalla 
-se vea una imagen a la vez < > -->
-<img src="/images/recipes-whisky.jpeg" class="recipes-whisky">
-<a href="/recetas"><h3 class="banner">Recetas</h3></a>  
-    </article>
 </section>
+</div>
 </main>
 
 <footer>
     <section class="container-footer">
-    <div class="container-logo">
-     <a href="/"><img src="/images/logo-home.png" class="logo-home"></a>
+    <div class="logo-footer">
+     <a href="/"><img src="/images/logo-home.png" class="logo-footer"></a>
     </div>  
+    <article class="art-footer">
+        <i class="fab fa-bitcoin"></i>
+    <h4>CriptoCash</h4>
+    <p class="text">Asocia tu cuenta en Apio y paga con tu billetera virtual. En el acto y sin recargo.</article>
+    
+     <article class="art-footer">
+        <i class="fas fa-globe-americas"></i>
+    <h4>Envíos globales</h4>
+    <p class="text">¡No tenemos límites! Disfruta de tus bebidas estés donde estés.</p>
+     </article>
+   
+    <article class="art-footer">
+        <i class="fas fa-check-circle"></i>
+    <h4>Excelencia verificada</h4></li>
+    <p class="text">La exclusividad y el lujo de nuestros productos están certificados.</p>
+    </article>
 
-<div class="nav-footer">
-<div class="nav-footer-column">       
-<h2 class="header-links"><a href="/productos">Productos</h2></a>
-    <ul class="footer-tablet">  
-        <li><a href="#" class="link">Procucto A</a></li>
-        <li><a href="#" class="link">Producto B</a></li>
-        <li><a href="#" class="link">Producto C</a></li>
-        <li><a href="#" class="link">Producto D</a></li>
-    </ul>
-</div>
-<div class="nav-footer-column"> 
-    <h2 class="header-links"><a href="/productos">Recetas</h2></a>
-    <ul class="footer-tablet">      
-        <li><a href="#" class="link">Receta A</a></li>
-        <li><a href="#" class="link">Receta B</a></li>
-        <li><a href="#" class="link">Receta C</a></li>
-        <li><a href="#" class="link">Receta D</a></li>
-        <li><a href="#" class="link">Receta E</a></li>
-    </ul>
-</div>    
-<div  class="nav-footer-column">
-<h2 class="header-links"><a href="/contacto">Contacto</h2></a>
-    <ul class="footer-tablet">
-        <li><a href="#" class="link">Enlace A</a></li>
-        <li><a href="#" class="link">Enlace B</a></li>
-        <li><a href="#" class="link">Enlace C</a></li>
-        <li><a href="#" class="link">Enlace D</a></li>
-    </ul>
-</div>
-
-<div class="nav-footer-column">
-<h2 class="header-links"><a href="/nosotros">Nosotros</a></h2>
-    <ul class="footer-tablet">
-         <li><a href="#" class="link">Enlace A</a></li>
-         <li><a href="#" class="link">Enlace B</a></li>
-         <li><a href="#" class="link">Enlace C</a></li>
-         <li><a href="#" class="link">Enlace D</a></li>
-    </ul>
-</div>
-
-</div>     
-
-<div class="contain-redes-sociales">
-    <a href="https://www.instagram.coml">
-    <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.facebook.com/">
-    <i class="fab fa-facebook-square"></i>
-    </a>
-    <a href="/images/gatito-wsp.jpeg">
-    <i class="fab fa-whatsapp-square"></i>
-    </a>
-    <a href="https://twitter.com">
-    <i class="fab fa-twitter-square"></i>
-    </a>
-</div>
-    </section>   
+    </section>
+    <div class="contain-redes-sociales">
+        <a href="https://www.instagram.coml">
+        <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/">
+        <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="/images/gatito-wsp.jpeg">
+        <i class="fab fa-whatsapp-square"></i>
+        </a>
+        <a href="https://twitter.com">
+        <i class="fab fa-twitter-square"></i>
+        </a>
+    </div>   
     <a href="/terminos-y-condiciones" class="terminos-y-condiciones">Términos y condiciones</a>
 </footer>
 
 </body>
+
 </html>
+
+

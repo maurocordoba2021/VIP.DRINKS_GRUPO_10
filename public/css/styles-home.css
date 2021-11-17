@@ -13,11 +13,11 @@ div{
     display: flex;
 }
 body{
-    display: block;
-    font-family: 'Bebas Neue', 'Roboto', sans-serif;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
     margin: 0%;
-    background-image: url("/images/background.jpg");
-    background-size: contain;
+    background-image: url("/images/background.png");
+    background-size: auto;
 }
 main{
     display: block;
@@ -32,6 +32,9 @@ img{
 }
 li{
     text-decoration: none;
+}
+h3{
+    color: whitesmoke;
 }
 
 /* CUERPO EN GRAL */
@@ -49,8 +52,9 @@ li{
     left: 0;
     line-height: 3rem;
     width: 100%;
-    height: 80px;
+    height: 150px;
     align-items: center;
+    z-index: 1;
 }
 
 .hamburguer-menu{
@@ -147,25 +151,24 @@ a.closebtn{
 /* ACÁ TERMINAEL MENÚ EMERGENTE*/
 
 /* ACÁ COMIENZA LA NAVBAR QUE SE ABRE EN TABLET*/
-
+img.logo-nav{
+    display: none;
+}
 .navbar-tablet{
 display: flex;
-width: 100%;
 justify-content: space-between;
 margin: 0%;
-margin-top: 10%;
+width: 100vw;
 }
 
 ul.nav-center{
 display: flex;
-margin: 10px;
-justify-content: space-between;
+justify-content: space-around;
 }
 
 ul.nav-center li,
 ul.nav-rigth li{
     display: inline-block;
-    padding-right: 25px;
     text-align: center;
     margin: 10px;
 }
@@ -180,64 +183,146 @@ ul.nav-rigth li{
 .navbar-tablet ul li a{
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 1em;
     color:whitesmoke;
 }
 
 .navbar-tablet ul li i{
-    font-size: 30px;
+    font-size: 1em;
     color: whitesmoke;
     margin: 10px;
 }
 
-/* ACÁ TERMINA LA NAVBAR BOTTOM QUE SE ABRE EN TABLET*/
+/*MAIN*/
 
-/* ACÁ COMIENZA EL MAIN*/
+main{
+    width: 90%;
+    margin: 150px auto 10px;
+}
 
-section.productos-destacados{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 25% auto 0%;
+.featured,
+.novelties{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+
+main section article{
+    display: inline-block;
+    margin: 10px 0px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+main section article img {
+    width: 100%;
+}
+
+.main-article{
+    position: relative;
+    border-top: solid 1px grey;
+    padding: 15px;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+    color: whitesmoke;
+}
+
+.discount,
+.shipping{
+    width: 70%;
+    color: #666;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.description{
+    display: none;
+    color: goldenrod;
+    margin-top: em;
+}
+
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: -15px;
+    transition: all 540ms;
+}
+
+main section article i:hover{
+    transform: rotateZ(-90deg);
+}
+
+main section h3{
+    margin:20px 0px;
+    color: whitesmoke;
 }
 
 
 article{
-    width: 90%;
+    width: 100%;
     display: flex;
-    margin: 5px;
-    padding: 5px;
-    flex-direction: column;
-    background:rgba(0,0,0,0.7);
-    border: solid 3px black;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid grey;
+    position: relative;
+    padding: 15px 15px 5px;
 }
+
+/*MAIN*/
+
+
+
+
+
 
 
 
 
 
 /* ACÁ EMPIEZAEL BOTON COMPRAR*/
-
-div.button-shopp{
+form {
     display: flex;
-    flex-direction: row-reverse;
-    padding: 20px;
-    margin-top: 80px;
+    width: 100%;
+    justify-content: center;
 }
 
-button.button-shopp{
-display: inline-block;
-align-self: flex-start;
-font-size: 24px;
-font-weight: bolder;
-background-color: gold;
-border-radius: 20px;
+button.buy{
+    background: gold;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 8px 0 0;
+    border-radius: 5px;
+    width: 120px;
+    transition: all 540ms;
 }
-button.button-shopp a{
-    color: black;
-    position: relative;
+button.buy:hover{
+    background: white;
+    color: gold;
+    border: solid 1px gold;
 }
-
 
 /* ACÁ TERMINA EL BOTON COMPRAR*/
 
@@ -254,22 +339,38 @@ footer{
     flex-wrap: wrap;
     margin: 0%;
     width: 100%;
-    background: linear-gradient(45deg, #5a532c5e, transparent);
 }
+
+footer img.logo-footer{
+    width: 70px;
+    position: absolute;
+}
+
 section.container-footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
     text-align: center;
 }
+
+footer article{
+    align-items: baseline;
+    display: flow-root;
+    color: whitesmoke;
+}
+
+footer i{
+    font-size: 2em;
+    color: whitesmoke;
+}
+
 .contain-redes-sociales{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: whitesmoke;
-    flex-direction: column;
-    margin-right: 4%;
-    margin-bottom: 4%;
-    font-size: 30px;
+    width: 100%;
+    margin: 0 10px;
+    font-size: 10px;
 }
 
 h2.header-links{
@@ -320,7 +421,7 @@ a.link{
 
 /* ACÁ COMIENZAN LAS MEDIA QUERIES */
 
-@media(min-width: 350px){
+@media(min-width: 0px){
     .navbar-tablet{
         display: none;
     }
@@ -329,7 +430,7 @@ a.link{
     }
 }
 
-@media(max-height: 450px){
+@media(min-height: 450px){
     .sidebar{
         padding-top: 15px;
     }
@@ -339,19 +440,64 @@ a.link{
 }
 
 @media(min-width: 768px){
+    .contain-navbar-scroll{
+        display: flex;
+        padding: 0% 1%;
+        background:rgba(0, 0, 0, 0.7); 
+        width: 100%;
+        position: relative;
+    }
+
+    main{
+        margin: 0 auto;
+    }
+
      .navbar-tablet{
         display: flex;
+        background: rgba(0, 0, 0, 0.7); 
     }
     
     ul.footer-tablet{
         display: flex;
         justify-content: space-around;
     }
-    .contain-navbar-scroll{
-        padding-top: 0%;
-    }
+    
     article{
-     width: 350px;
+     max-width: 40%;
     }
 
+    footer article{
+        max-width: 28%;
+    }
+    footer p.text {
+        font-size: 0.8em;
+    }
+
+    main section article:hover .description{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .discount{
+        width: 50%;
+        text-align: end;
+    }
+    .shipping{
+        width: 100%;
+    }
+}
+@media(min-width: 1024px){
+article{
+    max-width: 22%;
+   }
+   .contain-navbar-scroll{
+       display: none;
+   }
+   img.logo-nav{
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+}
 }

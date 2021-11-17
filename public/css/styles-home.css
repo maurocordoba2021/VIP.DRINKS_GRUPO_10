@@ -86,7 +86,7 @@ img.logo-home{
     z-index: 1;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, transparent);
+    background: black;
     overflow: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -422,6 +422,9 @@ a.link{
 /* ACÁ COMIENZAN LAS MEDIA QUERIES */
 
 @media(min-width: 0px){
+    .shipping{
+        width: 100%;
+    }
     .navbar-tablet{
         display: none;
     }

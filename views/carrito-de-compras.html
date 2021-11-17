@@ -14,10 +14,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
-     <title>carrito-de-compras</title>
+     <title>Carrito de compras</title>
 </head>
 <body>
-    <header>
+    <div class="container-page">
+<header>
         <nav class="global-nav">
         <div class="contain-navbar-scroll">
     
@@ -74,13 +75,13 @@
             </div>
         
         </nav>
-    </header>
+</header>
       
 <main>
     <!--ACÁ VA EL CÓDIGO DEL CUERPO DE LA PÁG-->
    <section>
     <table id="tabla-carritio">
-        ><thead>
+        <thead>
         <tr class="cabecera">
         <td class="centrar">Producto</td>
         <td class="centrar">Cantidad</td>
@@ -153,20 +154,58 @@
             </div>
    </section>
 
-   <section>
-       <H2 class="interes">Te puede interesar</H2>
+   <div class="products">
+    <h3>También te puede interesar</h3>
+    <section class="intereses">
+    <article>
+        <img src="/images/tequila-Ley-925.png" alt="tequila-Ley-925">    
+        <div class="main-article"><i class="fas fa-plane"></i>
+        <p class="price">$188.000</p>
+        <p class="shipping">Envío Global Gratuito</p> 
+        <h4 class="description">Tequila Ley 924</h4>  
+        <form action="/" method="post">
+        <button class="buy" type="submit">Comprar</button>
+        </form>
+    </div> 
+    </article> 
+        
+    <article>
+        <img src="/images/vodka-Trump.png" alt="vodka-Trump">
+        <div class="main-article"><i class="fas fa-plane"></i>
+        <p class="price">$250.000</p>
+        <p class="shipping">Envío Global Gratuito</p> 
+        <h4 class="description">Vodka Trump</h4>
+        <form action="/" method="post">
+            <button class="buy" type="submit">Comprar</button>
+            </form>
+    </div>
+    </article> 
 
-       <div class="carrusel"> 
-                <p>carrusel</p>
-           <!--aca tiene que ir el carrusel-->
-           <img src="/images/whisky-Louis-XIII.png" alt="">
-       </div>
-   </section>      
-
+    <article>
+        <img src="/images/whisky-Highland-Park.png" alt="whisky-Highland-Park">
+        <div class="main-article"><i class="fas fa-plane"></i>
+        <p class="price">$255.000</p>
+        <p class="shipping">Envío Global Gratuito</p> 
+        <h4 class="description">whisky Highland Park</h4>
+        <form action="/" method="post">
+            <button class="buy" type="submit">Comprar</button>
+            </form>
+    </div>
+    </article> 
+   
+    <article>
+        <img src="/images/whisky-Louis-XIII.png" alt="whisky-Louis-XIII">
+        <div class="main-article"><i class="fas fa-plane"></i>
+        <p class="price">$230.000</p>
+        <p class="shipping">Envío Global Gratuito</p> 
+         <h4 class="description">Whisky Louis XIII</h4>
+         <form action="/" method="post">
+            <button class="buy" type="submit">Comprar</button>
+            </form>
+        </div>
+        </article>
+</section>
 </main>
-<br>
-<br>
-<br>
 <footer>
     <section class="container-footer">
     <div class="logo-footer">
@@ -206,6 +245,6 @@
     </div>   
     <a href="/terminos-y-condiciones" class="terminos-y-condiciones">Términos y condiciones</a>
 </footer>
-
+</div>
 </body>
 </html>

@@ -12,21 +12,27 @@ div{
 }
 body{
     display: block;
-    font-family: 'Bebas Neue', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     margin: 0%;
-    background-image: url("/images/background.jpg");
-    background-size: contain;
+    color: whitesmoke;
+    background-image: url("/images/background.png");
+    background-size: auto;
+}
+.logo-nav{
+
 }
 main{
-    display: block;
-    width: 100vw;
+    display: flex;
+    width: 90%;
+    margin: 35% auto 0;
 }
 a{
     text-decoration: none;
     color: whitesmoke;
 }
 img{
-    width: 95vw;
+    width: 100%;
 }
 li{
     text-decoration: none;
@@ -151,7 +157,6 @@ display: flex;
 width: 100%;
 justify-content: space-between;
 margin: 0%;
-margin-top: 10%;
 }
 
 ul.nav-center{
@@ -193,6 +198,8 @@ ul.nav-rigth li{
 
 
 
+/*ACÁ COMIENZA EL MAIN*/
+
 
 /* ACÁ COMIENZA EL FOOTER */
 
@@ -201,22 +208,38 @@ footer{
     flex-wrap: wrap;
     margin: 0%;
     width: 100%;
-    background: linear-gradient(45deg, #5a532c5e, transparent);
 }
+
+footer img.logo-footer{
+    width: 70px;
+    position: absolute;
+}
+
 section.container-footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
     text-align: center;
 }
+
+footer article{
+    align-items: baseline;
+    display: flow-root;
+    color: whitesmoke;
+}
+
+footer i{
+    font-size: 2em;
+    color: whitesmoke;
+}
+
 .contain-redes-sociales{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: whitesmoke;
-    flex-direction: column;
-    margin-right: 4%;
-    margin-bottom: 4%;
-    font-size: 30px;
+    width: 100%;
+    margin: 0 10px;
+    font-size: 10px;
 }
 
 h2.header-links{
@@ -252,48 +275,22 @@ a.link{
 }
 
 /* ACÁ TERMINA EL FOOTER */
-/* ACA EMPIEZA EL MAIN*/ 
-main{
-    color:whitesmoke;
-}
 
-section.main-recetas{
-margin-top: 25%;
-}
 
-main section article{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 30px;
-}
-main section article ul li{
-    list-style: none;
-}
 
-.copy-procedimiento{
-    text-align: center;
-    margin-top: 15px;
-}
-.copy-ingredientes{
-    margin-top: 15px;
-}
 
-main section article p{
-    padding-left: 30px;
-}
-main section article img{
-    display: flex;
-    justify-content: center;
-    padding-right: 25px;
-}
+
+
+
+
+
+
+
+
+
 /* ACÁ COMIENZAN LAS MEDIA QUERIES */
 
-
-
-
-
-@media(min-width: 350px){
+@media(min-width: 0px){
     .navbar-tablet{
         display: none;
     }
@@ -302,7 +299,7 @@ main section article img{
     }
 }
 
-@media(max-height: 450px){
+@media(min-height: 450px){
     .sidebar{
         padding-top: 15px;
     }
@@ -311,40 +308,7 @@ main section article img{
     }
 }
 
-@media(min-width: 769px){
-     .navbar-tablet{
-        display: flex;
-    }
-    
-    ul.footer-tablet{
-        display: flex;
-        justify-content: space-around;
-    }
-    .contain-navbar-scroll{
-        padding-top: 0%;
-    }
 
-
-}
-/* Medium - Large screens */
-@media (min-width: 768px){
-    main section article {
-        width: 80%;
-        padding: 0 15px;
-        
-    }
-    main section article ul {
-        width: 100%;
-        text-align: center;
-        text-decoration-style: none;
-    }
-    main section img{
-        width: 100%;
-        padding-left: 90px;
-    }
-
-
-}
 
 /* Big screens */
 
@@ -370,4 +334,68 @@ main section article img{
         padding-left: 50px;
     }
 
+}
+/* ACÁ COMIENZAN LAS MEDIA QUERIES */
+
+@media(min-width: 0px){
+    .navbar-tablet{
+        display: none;
+    }
+    ul.footer-tablet{
+        display: none;
+    }
+    ol.procedimiento{
+        display: none;
+    }
+}
+
+@media(min-height: 450px){
+    .sidebar{
+        padding-top: 15px;
+    }
+    .sidebar a{
+        font-size: 18px;;
+    }
+}
+
+@media(min-width: 768px){
+    .contain-navbar-scroll{
+        display: flex;
+        padding: 0% 1%;
+        background:rgba(0, 0, 0, 0.7); 
+        width: 100%;
+        position: relative;
+    }
+
+     .navbar-tablet{
+        display: flex;
+        background: rgba(0, 0, 0, 0.7); 
+    }
+    
+    ul.footer-tablet{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer article{
+        max-width: 28%;
+    }
+    footer p.text {
+        font-size: 0.8em;
+    }
+    ol.procedimiento{
+        display: flex;
+    }
+}
+@media(min-width: 1024px){
+   .contain-navbar-scroll{
+       display: none;
+   }
+   img.logo-nav{
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+}
 }

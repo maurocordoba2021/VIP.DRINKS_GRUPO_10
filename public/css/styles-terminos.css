@@ -201,22 +201,38 @@ footer{
     flex-wrap: wrap;
     margin: 0%;
     width: 100%;
-    background: linear-gradient(45deg, #5a532c5e, transparent);
 }
+
+footer img.logo-footer{
+    width: 70px;
+    position: absolute;
+}
+
 section.container-footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
     text-align: center;
 }
+
+footer article{
+    align-items: baseline;
+    display: flow-root;
+    color: whitesmoke;
+}
+
+footer i{
+    font-size: 2em;
+    color: whitesmoke;
+}
+
 .contain-redes-sociales{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: whitesmoke;
-    flex-direction: column;
-    margin-right: 4%;
-    margin-bottom: 4%;
-    font-size: 30px;
+    width: 100%;
+    margin: 0 10px;
+    font-size: 10px;
 }
 
 h2.header-links{
@@ -264,10 +280,9 @@ a.link{
 
 
 
-
 /* ACÁ COMIENZAN LAS MEDIA QUERIES */
 
-@media(min-width: 350px){
+@media(min-width: 0px){
     .navbar-tablet{
         display: none;
     }
@@ -276,7 +291,7 @@ a.link{
     }
 }
 
-@media(max-height: 450px){
+@media(min-height: 450px){
     .sidebar{
         padding-top: 15px;
     }
@@ -285,18 +300,41 @@ a.link{
     }
 }
 
-@media(min-width: 769px){
+@media(min-width: 768px){
+    .contain-navbar-scroll{
+        display: flex;
+        padding: 0% 1%;
+        background:rgba(0, 0, 0, 0.7); 
+        width: 100%;
+        position: relative;
+    }
+
      .navbar-tablet{
         display: flex;
+        background: rgba(0, 0, 0, 0.7); 
     }
     
     ul.footer-tablet{
         display: flex;
         justify-content: space-around;
     }
-    .contain-navbar-scroll{
-        padding-top: 0%;
+
+    footer article{
+        max-width: 28%;
     }
-
-
+    footer p.text {
+        font-size: 0.8em;
+    }
+}
+@media(min-width: 1024px){
+   .contain-navbar-scroll{
+       display: none;
+   }
+   img.logo-nav{
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+}
 }

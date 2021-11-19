@@ -16,15 +16,13 @@ body{
     font-size: 15px;
     margin: 0%;
     color: whitesmoke;
-    background-image: url("/images/background.png");
+    background-color: black;
     background-size: auto;
 }
-.logo-nav{
 
-}
 main{
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 35% auto 0;
 }
 a{
@@ -200,6 +198,102 @@ ul.nav-rigth li{
 
 /*ACÁ COMIENZA EL MAIN*/
 
+.título-receta{
+    position: relative; 
+    display: block;
+    align-items: flex-end;
+    text-align: center;
+    line-height: 63px;
+    font-size: 30px;
+    color: whitesmoke;
+    transition: .5s;
+}
+.título-receta:hover{
+    position: relative; 
+    display: block;
+    align-items: flex-end;
+    text-align: center;
+    line-height: 63px;
+    font-size: 35px;
+    color: whitesmoke;
+    transition: .5s;
+}
+
+.receta-con-fondo{
+justify-content: center;
+display: flex;
+flex-direction: row;
+text-align: center;
+align-items: center;
+position: relative;
+width: 100vw;
+}
+
+.foto-receta  {
+padding-bottom: 1px;
+z-index: 1;
+position: absolute;
+margin: auto;
+box-sizing: border-box;
+width: 90%;
+transition: 2s;
+}
+.foto-receta:hover  {
+    padding-bottom: 1px;
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+    box-sizing: border-box;
+    width: 100%;
+    transition: 2s;
+    }
+.descripcion-receta{
+    position: absolute;
+    z-index: 30;
+    color: #0000ff00;
+    background:#0000ff00;
+    transition: 2s;
+}
+.descripcion-receta:hover{
+    position:absolute;
+    z-index: 30;
+    color: whitesmoke;
+    background: #00000099;
+    transition: 2s;
+}
+
+.fondo-humo{
+z-index: -1;
+box-sizing: border-box;
+width: 100%;
+margin-top: -10%;
+}
+.fondo-humo:hover{
+    opacity: 60%;
+}
+.ingredientes{
+    text-align: left;
+    padding: 2%;
+}
+
+.copy-ingredientes{
+    text-align: center;
+    text-decoration: underline;
+}
+.procedimiento {
+    padding: 5px;
+    text-align: center;
+}
+
+.ajuste-tamaño-martini{
+    width: 75%;
+}
+.ajuste-tamaño-tequila{
+    width: 75%;
+}
+.ajuste-tamaño-bloody{
+    width: 75%;
+}
 
 /* ACÁ COMIENZA EL FOOTER */
 

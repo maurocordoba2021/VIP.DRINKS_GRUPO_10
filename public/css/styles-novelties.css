@@ -14,20 +14,17 @@ body{
     display: block;
     font-family: 'Bebas Neue', 'Roboto', sans-serif;
     margin: 0%;
-    background-image: url("/images/background.jpg");
-    background-size: contain;
+    background-image: url("/images/background.png");
+    background-size: auto;
 }
 main{
-    display: block;
-    width: 100vw;
+    display: flex;
 }
 a{
     text-decoration: none;
     color: whitesmoke;
 }
-img{
-    width: 95vw;
-}
+
 li{
     text-decoration: none;
 }
@@ -151,7 +148,6 @@ display: flex;
 width: 100%;
 justify-content: space-between;
 margin: 0%;
-margin-top: 10%;
 }
 
 ul.nav-center{
@@ -201,13 +197,14 @@ main section.combos-destacados{
 }
 
 main section article.combo-main{
-width: 90%;
 display: flex;
 margin: 5px;
 padding: 5px;
 flex-direction: column;
 background:rgba(0,0,0,0.7);
 border: solid 3px black;
+justify-content: center;
+width: 280px;
 }
 
 .detalles-combos{
@@ -387,5 +384,11 @@ a.link{
     position: absolute;
     top: 5px;
     left: 50%;
+}
+main section article.combo-main{
+    max-width: 22%;
+}
+img{
+    width: 100%;
 }
 }

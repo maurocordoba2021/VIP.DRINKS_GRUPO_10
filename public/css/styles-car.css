@@ -20,7 +20,7 @@ body{
     background-size: auto;
 }
 main{
-    display: block;
+    display: flex;
     width: 100vw;
 }
 a{

@@ -14,11 +14,11 @@ body{
     display: block;
     font-family: 'Bebas Neue', 'Roboto', sans-serif;
     margin: 0%;
-    background-image: url("/images/background.jpg");
-    background-size: contain;
+    background-image: url("/images/background.png");
+    background-size: auto;
 }
 main{
-    display: block;
+    display: flex;
     width: 100vw;
 }
 a{
@@ -26,7 +26,7 @@ a{
     color: whitesmoke;
 }
 img{
-    width: 95vw;
+    width: 100%;
 }
 li{
     text-decoration: none;

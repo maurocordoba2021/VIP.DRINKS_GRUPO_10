@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles-detalle.css">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
     <title>detalle</title>
 </head>
 <body>
@@ -13,9 +14,7 @@
 <article class="article-detalle">
         <h3 class="title-product">Whisky Louis XIII</h3>
         <div class="container-images">
-    
-                <img src="/images/whisky-Louis-XIII.png" alt="">
-            </div>
+            <img src="/images/whisky-Louis-XIII.png" alt="">
         </div>
         <div class="selector">
             <p class="caracteristica">Color:</p>
@@ -31,51 +30,54 @@
                 <option value="710">710ml</option>
             </select>
         </div>
-        <h4 class="price">$120.000</h4>
-        <p class="off">10% OFF</p>
-        <p class="payment-details">en 25 cuotas</p>
-        <div class="button-stock">En stock</div>
-        <p class="stock-alert">¡Quedan solo dos!</p>
-        <a href="/metodos-de-pago">Ver todos los métodos de pago</a>
-        <div>
-        <i class="fas fa-globe-americas"></i>
-        <p class="title-green">Envío gratis a todo el mundo</p>
-        <p class="informative">Conocé los tiempos y las formas de envío</p>
-        <a href="/en-camino">Calcular cuándo llega</a>
+        <div class="box">
+            <h4 class="price">$120.000</h4>
+            <p class="off">10% OFF</p>
+            <p class="payment-details">en 12 x $10.000</p>
+            <a href="/metodos-de-pago">Ver todos los métodos de pago</a>
         </div>
-        <div>
-        <i class="fas fa-certificate"></i>
-        <p class="title-green">Calidad certificada</p>
-        <p class="informative">Conocé más de la marca y el producto.</p>
-        <a href="/marca">Conocer más</a>    
+        <div class="box">
+            <div class="box-item">
+            <i class="fas fa-truck"></i>
+            <p class="title-green">Envío gratis</p>
+        </div>
+            <p class="informative">Conocé los tiempos y las formas de envío</p>
+            <a href="/en-camino">Calcular cuándo llega</a>
+        </div>
+        <div class="box">
+            <div class="box-item">
+            <i class="fas fa-certificate"></i>
+            <p class="title-green">Calidad certificada</p>
+        </div>
+            <p class="informative">Conocé más de la marca y el producto.</p>
+            <a href="/marca">Conocer más</a>    
         </div>
 <h4 class="title">Stock disponible</h4>
-<div>
+<div class="selector">
+    <p class="caracteristica">Cantidad:</p>
     <select name="stock" id="stock">
         <option name="stock" value="1">1</option>
         <option name="stock" value="2">2</option>
     </select>
 </div>
-<button type="submit">Comprar</button>
+<div class="contain-buttons" >
+    <form action="/carrito-de-compras" method="post">
+<button class="buy" type="submit">Comprar ahora</button>
+</form>
+<form action="#" method="post">
+<button  class="add" type="submit"> Agregar al carrito</button>
+</form>
+</div>
+<div class="box-item">
+        <i class="fas fa-user-shield"></i>
+    <a class="compra-protegida" href="/terminos-y-condiciones">Compra Protegida</a>
+    </div>  
 
-<div>
-    <i class="fas fa-user-shield"></i>
-    <p class="informative">Proveedor oficial VIP <a href="/terminos-y-condiciones">Enterate de todo</a></p>
-</div>
-<div>
-<i class="fas fa-bahai"></i>
-<p class="informative">¡Última tendencia! <a href="/"></a></p>
-</div>
-<div>
-    <i class="fas fa-cocktail"></i>
-    <p class="informative">Recetas increíbles con esta botella<a href="/recipes">aquí</a></p>
-</div>
-<div>
-<i class="far fa-heart"></i>
+<div class="add-favorite">
     <input type="checkbox" name="favs" id="favs" value="favs">
     <label for="favs"><i class="far fa-heart"></i>Agregar a favoritos</label>
 </div>
-<div>
+<div class="share">
     <label for="compartir"><i class="fas fa-share-alt"></i>Compartir</label>
 </div>
 </article>

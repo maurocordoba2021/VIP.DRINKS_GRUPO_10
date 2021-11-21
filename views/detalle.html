@@ -78,14 +78,14 @@
     <label for="favs"><i class="far fa-heart"></i>Agregar a favoritos</label>
 </div>
 <div class="share">
-    <label for="compartir"><i class="fas fa-share-alt"></i>Compartir</label>
+    <input type="checkbox" name="share" id="share" value="share">
+    <label for="share"><i class="fas fa-share-alt"></i>Compartir</label>
 </div>
 </article>
 
 <section class="caracteristicas">
     <h4>Características del producto</h4>
-    <article class="caracteristicas">
-    <h4>Lo que tenés que saber de este producto</h4>
+    <article class="caracteristicas simple">
     <ul>
         <li>50 años de añejado</li>
         <li>Edición limitada</li>
@@ -94,27 +94,27 @@
     </ul>
     </article>
     
-<article class="caracteristicas">
-        <div>
+<article class="caracteristicas icons">
+        <div class="icon-tabla">
             <i class="fas fa-candy-cane"></i>
             <h5>Dulce</h5>
         </div>
-        <div>
+        <div class="icon-tabla">
             <i class="fas fa-fire-alt"></i>
             <h5>Fuerte</h5>
         </div>
-        <div>
+        <div class="icon-tabla">
             <i class="fas fa-apple-alt"></i>
             <h5>Frutal</h5>
         </div>
-        <div>
+        <div  class="icon-tabla">
             <i class="fas fa-seedling"></i>
             <h5>Sustentable</h5>
         </div>
-        <div>
-            <a href="/">Ver más características</a>
-        </div>
 </article>
+<div class="box-link">
+    <a href="/">Ver más características</a>
+</div>
         <section class="intereses">
             <h4>Mas publicaciones del vendedor</h4>
             <article>
@@ -153,31 +153,41 @@
         </section>
 
         <section class="information-seller">
-            <div>
-                <i class="fas fa-biohazard"></i>
-                <p class="subtitle">Marca x</p>
-                <p class="informative">Tienda oficial</p>
+            <h4>Información sobre el vendedor</h4>
+            <div  class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="subtitle">Ubicación</p>
+                <p class="informative">Caballito, Capital Federal</p>
             </div>
-            <div>
+            <div class="box">
             <i class="fas fa-award"></i>
             <p class="title-green">Líder en el mercado</p>
-            <p class="informative">De los mejores vendedores a nivel continental</p>
+            <p class="informative">¡Uno de los mejores vendedores!</p>
         </div>
-        <div>
-            <div>
+
+        <ul class="barra-reput">
+            <li class="barra-color pink"></li>
+            <li class="barra-color salmon"></li>
+            <li class="barra-color yellow"></li>
+            <li class="barra-color lime"></li>
+            <li class="barra-color green"></li>
+        </ul>
+
+        <div class="main-reput">
+            <div class="box-reput left">
                 <h6>3333</h6>
-                <p class="informative">Ventas en el último mes</p>
+                <p class="informative">Ventas</p>
             </div>
-            <div>
+            <div class="box-reput">
                 <h6><i class="fas fa-comments-dollar"></i></h6>
-                <p class="informative">Negociación destacada</p>
+                <p class="informative">Buena atención</p>
             </div>
-            <div>
+            <div class="box-reput">
                 <h6><i class="fas fa-user-clock"></i></h6>
-                <p class="informative">Cumple con los tiempos de envío</p>
+                <p class="informative">Envíos a tiempo</p>
             </div>
         </div>
-        <div>
+        <div class="box-link">
             <a href="/">Ver más datos de marca x</a>
         </div>
         </section>

@@ -20,7 +20,7 @@ body{
     background-size: auto;
 }
 main{
-    display: flex;
+   
     width: 100vw;
 }
 a{
@@ -197,77 +197,110 @@ ul.nav-rigth li{
 /*MAIN*/
 
 main{
-    width: 90%;
-    margin: 150px auto 10px;
+    width: 100%;
+    margin: 140px 20px 50px 23px;   
 }
 
 /* estilos aplicados al boddy*/
 
-table{
-    background-color: whitesmoke;
-    color: black;
-    border: solid 3px black;
-    width: 95%;
-    text-align: center;
-    margin: 0px 10px;
-    border: radius 5px;;
-}
-td.centrar{
-    text-align: center;
-}
-
-img.img-producto{
-    max-width: 100px;
-    max-height: 100px;
-    border:  solid 1px black;
-}
-
-td{
-    border: solid 1px black;
-}
-
-div.Cantidad{
-    text-align: center;
-}
-
-button.boton-borrar{
-    width:28px;
-    height: 28px;
+section.container-car{
+    width: 100%;
     
+  
 }
 
-i.far fa-trash-alt{
-    text-align: center;
-}
-
-div.eliminar{
-    text-align: center;
-}
-
-h2.nommbre-producto{
-    font-size: 17px;
-    font-weight: lighter;
-}
-
-div.detalle.de.compra{
-    
-    border: black solid 2px;
-    color: black;
-    background-color:whitesmoke;
-    width: 95%;
-    margin: 0px 10px;
-    text-align: center;
+div.product-car{
+    background: linear-gradient(354deg, rgb(182, 13, 13), transparent);
     padding: 10px;
-    border-radius: 5px;
+    color: whitesmoke;
+    border-radius: 15px;
+    margin: 10px 0px;
 }
 
-.compra{
-    background-color: red;
-    font-size: 20px;
-    border-radius: 5px;
-    color: white;
-    width: 30%;
+
+.img img {
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
 }
+
+div.description-product{
+    align-items: center;
+}
+
+
+div.img{
+    width: 25%;
+}
+
+div.description-product{
+    width: 25%;
+    justify-content: center;
+}
+div.cantidad{
+    width: 25%;
+    align-items: center;
+}
+
+div.cantidad input{
+    width: 50%;    
+}
+div.cantidad button{
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    
+}
+
+div.delete{
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+div.listado{
+    width: 50%;
+}
+div.botones{
+    width: 50%;
+}
+
+.listado ul.product-list{
+    width: 100%;
+    color: white;
+    margin: 10px;
+    background: linear-gradient(354deg, rgb(182, 13, 13), transparent);
+    text-align: center;
+    border-radius: 15px;  
+}
+
+span.total{
+    background: linear-gradient(354deg, rgb(182, 13, 13), transparent);
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+}
+
+div.code-discount{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(354deg, rgb(182, 13, 13), transparent);
+    border-radius: 15px;
+}
+
+
+
+div.code-discount button{
+        width: 80%;
+        border-radius: 15px;
+        color: black;
+        background: #fff6ff;
+        height: 50px; 
+}
+
 
 section.interes{
 display: flex;
@@ -275,6 +308,9 @@ justify-content: space-between;
 background: rgba(0, 0, 0, 0.7);
 }
 
+i.fas.fa-trash-alt{
+    font-size: 30px;
+}
 
 section.interese article{
     width: 20%;
@@ -282,6 +318,9 @@ section.interese article{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+}
+ul.list-product li {
+    margin: 2px 0px;
 }
 
 

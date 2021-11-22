@@ -382,17 +382,17 @@ article.caracteristicas.simple{
     width: 80%;
     justify-content: center;
     border-radius: 5px;
-    border: solid 1px gray;
+    border: solid 1px #383535;
     margin: 5px auto;
 }
 
 h4{
     font-weight: 400;
-    margin: 10px auto 5px;
+    margin: 10px 0;
 }
 .box-link{
     width: 90%;
-    border-bottom: solid 1px gray;
+    border-bottom: solid 1px #383535;
     padding: 10px;
     margin: 10px auto;
 }
@@ -406,7 +406,7 @@ article.caracteristicas.icons{
     justify-content: space-around;
     width: 80%;
     border-radius: 5px;
-    border: solid 1px gray;
+    border: solid 1px #383535;
     margin: 5px auto;
 }
 .icon-tabla{
@@ -469,10 +469,8 @@ li.barra-color.green{
     align-items: center;
     align-content: stretch;
     justify-content: center;
-    border-left: solid gray 1px;
+    border-left: solid #383535 1px;
 }
-
-
 
 .box-reput h6{
     color: #1bad20;
@@ -486,4 +484,117 @@ li.barra-color.green{
 
 .box-reput.left{
     border-left: none;
+}
+p.informative-L{
+    font-size: small;
+    font-weight: 200;
+    padding: 15px;
+    border: solid 1px #383535;
+    background: black;
+    border-radius: 5px;
+}
+section.medios-de-pago{
+    pad: 1%;
+}
+section.medios-de-pago h5{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.contain-logos-cripto{
+    margin: 0 auto;
+    border: 1px solid #383535;
+    border-radius: 5px;
+    padding: 15px;
+    background: black;
+}
+form.search{
+    display: flex;
+    width: 70%;
+    flex-direction: initial;
+    justify-content: space-around;
+    background: white;
+    padding: 0;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+form.search i{
+    color: gray;
+    font-size: 25px;
+}
+form.search input{
+    border: none;
+    background: white;
+}
+h4.text-gray{
+    color: gray;
+}
+textarea#questions{
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+}
+section.questions{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.buttons-questions{
+    width: 90%;
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-around;
+}
+.buttons-questions button{
+    width: 48%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button-send{
+border-radius: 7px;
+color: white;
+border: 1px solid;
+background-color: #ffeb00f0;
+}
+
+.button-delete{
+    border-radius: 7px;
+    background: white;
+    color: #ffeb00f0;
+    border: solid 1px #ffeb00f0;
+    margin-right: 5px;
+}
+.main-valoraciones{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+section.valoraciones i{
+    color: gold;
+    font-size: 20px;
+}
+section.valoraciones i.title{
+    font-size: 30px;
+}
+.stars-title{
+    width: 100%;
+    margin: 0px auto 5px; 
+    justify-content: center;
+}
+h2.valoracion-num{
+    font-weight: 300;
+    font-size: 36px;
+    margin-left: 20px;
+}
+p.text-valoracion{
+    font-size: 16px;
+    color: grey;
+    font-weight: 300;
+    padding: 10px;
+}
+article.val{
+    border-bottom: solid 1px #383535;
+    border-top: solid 1px #383535;
 }

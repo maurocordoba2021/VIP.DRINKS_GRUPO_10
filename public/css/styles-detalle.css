@@ -784,3 +784,15 @@ a.link{
     }
 
 }
+@media(min-width: 1440px){
+    section.medios-de-pago{
+        margin-right: 45px;
+    }
+    section.information-seller{
+        margin-right: 30px;
+        right: 45px;
+    }
+    section.main-product{
+        margin-left: 25px;
+    }
+}

@@ -156,9 +156,9 @@ justify-content: space-between;
 ul.nav-center li,
 ul.nav-rigth li{
     display: inline-block;
-    padding-right: 25px;
     text-align: center;
     margin: 10px;
+    padding-top: 20px;
 }
 
 .navbar-tablet ul {
@@ -261,6 +261,12 @@ form.section-registro{
      color: whitesmoke;
      font-size: 30px;
  }
+
+
+/*SECCION DE RECOMENDADOS*/
+section.intereses{
+    display: none;
+}
 
 /* ACÁ COMIENZA EL FOOTER */
 
@@ -374,7 +380,7 @@ a.link{
     }
 
      .navbar-tablet{
-         padding: 20px;
+    
         display: flex;
         background: rgba(0, 0, 0, 0.7); 
     }

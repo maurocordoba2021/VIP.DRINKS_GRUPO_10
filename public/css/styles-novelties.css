@@ -188,59 +188,131 @@ ul.nav-rigth li{
 
 /* ACA COMIENZA EL MAIN */
 
-main section.combos-destacados{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 25% auto 0%;
-    margin-bottom: 150px;
+
+/* ACA TERMINA EL MAIN*/ 
+main{
+    width: 90%;
+    margin: 150px auto 10px;
 }
 
-main section article.combo-main{
-display: flex;
-margin: 5px;
-padding: 5px;
-flex-direction: column;
-background:rgba(0,0,0,0.7);
-border: solid 3px black;
-justify-content: center;
-width: 280px;
-}
-
-.detalles-combos{
-    color:whitesmoke;
-}
-div.button-shopp{
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 20px;
-    margin-top: 80px;
-}
-
-button.button-shopp{
-display: inline-block;
-align-self: flex-start;
-font-size: 24px;
-font-weight: bolder;
-background-color: gold;
-border-radius: 20px;
-}
-button.button-shopp a{
-    color: black;
-    position: relative;
-}
-.titulo-combos{
-    text-align: center; 
-    width: 100%; 
-    display: block; 
-    margin-bottom: 80px;
-    font-size: 3rem;
+main h3{
     color: whitesmoke;
 }
 
-/* ACA TERMINA EL MAIN*/ 
+.featured,
+.novelties{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: wrap;
+}
 
 
+main section article{
+    display: inline-block;
+    margin: 10px 0px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+main section article img {
+    width: 100%;
+}
+
+.main-article{
+    position: relative;
+    border-top: solid 1px grey;
+    padding: 15px;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+    color: whitesmoke;
+}
+
+.discount,
+.shipping{
+    width: 70%;
+    color: #666;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.description{
+    display: none;
+    color: goldenrod;
+    margin-top: em;
+}
+
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: -15px;
+    transition: all 540ms;
+}
+
+main section article i:hover{
+    transform: rotateZ(-90deg);
+}
+
+main section h3{
+    margin:20px 0px;
+    color: whitesmoke;
+}
+
+
+article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid grey;
+    position: relative;
+    padding: 15px 15px 5px;
+}
+
+/* ACA COMIENZA EL BOTON COMPRAR*/ 
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+button.buy{
+    background: gold;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 8px 0 0;
+    border-radius: 5px;
+    width: 120px;
+    transition: all 540ms;
+}
+button.buy:hover{
+    background: white;
+    color: gold;
+    border: solid 1px gold;
+}
+
+/* ACA TERMINA EL BOTON COMPRAR*/
 
 /* ACÁ COMIENZA EL FOOTER */
 
@@ -331,6 +403,9 @@ a.link{
 /* ACÁ COMIENZAN LAS MEDIA QUERIES */
 
 @media(min-width: 0px){
+    .shipping{
+        width: 100%;
+    }
     .navbar-tablet{
         display: none;
     }
@@ -357,6 +432,10 @@ a.link{
         position: relative;
     }
 
+    main{
+        margin: 0 auto;
+    }
+
      .navbar-tablet{
         display: flex;
         background: rgba(0, 0, 0, 0.7); 
@@ -366,6 +445,10 @@ a.link{
         display: flex;
         justify-content: space-around;
     }
+    
+    article{
+     max-width: 40%;
+    }
 
     footer article{
         max-width: 28%;
@@ -373,8 +456,24 @@ a.link{
     footer p.text {
         font-size: 0.8em;
     }
+
+    main section article:hover .description{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .discount{
+        width: 50%;
+        text-align: end;
+    }
+    .shipping{
+        width: 100%;
+    }
 }
 @media(min-width: 1024px){
+article{
+    max-width: 22%;
+   }
    .contain-navbar-scroll{
        display: none;
    }
@@ -384,11 +483,8 @@ a.link{
     position: absolute;
     top: 5px;
     left: 50%;
+    }
+  
 }
-main section article.combo-main{
-    max-width: 22%;
-}
-img{
-    width: 100%;
-}
-}
+
+

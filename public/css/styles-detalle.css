@@ -795,4 +795,10 @@ a.link{
     section.main-product{
         margin-left: 25px;
     }
+    li.barra-color{
+        width: 80px;
+    }
+    section.valoraciones i.title{
+        font-size: 50px;
+    }
 }

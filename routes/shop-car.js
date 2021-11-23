@@ -1,12 +1,9 @@
 const express=require('express');
 const router=express.Router();
 const path = require("path");
+const carController = require('../controllers/carController')
 
-router.get("/carrito-de-compras", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "../views/carrito-de-compras.html"))
-});
-router.post("/carrito-de-compras", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "../views/carrito-de-compras.html"))
-});
+router.get("/carrito-de-compras", carController.car);
+router.post("/carrito-de-compras", carController.car);
 
 module.exports=router;

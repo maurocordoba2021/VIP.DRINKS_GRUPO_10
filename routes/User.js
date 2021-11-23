@@ -1,18 +1,12 @@
 const express=require('express');
 const router=express.Router();
 const path = require("path");
+const usersController = require('../controllers/usersController')
 
-router.get("/login", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "../views/login.html"))
-});
+router.get("/login", usersController.login);
 
+router.get("/perfil", usersController.perfil);
 
+router.get("/registro", usersController.registro);
 
-router.get("/perfil", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "../views/profile.html"))
-});
-
-router.get("/registro", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "../views/registro.html"))
-});
 module.exports=router;

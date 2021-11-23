@@ -1,21 +1,14 @@
 const express=require('express');
 const router=express.Router();
 const path = require("path");
+const productController = require('../controllers/productController')
 
-router.get("/detalle-de-productos", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "../views/detalle-de-productos.html"))
-});
+router.get("/detalle-de-productos", productController.detalleDeProductos );
 
-router.get("/productos", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "../views/listado-de-productos.html"))
-});
+router.get("/productos", productController.productos );
 
-router.get("/detalle", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "../views/detalle.html"))
-});
+router.get("/detalle", productController.detalle);
 
-router.get("/novedades", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "../views/novelties.html"))
-});
+router.get("/novedades", productController.novedades);
 
 module.exports=router;

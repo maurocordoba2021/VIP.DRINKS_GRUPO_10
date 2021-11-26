@@ -10,7 +10,7 @@ const product=require('./routes/product')
 const main =require('./routes/main')
 /* Modularizado de rutas */
 
-
+app.set('view engine', 'ejs');
 app.use (express.static(miRuta));
 app.use('/',shopCar)
 app.use('/',user)

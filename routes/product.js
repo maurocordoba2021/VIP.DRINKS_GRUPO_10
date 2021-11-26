@@ -3,12 +3,11 @@ const router=express.Router();
 const path = require("path");
 const productController = require('../controllers/productController')
 
-router.get("/detalle-de-productos", productController.detalleDeProductos );
+router.get("/history", productController.historyProducts);
 
-router.get("/productos", productController.productos );
 
 router.get("/detalle", productController.detalle);
 
-router.get("/novedades", productController.novedades);
+router.get("/luxury-offers", productController.novedades);
 
 module.exports=router;

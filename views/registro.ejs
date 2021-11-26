@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+                <link rel="stylesheet" href="css/styles-forms.css">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+             <title>registro</title>
+</head>
+<body>
+    <%- include('./partials/header') %>
+    
+        
+<main class="form-register">
+           <section class="register-form"> <!--ACÁ VA EL CÓDIGO DEL CUERPO DE LA PÁG-->
+            <form method="post" action="/" typ class="section-registro">
+                <h4>Formulario de Registro</h4>
+                <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo electronico">
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+                <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+                <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Confirmar contraseña">
+                
+                <button type="submit" class="boton-registro">Registrarse</button>
+                <p><a href="/login">¿Ya tiene una cuenta?</a></p>
+            </section>
+</main>
+        
+<%- include('./partials/footer') %>
+</div>      
+</body>
+</html>
+    

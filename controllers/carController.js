@@ -3,7 +3,7 @@ const path = require('path');
 
 const carController ={
     car: (req, res) =>{
-        res.sendFile(path.resolve(__dirname, "../views/carrito-de-compras.html"))
+        res.render("carrito-de-compras")
     },
 };
 

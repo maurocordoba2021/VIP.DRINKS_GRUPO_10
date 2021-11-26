@@ -4,16 +4,13 @@ const path = require('path');
 
 const productController ={
     detalle:  (req, res) =>{
-        res.sendFile(path.resolve(__dirname, "../views/detalle.html"))
+        res.render("detalle");
     },
     novedades: (req, res) =>{
-        res.sendFile(path.resolve(__dirname, "../views/novelties.html"))
+        res.render("luxury");
     },
-    productos:(req, res) =>{
-        res.sendFile(path.resolve(__dirname, "../views/listado-de-productos.html"))
-    },
-    detalleDeProductos:(req, res) =>{
-        res.sendFile(path.resolve(__dirname, "../views/detalle-de-productos.html"))
+    historyProducts:(req, res) =>{
+        res.render("history");
     }
 }
 

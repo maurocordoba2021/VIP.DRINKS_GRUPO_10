@@ -3,13 +3,13 @@ const path = require('path');
 
 const usersController ={
     login: (req, res) =>{
-        res.sendFile(path.resolve(__dirname, "../views/login.html"))
+        res.render('login');
     },
     perfil: (req, res) =>{
-        res.sendFile(path.resolve(__dirname, "../views/profile.html"))
+        res.render('profile');
     },
     registro:  (req, res) =>{
-        res.sendFile(path.resolve(__dirname, "../views/registro.html"))
+        res.render('registro');
     },
 }
 module.exports = usersController;

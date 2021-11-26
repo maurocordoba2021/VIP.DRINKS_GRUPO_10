@@ -270,7 +270,7 @@ main section article i{
     transition: all 540ms;
 }
 
-main section article i:hover{
+main section article .main-article:hover i{
     transform: rotateZ(-90deg);
 }
 

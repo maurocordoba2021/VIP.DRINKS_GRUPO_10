@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Carga de productos</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles-upload.css">
+    <link rel="stylesheet" href="/css/styles-header.css">
+    <link rel="stylesheet" href="/css/styles-footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <%- include('./partials/header') %>
+
+<main>
+    <form action="/" method="post">
+<section>
+    <div class="contain-upload-photo">
+        <input id="upload-photo" name="upload-photo" type="file" multiple>
+        <label for="upload-photo">Foto</label>
+    </div>
+</section>
+<section>
+    <div class="box">
+    <label for="name-product"></label>
+    <input type="text" name="name-product" id="name-product">
+    </div>
+    
+    <div class="box">
+    <label for="brand"></label>
+    <input type="text" name="brand" id="brand">
+    </div>
+    
+    <div class="box">
+    <label for="price"></label>
+    <input type="number" name="price" id="price">
+    </div>
+
+    <div class="box">
+    <label for="category"></label>
+    <input type="text" name="category" id="category">
+    </div>
+
+    <div class="box">
+    <label for="location"></label>
+    <input type="text" name="location" id="location">
+    </div>
+
+    <div class="box">
+    <label for="description"></label>
+    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    </div>
+    
+    <div class="contain-buttons">
+    <button type="reset" class="button-cancel">Cancelar</button>
+    <button type="submit" class="button-upload">Publicar</button>
+    </div>
+
+</section>
+
+<section class=""> 
+    <p>Los artículos tienen que estar certificados validando su autenticidad.</p>
+    <p>Los artículos como animales, drogas, armas, falsificaciones y otros que infringen derechos de propiedad intelectual no estan permitidos.</p>
+</section>
+
+</form>
+
+</main>
+
+<%- include('./partials/footer') %>
+
+</body>
+</html>

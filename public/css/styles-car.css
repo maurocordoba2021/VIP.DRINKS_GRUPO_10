@@ -9,9 +9,7 @@
 
 
 /* CUERPO EN GRAL */
-div{
-    display: flex;
-}
+
 body{
     display: flex;
     font-family: 'Roboto', sans-serif;

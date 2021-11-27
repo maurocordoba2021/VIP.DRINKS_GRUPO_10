@@ -9,11 +9,8 @@
 
 
 /* CUERPO EN GRAL */
-div{
-    display: flex;
-}
+
 body{
-    display: flex;
     font-family: 'Roboto', sans-serif;
     margin: 0%;
     background-image: url("/images/background.png");

@@ -1,0 +1,108 @@
+/* UNIVERSAL*/
+*{  
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+/* UNIVERSAL*/
+
+
+/* CUERPO EN GRAL */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    background-image: url("/images/background.png");
+    background-size: auto;
+}
+main{
+    margin-top: 30%;
+}
+form{
+    padding: 10px;
+    border-radius: 20px;
+    width: 90%;
+   margin: 0 auto;
+   padding: auto;
+   background: rgba(0, 0, 0, 0.7);
+}
+
+.contain-upload-image{
+    border: 1px gold dashed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    transition: ease 450ms all;
+}
+input.upload-image{
+    display: none;
+}
+.contain-upload-image:hover i{
+    color: gold;
+}
+
+h1{
+    text-align: center;
+    margin: 10px 0;
+    color: gold;
+}
+
+h3{
+    color: whitesmoke;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+input, 
+select#category,
+textarea{
+    width: 100%;
+    border: none;
+    background: black;
+    font-size: 1em;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contain-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button{
+    width: 49%;
+    margin: 10px 0;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+button.cancel{
+    background: white;
+    color: #ffeb00f0;
+    border: solid 1px #ffeb00f0;
+}
+
+button.upload{
+    background: #ffeb00f0;
+    color: white;
+    border: solid 1px white;
+}
+
+p{
+    font-size: 12px;
+    color: gray;
+}
+
+
+
+@media(min-width: 768px){
+    main{
+        margin-top: 10px;
+    }
+}

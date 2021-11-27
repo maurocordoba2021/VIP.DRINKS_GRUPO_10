@@ -19,46 +19,82 @@
 
 <main>
     <form action="/" method="post">
-<section>
-    <div class="contain-upload-photo">
-        <input id="upload-photo" name="upload-photo" type="file" multiple>
-        <label for="upload-photo">Foto</label>
+        <h1>Carga un nuevo producto</h1>
+<section class="images">
+    <div class="contain-upload-image"> 
+        <input class="upload-image" id="file" name="upload-image" type="file" multiple>
+        <label for="upload-image"> <h3><i class="fas fa-plus"></i></h3></label>
     </div>
+    <div id="preview"></div>
+
+
+
+
+    <!--
+    
+   <script>
+       document.getElementById('file').onchange = function(i){
+        let reader = new FileReader();
+        reader.readAsDataURL(i.target.files[0]);
+        reader.onload = function(){
+            let preview = document.get.ElementById('preview');
+            image = document.createElement('img');
+
+            image.src = reader.result;
+            
+            preview.innerHTML = '';
+            preview.append('image');
+        }
+       }
+       -->
+   </script>
 </section>
 <section>
     <div class="box">
+        <h3>Nombre del artículo</h3>
     <label for="name-product"></label>
     <input type="text" name="name-product" id="name-product">
     </div>
     
     <div class="box">
+        <h3>Marca</h3>
     <label for="brand"></label>
     <input type="text" name="brand" id="brand">
     </div>
     
     <div class="box">
+        <h3>Precio $</h3>
     <label for="price"></label>
-    <input type="number" name="price" id="price">
+    <input type="text" name="price" id="price">
     </div>
 
     <div class="box">
-    <label for="category"></label>
-    <input type="text" name="category" id="category">
+        <h3>Categoría</h3>
+        <select name="category" id="category">
+            <option name="category" value="Whisky">Whisky</option>
+            <option name="category" value="Vodka">Vodka</option>
+            <option name="category" value="Champagne">Champagne</option>
+            <option name="category" value="Tequila">Tequila</option>
+            <option name="category" value="Ron">Ron</option>
+            <option name="category" value="Sake">Sake</option>
+        </select>
     </div>
 
     <div class="box">
+        <h3>Origen</h3>
     <label for="location"></label>
     <input type="text" name="location" id="location">
     </div>
 
     <div class="box">
+        <h3>Descripción</h3>
     <label for="description"></label>
     <textarea name="description" id="description" cols="30" rows="10"></textarea>
     </div>
     
     <div class="contain-buttons">
-    <button type="reset" class="button-cancel">Cancelar</button>
-    <button type="submit" class="button-upload">Publicar</button>
+    <button type="reset" class="cancel">Cancelar</button>
+    <button type="submit" class="upload">Publicar</button>
     </div>
 
 </section>

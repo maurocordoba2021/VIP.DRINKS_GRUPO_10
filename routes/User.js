@@ -9,4 +9,6 @@ router.get("/perfil", usersController.perfil);
 
 router.get("/registro", usersController.registro);
 
+router.get("/upload" , usersController.upload);
+
 module.exports=router;

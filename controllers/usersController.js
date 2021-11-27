@@ -11,5 +11,8 @@ const usersController ={
     registro:  (req, res) =>{
         res.render('registro');
     },
+    upload: (req, res) => {
+        res.render('products-upload');
+    }
 }
 module.exports = usersController;

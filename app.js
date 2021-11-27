@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const miRuta =path.resolve(__dirname, "./public");
+app.use(express.static('public'))
 
 /* Modularizado de rutas */
 const shopCar=require('./routes/shop-car')
@@ -11,10 +11,9 @@ const main =require('./routes/main')
 /* Modularizado de rutas */
 
 app.set('view engine', 'ejs');
-app.use (express.static(miRuta));
-app.use('/',shopCar)
-app.use('/',user)
-app.use('/',product)
+app.use('/shop',shopCar)
+app.use('/user',user)
+app.use('/product',product)
 app.use('/',main)
 app.listen(3000, () => { console.log("Servidor corriendo en el puerto 3000"); });
 

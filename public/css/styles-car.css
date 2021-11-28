@@ -11,7 +11,6 @@
 /* CUERPO EN GRAL */
 
 body{
-    display: flex;
     font-family: 'Roboto', sans-serif;
     margin: 0%;
     background-image: url("/images/background.png");
@@ -195,135 +194,166 @@ ul.nav-rigth li{
 /*MAIN*/
 
 main{
-    width: 100%;
-    margin: 140px 20px 50px 23px;   
-}
-
-/* estilos aplicados al boddy*/
-
-section.container-car{
-    width: 100%;
-    
-  
-}
-
-div.product-car{
-    background: linear-gradient(354deg, rgb(182, 13, 13), transparent);
-    padding: 10px;
     color: whitesmoke;
-    border-radius: 15px;
-    margin: 10px 0px;
-}
-
-
-.img img {
     width: 100%;
-    padding: 5px;
-    border-radius: 15px;
+    margin-top: 22%;   
 }
 
-div.description-product{
-    align-items: center;
-}
-
-
-div.img{
-    width: 25%;
-}
-
-div.description-product{
-    width: 25%;
-    justify-content: center;
-}
-div.cantidad{
-    width: 25%;
-    align-items: center;
-}
-
-div.cantidad input{
-    width: 50%;    
-}
-div.cantidad button{
-    width: 20px;
-    height: 20px;
-    border-radius: 30%;
-    
-}
-
-div.delete{
-    width: 25%;
-    justify-content: center;
-    align-items: center;
-}
-
-div.listado{
-    width: 50%;
-}
-div.botones{
-    width: 50%;
-}
-
-.listado ul.product-list{
+nav{
     width: 100%;
-    color: white;
-    margin: 10px;
-    background: linear-gradient(354deg, rgb(182, 13, 13), transparent);
-    text-align: center;
-    border-radius: 15px;  
-}
-
-span.total{
-    background: linear-gradient(354deg, rgb(182, 13, 13), transparent);
-    border-radius: 15px;
-    color: white;
-    width: 100%;
-    text-align: center;
-
-}
-
-div.code-discount{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(354deg, rgb(182, 13, 13), transparent);
-    border-radius: 15px;
-}
-
-
-
-div.code-discount button{
-        width: 80%;
-        border-radius: 15px;
-        color: black;
-        background: #fff6ff;
-        height: 50px; 
-}
-
-
-section.interes{
-display: flex;
-justify-content: space-between;
-background: rgba(0, 0, 0, 0.7);
-}
-
-i.fas.fa-trash-alt{
-    font-size: 30px;
-}
-
-section.interese article{
-    width: 20%;
+    background: black;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    padding: 5px;
+    z-index: 20;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background: rgba(0, 0, 0, 0.9);
+}
+div.car{
+    width: 95%;
+    margin: 35px auto;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
 }
-ul.list-product li {
-    margin: 2px 0px;
+div.container-img{
+    width: 80px;
+    height: 80px;
+}
+article{
+    border-bottom: solid 1px grey;
+    display: flex;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: #3483fa;
+    font-size: xx-small;
+    font-weight: 300;
+    width: 60%;
+}
+
+button.delete{
+    width: 20%;
+    background: none;
+    color: #3483fa;
+    font-size: xx-small;
+    font-weight: 200;
+    border: none;
+}
+
+
+article h5,
+article p{
+    width: 100%;
+    font-weight: 300;
+    color: gray;
+} 
+article p {
+    font-size: xx-small;
+    margin: 20px auto;
+}
+
+div.main-article{
+    width: 70%;
+    padding-left: 10px;
+    justify-content: space-between;
+   
+}
+
+div.box,
+div.box-foot,
+div.box-shipping{
+    width: 100%;
+    padding: 5px 5px 10px ;
+    justify-content: space-between;
+}
+
+div.box-foot{
+    border-top: solid grey 1px;
+}
+
+select#u{
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: grey;
+    background: black;
+    text-align: center;
+}
+h4{
+    width: 60%;
+    display: inline-block;
+    text-align: end;
+}
+.fas.fa-ellipsis-v{
+    width: 20%;
+    color: #444;
+    text-align: end;
+}
+
+div.box-shipping a{
+    font-size: small
+}
+
+h5.shipping-price{
+    width: 30%;
+    font-weight: 300;
+    color: green;
+    display: inline-block;
+    text-align: end;
+}
+.box-shipping{
+    margin-bottom: 30px;
+    border-bottom: solid 1px grey;
+}
+h4.total{
+    width: 45%;
+    display: inline-block;
+}
+h4.total.text{
+    text-align: start;
+}
+.box.total{
+    padding:5px 0 10px;
+};
+
+section.total{
+    margin-top: 50px;
+}
+
+.container-button{
+    display: flex;
+  justify-content: center;
+ }
+button.comprar{
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    border: 1px solid;
+    background-color: #ffeb00f0;
+    width: 100%;
+    margin: 0 auto;
+    margin: 30px auto 0;
+    transition: 350ms all ease;
+
+}
+
+button.comprar:hover{
+    background: white;
+    color: #ffeb00f0;
 }
 
 
 
-/*SECCION INTERESES,SE ABRE EN DESKTOP 1440*/
+/*SECCION INTERESES,SE ABRE EN DESKTOP 1440
 section.intereses{
     border-top: solid goldenrod 1px;
     display: flex;
@@ -429,6 +459,7 @@ a.link{
 /* ACÁ COMIENZAN LAS MEDIA QUERIES */
 
 @media(min-width: 0px){
+    
    .navbar-tablet{
        display: none;
    }
@@ -450,6 +481,10 @@ a.link{
 }
 
 @media(min-width: 768px){
+   
+        main{
+            margin-top: 10px;
+        }
    .contain-navbar-scroll{
        display: flex;
        padding: 0% 1%;

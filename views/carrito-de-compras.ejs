@@ -14,6 +14,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="icon" href="/images/favicon.ico" type="ico">
+    
     
 </head>
 <body>
@@ -21,95 +23,97 @@
         <%- include('./partials/header') %>
       
 <main>
-    <!--ACÁ VA EL CÓDIGO DEL CUERPO DE LA PÁG-->
-    <section class="container-car">
-        <div class="product-car">
-            <div class="img">
-                <img src="/images/whisky-highland-feature.jpeg" alt="">
-            </div>
-            <div class="description-product">
-                    <ul class="list-product" type="none">
-                        <li> TITULO</li>
-                        <li>Pecio: 
-                            <em>30000$</em>
-                        </li>
-                        <li>presentacion:
-                            <em>1Lt</em>
-                        </li>
-                    </ul>
-            </div>
-            <div class="cantidad">
-                <button><i class="fas fa-minus"></i></button><input type="text" name="" id=""><button><i class="fas fa-plus"></i></button>
-            </div>
-            <div class="delete">
-                <i class="fas fa-trash-alt"></i>
-            </div>
+ <nav>
+     <ul>
+         <li>
+             <a href="/shop">Carrito</a>
+         </li>
+         <li>
+             <a href="#">Guardados</a>
+         </li>
+     </ul>
+ </nav>
+<div  class="car">
+ <section>
+     <article >
+         <div class="container-img">
+             <img src="/images/whisky-Louis-XIII.png" alt="whisky-Louis-XIII">
+         </div>
+         <div class="main-article">         
+             <h5>Whisky Louis XIII ...</h5>
+         <p>Medida 710ml</p>
 
+         <div class="box">
+            <select name="u" id="u">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="1">4</option>
+                <option value="2">5</option>
+                <option value="3">6</option>
+                <option value="3">7</option>
+                <option value="1">8</option>
+                <option value="2">9</option>
+                <option value="3">10</option>
+            </select>
+        <h4 class="price">$ 766.444</h4>
+       </div>
+         </div>
+     
+         <div  class="box-foot">
+             <button class="delete" type="reset">Eliminar</button>
+             <a href="#">Ver más productos</a>
+             <i class="fas fa-ellipsis-v"></i>
+         </div>
+     </article>
+
+     <article>
+        <div class="container-img">
+            <img src="/images/champagne-krug-combo1.jpg" alt="champagne-krug-combo1">
         </div>
-        <div class="product-car">
-            <div class="img">
-                <img src="/images/whisky-highland-feature.jpeg   " alt="whisky-highland-feature">
-            </div>
-            <div class="description-product">
-                    <ul class="list-product" type="none">
-                        <li> TITULO</li>
-                        <li>Pecio: 
-                            <em>30000$</em>
-                        </li>
-                        <li>presentacion:
-                            <em>1Lt</em>
-                        </li>
-                    </ul>
-            </div>
-            <div class="cantidad">
-                <button><i class="fas fa-minus"></i></button><input type="text" name="" id=""><button><i class="fas fa-plus"></i></button>
-            </div>
-            <div class="delete">
-                <i class="fas fa-trash-alt"></i>
-            </div>
-
+            <div class="main-article">
+        <h5>Champagne Krug Luxury Nº I...</h5>
+        <p>Medida: 710ml</p>
+        <div class="box">
+            <select name="u" id="u">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="1">4</option>
+                <option value="2">5</option>
+                <option value="3">6</option>
+                <option value="3">7</option>
+                <option value="1">8</option>
+                <option value="2">9</option>
+                <option value="3">10</option>
+            </select>
+            <h4 class="price">$ 188.020</h4>
         </div>
-
-        <div class="resumen">
-                <div class="listado">
-                    <ul  type="none" class="product-list">
-                        <li>Item:xxx
-                            <em>Precio c/u: </em><em> xxx </em> 
-                        </li>
-                        <li>Item:xxx
-                            <em>Precio Total: </em> <em>xxx</em>
-                        </li>
-                        <li>Descuento Aplicado:<em>0%</em></li>
-                        
-                    </ul>
-                    <ul type="none" class="product-list">
-                        <li>Item:xxx
-                            <em>Precio c/u: </em><em> xxx </em> 
-                        </li>
-                        <li>Item:xxx
-                            <em>Precio Total: </em> <em>xxx</em>
-                        </li>
-                        <li>Descuento Aplicado: <em>0%</em> </li>
-                        
-                    </ul>
-                     <span class="total"> Toltal a pagar:<em>XXX</em></span>
-                </div>
-                <div class="botones">
-                        <div class="code-discount">
-                             <button>Finalizar compras</button>
-                        
-                        </div>
-                       
+    </div>
+       
+       
+        <div class="box-foot">
+            <button class="delete" type="reset">Eliminar</button>
+            <a href="#">Ver más productos del vendedor</a>
+            <i class="fas fa-ellipsis-v"></i>
         </div>
-    </section>
-
-   
+    </article>
+ </section>
+ <section class="total">
+     <div class="box-shipping">
+         <a href="#"> Envío a Calle Falsa 123, S...</a>
+         <h5 class="shipping-price">$ 0</h5>
+     </div>
+     <div class="box total">
+         <h4 class="total text">Total con envío</h4>
+         <h4 class="total">$ 95.4632</h4>
+     </div>
+     <div class="container-button">
+    <button type="submit" class="comprar">Comprar ahora</a></button>
+</div>
+</div>
+</section>
 </main>
-
-<br>
-<br>
-<br>
-<br>
 <%- include('./partials/footer') %>
 </div>
 </body>

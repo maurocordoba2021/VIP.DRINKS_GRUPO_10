@@ -44,12 +44,7 @@ h2.header-links{
     display: inline-block;
     margin: 8%;
 }
-
-img.logo-home{
-    width: 120px;
-    display: inline-block;
-}
-
+footer img.logo-home
 footer ul{
     list-style-type: none;
 }

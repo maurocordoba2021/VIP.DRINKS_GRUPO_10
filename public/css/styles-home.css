@@ -37,158 +37,6 @@ h3{
 /* CUERPO EN GRAL */
 
 
-/* ACÁ COMIENZA LA NAVBAR TOP*/
-.contain-navbar-scroll{
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    background-color: transparent;
-    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, transparent);
-    position: fixed;
-    top: 0;
-    left: 0;
-    line-height: 3rem;
-    width: 100%;
-    height: 150px;
-    align-items: center;
-    z-index: 1;
-}
-
-.hamburguer-menu{
-display: inline-block;
-font-size: 40px;
-color: whitesmoke;
-border-radius: 5%;
-background-color: transparent;
-}
-
-.logo-instagram{
-    display: inline-block;
-    font-size: 40px;
-    color: whitesmoke;
-}
-
-img.logo-home{
-  width: 80px;
-}
-
-/* ACÁ TERMINA LA NAVBAR TOP*/
-
-/* ACÁ COMIENZA EL MENÚ EMERGENTE*/
-
-.sidebar{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: black;
-    overflow: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-div#mySidebar{
-    display: block;
-    text-align: center;
-}
-a.close-btn{
-    position: relative;
-    right: 80px;
-    font-size: 40px;;
-    display: inline-block;
-}
-
-.sidebar a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 30px;
-    color: goldenrod;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidebar a:hover{
-    color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 0%;
-    right: 25px;
-    font-size: 36px;margin-left: 50px;
-}
-
-a.closebtn{
-    display: flex;
-    justify-content: end;
-    font-size: 40px;
-    padding-right: 30px;
-}
-
-.openbtn{
-    font-size: 20px;
-    cursor: pointer;
-    background-color:#111;
-    color: whitesmoke;
-    padding: 10px 15px;
-    border: none;
-}
-
-.openbtn:hover{
-    background-color: #444;
-}
-
-#main{
-    transition: margin-left 0.5s;
-    padding: 16px;
-}
-
-/* ACÁ TERMINAEL MENÚ EMERGENTE*/
-
-/* ACÁ COMIENZA LA NAVBAR QUE SE ABRE EN TABLET*/
-img.logo-nav{
-    display: none;
-}
-.navbar-tablet{
-display: flex;
-justify-content: space-between;
-margin: 0%;
-width: 100vw;
-}
-
-ul.nav-center{
-display: flex;
-justify-content: space-around;
-}
-
-ul.nav-center li,
-ul.nav-rigth li{
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-}
-
-.navbar-tablet ul {
-    list-style-type: none;
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-}
-
-.navbar-tablet ul li a{
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    color:whitesmoke;
-}
-
-.navbar-tablet ul li i{
-    font-size: 1em;
-    color: whitesmoke;
-    margin: 10px;
-}
 
 /*MAIN*/
 
@@ -210,6 +58,7 @@ main section article{
     display: inline-block;
     margin: 10px 0px;
     background: rgba(0, 0, 0, 0.7);
+   
 }
 
 main section article img {
@@ -220,6 +69,7 @@ main section article img {
     position: relative;
     border-top: solid 1px grey;
     padding: 15px;
+    transition: 2s ease;
 }
 
 .price{
@@ -264,7 +114,7 @@ main section article i{
     position: absolute;
     right: 5px;
     top: -15px;
-    transition: all 540ms;
+    transition: ease 540ms;
 }
 
 main section article .main-article:hover i{
@@ -288,13 +138,6 @@ article{
 }
 
 /*MAIN*/
-
-
-
-
-
-
-
 
 
 
@@ -326,151 +169,28 @@ button.buy:hover{
 
 
 
-
-
-
-/* ACÁ COMIENZA EL FOOTER */
-
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0%;
-    width: 100%;
-}
-
-footer img.logo-footer{
-    width: 70px;
-    position: absolute;
-}
-
-section.container-footer{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    text-align: center;
-}
-
-footer article{
-    align-items: baseline;
-    display: flow-root;
-    color: whitesmoke;
-}
-
-footer i{
-    font-size: 2em;
-    color: whitesmoke;
-}
-
-.contain-redes-sociales{
-    display: flex;
-    justify-content: space-around;
-    color: whitesmoke;
-    width: 100%;
-    margin: 0 10px;
-    font-size: 10px;
-}
-
-h2.header-links{
-    color: whitesmoke;
-    display: inline-block;
-    margin: 8%;
-}
-
-img.logo-home{
-    width: 120px;
-    display: inline-block;
-}
-
-footer ul{
-    list-style-type: none;
-}
-
-a.link{
-    color: goldenrod;
-    text-align: center;
-    margin: 0 5px;
-    display: inline-block;
-}
-.terminos-y-condiciones{
-    color: whitesmoke;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 1%;
-    border-top: gold solid 1px;
-}
-
-/* ACÁ TERMINA EL FOOTER */
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ACÁ COMIENZAN LAS MEDIA QUERIES */
 
 @media(min-width: 0px){
     .shipping{
         width: 100%;
     }
-    .navbar-tablet{
-        display: none;
-    }
-    ul.footer-tablet{
-        display: none;
-    }
+  
 }
 
 @media(min-height: 450px){
-    .sidebar{
-        padding-top: 15px;
-    }
-    .sidebar a{
-        font-size: 18px;;
-    }
+   
 }
 
 @media(min-width: 768px){
-    .contain-navbar-scroll{
-        display: flex;
-        padding: 0% 1%;
-        background:rgba(0, 0, 0, 0.7); 
-        width: 100%;
-        position: relative;
-    }
+ 
 
     main{
         margin: 0 auto;
     }
-
-     .navbar-tablet{
-        display: flex;
-        background: rgba(0, 0, 0, 0.7); 
-    }
-    
-    ul.footer-tablet{
-        display: flex;
-        justify-content: space-around;
-    }
     
     article{
      max-width: 40%;
-    }
-
-    footer article{
-        max-width: 28%;
-    }
-    footer p.text {
-        font-size: 0.8em;
     }
 
     main section article:hover .description{
@@ -478,10 +198,12 @@ a.link{
         width: 100%;
         justify-content: center;
     }
+
     .discount{
         width: 50%;
         text-align: end;
     }
+
     .shipping{
         width: 100%;
     }
@@ -490,16 +212,7 @@ a.link{
 article{
     max-width: 22%;
    }
-   .contain-navbar-scroll{
-       display: none;
-   }
-   img.logo-nav{
-    display: inline-block;
-    width: 50px;
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    }
+
   
 }
 

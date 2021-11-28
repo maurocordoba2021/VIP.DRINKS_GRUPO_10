@@ -1,0 +1,99 @@
+/* UNIVERSAL*/
+*{
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+/* UNIVERSAL*/
+
+
+/* CUERPO EN GRAL */
+div{
+    display: block;
+}
+body{
+    display: block;
+    font-family: 'Bebas Neue', 'Roboto', sans-serif;
+    margin: 0%;
+    background-image: url("/images/background.png");
+    background-size: auto;
+}
+main{
+    display: flex;
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+img{
+    width: 100%;
+}
+li{
+    text-decoration: none;
+}
+
+/* CUERPO EN GRAL */
+
+/* ACÁ COMIENZA LA SECCIÓN DE ARTÍCULOS*/
+
+section.contain-articles{
+    display: flex;
+    justify-content: space-around;
+
+}
+article{
+    display: flex;
+    width: 90%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparet);
+    justify-content: center;
+    color: whitesmoke;
+    margin: 5%;
+}
+
+.container-description{
+    display: flex;
+}
+
+.container-description{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container-description p{
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.container-description h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 8%;
+
+}
+
+.container-image-product{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-height: 50%;
+}
+/* ACÁ TERMINA LA SECCIÓN DE ARTÍCULOS*/
+
+
+/* ACÁ COMIENZAN LAS MEDIA QUERIES */
+
+@media(min-width: 0px){
+
+}
+
+@media(min-height: 450px){
+
+}
+
+@media(min-width: 768px){
+}
+   
+@media(min-width: 1024px){
+}

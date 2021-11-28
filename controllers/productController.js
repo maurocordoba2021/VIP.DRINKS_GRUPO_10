@@ -80,38 +80,38 @@ const listProducts =[{
 
 const luxuryProductos =[
     {
-        id: 1,
+        id: "champagne-krug-combo1",
         caracteristicas:"Colección de Champagnes Krug 25 años",
          descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
         precio: 960000,
         img:"champagne-krug-combo1.jpg",
     },
      {
-        id: 2 ,
+        id: "Whisky-combo-juegodetronos1",
         descripcion:"Colección de Whisky GOT 15 años",
         precio: 1250000 ,
         img:"Whisky-combo-juegodetronos1.jpg",
     },
    {
-        id: 3 ,
+        id: "vodka-trump-combo1" ,
         descripcion:"Combo de sabores Vodka Trump",
         precio: 650000,
         img:"vodka-trump-combo1.jpg",
     },
     {
-        id: 4 ,
+        id: "tequilaleycombo1",
         descripcion:"Combo de Tequila Ley 924",
         precio: 652000,
         img:"tequilaleycombo1.jpg",
     },
     {
-        id: 5 ,
+        id: "rutini-coleccion-combo1",
         descripcion:"Colección de Vinos Rutini 15 años",
         precio: 350000,
         img:"rutini-coleccion-combo1.jpg",
     },
     {
-        id: 6 ,
+        id: "cognac-remy-combo1",
         descripcion:"Dos Cognac Remy",
         precio: 1250000,
         img:"cognac-remy-combo1.jpg",
@@ -134,7 +134,7 @@ const luxuryProductos =[
 const productController ={
     detalle:  (req, res) =>{ 
         let producto = listProducts.find((producto) => producto.idProducto == req.params.idProducto)
-        res.render("detalle", {producto: producto, caracteristicas: producto.caracteristicas , listProducts: listProducts });
+        res.render("detalle", {producto: producto, listProducts: listProducts });
     },
     novedades: (req, res) =>{
         res.render("luxury",{productos : luxuryProductos });

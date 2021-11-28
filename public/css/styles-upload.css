@@ -38,13 +38,31 @@ form{
     align-content: center;
     background-color: black;
     transition: ease 450ms all;
+    cursor: pointer;
 }
-
+.icon-upload{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 input.upload-image{
     display: none;
 }
 
-.contain-upload-image:hover i{
+.images {
+    display: flex;
+}
+
+.image-upload {
+    height: 100px;
+    width: 100px;
+    margin-left: 8px;
+}
+
+.contain-upload-image:hover  i{
     color: gold;
 }
 

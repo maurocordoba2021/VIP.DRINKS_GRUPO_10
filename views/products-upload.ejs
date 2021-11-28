@@ -26,31 +26,28 @@
 <section class="images">
     <div class="contain-upload-image"> 
         <input class="upload-image" id="file" name="upload-image" type="file" multiple>
-        <label for="upload-image"> <h3><i class="fas fa-plus"></i></h3></label>
+        <label class="icon-upload" for="file"> <h3><i class="fas fa-plus"></i></h3></label>
     </div>
-    <div id="preview"></div>
+    <div class="preview" id="preview"></div>
 
 
-
-
-    <!--
-    
-   <script>
-       document.getElementById('file').onchange = function(i){
-        let reader = new FileReader();
-        reader.readAsDataURL(i.target.files[0]);
-        reader.onload = function(){
-            let preview = document.get.ElementById('preview');
-            image = document.createElement('img');
-
-            image.src = reader.result;
-            
-            preview.innerHTML = '';
-            preview.append('image');
+    <script>
+        document.getElementById('file').onchange = function(i){
+         for (let i = 0; i < this.files.length; i++) {
+             let reader = new FileReader();
+             reader.onload = function(e){
+                 let img = document.createElement('img');
+                 img.classList.add('image-upload');
+                 img.src = e.target.result;
+                 document.getElementById('preview').appendChild(img);
+             }
+             reader.readAsDataURL(this.files[i]);
+         }
         }
-       }
-       -->
-   </script>
+    </script>
+
+
+ 
 </section>
 <section>
     <div class="box">

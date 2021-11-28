@@ -7,7 +7,6 @@ router.get("/", mainController.index);
 
 router.post("/", mainController.index);
 
-
 router.get("/recetas", mainController.recetas);
 
 module.exports=router;

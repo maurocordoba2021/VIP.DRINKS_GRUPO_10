@@ -68,11 +68,13 @@
 <div class="selector">
     <p class="caracteristica">Cantidad:</p>
     <select name="stock" id="stock">
-        <option name="stock" value="i">1</option>
-        <option name="stock" value="1">1</option>
-        <option name="stock" value="2">2</option>
+        <option name="stock" value="i"></option>
+
     </select>
+ 
+
 </div>
+
 <div class="contain-buttons" >
     <form action="/carrito-de-compras" method="post">
 <button class="buy" type="submit">Comprar ahora</button>
@@ -83,7 +85,7 @@
 </div>
 <div class="box-item">
         <i class="fas fa-user-shield"></i>
-    <a class="compra-protegida" href="/terminos-y-condiciones">Compra Protegida</a>
+    <a class="compra-protegida" href="#">Compra Protegida</a>
     </div>  
 
 <div class="add-favorite">
@@ -99,15 +101,15 @@
 
 <section class="caracteristicas">
     <h4>Características del producto</h4>
+
     <div class="contain-caracteristicas">
     <article class="caracteristicas simple">
+         <% producto.caracteristicas.forEach(caracteristica =>  {%>
 
         <ul>
-        <li></li>
-        <li>Edición limitada</li>
-        <li>Sólo 100 ejemplares</li>
-        <li>Imágenes ilustrativas</li>
+        <li><%= caracteristica %></li>
         </ul>
+        <%})%>
     </article>
     
 <article class="caracteristicas icons">

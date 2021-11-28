@@ -18,11 +18,14 @@
 
 <body>
     <%- include('./partials/header') %>
-<main>
+<main>º
+ 
+ 
 <article class="article-detalle">
-        <h3 class="title-product">Whisky Louis XIII</h3>
+        <h3 class="title-product"> <%= producto.nombre %> </h3>
         <div class="container-images">
-            <img src="/images/whisky-Louis-XIII.png" alt="">
+            <img src="/images/<%=producto.img%>" alt="<%=producto.img%>">
+            
         </div>
         <section class="main-product">
         <div class="selector">
@@ -40,9 +43,9 @@
             </select>
         </div>
         <div class="box">
-            <h4 class="price">$766.444</h4>
+            <h4 class="price"><%= "$" + producto.precio%></h4>
             <p class="off">10% OFF</p>
-            <p class="payment-details">en 12 x $35.000</p>
+            <p class="payment-details">en 12 x <%= "$" + producto.precio/12 %></p>
             <a href="/metodos-de-pago">Ver todos los métodos de pago</a>
         </div>
         <div class="box">
@@ -59,12 +62,13 @@
             <p class="title-green">Calidad certificada</p>
         </div>
             <p class="informative">Conocé más de la marca y el producto.</p>
-            <a href="/marca">Conocer más</a>    
+            <a href="#">Conocer más</a>    
         </div>
 <h4 class="title">Stock disponible</h4>
 <div class="selector">
     <p class="caracteristica">Cantidad:</p>
     <select name="stock" id="stock">
+        <option name="stock" value="i">1</option>
         <option name="stock" value="1">1</option>
         <option name="stock" value="2">2</option>
     </select>
@@ -97,12 +101,13 @@
     <h4>Características del producto</h4>
     <div class="contain-caracteristicas">
     <article class="caracteristicas simple">
-    <ul>
-        <li>50 años de añejado</li>
+
+        <ul>
+        <li></li>
         <li>Edición limitada</li>
         <li>Sólo 100 ejemplares</li>
         <li>Imágenes ilustrativas</li>
-    </ul>
+        </ul>
     </article>
     
 <article class="caracteristicas icons">
@@ -169,10 +174,7 @@
 <div class="block-3">
 <article class="caracteristicas text">
     <h4>Todas sus características</h4>
-    <p class="informative-L">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur?
-    Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id.
-    e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!
-    Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit!</p>
+    <p class="informative-L"><%= producto.descripcionLarga %></p>
 </article>
 <section class="medios-de-pago">
     <h4>Medios de pago</h4>
@@ -181,7 +183,7 @@
         <img src="/images/logos-criptos.png" alt="logos-cripto">
     </div>
     <div class="box-link">
-        <a href="/medios-de-pago">Conocé otros medios de pago</a>
+        <a href="#">Conocé otros medios de pago</a>
     </div>
 </section>
 </div>

@@ -6,127 +6,135 @@ const path = require('path');
 
 
 const listProducts =[{
-        id: "vodka-trump" ,
-        descripcionCorta: "Quíntuple destilación en Holanda por el renombrado maestro destilador holandés Jacques de Lat Vodka Trump es embotellada en un diseño único, hermoso y lujoso, con etiquetas y decoración exterior por el famoso diseñador de Nueva York y artista Milton Glaser.",
-        descripcionLarga:"",
-        precio: "$ 740.000",
-        img: '/images/vodka-Trump.png',
+        idProducto: "vodka-Trump" ,
+        nombre: "Vodka Trump",
+        caracteristicas: ["Quíntuple destilación en Holanda", "Embotellada en un diseño único", "Hermoso y lujoso","Etiquetas y decoración exterior Milton Glaser"],
+        descripcionLarga: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        precio:  740000,
+        img: 'vodka-Trump.png',
+        stock: 20,
     },
     {
-        id: "champagne-Krug",
-        nombre: "Champagne Krug",
-        descripcionCorta: "Champagne Krug gran cuveé, es el arquetipo de la filosofía de la elaboración artesanal y el sabor. Al rededor de 120 vinos diferentes, cuidadosamente seleccioandos de entre 10 cosechas diferentes, algunos pueden llegar a 15 años de edad. Es el factor diferenciador de este champagne con el resto.",
-        descripcionLarga:"",
-        precio:"$ 750.000",
-        img: '/images/champagne-Krug.png',
+        idProducto: "champagne-Krug",
+        nombre: "Champagne Krug de Cuveé",
+        caracteristicas: ["Elaboración artesanal y sabor único", "Alrededor de 120 vinos diferentes", "Productos especialmente seleccioandos" , "15 años de edad"],
+        descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        precio: 750000,
+        img: 'champagne-Krug.png',
+        stock: 20,
     },
     {
-        id: "whisky-Chivas" ,
+        idProducto: "whisky-Chivas" ,
         nombre: "Chivas Regal 25",
-        descripcionCorta: "El primer whisky de lujo en el mundo elaborado a partir de una seductora mezcla frutal. Una opción habitual de mezcla suave para la alta sociedad de Nueva York desde 1909. Este legendario whisky ha sido testigo de la historia: sobrevivió a dos guerras mundiales, también a la época de la prohibición y se convirtió en una obra maestra para ser distinguido y aclamado para siempre. Porque el éxito es una mezcla única, tanto en la vida como en el whisky.",
-        descripcionLarga:"",
-        precio: "$ 79.991",
-        img: '/images/chivas.jpg',
+        caracteristicas: ["Primer whisky de lujo en el mundo", "Elaborado a partir de una seductora mezcla frutal", "Una opción habitual para la alta sociedad", "En Nueva York desde 1909", "Legendario whisky", "Obra maestra", "Una mezcla única"],
+        descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        precio:  79991,
+        img: 'chivas.jpg',
+        stock: 20,
     },
    {
-        id: "tequila-Ley-925",
+        idProducto: "tequila-Ley-925",
         nombre:"Tequila 925 Ley Diamante",
-        descripcionCorta: "Ley Diamante, como se le llama a la botella, es una pieza única con un valor en el Mercado de 3.5 millones de dólares. Según sus fabricantes, es, hasta el momento, la botella de tequila más cara del mundo y la joya más importante fabricada en México desde la época colonial (1521-1810).",
-        descripcionLarga:"",
-        precio: "$ 3.5M",
-        img: '/images/tequila-Ley-925.png',
+        caracteristicas: ["Ley Diamante",  "Una pieza única", "La botella de tequila más cara del mundo", "La joya más importante fabricada en México"],
+          descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        precio:  3500000 ,
+        img: 'tequila-Ley-925.png',
+        stock: 20,
     },
     {
-        id: "whisky-Highland-Park",
+        idProducto: "whisky-Highland-Park",
         nombre:"Whisky Highland Park",
-        descripcionCorta:"Highland Park 12 años es de color oro pálido, con un matiz anaranjado. En nariz, muestra aromas de fruta blanca (pera, manzana, melón) y notas de miel con especias como la vainilla y la canela. Aparecen también toques florales, de brezo, matices de yodo y de ahumado suave",
-        descripcionLarga:"",
-        precio: "$ 39.663",
-        img:'/images/whisky-Highland-Park.png',
+        caracteristicas: ["12 años", "Color oro pálido", "Matiz anaranjado", "Aromas de fruta blanca", "(pera, manzana, melón)", "Notas de miel con especias", "Vainilla y Canela", "Toques florales", "Matices de yodo y de ahumado suave"],
+          descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        precio:  39663,
+        img:'whisky-Highland-Park.png',
+        stock: 20,
     },
     {
-        id: "whisky-Louis-XIII",
-        descripcionCorta:"Con un fino y largo bouquet, posee un aroma a flores y sándalo, sabor a frutos como higos y dátiles mezclados con nuez moscada y jengibre.",
-        descripcionLarga:"",
-        precio: "$ 766.444",
-        img: '/images/whisky-Louis-XIII.png',
+        idProducto: "whisky-Louis-XIII",
+        caracteristicas:["Fino y largo bouquet", "Aroma a flores y sándalo", "Sabor a frutos como higos y dátiles", "mezclados con nuez moscada y jengibre"],
+          descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        precio:  766444,
+        img: 'whisky-Louis-XIII.png',
+        stock: 20,
     },
     {
-        id: "sake-Jumai",
-        descripcionCorta: "JUNMAI: El Junmai o “sake de arroz puro” es un sake que se elabora sólo con arroz, arroz koji y agua. ... Es un sake fragante con un sabor rico y suave, puede elaborarse para poseer un gusto seco, dulce o neutral.",
-       descripcionLarga:"",
-        precio: "$ 134.918",
-        img:'/images/sake-Jumai.png',
+        idProducto: "sake-Jumai",
+        caracteristicas: [ "Sake de arroz puro" , "Aroma fresco y afrutado",  "Arroz pulido y filtrado de forma natural"],
+        descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        precio: 134918,
+        img:'sake-Jumai.png',
+        stock: 20,
     },
    {
-        id: "ron-Habana-Club",
-        descripcionCorta:"Havana Club Máximo Extra Añejo tiene un brillo de color ámbar, potenciado por un añejado adicional. En nariz, la experiencia es extremadamente rica, intensa y persistente, junto con un aroma delicado que equilibra el roble y las notas ahumadas con sutiles matices de pera fresca, coco y fruta desecada. Seco y dulce.",
-        descripcionLarga:"",
-        precio:"$ 225.133",
-        img:'/images/"ron-Habana-Club".png',
+        idProducto: "ron-Habana-Club",
+        nombre: "Havana Club Máximo",
+        caracteristicas:["Extra Añejo", "Brillo de color ámbar", "potenciado por un añejado adicional", "Experiencia extremadamente rica", "intensa y persistente", "Aroma delicado", "Roble", "Notas ahumadas","Pera fresca, coco y fruta desecada", "Seco y dulce"],
+         descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        precio: 225133,
+        img:'ron-Habana-Club.jpg',
+        stock: 20,
     },
   
 ]
 
 const luxuryProductos =[
     {
-        id:1,
-        descripcionCorta:"Colección de Champagnes Krug 25 años",
-        descripcionLarga:"",
-        precio:"960.000$",
-        img:"/images/champagne-krug-combo1.jpg",
+        id: 1,
+        caracteristicas:"Colección de Champagnes Krug 25 años",
+         descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        precio: 960000,
+        img:"champagne-krug-combo1.jpg",
     },
      {
-        id:2 ,
-        descripcion:"1.250.000$",
-        precio:"Colección de Whisky GOT 15 años",
-        img:"/images/Whisky-combo-juegodetronos1.jpg",
+        id: 2 ,
+        descripcion:"Colección de Whisky GOT 15 años",
+        precio: 1250000 ,
+        img:"Whisky-combo-juegodetronos1.jpg",
     },
    {
-        id:3 ,
+        id: 3 ,
         descripcion:"Combo de sabores Vodka Trump",
-        precio:"650.000$",
-        img:"/images/vodka-trump-combo1.jpg",
+        precio: 650000,
+        img:"vodka-trump-combo1.jpg",
     },
     {
-        id:4 ,
+        id: 4 ,
         descripcion:"Combo de Tequila Ley 924",
-        precio:"652.000$",
-        img:"/images/tequilaleycombo1.jpg",
+        precio: 652000,
+        img:"tequilaleycombo1.jpg",
     },
     {
-        id:5 ,
+        id: 5 ,
         descripcion:"Colección de Vinos Rutini 15 años",
-        precio:"350.000$",
-        img:"/images/rutini-coleccion-combo1.jpg",
+        precio: 350000,
+        img:"rutini-coleccion-combo1.jpg",
     },
     {
-        id:6 ,
+        id: 6 ,
         descripcion:"Dos Cognac Remy",
-        precio:"1.250.000$",
-        img:"/images/cognac-remy-combo1.jpg",
+        precio: 1250000,
+        img:"cognac-remy-combo1.jpg",
     },{
-        id:7 ,
+        id: 7 ,
         descripcion:"Combo 3 Whisky Chivas",
-        precio:"250.000$",
-        img:"/images/chivas-combo1.jpg",
+        precio: 250000,
+        img:"chivas-combo1.jpg",
     },
     {
         id: 8,
         descripcion:"Combo Bebidas JCB",
-        precio:"1.550.000$",
-        img:"/images/gin-jcb-combo1.jpg",
+        precio: 1550000,
+        img:"gin-jcb-combo1.jpg",
     },
   
 ]
 
 
-
-
-
 const productController ={
-    detalle:  (req, res) =>{
-        res.render("detalle");
+    detalle:  (req, res) =>{ 
+        let producto = listProducts.find((producto) => producto.idProducto == req.params.idProducto)
+        res.render("detalle", {producto: producto, caracteristicas: producto.caracteristicas , listProducts: listProducts });
     },
     novedades: (req, res) =>{
         res.render("luxury",{productos : luxuryProductos });
@@ -140,3 +148,4 @@ const productController ={
 
 
 module.exports = productController;
+//module.exports = listProducts;

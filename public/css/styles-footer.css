@@ -1,4 +1,4 @@
-/* ACÁ COMIENZA EL FOOTER */
+/* START FOOTER */
 
 footer{
     display: flex;
@@ -55,6 +55,7 @@ a.link{
     margin: 0 5px;
     display: inline-block;
 }
+
 .terminos-y-condiciones{
     color: whitesmoke;
     font-size: 20px;
@@ -66,21 +67,10 @@ a.link{
     border-top: gold solid 1px;
 }
 
-/* ACÁ TERMINA EL FOOTER */
+/* END FOOTER */
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* ACÁ COMIENZAN LAS MEDIA QUERIES */
+/* START MEDIA QUERIES */
 
 @media(min-width: 0px){
   
@@ -90,29 +80,22 @@ a.link{
 }
 
 @media(min-height: 450px){
-  
 }
 
 @media(min-width: 768px){
-
-
     ul.footer-tablet{
         display: flex;
         justify-content: space-around;
     }
-    
-
     footer article{
         max-width: 28%;
     }
     footer p.text {
         font-size: 0.8em;
     }
-
-  
 }
-@media(min-width: 1024px){
 
+@media(min-width: 1024px){
 }
 
 

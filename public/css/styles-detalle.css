@@ -7,11 +7,11 @@
 }
 /* UNIVERSAL*/
 
-
-/* CUERPO EN GRAL */
+/* START CUERPO EN GRAL */
 div{
     display: flex;
 }
+
 body{
     display: flex;
     font-family: 'Roboto', sans-serif;
@@ -19,39 +19,46 @@ body{
     background-image: url("/images/background.png");
     background-size: auto;
 }
+
 main{
     display: block;
     width: 100vw;
 }
+
 a{
     text-decoration: none;
     color: whitesmoke;
 }
+
 img{
     width: 100%;
 }
+
 li{
     text-decoration: none;
 }
+
 h3{
     color: whitesmoke;
 }
+
 i{
     font-size: 30px;
     color: whitesmoke;
     padding: 8px;
 }
 
-/* CUERPO EN GRAL */
+/* END CUERPO EN GRAL */
 
+/* START SECCIÒN RECOMENDADOS */
 
-
-/*SECCIÒN RECOMENDADOS*/
 section.intereses{
     display: none;
 }
 
-/* DETALLES DE ARTÍCULO*/
+/* END SECCIÒN RECOMENDADOS */
+
+/* START DETALLES DE ARTÍCULO*/
 
 .article-detalle{
     color: whitesmoke;
@@ -64,19 +71,20 @@ section.intereses{
 }
 
 .selector{
-background: black;
-color: whitesmoke;
-margin: 3px 0;
-border-radius: 5px;
-padding: 5px 1px 10px 5px;
-display: flex;
-justify-content: space-between;
-border-bottom: solid gold 0.2px;
+    background: black;
+    color: whitesmoke;
+    margin: 3px 0;
+    border-radius: 5px;
+    padding: 5px 1px 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid gold 0.2px;
 }
 
 .caracteristica{
     width: 50%;
 }
+
 select{
     width: 50%;
     border-radius: 5px;
@@ -89,29 +97,34 @@ select{
 p.off{
     color: #1bad20;
 }
+
 h4.price{
     font-size: 36px;
     font-weight: 300;
     width: 100%;
 
 }
+
 p.payment-details{
     color: grey;
     width: 100%;
 
 }
+
 .button-stock{
     padding: 1px;
     width: 90px;
     background-color: orange;
     justify-content: center;
 }
+
 .box,
 article.caracteristicas{
     padding: 1%;
     display: flex;
     margin: 10px 0;
 }
+
 .box a{
     text-decoration: none;
     color: #3483fa;
@@ -120,17 +133,21 @@ article.caracteristicas{
     font-weight: 300;
     width: 90%;
 }
+
 .box-item{
     display: flex;
  
     align-items: center;
 }
+
 .title-green{
     color: #1bad20;
 }
+
 i {
     color: #1bad20;
 }
+
 p.informative{
     font-size: 16px;
     color: grey;
@@ -138,6 +155,7 @@ p.informative{
     width: 90%;
     font-weight: 300;
 }
+
 h4.title{
     margin-bottom: 10px;
 }
@@ -164,6 +182,7 @@ button.buy{
     background-color: #ffeb00f0;
     width: 90%;
 }
+
 button.add{
     padding: 10px;
     border-radius: 7px;
@@ -172,14 +191,14 @@ button.add{
     color: #ffeb00f0;
     border: solid 1px #ffeb00f0;
 }
+
 p.title-grey{
     display: inline-block;
-color: grey;
-text-align: center;
-font-weight: 300;
-font-size: 16px;
+    color: grey;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
 }
-
 
 i.fas.fa-user-shield{
     font-size: 16px;
@@ -187,35 +206,41 @@ i.fas.fa-user-shield{
 }
 
 .compra-protegida{
-text-decoration: none;
-color: #3483fa;
-font-size: x-small;
-font-weight: 300;
+    text-decoration: none;
+    color: #3483fa;
+    font-size: x-small;
+    font-weight: 300;
 }
+
 .add-favorite{
     display: inline-block;
     width: 60%;
 }
+
 .share{
     width: 30%;
     display: inline-block;
     transition: all 450ms ease;
 }
+
 .share i,
 .add-favorite i{
-  font-size: 22px;
-  color: #ffeb00f0;
-
+    font-size: 22px;
+    color: #ffeb00f0;
 }
+
 .add-favorite label,
 .share label{
     font-size: 16px;
 }
+
 .add-favorite input, 
 .share input{
     display: none;
 }
-/*SECCIÓN CARACTERÍSTICAS DETALLADAS*/
+/* END DETALLES DE ARTÍCULO*/
+
+/* START SECCIÓN CARACTERÍSTICAS DETALLADAS */
 
 section.caracteristicas{
     width: 90%;
@@ -268,18 +293,22 @@ article.caracteristicas.icons{
 .icon-tabla i{
     text-align: center;
 }
+
 .icon-tabla h5{
     font-size: xx-small;
 }
+
 p.subtitle{
     text-align: center;
     display: flex;
     align-content: center;
 }
+
 .title-green{
     align-content: center;
     display: flex;
 }
+
 ul.barra-reput{
     display: flex;
     list-style-type: none;
@@ -288,6 +317,7 @@ ul.barra-reput{
     width: 90%;
     align-items: center;
 }
+
 li.barra-color{
     height: 8px;
     width: 60px;
@@ -301,6 +331,7 @@ li.barra-color.pink{
 li.barra-color.salmon{
     background: #fff5e8;
 }
+
 li.barra-color.yellow{
     background: #fffcda;
 }
@@ -308,10 +339,12 @@ li.barra-color.yellow{
 li.barra-color.lime{
     background: #f1fdd7;
 }
+
 li.barra-color.green{
     background: #39b54a;
     height: 12px;
 }
+
 .box-reput{
     width: 33%;
     align-items: center;
@@ -333,6 +366,7 @@ li.barra-color.green{
 .box-reput.left{
     border-left: none;
 }
+
 p.informative-L{
     font-size: small;
     font-weight: 200;
@@ -341,9 +375,11 @@ p.informative-L{
     background: black;
     border-radius: 5px;
 }
+
 section.medios-de-pago{
     pad: 1%;
 }
+
 section.medios-de-pago h5{
     font-weight: 300;
     margin-bottom: 10px;
@@ -356,6 +392,7 @@ section.medios-de-pago h5{
     padding: 15px;
     background: black;
 }
+
 form.search{
     display: flex;
     width: 70%;
@@ -366,23 +403,28 @@ form.search{
     border-radius: 15px;
     margin: 10px auto;
 }
+
 form.search i{
     color: gray;
     font-size: 25px;
 }
+
 form.search input{
     border: none;
     background: white;
 }
+
 h4.text-gray{
     color: gray;
 }
+
 textarea#questions{
     background: white;
     border-radius: 10px;
     padding: 10px;
     margin: 0 auto;
 }
+
 section.questions{
     width: 90%;
     margin: 0 auto;
@@ -394,6 +436,7 @@ section.questions{
     flex-direction: initial;
     justify-content: space-around;
 }
+
 .buttons-questions button{
     width: 48%;
     border-radius: 5px;
@@ -414,47 +457,54 @@ background-color: #ffeb00f0;
     border: solid 1px #ffeb00f0;
     margin-right: 5px;
 }
+
 .main-valoraciones{
     display: flex;
     justify-content: space-around;
     margin-bottom: 15px;
 }
+
 section.valoraciones i{
     color: gold;
     font-size: 20px;
 }
+
 section.valoraciones i.title{
     font-size: 30px;
 }
+
 .stars-title{
     width: 100%;
     margin: 0px auto 5px; 
     justify-content: center;
 }
+
 h2.valoracion-num{
     font-weight: 300;
     font-size: 36px;
     margin-left: 20px;
 }
+
 p.text-valoracion{
     font-size: 16px;
     color: grey;
     font-weight: 300;
     padding: 10px;
 }
+
 article.val{
     border-bottom: solid 1px #383535;
     border-top: solid 1px #383535;
 }
  
+/* END SECCIÓN CARACTERÍSTICAS DETALLADAS */
 
+/* START MEDIA QUERIES */
 
 @media(min-width: 0px){
-  
 }
 
 @media(min-height: 450px){
-  
 }
 
 @media(min-width: 768px){
@@ -481,6 +531,7 @@ article.val{
         font-size: 0.8em;
     }
 }
+
 @media(min-width: 1024px){
     main{
         display: flex;
@@ -558,8 +609,8 @@ article.val{
     footer article{
     max-width: 30%;
     }
-
 }
+
 @media(min-width: 1440px){
     section.medios-de-pago{
         margin-right: 45px;
@@ -578,3 +629,5 @@ article.val{
         font-size: 50px;
     }
 }
+
+/* END MEDIA QUERIES */

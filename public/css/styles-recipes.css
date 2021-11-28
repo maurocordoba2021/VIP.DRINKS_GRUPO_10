@@ -1,15 +1,16 @@
-/* UNIVERSAL*/
+/* START UNIVERSAL*/
 *{
     box-sizing: border-box;
     flex-wrap: wrap;
 }
-/* UNIVERSAL*/
+/* END UNIVERSAL*/
 
 
-/* CUERPO EN GRAL */
+/* START CUERPO EN GRAL */
 div{
     display: block;
 }
+
 body{
     display: block;
     font-family: 'Roboto', sans-serif;
@@ -26,29 +27,31 @@ main{
     margin: 35% auto 0;
     justify-content: center;
 }
+
 .main-recetas{
 margin: o auto;
 display: flex;
 width: 90%;
 justify-content: space-around;
 }
+
 a{
     text-decoration: none;
     color: whitesmoke;
 }
+
 img{
     width: 100%;
 }
+
 li{
     text-decoration: none;
 }
 
-/* CUERPO EN GRAL */
+/* END CUERPO EN GRAL */
 
 
-/*ACÁ COMIENZA EL MAIN*/
-
-
+/*START MAIN*/
 
 .título-receta, 
 .foto-receta ,
@@ -65,6 +68,7 @@ transition: 1s all ease;
     font-size: 30px;
     color: whitesmoke;
 }
+
 article.receta:hover .título-receta{
     position: relative; 
     display: block;
@@ -91,8 +95,8 @@ position: absolute;
 margin: auto;
 box-sizing: border-box;
 width: 90%;
-
 }
+
 article.receta:hover .foto-receta  {
     padding-bottom: 1px;
     z-index: 1;
@@ -100,21 +104,20 @@ article.receta:hover .foto-receta  {
     margin: auto;
     box-sizing: border-box;
     width: 170%;
+}
 
-    }
 .descripcion-receta{
     position: absolute;
     z-index: 30;
     color: #0000ff00;
     background:#0000ff00;
-
 }
+
 article.receta:hover .descripcion-receta{
     position:absolute;
     z-index: 30;
     color: whitesmoke;
     background: #00000099;
-
 }
 
 .fondo-humo{
@@ -123,6 +126,7 @@ box-sizing: border-box;
 width: 100%;
 margin-top: -10%;
 }
+
 .ingredientes{
     text-align: left;
     padding: 2%;
@@ -132,6 +136,7 @@ margin-top: -10%;
     text-align: center;
     text-decoration: underline;
 }
+
 .procedimiento {
     padding: 5px;
     text-align: center;
@@ -140,20 +145,17 @@ margin-top: -10%;
 .ajuste-tamaño-martini{
     width: 75%;
 }
+
 .ajuste-tamaño-tequila{
     width: 75%;
 }
+
 .ajuste-tamaño-bloody{
     width: 75%;
 }
 
-/* ACÁ COMIENZA EL FOOTER */
 
-/* ACÁ TERMINA EL FOOTER */
-
-
-
-/* ACÁ COMIENZAN LAS MEDIA QUERIES */
+/* START MEDIA QUERIES */
 
 @media(min-width: 0px){
 
@@ -173,5 +175,4 @@ margin: 0 auto;
 }
     
 @media(min-width: 1024px){
-
 }

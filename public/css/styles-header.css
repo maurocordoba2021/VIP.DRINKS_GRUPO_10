@@ -1,5 +1,4 @@
-
-/* ACÁ COMIENZA LA NAVBAR TOP*/
+/* START NAVBAR TOP*/
 .contain-navbar-scroll{
     display: flex;
     padding: 10px;
@@ -16,10 +15,9 @@
     z-index: 1;
 }
 .contain-navbar-scroll i{
-        font-size: 30px;
-        color: whitesmoke;
-        padding: 8px;
-    
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 8px;
 }
 
 .hamburguer-menu{
@@ -40,9 +38,9 @@ img.logo-home{
   width: 80px;
 }
 
-/* ACÁ TERMINA LA NAVBAR TOP*/
+/* END  NAVBAR TOP*/
 
-/* ACÁ COMIENZA EL MENÚ EMERGENTE*/
+/* START MENÚ EMERGENTE*/
 
 .sidebar{
     height: 100%;
@@ -113,12 +111,13 @@ a.closebtn{
     padding: 16px;
 }
 
-/* ACÁ TERMINAEL MENÚ EMERGENTE*/
+/* END MENÚ EMERGENTE*/
 
-/* ACÁ COMIENZA LA NAVBAR QUE SE ABRE EN TABLET*/
+/* START  NAVBAR QUE SE ABRE EN TABLET*/
 img.logo-nav{
     display: none;
 }
+
 .navbar-tablet{
 display: flex;
 justify-content: space-between;
@@ -157,9 +156,9 @@ ul.nav-rigth li{
     color: whitesmoke;
     margin: 10px;
 }
+/* END  NAVBAR QUE SE ABRE EN TABLET*/
 
-
-/* ACÁ COMIENZAN LAS MEDIA QUERIES */
+/* START MEDIA QUERIES */
 
 @media(min-width: 0px){
     .shipping{
@@ -190,28 +189,23 @@ ul.nav-rigth li{
         width: 100%;
         position: relative;
     }
-
-  
      .navbar-tablet{
         display: flex;
         background: rgba(0, 0, 0, 0.7); 
     }
-    
-
-   
 }
-@media(min-width: 1024px){
 
+@media(min-width: 1024px){
    .contain-navbar-scroll{
        display: none;
    }
    img.logo-nav{
-    display: inline-block;
-    width: 50px;
-    position: absolute;
-    top: 5px;
-    left: 50%;
+        display: inline-block;
+        width: 50px;
+        position: absolute;
+        top: 5px;
+        left: 50%;
     }
-  
 }
 
+/* END MEDIA QUERIES */

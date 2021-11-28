@@ -1,15 +1,17 @@
-/* UNIVERSAL*/
+/* START UNIVERSAL*/
+
 *{
     box-sizing: border-box;
     flex-wrap: wrap;
 }
-/* UNIVERSAL*/
 
+/* END UNIVERSAL*/
 
-/* CUERPO EN GRAL */
+/* START CUERPO EN GRAL */
 div{
     display: block;
 }
+
 body{
     display: block;
     font-family: 'Bebas Neue', 'Roboto', sans-serif;
@@ -17,30 +19,34 @@ body{
     background-image: url("/images/background.png");
     background-size: auto;
 }
+
 main{
     display: flex;
     width: 100vw;
 }
+
 a{
     text-decoration: none;
     color: whitesmoke;
 }
+
 img{
     width: 100%;
 }
+
 li{
     text-decoration: none;
 }
 
-/* CUERPO EN GRAL */
+/* END CUERPO EN GRAL */
 
-/* ACÁ COMIENZA LA SECCIÓN DE ARTÍCULOS*/
+/* START SECCIÓN DE ARTÍCULOS*/
 
 section.contain-articles{
     display: flex;
     justify-content: space-around;
-
 }
+
 article{
     display: flex;
     width: 90%;
@@ -79,17 +85,15 @@ article{
     width: auto;
     max-height: 50%;
 }
-/* ACÁ TERMINA LA SECCIÓN DE ARTÍCULOS*/
+/* END SECCIÓN DE ARTÍCULOS*/
 
 
-/* ACÁ COMIENZAN LAS MEDIA QUERIES */
+/* START MEDIA QUERIES */
 
 @media(min-width: 0px){
-
 }
 
 @media(min-height: 450px){
-
 }
 
 @media(min-width: 768px){
@@ -97,3 +101,5 @@ article{
    
 @media(min-width: 1024px){
 }
+
+/* END MEDIA QUERIES */

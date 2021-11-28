@@ -129,7 +129,7 @@ const productController ={
         res.render("detalle");
     },
     novedades: (req, res) =>{
-        res.render("luxury",{productos:luxuryProductos});
+        res.render("luxury",{productos : luxuryProductos });
     },
     historyProducts:(req, res) =>{
         res.render("history");
@@ -140,5 +140,3 @@ const productController ={
 
 
 module.exports = productController;
-module.exports = luxuryProductos ;
-module.exports = listProducts;

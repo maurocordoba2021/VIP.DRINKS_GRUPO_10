@@ -1,14 +1,13 @@
-/* UNIVERSAL*/
+/* START UNIVERSAL*/
 *{  
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     flex-wrap: wrap;
 }
-/* UNIVERSAL*/
+/* END UNIVERSAL*/
 
-
-/* CUERPO EN GRAL */
+/* START CUERPO EN GRAL */
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -16,9 +15,11 @@ body{
     background-image: url("/images/background.png");
     background-size: auto;
 }
+
 main{
     margin-top: 30%;
 }
+
 form{
     padding: 10px;
     border-radius: 20px;
@@ -38,9 +39,11 @@ form{
     background-color: black;
     transition: ease 450ms all;
 }
+
 input.upload-image{
     display: none;
 }
+
 .contain-upload-image:hover i{
     color: gold;
 }
@@ -99,10 +102,14 @@ p{
     color: gray;
 }
 
+/* END CUERPO EN GRAL */
 
+/* START MEDIA QUERIES */
 
 @media(min-width: 768px){
     main{
         margin-top: 10px;
     }
 }
+
+/* END MEDIA QUERIES */

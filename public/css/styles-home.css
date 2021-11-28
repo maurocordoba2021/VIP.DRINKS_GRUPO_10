@@ -1,14 +1,13 @@
-/* UNIVERSAL*/
+/* START UNIVERSAL*/
 *{  
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     flex-wrap: wrap;
 }
-/* UNIVERSAL*/
+/* END UNIVERSAL*/
 
-
-/* CUERPO EN GRAL */
+/* START CUERPO EN GRAL */
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -16,29 +15,32 @@ body{
     background-image: url("/images/background.png");
     background-size: auto;
 }
+
 main{
     display: block;
     width: 100vw;
 }
+
 a{
     text-decoration: none;
     color: whitesmoke;
 }
+
 img{
     width: 100%;
 }
+
 li{
     text-decoration: none;
 }
+
 h3{
     color: whitesmoke;
 }
 
-/* CUERPO EN GRAL */
+/* END CUERPO EN GRAL */
 
-
-
-/*MAIN*/
+/* START MAIN */
 
 main{
     width: 90%;
@@ -47,12 +49,11 @@ main{
 
 .featured,
 .novelties{
-display: flex;
-justify-content: space-between;
-flex-direction: row;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
 
 main section article{
     display: inline-block;
@@ -96,7 +97,6 @@ main section article img {
     margin-top: em;
 }
 
-
 main section article i,
 .discount{
     color: #39b54a;
@@ -126,7 +126,6 @@ main section h3{
     color: whitesmoke;
 }
 
-
 article{
     width: 100%;
     display: flex;
@@ -137,11 +136,9 @@ article{
     padding: 15px 15px 5px;
 }
 
-/*MAIN*/
+/* END MAIN */
 
-
-
-/* ACÁ EMPIEZAEL BOTON COMPRAR*/
+/* START BOTON COMPRAR*/
 form {
     display: flex;
     width: 100%;
@@ -158,33 +155,27 @@ button.buy{
     width: 120px;
     transition: all 540ms;
 }
+
 button.buy:hover{
     background: white;
     color: gold;
     border: solid 1px gold;
 }
 
-/* ACÁ TERMINA EL BOTON COMPRAR*/
+/* END BOTON COMPRAR*/
 
-
-
-
-/* ACÁ COMIENZAN LAS MEDIA QUERIES */
+/* START MEDIA QUERIES */
 
 @media(min-width: 0px){
     .shipping{
         width: 100%;
     }
-  
 }
 
 @media(min-height: 450px){
-   
 }
 
 @media(min-width: 768px){
- 
-
     main{
         margin: 0 auto;
     }
@@ -208,12 +199,11 @@ button.buy:hover{
         width: 100%;
     }
 }
+
 @media(min-width: 1024px){
 article{
     max-width: 22%;
    }
-
-  
 }
 
 

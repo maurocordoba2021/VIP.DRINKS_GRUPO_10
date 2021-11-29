@@ -8,10 +8,6 @@
 /* UNIVERSAL*/
 
 /* START CUERPO EN GRAL */
-div{
-    display: flex;
-}
-
 
 main{
     display: block;
@@ -52,7 +48,9 @@ section.intereses{
 /* END SECCIÒN RECOMENDADOS */
 
 /* START DETALLES DE ARTÍCULO*/
-
+.main-reput{
+    display: flex;
+}
 .article-detalle{
     color: whitesmoke;
     margin-top: 30%;
@@ -66,12 +64,11 @@ section.intereses{
 .selector{
     background: black;
     color: whitesmoke;
-    margin: 3px 0;
+    margin: 10px 0;
     border-radius: 5px;
-    padding: 5px 1px 10px 5px;
+    padding: 5px 5px 10px ;
     display: flex;
     justify-content: space-between;
-    border-bottom: solid orange 0.2px;
 }
 
 .caracteristica{
@@ -116,8 +113,13 @@ article.caracteristicas{
     padding: 1%;
     display: flex;
     margin: 10px 0;
+    width: 500px;
 }
-
+.box-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .box a{
     text-decoration: none;
     color: #3483fa;
@@ -145,7 +147,6 @@ p.informative{
     font-size: 16px;
     color: grey;
     text-align: center;
-    width: 90%;
     font-weight: 300;
 }
 
@@ -153,36 +154,46 @@ h4.title{
     margin-bottom: 10px;
 }
 
-.contain-buttons{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
 
 form{
     width: 100%;
     display: flex;
     padding: 6px;
-    flex-direction: column;
     align-items: center;
 }
 
-button.buy{
+div.buy{
     padding: 10px;
     border-radius: 7px;
     color: white;
     border: 1px solid;
     background-color: orange;
-    width: 90%;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    transition: all 500ms ease;
 }
+div.buy:hover{
+    background-color: #b57500;
+    color: white;
+    border: none;
+}
+
 
 button.add{
     padding: 10px;
     border-radius: 7px;
-    width: 90%;
+    width: 250px;
     background: white;
     color:orange;
     border: solid 1px orange;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+button.add:hover{
+    border: none;
 }
 
 p.title-grey{
@@ -318,7 +329,7 @@ ul.barra-reput{
 
 li.barra-color{
     height: 8px;
-    width: 60px;
+    width: 50px;
     background: whitesmoke;
 }
 
@@ -390,26 +401,16 @@ section.medios-de-pago h5{
     padding: 15px;
     background: black;
 }
-
-form.search{
-    display: flex;
-    width: 70%;
-    flex-direction: initial;
-    justify-content: space-around;
-    background: white;
-    padding: 0;
-    border-radius: 15px;
-    margin: 10px auto;
-}
-
 form.search i{
     color: gray;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 form.search input{
     border: none;
     background: white;
+    border-radius: 5px;
+    padding: 4px;
 }
 
 h4.text-gray{
@@ -502,7 +503,9 @@ article.val{
 @media(min-width: 0px){
 }
 
-@media(min-height: 450px){
+@media(min-height: 425px){
+   
+    
 }
 
 @media(min-width: 768px){
@@ -522,20 +525,14 @@ article.val{
     textarea#questions{
         width: 90%;
     }
-    footer article{
-        max-width: 28%;
-    }
-    footer p.text {
-        font-size: 0.8em;
-    }
-}
+  
 
 @media(min-width: 1024px){
     main{
         display: flex;
     }
     .container-images{
-        max-width: 500px;
+        width: 500px;
     }
     .article-detalle{
         display: flex;
@@ -544,10 +541,7 @@ article.val{
     .selector{
         width: 300px;
     }
-    .contain-buttons{
-        margin-left: 0 ;
-        padding-left: 0; 
-    }
+
     h3.title-product{
         width: 100%;
     }
@@ -559,14 +553,16 @@ article.val{
         border-radius: 5px;
     }
 
-    button.buy,
+.butns{
+    flex-direction: column;
+    align-items: center;
+}
+
+    div.buy,
     button.add{
         width: 280px;
     }
-    .contain-caracteristicas{
-        /* max-width: 60%; */
-     
-    }
+   
     section.caracteristicas{
         position: relative;
     }
@@ -599,8 +595,8 @@ article.val{
 
     .caracteristicas-container {
         display: flex;
-        max-width: 500px;
-        padding: 1%;
+      
+      
     }
     section.medios-de-pago{
         max-width: 40%;
@@ -609,12 +605,7 @@ article.val{
         margin-top: 20px;
         border-radius: 5px;
     }
-    article.caracteristicas.text{
-        max-width: 500px;
-    }
-    footer article{
-    max-width: 30%;
-    }
+   
 }
 
 @media(min-width: 1440px){
@@ -634,5 +625,4 @@ article.val{
         font-size: 50px;
     }
 }
-
-/* END MEDIA QUERIES */
+}

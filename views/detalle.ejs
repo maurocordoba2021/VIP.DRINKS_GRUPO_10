@@ -58,7 +58,7 @@
                             <p class="title-green">Envío gratis</p>
                         </div>
                         <p class="informative">Conocé los tiempos y las formas de envío</p>
-                        <a href="/en-camino">Calcular cuándo llega</a>
+                        <a href="/">Calcular cuándo llega</a>
                     </div>
                     <div class="box">
                         <div class="box-item">
@@ -66,7 +66,7 @@
                             <p class="title-green">Calidad certificada</p>
                         </div>
                         <p class="informative">Conocé más de la marca y el producto.</p>
-                        <a href="#">Conocer más</a>
+                        <a href="/">Conocer más</a>
                     </div>
                     <h4 class="title">Stock disponible: <%=producto.stock%>
                     </h4>
@@ -81,12 +81,12 @@
                         </select>
 
                     </div>
-
-                    <div class="contain-buttons">
+                    <div>
+                     <div class="butns">
                         <a href="<%= post.init_point %>" target="_blank">
                             <div class="buy">Comprar ahora</div>
                         </a>
-                        <form action="#" method="post">
+                        <form action="/shop" method="post">
                             <button class="add" type="submit"> Agregar al carrito</button>
                         </form>
                     </div>
@@ -207,6 +207,7 @@
                     </section>
                 </div>
                 <section class="questions">
+                    <div class="box-search">
                     <h4>Preguntas y respuestas</h4>
                     <p class="informative">Buscá lo que querés saber</p>
                     <div class="barra-search">
@@ -214,6 +215,7 @@
                             <input type="text">
                             <i class="fas fa-search"></i>
                         </form>
+                    </div>
                     </div>
                     <h4 class="text-gray">Haz tu pregunta al vendedor</h4>
                     <textarea name="questions" id="questions" cols="30" rows="10"

@@ -35,7 +35,7 @@
                     <p class="price">$<%= product.precio %></p>
                     <p class="shipping">Envío Global Gratuito</p> 
                     <h4 class="description"><%= product.nombre %></h4>
-                    <form action="/shop" method="post">
+                    <form action="/detalle/<%= product.idProducto %>" method="post">
                     <button class="buy" type="submit">Comprar</button>
                     </form>
                 </div> 

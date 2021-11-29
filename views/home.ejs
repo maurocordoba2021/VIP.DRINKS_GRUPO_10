@@ -24,61 +24,24 @@
     <div class="products">
     <h3>Tus productos favoritos</h3>
     <section class="featured">
-    <article>
-        <a href="/product/detalle">
-        <img src="/images/tequila-Ley-925.png" alt="tequila-Ley-925">  
-        </a>  
-        <div class="main-article"><i class="fas fa-plane"></i>
-        <p class="price">$188.000</p>
-        <p class="shipping">Envío Global Gratuito</p> 
-        <h4 class="description">Tequila Ley 924</h4>  
-        <form action="/shop" method="post">
-        <button class="buy" type="submit">Comprar</button>
-        </form>
-    </div> 
-    </article> 
-        
-    <article>
-        <a href="/product/detalle">
-        <img src="/images/vodka-Trump.png" alt="vodka-Trump">
-    </a>
-        <div class="main-article"><i class="fas fa-plane"></i>
-        <p class="price">$250.000</p>
-        <p class="shipping">Envío Global Gratuito</p> 
-        <h4 class="description">Vodka Trump</h4>
-        <form action="/shop" method="post">
-            <button class="buy" type="submit">Comprar</button>
-            </form>
-    </div>
-    </article> 
 
-    <article>
-        <a href="/product/detalle">
-        <img src="/images/whisky-Highland-Park.png" alt="whisky-Highland-Park">
-        </a>
-        <div class="main-article"><i class="fas fa-plane"></i>
-        <p class="price">$255.000</p>
-        <p class="shipping">Envío Global Gratuito</p> 
-        <h4 class="description">whisky Highland Park</h4>
-        <form action="/shop" method="post">
-            <button class="buy" type="submit">Comprar</button>
-            </form>
-    </div>
-    </article> 
+        <% listProducts.forEach(product => { %>
+            <article class="product">
+                <a href="/product/detalle/<%= product.idProducto %>">
+                    <img src="/images/<%= product.img %>" alt="<%= product.nombre %>">
+                </a>
+                <div class="main-article">
+                    <i class="fas fa-plane"></i>
+                    <p class="price">$<%= product.precio %></p>
+                    <p class="shipping">Envío Global Gratuito</p> 
+                    <h4 class="description"><%= product.nombre %></h4>
+                    <form action="/shop" method="post">
+                    <button class="buy" type="submit">Comprar</button>
+                    </form>
+                </div> 
+            </article>
+            <% }) %>
    
-    <article>
-        <a href="/product/detalle">
-        <img src="/images/whisky-Louis-XIII.png" alt="whisky-Louis-XIII">
-        </a>
-        <div class="main-article"><i class="fas fa-plane"></i>
-        <p class="price">$230.000</p>
-        <p class="shipping">Envío Global Gratuito</p> 
-         <h4 class="description">Whisky Louis XIII</h4>
-         <form action="/shop" method="post">
-            <button class="buy" type="submit">Comprar</button>
-            </form>
-        </div>
-        </article>
 </section>
 
 <h3>Novedades</h3>

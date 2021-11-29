@@ -44,6 +44,8 @@ const productController ={
 
 
 
+        }else if (req.params.idCombo){
+            let combo = listLuxury.find((combo) => combo.idCombo == req.params.idCombo)
         } else {
             res.redirect('/');
         }

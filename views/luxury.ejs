@@ -31,115 +31,25 @@
     <div class="products"></div>
     <h3>Tus productos favoritos</h3>
     <section class="featured">
-        <article>
-            <a href="/product/detalle">
-                <img src="/images/champagne-krug-combo1.jpg" alt="coleccion-champagne-krug">  
-            </a>  
-            <div class="main-article"><i class="fas fa-plane"></i>
-                <p class="price">960.000$</p>
-                <p class="shipping">Envío Global Gratuito</p> 
-                <h4 class="description">Colección de Champagnes Krug 25 años</h4>  
-                <form action="/carrito-de-compras" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                </form>
-            </div> 
-        </article>
-        <article>
-            <a href="/product/detalle">
-                <img src="/images/Whisky-combo-juegodetronos1.jpg" alt="coleccion-whisky-got">  
-            </a>  
-            <div class="main-article"><i class="fas fa-plane"></i>
-                <p class="price">1.250.000$</p>
-                <p class="shipping">Envío Global Gratuito</p> 
-                <h4 class="description">Colección de Whisky GOT 15 años </h4>  
-                <form action="/carrito-de-compras" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                </form>
-            </div> 
-        </article>
-        <article>
-            <a href="/product/detalle">
-                <img src="/images/vodka-trump-combo1.jpg" alt="vodka-trump-combo">  
-            </a>  
-            <div class="main-article"><i class="fas fa-plane"></i>
-                <p class="price">650.000$</p>
-                <p class="shipping">Envío Global Gratuito</p> 
-                <h4 class="description">Combo de sabores Vodka Trump</h4>  
-                <form action="/carrito-de-compras" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                </form>
-            </div> 
-        </article>
-        <article>
-            <a href="/product/detalle">
-                <img src="/images/tequilaleycombo1.jpg" alt="combo-tequila-ley">  
-            </a>  
-            <div class="main-article"><i class="fas fa-plane"></i>
-                <p class="price">652.000$</p>
-                <p class="shipping">Envío Global Gratuito</p> 
-                <h4 class="description">Combo de Tequila Ley 924</h4>  
-                <form action="/carrito-de-compras" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                </form>
-            </div> 
-        </article>
-    </section>
 
-    <h3>Novedades</h3>
-    <section class="novelties">
-        <article>
-            <a href="/product/detalle">
-                <img src="/images/rutini-coleccion-combo1.jpg" alt="coleccion-rutinis">  
-            </a>  
-            <div class="main-article"><i class="fas fa-plane"></i>
-                <p class="price">350.000$</p>
-                <p class="shipping">Envío Global Gratuito</p> 
-                <h4 class="description">Colección de Vinos Rutini 15 años</h4>  
-                <form action="/carrito-de-compras" method="post">
+        <% listLuxury.forEach(product => { %>
+            <article class="product">
+                <a href="/product/detalle/<%= product.idProducto %>">
+                    <img src="/images/<%= product.img %>" alt="<%= product.nombre %>">
+                </a>
+                <div class="main-article">
+                    <i class="fas fa-plane"></i>
+                    <p class="price">$<%= product.precio %></p>
+                    <p class="shipping">Envío Global Gratuito</p> 
+                    <h4 class="description"><%= product.nombre %></h4>
+                    <form action="/shop" method="post">
                     <button class="buy" type="submit">Comprar</button>
-                </form>
-            </div> 
-        </article>
-        <article>
-            <a href="/product/detalle">
-                <img src="/images/cognac-remy-combo1.jpg" alt="cognac-remy">  
-            </a>  
-            <div class="main-article"><i class="fas fa-plane"></i>
-                <p class="price">1.250.000$</p>
-                <p class="shipping">Envío Global Gratuito</p> 
-                <h4 class="description">Dos Cognac Remy</h4>  
-                <form action="/carrito-de-compras" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                </form>
-            </div> 
-        </article>
-        <article>
-            <a href="/product/detalle">
-                <img src="/images/chivas-combo1.jpg" alt="combo-chivas">  
-            </a>  
-            <div class="main-article"><i class="fas fa-plane"></i>
-                <p class="price">250.000$</p>
-                <p class="shipping">Envío Global Gratuito</p> 
-                <h4 class="description">Combo 3 Whisky Chivas</h4>  
-                <form action="/carrito-de-compras" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                </form>
-            </div> 
-        </article>
-        <article>
-            <a href="/product/detalle">
-                <img src="/images/gin-jcb-combo1.jpg" alt="gin-jcb">  
-            </a>  
-            <div class="main-article"><i class="fas fa-plane"></i>
-                <p class="price">1.550.000$</p>
-                <p class="shipping">Envío Global Gratuito</p> 
-                <h4 class="description">Combo Bebidas JCB</h4>  
-                <form action="/carrito-de-compras" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                </form>
-            </div> 
-        </article> 
-    </section>
+                    </form>
+                </div> 
+            </article>
+            <% }) %>
+   
+</section>
 </main>
         
 <%- include('./partials/footer') %>

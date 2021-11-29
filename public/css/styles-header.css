@@ -27,7 +27,6 @@ body{
     color: whitesmoke;
     padding: 8px;
 }
-
 .hamburguer-menu{
 display: inline-block;
 font-size: 40px;
@@ -37,7 +36,7 @@ background-color: transparent;
 }
 
 .logo-instagram{
-    display: inline-block;
+    display: none;
     font-size: 40px;
     color: whitesmoke;
 }

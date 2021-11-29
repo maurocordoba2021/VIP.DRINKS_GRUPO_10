@@ -12,13 +12,6 @@ div{
     display: flex;
 }
 
-body{
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-    margin: 0%;
-    background-image: url("/images/background.png");
-    background-size: auto;
-}
 
 main{
     display: block;
@@ -78,7 +71,7 @@ section.intereses{
     padding: 5px 1px 10px 5px;
     display: flex;
     justify-content: space-between;
-    border-bottom: solid gold 0.2px;
+    border-bottom: solid orange 0.2px;
 }
 
 .caracteristica{
@@ -179,7 +172,7 @@ button.buy{
     border-radius: 7px;
     color: white;
     border: 1px solid;
-    background-color: #ffeb00f0;
+    background-color: orange;
     width: 90%;
 }
 
@@ -188,8 +181,8 @@ button.add{
     border-radius: 7px;
     width: 90%;
     background: white;
-    color: #ffeb00f0;
-    border: solid 1px #ffeb00f0;
+    color:orange;
+    border: solid 1px orange;
 }
 
 p.title-grey{
@@ -226,7 +219,7 @@ i.fas.fa-user-shield{
 .share i,
 .add-favorite i{
     font-size: 22px;
-    color: #ffeb00f0;
+    color: orange;
 }
 
 .add-favorite label,
@@ -252,11 +245,17 @@ section.caracteristicas{
 }
 
 article.caracteristicas.simple{
-    width: 80%;
     justify-content: center;
     border-radius: 5px;
+    display: flex;
+    list-style:none;
+    flex-direction: column;
+    width: 100%;
     border: solid 1px #383535;
-    margin: 5px auto;
+}
+
+.caracteristica-ul {
+    list-style: none;
 }
 
 h4{
@@ -277,10 +276,9 @@ h4{
 article.caracteristicas.icons{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
     border-radius: 5px;
     border: solid 1px #383535;
-    margin: 5px auto;
 }
 .icon-tabla{
     display: flex;
@@ -447,14 +445,14 @@ section.questions{
 border-radius: 7px;
 color: white;
 border: 1px solid;
-background-color: #ffeb00f0;
+background-color: orange;
 }
 
 .button-delete{
     border-radius: 7px;
     background: white;
-    color: #ffeb00f0;
-    border: solid 1px #ffeb00f0;
+    color: orange;
+    border: solid 1px orange;
     margin-right: 5px;
 }
 
@@ -516,8 +514,8 @@ article.val{
         justify-content: space-around;
     }
     section.information-seller{
-        width: 100%;
-    }
+    width: 100%;
+}
     li.barra-color{
         width: 90px;
     }
@@ -566,7 +564,7 @@ article.val{
         width: 280px;
     }
     .contain-caracteristicas{
-        max-width: 60%;
+        /* max-width: 60%; */
      
     }
     section.caracteristicas{
@@ -575,11 +573,7 @@ article.val{
     section.information-seller{
         border: 1px solid grey;
         border-radius: 5px;
-        margin-right: 20px;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        max-width: 39%;
+        max-width: 40%;
     }
     section.caracteristicas h4{
         width: 100%;
@@ -594,17 +588,29 @@ article.val{
     .block-3{
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    .block-2{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .caracteristicas-container {
+        display: flex;
+        max-width: 500px;
+        padding: 1%;
     }
     section.medios-de-pago{
-        max-width: 41%;
+        max-width: 40%;
         padding: 20px 5px;
         border: solid 1px grey;
         margin-top: 20px;
         border-radius: 5px;
     }
     article.caracteristicas.text{
-        max-width: 50%;
+        max-width: 500px;
     }
     footer article{
     max-width: 30%;
@@ -616,7 +622,6 @@ article.val{
         margin-right: 45px;
     }
     section.information-seller{
-        margin-right: 30px;
         right: 45px;
     }
     section.main-product{

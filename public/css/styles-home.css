@@ -9,12 +9,6 @@
 
 /* START CUERPO EN GRAL */
 
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0%;
-    background-image: url("/images/background.png");
-    background-size: auto;
-}
 
 main{
     display: block;
@@ -93,7 +87,7 @@ main section article img {
 
 .description{
     display: none;
-    color: goldenrod;
+    color: orange;
     margin-top: em;
 }
 
@@ -146,7 +140,7 @@ form {
 }
 
 button.buy{
-    background: gold;
+    background: orange;
     color: white;
     border: none;
     padding: 5px;
@@ -158,8 +152,8 @@ button.buy{
 
 button.buy:hover{
     background: white;
-    color: gold;
-    border: solid 1px gold;
+    color: orange;
+    border: solid 1px orange;
 }
 
 /* END BOTON COMPRAR*/

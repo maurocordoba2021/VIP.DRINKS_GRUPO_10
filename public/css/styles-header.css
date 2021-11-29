@@ -1,3 +1,11 @@
+
+body{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    background:#36131e;
+}
+
 /* START NAVBAR TOP*/
 .contain-navbar-scroll{
     display: flex;

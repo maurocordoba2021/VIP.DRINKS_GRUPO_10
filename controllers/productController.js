@@ -19,7 +19,7 @@ const productController ={
     }
 },
     novedades: (req, res) =>{
-        res.render("luxury",{productos : luxuryProductos });
+        res.render("luxury",{listLuxury : listLuxury });
     },
     historyProducts:(req, res) =>{
         res.render("history");

@@ -113,7 +113,7 @@ article.caracteristicas{
     padding: 1%;
     display: flex;
     margin: 10px 0;
-    width: 500px;
+    width: 350px;
 }
 .box-search{
     display: flex;
@@ -421,12 +421,14 @@ textarea#questions{
     background: white;
     border-radius: 10px;
     padding: 10px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 section.questions{
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .buttons-questions{
@@ -510,7 +512,7 @@ article.val{
 
 @media(min-width: 768px){
     .article-detalle{
-        margin: 0 auto;
+        margin: 10px auto 0;
     }
     ul.footer-tablet{
         display: flex;
@@ -524,6 +526,7 @@ article.val{
     }
     textarea#questions{
         width: 90%;
+    
     }
   
 
@@ -545,6 +548,12 @@ article.val{
     h3.title-product{
         width: 100%;
     }
+    p.informative-L,
+    .caracteristicas-container,
+    .caracteristicas-container{
+        width: 500px;
+    }
+
 
     section.main-product{
         max-width: 40%;
@@ -584,18 +593,17 @@ article.val{
     .block-3{
         display: flex;
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .block-2{
         display: flex;
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .caracteristicas-container {
         display: flex;
-      
       
     }
     section.medios-de-pago{
@@ -624,5 +632,9 @@ article.val{
     section.valoraciones i.title{
         font-size: 50px;
     }
+    .box,
+article.caracteristicas{
+    width: 500px;
+}
 }
 }

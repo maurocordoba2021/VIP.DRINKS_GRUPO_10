@@ -18,6 +18,7 @@ section.container-footer{
     justify-content: space-between;
     width: 100%;
     text-align: center;
+    flex-wrap: nowrap
 }
 
 footer article{

@@ -58,13 +58,18 @@ main section article{
 
 main section article img {
     width: 100%;
+    opacity: 100%;
+}
+main section article img:hover {
+    width: 100%;
+    opacity: 60%;
 }
 
 .main-article{
     position: relative;
     border-top: solid 1px grey;
     padding: 15px;
-    transition: 2s ease;
+    transition: 2s;
 }
 
 .price{
@@ -108,7 +113,7 @@ main section article i{
     position: absolute;
     right: 5px;
     top: -15px;
-    transition: ease 540ms;
+    transition: 2s;
 }
 
 main section article .main-article:hover i{
@@ -147,7 +152,7 @@ button.buy{
     margin: 8px 0 0;
     border-radius: 5px;
     width: 120px;
-    transition: all 540ms;
+    transition: all 2s;
 }
 
 button.buy:hover{
@@ -182,6 +187,7 @@ button.buy:hover{
         display: flex;
         width: 100%;
         justify-content: center;
+        transition: 2s;
     }
 
     .discount{

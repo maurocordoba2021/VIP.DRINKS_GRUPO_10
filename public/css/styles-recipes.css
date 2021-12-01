@@ -56,7 +56,7 @@ li{
 .título-receta, 
 .foto-receta ,
 .descripcion-receta{
-transition: 1s all ease;
+transition: 1s all cubic-bezier(0.33, 2.6, 1, 1.35);
 }
 
 .título-receta{
@@ -103,7 +103,7 @@ article.receta:hover .foto-receta  {
     position: absolute;
     margin: auto;
     box-sizing: border-box;
-    width: 170%;
+    width: 120%;
 }
 
 .descripcion-receta{
@@ -117,7 +117,7 @@ article.receta:hover .descripcion-receta{
     position:absolute;
     z-index: 30;
     color: whitesmoke;
-    background: #00000099;
+    background: #00000042;
 }
 
 .fondo-humo{

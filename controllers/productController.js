@@ -9,12 +9,22 @@ mercadopago.configure({
     access_token: 'TEST-2074110728450610-112903-13b9da7ab252d6ee2a360d42bb332ca5-176106233'
 });
 
-
+function searchInArray(array, value) {
+    const prod = array.find((producto) => producto.idProducto == value);
+    return prod;
+}
 
 const productController ={
     detalle: (req, res) => {
         if (req.params.idProducto) {
-            let producto = listProducts.find((producto) => producto.idProducto == req.params.idProducto)
+            let producto
+            if (searchInArray(listProducts, req.params.idProducto)) {
+                producto = searchInArray(listProducts, req.params.idProducto);
+            } else if (searchInArray(listLuxury, req.params.idProducto)) {
+                producto = searchInArray(listLuxury, req.params.idProducto);
+            } else {
+                res.redirect('/');
+            }
             let preference = {
                 items: [
                     {

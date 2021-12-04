@@ -26,6 +26,9 @@ app.use('/shop',shopCar)
 app.use('/user',user)
 app.use('/product',product)
 app.use('/',main)
+app.use((req, res, next) => {
+    res.status(404).render("not-found")
+})
 app.listen(3000, () => { console.log("Servidor corriendo en el puerto 3000"); });
 
 

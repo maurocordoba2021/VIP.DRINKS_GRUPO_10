@@ -2,7 +2,7 @@
 const listLuxury=[
     {
         idProducto: "champagne-krug-combo1",
-        nombre: "Colección de Champagnes Krug 25 años",
+        nombre: "Colección de Champagnes Krug",
         caracteristicas:["lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"],
          descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidProductount beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni idProducto. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas idProducto atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
         precio: 960000,

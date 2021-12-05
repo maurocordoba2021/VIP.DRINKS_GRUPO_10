@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/styles-listEdit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de productos</title>
+</head>
+<body>
+    <main>
+    <h2>Sección administración</h2>
+    <%listProducts.forEach(product => {%>
+    <article class="">
+        <div class="box-img">
+            <img src="/images/<%= product.img%>" alt="">
+        </div>
+        <div class="main-product">
+            <h4 class="nameProduct"><%=product.nombre%></h4>
+    
+            <form action="/admin/create/<%= product.idProducto%>">
+            <button type="post">Editar</button>
+        </form>
+        <form action="/admin/create/:id?_method=delete">
+            <button type="post">Eliminar producto</button>
+        </form>
+        </div>
+    </article>
+    <%})%>
+    <%listLuxury.forEach(product => {%>
+        <article>
+            <div class="box-img">
+                <img src="/images/<%= product.img%>" alt="">
+            </div>
+            <div class="main-product">
+                <h4 class="nameProduct"><%=product.nombre%></h4>
+                <form action="/admin/create/<%= product.idProducto%>">
+                <button type="post">Editar</button>
+            </form>
+            <form action="/admin/create/:id?_method=delete">
+                <button type="post">Eliminar producto</button>
+            </form>
+            </div>
+        </article>
+        <%})%>
+    
+
+    </main>
+
+</body>
+</html>

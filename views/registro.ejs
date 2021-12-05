@@ -40,8 +40,19 @@
                 
                 <button type="submit" class="boton-registro">Registrarse</button>
             </form>
-                <p><a href="/users/login">¿Ya tiene una cuenta?</a></p>
-                <p><a href="/users/login">iniciar sesión como administrador</a></p>
+            <div class="box-extra">    
+            <p><a href="/users/login">¿Ya tiene una cuenta?</a></p>
+
+                
+                <div class="admin-password">
+                    <a class="admin-button" href="">iniciar sesión como administrador</a>
+                    <form action="/admin/" method="post">
+                        <label for="password-admin"></label>
+                        <input type="password" name="password-admin" id="password-admin">
+                        <button type="submit">Ingresar</button>
+                    </form>
+                </div>
+            </div>
             </section>
 </main>
         

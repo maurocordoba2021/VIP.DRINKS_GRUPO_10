@@ -90,36 +90,29 @@ form.section-registro{
     background: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
 }
+div.admin-password{
+    text-align: center;
+    background-color: orange;
+    width: 300px;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 1px white;
+    color: white;
+}
 
+input#password-admin{
+    border: none;
+    background-color: tomato;
+}
+.box-extra{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
 /* END FORMULARIO*/
 
-/*START SECCION INTERESES,SE ABRE EN DESKTOP 1440*/
-
- section.intereses{
-     border-top: solid goldenrod 1px;
-     display: flex;
-     justify-content: space-around;
- }
- section.intereses article{
-     max-width: 20%;
-     background: rgba(0, 0, 0, 0.7);
-     border-radius: 20px;
-     padding: 10px;
- }
- section.intereses article img{
-     width: 200px;
- }
- section.intereses h3{
-     width: 100%;
-     color: whitesmoke;
-     font-size: 30px;
- }
-
-
-/*END SECCION DE RECOMENDADOS*/
-section.intereses{
-    display: none;
-}
 
 /* START MEDIA QUERIES */
 

@@ -25,7 +25,7 @@ const fileUpload = multer({storage});
 let validateRegister = [
     check('name').notEmpty().withMessage('Debes agregar tu nombre'),
     check('email').notEmpty().isEmail().withMessage('Debes escribir un e-mail válido'),
-    check('password').notEmpty().isLength({min: 8}).withMessage('Debes elegir una contrañera de al menos 8 caracteres.')
+    check('password').notEmpty().isLength({min: 8}).withMessage('Debes elegir una contrañera de al menos')
 ]
 
 // Rutas
@@ -34,7 +34,7 @@ router.get("/login", usersController.login);
 
 router.get("/registro", usersController.registro);
 
-router.post("/registro", fileUpload.single('imgUser'), validateRegister, usersController.procesarFormulario);
+router.post("/registro", fileUpload.single('imgUser'), usersController.procesarFormulario);
 
 
 

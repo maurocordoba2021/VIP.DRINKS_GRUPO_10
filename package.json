@@ -13,8 +13,10 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "git": "^0.1.5",
     "mercadopago": "^1.5.9",
+    "method-override": "^3.0.0",
     "multer": "^1.4.3",
     "override": "0.0.1",
     "pull": "^2.1.1"

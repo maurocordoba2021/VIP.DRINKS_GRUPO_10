@@ -5,14 +5,18 @@ const usersController ={
     login: (req, res) =>{
         res.render('login');
     },
-    perfil: (req, res) =>{
-        res.render('profile');
-    },
     registro:  (req, res) =>{
         res.render('registro');
     },
-    upload: (req, res) => {
-        res.render('products-upload');
+    procesarFormulario: (req, res, next) =>{
+        let file = req.file
+        let users = req.body  ;
+        if(!file) {
+            const error = new Error("No se encontró imagen")   
+            error.httpStatusCode = 400  
+            return next(error)
     }
+    res.redirect("login")
+    },
 }
 module.exports = usersController;

@@ -4,26 +4,25 @@ const path = require("path");
 
 app.use(express.static('public'))
 
-//app.use(express.urlencoded({extended: false}));
-//app.use(express.json());
-//const methodOverride = require('method-override');
-//app.use(methodOverride('_method'));
-/*app.use((req, res, next) =>{
-    res.status(404).render('not-found')
-})*/
+app.use(express.urlencoded({extended: false}));
+
+app.use(express.json());
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 
 
+ 
 
 /* Modularizado de rutas */
 const shopCar=require('./routes/shop-car')
-const user=require('./routes/User')
+const users=require('./routes/users')
 const product=require('./routes/product')
 const main =require('./routes/main')
 /* Modularizado de rutas */
 
 app.set('view engine', 'ejs');
 app.use('/shop',shopCar)
-app.use('/user',user)
+app.use('/users',users)
 app.use('/product',product)
 app.use('/',main)
 app.use((req, res, next) => {

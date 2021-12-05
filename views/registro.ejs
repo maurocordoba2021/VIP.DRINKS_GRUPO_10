@@ -25,15 +25,23 @@
         
 <main class="form-register">
            <section class="register-form"> <!--ACÁ VA EL CÓDIGO DEL CUERPO DE LA PÁG-->
-            <form method="post" action="/" typ class="section-registro">
+            <form method="POST" action="/users/registro"  class="section-registro" enctype="multipart/form-data">
                 <h4>Formulario de Registro</h4>
+                <label for="email"></label>
                 <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo electronico">
+                <label for="nombres"></label>
                 <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+                <label for="contraseña"></label>
                 <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
                 <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Confirmar contraseña">
+
+                <label for="imgUser"></label>
+                <input type="file" name="imgUser" id="imgUser" >
                 
                 <button type="submit" class="boton-registro">Registrarse</button>
+            </form>
                 <p><a href="/login">¿Ya tiene una cuenta?</a></p>
+                <p><a href="/login">iniciar sesión como administrador</a></p>
             </section>
 </main>
         

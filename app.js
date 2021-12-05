@@ -14,16 +14,19 @@ app.use(methodOverride('_method'));
  
 
 /* Modularizado de rutas */
-const shopCar=require('./routes/shop-car')
-const users=require('./routes/users')
-const product=require('./routes/product')
-const main =require('./routes/main')
+const shopCar=require('./routes/shop-car');
+const users=require('./routes/users');
+const product=require('./routes/product');
+const admin = require('./routes/admin');
+const main =require('./routes/main');
 /* Modularizado de rutas */
 
 app.set('view engine', 'ejs');
 app.use('/shop',shopCar)
 app.use('/users',users)
 app.use('/product',product)
+app.use('/admin',admin)
+
 app.use('/',main)
 app.use((req, res, next) => {
     res.status(404).render("not-found")

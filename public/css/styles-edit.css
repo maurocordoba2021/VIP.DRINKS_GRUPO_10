@@ -1,0 +1,43 @@
+/* START UNIVERSAL*/
+*{  
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+body{
+    background: lightgrey;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.contenedorDeImagen{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.product{
+    border: solid black 1px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.featured{
+    display: flex;
+}
+
+.button{
+   width: 100%;
+   background: white;
+   font-size: 14px;
+}
+.price{
+    justify-content: center;
+    display: flex;
+}

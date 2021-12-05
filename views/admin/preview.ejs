@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>OREVIEW</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles-footer.css">
+    <link rel="stylesheet" href="/css/styles-detalle.css">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/favicon.ico" type="ico">
+
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+        <main>
+
+            <article class="article-detalle">
+                <h3 class="title-product">
+                    <%= producto.nombre %>
+                </h3>
+                <div class="container-images">
+                    <img src="/images/<%=producto.img%>" alt="<%=producto.img%>">
+
+                </div>
+                <section class="main-product">
+                    <div class="selector">
+                        <p class="caracteristica">Color:</p>
+                        <select name="color" id="color">
+                            <option name="color" value="negro">Negro</option>
+                            <option name="color" value="blanco">Blanco</option>
+                        </select>
+                    </div>
+                    <div class="selector">
+                        <p class="caracteristica">Tamaño:</p>
+                        <select name="tamaño" id="tamaño">
+                            <option value="525">525ml</option>
+                            <option value="710">710ml</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <h4 class="price">
+                            <%= "$" + producto.precio%>
+                        </h4>
+                        <p class="off">10% OFF</p>
+                        <p class="payment-details">en 12 x <%= "$" + producto.precio/12 %>
+                        </p>
+                        <a href="/metodos-de-pago">Ver todos los métodos de pago</a>
+                    </div>
+                    <div class="box">
+                        <div class="box-item">
+                            <i class="fas fa-truck"></i>
+                            <p class="title-green">Envío gratis</p>
+                        </div>
+                        <p class="informative">Conocé los tiempos y las formas de envío</p>
+                        <a href="/">Calcular cuándo llega</a>
+                    </div>
+                    <div class="box">
+                        <div class="box-item">
+                            <i class="fas fa-certificate"></i>
+                            <p class="title-green">Calidad certificada</p>
+                        </div>
+                        <p class="informative">Conocé más de la marca y el producto.</p>
+                        <a href="/">Conocer más</a>
+                    </div>
+                    <h4 class="title">Stock disponible: <%=producto.stock%>
+                    </h4>
+                    <div class="selector">
+                        <p class="caracteristica">Cantidad:</p>
+                        <select name="stock" id="stock">
+                            <% for(var i=0; i < producto.stock; i++) { %>
+                                <option name="stock" value="i">
+                                    <%= i+1 %>
+                                </option>
+                                <% } %>
+                        </select>
+
+                    </div>
+                    <div>
+                     <div class="butns">
+                        <a href="<%= post.init_point %>" target="_blank">
+                            <div class="buy">Comprar ahora</div>
+                        </a>
+                        <form action="/shop" method="post">
+                            <button class="add" type="submit"> Agregar al carrito</button>
+                        </form>
+                    </div>
+                    <div class="box-item">
+                        <i class="fas fa-user-shield"></i>
+                        <a class="compra-protegida" href="#">Compra Protegida</a>
+                    </div>
+
+                    <div class="add-favorite">
+                        <input type="checkbox" name="favs" id="favs" value="favs">
+                        <label for="favs"><i class="far fa-heart"></i>Agregar a favoritos</label>
+                    </div>
+                    <div class="share">
+                        <input type="checkbox" name="share" id="share" value="share">
+                        <label for="share"><i class="fas fa-share-alt"></i>Compartir</label>
+                    </div>
+                </section>
+            </article>
+
+            <section class="caracteristicas">
+                <div class="block-2">
+                    <div class="caracteristicas-container">
+                        <h4>Características del producto</h4>
+
+                        <div class="contain-caracteristicas">
+                            <article class="caracteristicas simple">
+                                <ul class="caracteristica-ul">
+                                    <% producto.caracteristicas.forEach(caracteristica=> {%>
+
+
+                                        <li>
+                                            <%= caracteristica %>
+                                        </li>
+
+                                        <%})%>
+                                </ul>
+                            </article>
+
+                            <article class="caracteristicas icons">
+                                <div class="icon-tabla">
+                                    <i class="fas fa-candy-cane"></i>
+                                    <h5>Dulce</h5>
+                                </div>
+                                <div class="icon-tabla">
+                                    <i class="fas fa-fire-alt"></i>
+                                    <h5>Fuerte</h5>
+                                </div>
+                                <div class="icon-tabla">
+                                    <i class="fas fa-apple-alt"></i>
+                                    <h5>Frutal</h5>
+                                </div>
+                                <div class="icon-tabla">
+                                    <i class="fas fa-seedling"></i>
+                                    <h5>Sustentable</h5>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="box-link desktop">
+                            <a href="/">Ver más características</a>
+                        </div>
+                    </div>
+                    <section class="information-seller">
+                        <h4>Información sobre el vendedor</h4>
+                        <div class="box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p class="subtitle">Ubicación</p>
+                            <p class="informative">Caballito, Capital Federal</p>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-award"></i>
+                            <p class="title-green">Líder en el mercado</p>
+                            <p class="informative">¡Uno de los mejores vendedores!</p>
+                        </div>
+
+                        <ul class="barra-reput">
+                            <li class="barra-color pink"></li>
+                            <li class="barra-color salmon"></li>
+                            <li class="barra-color yellow"></li>
+                            <li class="barra-color lime"></li>
+                            <li class="barra-color green"></li>
+                        </ul>
+
+                        <div class="main-reput">
+                            <div class="box-reput left">
+                                <h6>3333</h6>
+                                <p class="informative">Ventas</p>
+                            </div>
+                            <div class="box-reput">
+                                <h6><i class="fas fa-comments-dollar"></i></h6>
+                                <p class="informative">Buena atención</p>
+                            </div>
+                            <div class="box-reput">
+                                <h6><i class="fas fa-user-clock"></i></h6>
+                                <p class="informative">Envíos a tiempo</p>
+                            </div>
+                        </div>
+                        <div class="box-link">
+                            <a href="/">Ver más datos de marca x</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="block-3">
+                    <article class="caracteristicas text">
+                        <h4>Todas sus características</h4>
+                        <p class="informative-L">
+                            <%= producto.descripcionLarga %>
+                        </p>
+                    </article>
+                    <section class="medios-de-pago">
+                        <h4>Medios de pago</h4>
+                        <h5>Descuentos con las siguientes criptos</h5>
+                        <div class="contain-logos-cripto">
+                            <img src="/images/logos-criptos.png" alt="logos-cripto">
+                        </div>
+                        <div class="box-link">
+                            <a href="#">Conocé otros medios de pago</a>
+                        </div>
+                    </section>
+                </div>
+                <section class="questions">
+                    <div class="box-search">
+                    <h4>Preguntas y respuestas</h4>
+                    <p class="informative">Buscá lo que querés saber</p>
+                    <div class="barra-search">
+                        <form class="search" action="/" method="post">
+                            <input type="text">
+                            <i class="fas fa-search"></i>
+                        </form>
+                    </div>
+                    </div>
+                    <h4 class="text-gray">Haz tu pregunta al vendedor</h4>
+                    <textarea name="questions" id="questions" cols="30" rows="10"
+                        placeholder="Escriba una pregunta al vendedor"></textarea>
+                    <div class="buttons-questions">
+                        <button class="button-delete" type="reset">Borrar</button>
+                        <button class="button-send" type="submit">Enviar</button>
+                    </div>
+                </section>
+                <section class="valoraciones">
+                    <h4>Opiniones sobre este producto</h4>
+                    <h2 class="valoracion-num">4.0</h2>
+                    <div class="stars-title">
+                        <i class="title fas fa-star"></i>
+                        <i class="title fas fa-star"></i>
+                        <i class="title fas fa-star"></i>
+                        <i class="title fas fa-star"></i>
+                        <i class="title far fa-star"></i>
+                    </div>
+                    <div class="main-valoraciones">
+                        <p class="subtitle">Todas</p>
+                        <p class="subtitle">Buenas</p>
+                        <p class="subtitle">Malas</p>
+                    </div>
+                    <article class="val">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="title-val">Buena</p>
+                        <p class="text-valoracion">Lorem, ipsum dolor suasi qui! Dolore, quibusdam repellat excepturi
+                            itaque vel, at quisquam minus veniam atque fuga sequi libero expedita dicta.
+                            Iure perferendis delectus nostrum omnis sequi reprehenderit autem est cupiditate debitis,
+                            error, nemo impedit provident, voluptas at. Ea asperiores placeat ipsam voluptas nesciunt
+                            quos, officiis perspiciatis. Cumque facilis dolor in!</p>
+                    </article>
+                    <article class="val">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p class="title-val">Muy buena</p>
+                        <p class="text-valoracion">Lorem, ipsum dolor s quasi qui! Dolore, quibusdam repellat excepturi
+                            itaque vel, at quisquam minus veniam atque fuga sequi libero expedita dicta.
+                            Iure perferendis delectus nostrum omnis sequi reprehenderit autem est cupiditate debitis,
+                            error, nemo impedit provident, voluptas at. Ea asperiores placeat ipsam voluptas nesciunt
+                            quos, officiis perspiciatis. Cumque facilis dolor in!</p>
+                    </article>
+                    <article class="val">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="title-val">Muy buena</p>
+                        <p class="text-valoracion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                            vitae vero consequatur quasi qui! Dolore, quibusdam repellat excepturi itaque vel, at
+                            quisquam minus veniam atque fuga sequi libero expedita dicta.
+                            Iure perferendis delectus nostrum oerror, nemo impedit provident, voluptres placeat ipsam
+                            voluptas nesciunt quos, officiis perspiciatis. Cumque facilis dolor in!</p>
+                    </article>
+                    <div class="box-link">
+                        <a href="/">Ver todas las valoraciones</a>
+                    </div>
+                </section>
+        </main>
+        <%- include('./partials/footer') %>
+</body>
+
+</html>

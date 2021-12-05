@@ -13,6 +13,7 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-validator": "^6.13.0",
     "fs": "0.0.1-security",
     "git": "^0.1.5",
     "mercadopago": "^1.5.9",

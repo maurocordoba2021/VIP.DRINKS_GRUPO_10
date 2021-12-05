@@ -9,8 +9,20 @@ router.get("/history", productController.historyProducts);
 
 //router.get("/detalle", productController.detalle);
 
+// router.get('/', productController.index);
+
+// router.get('/create', productController.list);
+
+// router.post('/', productController.create);
+
+
+
 router.get("/detalle/:idProducto?", productController.detalle)
 
 router.get("/luxury-offers", productController.novedades);
 
+
+
+
 module.exports=router;
+

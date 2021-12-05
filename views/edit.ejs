@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+   
+<head>
+    <title>Edit</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/styles-edit.css">
+</head>
+<body>
+
+<main>
+    <div class="products">
+    <h3>Editar / Eliminar productos</h3>
+    <section class="featured">
+
+        <% listProducts.forEach(product => { %>
+            <article class="product">
+                <div class= "contenedorDeImagen">
+                    <img src="/images/<%= product.img %>" alt="<%= product.nombre %>">
+                </div>
+                <div class="main-article">
+                    <p class="price">$<%= product.precio %></p>
+                    <form action="/create/<%= product.idProducto %>" method="post">
+                    <button class="button" type="submit">editar</button>
+                    </form>
+                    <form action="/delete/<%= product.idProducto %>" method="post"></form>
+                    <button class="button" type="delete">eliminar</button>
+                    </form>
+                </div> 
+            </article>
+            <% }) %>
+   
+</section>
+</div>
+</main>
+
+</body>
+
+</html>
+
+

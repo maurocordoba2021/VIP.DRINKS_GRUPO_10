@@ -12,7 +12,10 @@ const adminController = {
     listEdit:  (req, res) => {
         res.render("listEdit", {listProducts});
     },
-    editProduct:()=>{},
+    editProduct:(req, res)=>{
+        let id = req.params.id;
+        res.render('create', {})
+    },
 }
 
 module.exports = adminController;

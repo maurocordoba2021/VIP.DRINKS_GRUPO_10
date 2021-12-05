@@ -12,11 +12,11 @@ const usersController ={
         let file = req.file
         let users = req.body  ;
         if(!file) {
-            const error = " UPS! No se encontró imagen"   
+            const error = new Error("No se encontró imagen")   
             error.httpStatusCode = 400  
-            return next(error)  
+            return next(error)
     }
-    res.redirect("login")
+    res.redirect('/');
     },
 }
 module.exports = usersController;

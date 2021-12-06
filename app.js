@@ -11,14 +11,13 @@ const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
 
- 
-
 /* Modularizado de rutas */
 const shopCar=require('./routes/shop-car');
 const users=require('./routes/users');
 const product=require('./routes/product');
 const admin = require('./routes/admin');
 const main =require('./routes/main');
+const { format } = require("path");
 /* Modularizado de rutas */
 
 app.set('view engine', 'ejs');

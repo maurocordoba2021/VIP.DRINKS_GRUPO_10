@@ -13,12 +13,22 @@ const adminController = {
         res.render("listEdit", {listProducts, listLuxury});
     },
     editProduct:(req, res)=>{
-        let id = req.params.id;
-        res.render('create', {})
-    },
+            if (req.params.id) {
+                let product = ''
+                if (searchInArray(listProducts, req.params.id)) {
+                    product = searchInArray(listProducts, req.params.id);
+                } else if (searchInArray(listLuxury, req.params.id)) {
+                    product = searchInArray(listLuxury, req.params.id);
+                } else {
+                    res.redirect('/admin/create');
+                }
+        res.render('editProduct', {product})
+    }
+},
     preview: (req, res)=>{
         res.render("preview")
-    },
+    }
 }
+
 
 module.exports = adminController;

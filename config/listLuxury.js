@@ -1,16 +1,16 @@
 
 const listLuxury=[
     {
-        idProducto: "champagne-krug-combo1",
+        id: "champagne-krug-combo1",
         nombre: "Colección de Champagnes Krug",
         caracteristicas:["lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"],
-         descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidProductount beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni idProducto. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas idProducto atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+         descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidount beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni ido. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas idProducto atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
         precio: 960000,
         img:"champagne-krug-combo1.jpg",
         stock: 10,
     },
      {
-        idProducto: "Whisky-combo-juegodetronos1",
+        id: "Whisky-combo-juegodetronos1",
         nombre: "Colección de Whisky GOT 15 años",
         caracteristicas:["lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"],
         descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidProductount beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni idProducto. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas idProducto atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
@@ -19,7 +19,8 @@ const listLuxury=[
         stock: 10,
     },
     {
-        idProducto: "vodka-trump-combo1",
+        
+        id: "vodka-trump-combo1",
         nombre: "Combo de sabores Vodka Trump",
         caracteristicas:["lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"],
         descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidProductount beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni idProducto. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas idProducto atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
@@ -28,7 +29,7 @@ const listLuxury=[
         stock: 10,
     },
     {
-        idProducto: "tequilaleycombo1",
+        id: "tequilaleycombo1",
         nombre: "Combo de Tequila Ley 924",
         caracteristicas:["lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"],
         descripcionLarga:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidProductount beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni idProducto. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas idProducto atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",

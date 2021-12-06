@@ -8,7 +8,7 @@ const adminController = require('../controllers/adminController');
 router.get("/", adminController.index);
 router.post('/', adminController.index)
 router.get("/create", adminController.create);
-router.post('/create/:id' , adminController.editProduct)
+router.post('/editProduct/:id' , adminController.editProduct)
 router.get('/preview', adminController.preview)
 router.get("/listEdit", adminController.listEdit);
 router.post("/listEdit", adminController.listEdit);

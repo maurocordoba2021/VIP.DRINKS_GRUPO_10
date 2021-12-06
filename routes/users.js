@@ -32,6 +32,8 @@ let validateRegister = [
 
 router.get("/login", usersController.login);
 
+router.get("/users/profile", usersController.profile)
+
 router.get("/registro", usersController.registro);
 
 router.post("/registro", fileUpload.single('imgUser'), usersController.procesarFormulario);

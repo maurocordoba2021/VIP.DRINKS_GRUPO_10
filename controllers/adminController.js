@@ -16,6 +16,9 @@ const adminController = {
         let id = req.params.id;
         res.render('create', {})
     },
+    preview: (req, res)=>{
+        res.render("preview")
+    },
 }
 
 module.exports = adminController;

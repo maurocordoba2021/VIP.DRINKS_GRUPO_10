@@ -81,6 +81,7 @@ h3{
 
 input, 
 select#category,
+select#luxury,
 textarea{
     width: 100%;
     border: none;

@@ -1,0 +1,279 @@
+[
+    {
+        "id": 1,
+        "title": "Vodka Trump",
+        "price": 740000,
+        "discount": 0.15,
+        "shortDescription": [
+            "Quíntuple destilación en Holanda",
+            "Embotellada en un diseño único",
+            "Hermoso y lujoso",
+            "Etiquetas y decoración exterior Milton Glaser"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "vodka-Trump.png",
+        "stock": 10,
+        "shippingCost": "$3211.31",
+        "luxury": false,
+        "category": "Vodka"
+    },
+    {
+        "id": 2,
+        "title": "Champagne Krug de Cuveé",
+        "price": 750000,
+        "discount": 0.15,
+        "shortDescription": [
+            "Elaboración artesanal y sabor único",
+            "Alrededor de 120 vinos diferentes",
+            "Productos especialmente seleccioandos",
+            "15 años de edad"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "champagne-Krug.png",
+        "stock": 30,
+        "shippingCost": "$3211.31",
+        "luxury": false,
+        "category": "Champagne"
+    },
+    {
+        "id": 3,
+        "title": "Chivas Regal 25",
+        "price": 79991,
+        "discount": 0.15,
+        "shortDescription": [
+            "Primer whisky de lujo en el mundo",
+            "Elaborado a partir de una seductora mezcla frutal",
+            "Una opción habitual para la alta sociedad",
+            "En Nueva York desde 1909",
+            "Legendario whisky",
+            "Obra maestra",
+            "Una mezcla única"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "chivas.jpg",
+        "stock": 5,
+        "shippingCost": "$3211.31",
+        "luxury": false,
+        "category": "Whisky"
+    },
+    {
+        "id": 4,
+        "title": "Tequila 925 Ley Diamante",
+        "price": 3500000,
+        "discount": 0.15,
+        "shortDescription": [
+            "Ley Diamante",
+            "Una pieza única",
+            "La botella de tequila más cara del mundo",
+            "La joya más importante fabricada en México"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "tequila-Ley-925.png",
+        "stock": 20,
+        "shippingCost": "$3211.31",
+        "luxury": false,
+        "category": "Tequila"
+    },
+    {
+        "id": 5,
+        "title": "Whisky Highland Park",
+        "price": 39663,
+        "discount": 0.15,
+        "shortDescription": [
+            "12 años",
+            "Color oro pálido",
+            "Matiz anaranjado",
+            "Aromas de fruta blanca",
+            "(pera, manzana, melón)",
+            "Notas de miel con especias",
+            "Vainilla y Canela",
+            "Toques florales",
+            "Matices de yodo y de ahumado suave"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "whisky-Highland-Park.png",
+        "stock": 20,
+        "shippingCost": "$3211.31",
+        "luxury": false,
+        "category": "Whisky"
+    },
+    {
+        "id": 6,
+        "title": "Whisky Louis XIII",
+        "price": 766444,
+        "discount": 0.15,
+        "shortDescription": [
+            "Fino y largo bouquet",
+            "Aroma a flores y sándalo",
+            "Sabor a frutos como higos y dátiles",
+            "mezclados con nuez moscada y jengibre"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "whisky-Louis-XIII.png",
+        "stock": 20,
+        "shippingCost": "$3211.31",
+        "luxury": false,
+        "category": "Whisky"
+    },
+    {
+        "id": 7,
+        "title": "Sake Jumai",
+        "price": 134918,
+        "discount": 0.15,
+        "shortDescription": [
+            "Sake de arroz puro",
+            "Aroma fresco y afrutado",
+            "Arroz pulido y filtrado de forma natural"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "sake-Jumai.png",
+        "stock": 20,
+        "shippingCost": "$3211.31",
+        "luxury": false,
+        "category": "Sake"
+    },
+    {
+        "id": 8,
+        "title": "Havana Club Máximo",
+        "price": 225133,
+        "discount": 0.15,
+        "shortDescription": [
+            "Extra Añejo",
+            "Brillo de color ámbar",
+            "potenciado por un añejado adicional",
+            "Experiencia extremadamente rica",
+            "intensa y persistente",
+            "Aroma delicado",
+            "Roble",
+            "Notas ahumadas",
+            "Pera fresca, coco y fruta desecada",
+            "Seco y dulce"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "ron-Habana-Club.jpg",
+        "stock": 20,
+        "shippingCost": null,
+        "luxury": false,
+        "category": "Ron"
+    },
+    {
+        "id": 9,
+        "title": "Colección de Champagnes Krug",
+        "price": 960000,
+        "discount": 0.15,
+        "shortDescription": [
+            "lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "champagne-krug-combo1.jpg",
+        "stock": 10,
+        "shippingCost": "$3211.31",
+        "luxury": true,
+        "category": "Champagne"
+    },
+    {
+        "id": 10,
+        "title": "Colección de Whisky GOT 15 años",
+        "price": 1250000,
+        "discount": 0.15,
+        "shortDescription": [
+            "lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "Whisky-combo-juegodetronos1.jpg",
+        "stock": 10,
+        "shippingCost": "$3211.31",
+        "luxury": true,
+        "category": "Whisky"
+    },
+    {
+        "id": 11,
+        "title": "Combo de sabores Vodka Trump",
+        "price": 650000,
+        "discount": 0.15,
+        "shortDescription": [
+            "lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "vodka-trump-combo1.jpg",
+        "stock": 10,
+        "shippingCost": "$3211.31",
+        "luxury": true,
+        "category": "Vodka"
+    },
+    {
+        "id": 12,
+        "title": "Combo de Tequila Ley 924",
+        "price": 652000,
+        "discount": 0.15,
+        "shortDescription": [
+            "lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "tequilaleycombo1.jpg",
+        "stock": 10,
+        "shippingCost": "$3211.31",
+        "luxury": true,
+        "category": "Tequila"
+    },
+    {
+        "id": 13,
+        "discount": 0.15,
+        "title": "Colección de Vinos Rutini 15 años",
+        "price": 350000,
+        "shortDescription": [
+            "lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "rutini-coleccion-combo1.jpg",
+        "stock": 10,
+        "shippingCost": "$3211.31",
+        "luxury": true,
+        "category": "Vino"
+    },
+    {
+        "id": 14,
+        "discount": 0.15,
+        "title": "Dos Cognac Remy",
+        "price": 1250000,
+        "shortDescription": [
+            "lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "cognac-remy-combo1.jpg",
+        "stock": 10,
+        "shippingCost": "$3211.31",
+        "luxury": true,
+        "category": "Cognac"
+    },
+    {
+        "id": 15,
+        "discount": 0.15,
+        "title": "Combo 3 Whisky Chivas",
+        "price": 250000,
+        "shortDescription": [
+            "lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "chivas-combo1.jpg",
+        "stock": 10,
+        "shippingCost": "$3211.31",
+        "luxury": true,
+        "category": "Whisky"
+    },
+    {
+        "id": 16,
+        "title": "Gin Pack JCB",
+        "price": 1550000,
+        "discount": 0.15,
+        "shortDescription": [
+            "lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "img": "gin-jcb-combo1.jpg",
+        "stock": 10,
+        "shippingCost": "$3211.31",
+        "luxury": true,
+        "category": "Gin"
+    }
+]

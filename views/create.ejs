@@ -1,115 +1,131 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
 <head>
 
     <title>Carga de productos</title>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/styles-header.css">
-        <link rel="stylesheet" href="/css/styles-footer.css">
-        <link rel="stylesheet" href="/css/styles-upload.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="/images/favicon.ico" type="ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles-header.css">
+    <link rel="stylesheet" href="/css/styles-footer.css">
+    <link rel="stylesheet" href="/css/styles-upload.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/favicon.ico" type="ico">
 </head>
 
 <body>
     <%- include('./partials/header') %>
 
-<main>
-    <form action="/" method="post" enctype="multipart/form-data">
-        <h1>Carga un nuevo producto</h1>
-<section class="images">
-    <div class="contain-upload-image"> 
-        <input class="upload-image" id="file" name="upload-image" type="file" multiple>
-        <label class="icon-upload" for="file"> <h3><i class="fas fa-plus"></i></h3></label>
-    </div>
-    <div class="preview" id="preview"></div>
+        <main>
+            <form action="/admin/listEdit" method="post" enctype="multipart/form-data">
+                <h1>Carga un nuevo producto</h1>
+                <section class="images">
+                    <div class="contain-upload-image">
+                        <input class="upload-image" id="file" name="upload-image" type="file" multiple>
+                        <label class="icon-upload" for="file">
+                            <h3><i class="fas fa-plus"></i></h3>
+                        </label>
+                    </div>
+                    <div class="preview" id="preview"></div>
 
 
-    <script>
-        document.getElementById('file').onchange = function(i){
-         for (let i = 0; i < this.files.length; i++) {
-             let reader = new FileReader();
-             reader.onload = function(e){
-                 let img = document.createElement('img');
-                 img.classList.add('image-upload');
-                 img.src = e.target.result;
-                 document.getElementById('preview').appendChild(img);
-             }
-             reader.readAsDataURL(this.files[i]);
-         }
-        }
-    </script>
+                    <script>
+                        document.getElementById('file').onchange = function (i) {
+                            for (let i = 0; i < this.files.length; i++) {
+                                let reader = new FileReader();
+                                reader.onload = function (e) {
+                                    let img = document.createElement('img');
+                                    img.classList.add('image-upload');
+                                    img.src = e.target.result;
+                                    document.getElementById('preview').appendChild(img);
+                                }
+                                reader.readAsDataURL(this.files[i]);
+                            }
+                        }
+                    </script>
 
 
- 
-</section>
-<section>
-    <div class="box">
-        <h3>Nombre del artículo</h3>
-    <label for="name-product"></label>
-    <input type="text" name="name-product" id="name-product">
-    </div>
-    
-    <div class="box">
-        <h3>Marca</h3>
-    <label for="brand"></label>
-    <input type="text" name="brand" id="brand">
-    </div>
-    
-    <div class="box">
-        <h3>Precio $</h3>
-    <label for="price"></label>
-    <input type="text" name="price" id="price">
-    </div>
 
-    <div class="box">
-        <h3>Categoría</h3>
-        <select name="category" id="category">
-            <option name="category" value="Whisky">Whisky</option>
-            <option name="category" value="Vodka">Vodka</option>
-            <option name="category" value="Champagne">Champagne</option>
-            <option name="category" value="Tequila">Tequila</option>
-            <option name="category" value="Ron">Ron</option>
-            <option name="category" value="Sake">Sake</option>
-        </select>
-    </div>
+                </section>
+                <section>
+                    <div class="box">
+                        <h3>Nombre del artículo</h3>
+                        <label for="title"></label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div class="box">
+                        <h3>Precio $</h3>
+                        <label for="price"></label>
+                        <input type="number" name="price" id="price">
+                    </div>
+                    <div class="box">
+                        <h3>Descuento %</h3>
+                        <label for="discount"></label>
+                        <input type="number" name="discount" id="discount">
+                    </div>
+                    <div class="box">
+                        <h3>Descripción Corta</h3>
+                        <label for="shortDescription"></label>
+                        <textarea name="shortDescription" id="shortDescription" cols="10" rows="4"></textarea>
+                    </div>
+                    <div class="box">
+                        <h3>Descripción Larga</h3>
+                        <label for="longDescription"></label>
+                        <textarea name="longDescription" id="longDescription" cols="20" rows="8"></textarea>
+                    </div>
+                    <div class="box">
+                        <h3>Stock</h3>
+                        <label for="stock"></label>
+                        <input type="number" name="stock" id="stock">
+                    </div>
+                    <div class="box">
+                        <h3>Costo de envío $</h3>
+                        <label for="shippingCost"></label>
+                        <input type="number" name="shippingCost" id="shippingCost">
+                    </div>
+                    <div class="box">
+                        <h3>¿Es un producto Luxury?</h3>
+                        <select name="luxury" id="luxury">
+                            <option name="Luxury" value="true">Si</option>
+                            <option name="Luxury" value="false">No</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <h3>Categoría</h3>
+                        <select name="category" id="category">
+                            <option name="category" value="Whisky">Whisky</option>
+                            <option name="category" value="Vodka">Vodka</option>
+                            <option name="category" value="Champagne">Champagne</option>
+                            <option name="category" value="Tequila">Tequila</option>
+                            <option name="category" value="Ron">Ron</option>
+                            <option name="category" value="Sake">Sake</option>
+                        </select>
+                    </div>
 
-    <div class="box">
-        <h3>Origen</h3>
-    <label for="location"></label>
-    <input type="text" name="location" id="location">
-    </div>
 
-    <div class="box">
-        <h3>Descripción</h3>
-    <label for="description"></label>
-    <textarea name="description" id="description" cols="30" rows="10"></textarea>
-    </div>
-    
-    <div class="contain-buttons">
-    <button type="reset" class="cancel">Cancelar</button>
-    <button type="submit" class="upload">Publicar</button>
-    <a href="/products/preview"></a>
-    </div>
+                    <div class="contain-buttons">
+                        <button type="reset" class="cancel">Cancelar</button>
+                        <button type="submit" class="upload">Publicar</button>
+                    </div>
 
-</section>
+                </section>
 
-<section class=""> 
-    <p>Los artículos tienen que estar certificados validando su autenticidad.</p>
-    <p>Los artículos como animales, drogas, armas, falsificaciones y otros que infringen derechos de propiedad intelectual no estan permitidos.</p>
-</section>
+                <section class="">
+                    <p>Los artículos tienen que estar certificados validando su autenticidad.</p>
+                    <p>Los artículos como animales, drogas, armas, falsificaciones y otros que infringen derechos de
+                        propiedad intelectual no estan permitidos.</p>
+                </section>
 
-</form>
+            </form>
 
-</main>
+        </main>
 
-<%- include('./partials/footer') %>
+        <%- include('./partials/footer') %>
 
 </body>
+
 </html>

@@ -9,7 +9,9 @@ router.get("/", adminController.index);
 router.post('/', adminController.index)
 router.get("/create", adminController.create);
 router.post('/create/:id' , adminController.editProduct)
+router.get('/preview', adminController.preview)
 router.get("/listEdit", adminController.listEdit);
+router.post("/listEdit", adminController.listEdit);
 
 
 module.exports=router;

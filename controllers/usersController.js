@@ -25,5 +25,8 @@ const usersController ={
 
     res.redirect('/');
     },
+    profile: (req, res)=>{
+        res.render('profile');
+    }
 }
 module.exports = usersController;

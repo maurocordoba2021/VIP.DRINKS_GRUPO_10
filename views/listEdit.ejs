@@ -19,9 +19,9 @@
             <img src="/images/<%= product.img%>" alt="">
         </div>
         <div class="main-product">
-            <h4 class="nameProduct"><%=product.nombre%></h4>
+            <h4 class="nameProduct"><%=product.title%></h4>
     
-            <form action="/admin/create/<%= product.idProducto%>">
+            <form action="/admin/create/<%= product.id%>">
             <button type="post">Editar</button>
         </form>
         <form action="/admin/create/:id?_method=delete">
@@ -37,8 +37,8 @@
             </div>
             <div class="main-product">
                 <h4 class="nameProduct"><%=product.nombre%></h4>
-                <form action="/admin/create/<%= product.idProducto%>">
-                <button type="post">Editar</button>
+                <form action="/admin/editProduct/<%= product.id%>" method="get">
+                <button type="button">Editar</button>
             </form>
             <form action="/admin/create/:id?_method=delete">
                 <button type="post">Eliminar producto</button>

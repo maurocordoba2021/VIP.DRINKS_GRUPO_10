@@ -10,26 +10,26 @@ mercadopago.configure({
 });
 
 function searchInArray(array, value) {
-    const prod = array.find((producto) => producto.idProducto == value);
+    const prod = array.find((product) => product.id == value);
     return prod;
 }
 
 const productController ={
     detalle: (req, res) => {
-        if (req.params.idProducto) {
-            let producto
-            if (searchInArray(listProducts, req.params.idProducto)) {
-                producto = searchInArray(listProducts, req.params.idProducto);
-            } else if (searchInArray(listLuxury, req.params.idProducto)) {
-                producto = searchInArray(listLuxury, req.params.idProducto);
+        if (req.params.id) {
+            let product
+            if (searchInArray(listProducts, req.params.id)) {
+                product = searchInArray(listProducts, req.params.id);
+            } else if (searchInArray(listLuxury, req.params.id)) {
+                product = searchInArray(listLuxury, req.params.id);
             } else {
                 res.redirect('/');
             }
             let preference = {
                 items: [
                     {
-                        title: producto.nombre,
-                        unit_price: producto.precio,
+                        title: product.title,
+                        unit_price: product.price,
                         quantity: 1,
                     }
                 ]
@@ -45,13 +45,13 @@ const productController ={
                             id: response.body.id,
                             init_point: response.body.init_point,
                         },
-                        producto: producto,
+                        product: product,
                         listProducts: listProducts
                     });
                 }).catch(function (error) {
                     console.log(error);
                 });
-        }else if (req.params.idProducto){
+        }else if (req.params.id){
             let combo = listLuxury.find((combo) => combo.idCombo == req.params.idCombo)
             res.render('detalle', {listLuxury: listLuxury})
         } else {
@@ -60,9 +60,6 @@ const productController ={
     },
     novedades: (req, res) =>{
         res.render("luxury",{listLuxury : listLuxury });
-    },
-    historyProducts:(req, res) =>{
-        res.render("history");
     }
 }
 

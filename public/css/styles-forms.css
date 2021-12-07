@@ -91,13 +91,17 @@ form.section-registro{
     border-radius: 20px;
 }
 div.admin-password{
+    margin: 0 auto;
     text-align: center;
-    background-color: orange;
+    background: rgba(0, 0, 0, 0.7);
     width: 300px;
     border-radius: 5px;
     padding: 5px;
-    border: solid 1px white;
     color: white;
+    font-size: 15px;
+}
+h6 .admin-button{
+    margin-bottom: 10px auto;
 }
 
 input#password-admin{
@@ -126,4 +130,11 @@ input#password-admin{
 }
 
 @media(min-width: 1024px){
+ .section-login,
+.section-registro{
+    margin: 10px auto;
+}
+main.login-form{
+    margin: 0 auto;
+}
 }

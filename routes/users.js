@@ -4,8 +4,8 @@ const multer = require('multer');
 const path = require("path");
 const usersController = require('../controllers/usersController')
 const { check } = require('express-validator');
-// configuración de guardado de archivos
 
+// configuración de guardado de archivos
 let storage = multer.diskStorage({
     destination: (req, file, callback)=>{
     let fileDestination = path.join(__dirname, '../public/images/imgUsers')
@@ -36,7 +36,7 @@ router.get("/users/profile", usersController.profile)
 
 router.get("/registro", usersController.registro);
 
-router.post("/registro", fileUpload.single('imgUser'), usersController.procesarFormulario);
+router.post("/registro", fileUpload.single('imgUser'), usersController.processForm);
 
 
 

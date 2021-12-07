@@ -11,7 +11,7 @@ const usersController ={
     registro:  (req, res) =>{
         res.render('registro');
     },
-    procesarFormulario: (req, res, next) =>{
+    processForm: (req, res, next) =>{
         let file = req.file
         let user = req.body  ;
         if(!file) {
@@ -20,9 +20,6 @@ const usersController ={
             return next(error)
     }
      let nuevaLista = listUser.push(user);
-     
-
-
     res.redirect('/');
     },
     profile: (req, res)=>{

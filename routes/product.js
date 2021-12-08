@@ -15,7 +15,7 @@ const productController = require('../controllers/productController')
 
 
 
-router.get("/detalle/:idProducto?", productController.detalle)
+router.get("/detalle/:id", productController.detalle)
 
 router.get("/luxury-offers", productController.novedades);
 

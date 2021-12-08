@@ -28,15 +28,15 @@
         <% homeProducts.forEach(product => { %>
             <article class="product">
                 <a href="/product/detalle/<%= product.id %>">
-                    <img src="/images/imgProducts/<%= product.img %>" alt="<%= product.nombre %>">
+                    <img src="/images/imgProducts/<%= product.img %>" alt="<%= product.title %>">
                 </a>
                 <div class="main-article">
                     <i class="fas fa-plane"></i>
                     <p class="price">$<%= product.price %></p>
                     <p class="shipping">Envío Global Gratuito</p> 
                     <h4 class="description"><%= product.title %></h4>
-                    <form action="/detalle/<%= product.idProducto %>" method="post">
-                    <button class="buy" type="submit">Comprar</button>
+                    <form action="/detalle/<%= product.id%>" method="get">
+                    <button class="buy" type="button">Comprar</button>
                     </form>
                 </div> 
             </article>

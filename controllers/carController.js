@@ -1,7 +1,8 @@
 const express = require('express');
 const path = require('path');
-const listProducts = require("../config/listProducts");
-const listLuxury = require('../config/listLuxury');
+const products = require('../database/products.json')
+const productsLuxury = products.filter(luxury => luxury.luxury == true)
+const homeProducts = products.filter(homeproduct => homeproduct.luxury == false)
 const mercadopago = require('mercadopago');
 
 const carController ={

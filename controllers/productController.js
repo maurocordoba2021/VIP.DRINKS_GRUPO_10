@@ -1,10 +1,10 @@
 const express = require('express');
 const { url } = require('inspector');
 const path = require('path');
-const listProducts = require("../config/listProducts");
-const listLuxury = require('../config/listLuxury')
 const mercadopago = require('mercadopago');
-
+const products = require('../database/products.json')
+const productsLuxury = products.filter(luxury => luxury.luxury == true)
+const homeProducts = products.filter(homeproduct => homeproduct.luxury == false)
 mercadopago.configure({
     access_token: 'TEST-2074110728450610-112903-13b9da7ab252d6ee2a360d42bb332ca5-176106233'
 });
@@ -18,10 +18,10 @@ const productController ={
     detalle: (req, res) => {
         if (req.params.id) {
             let product
-            if (searchInArray(listProducts, req.params.id)) {
-                product = searchInArray(listProducts, req.params.id);
-            } else if (searchInArray(listLuxury, req.params.id)) {
-                product = searchInArray(listLuxury, req.params.id);
+            if (searchInArray(homeProducts, req.params.id)) {
+                product = searchInArray(homeProducts, req.params.id);
+            } else if (searchInArray(productsLuxury, req.params.id)) {
+                product = searchInArray(productsLuxury, req.params.id);
             } else {
                 res.redirect('/');
             }
@@ -51,15 +51,12 @@ const productController ={
                 }).catch(function (error) {
                     console.log(error);
                 });
-        }else if (req.params.id){
-            let combo = listLuxury.find((combo) => combo.idCombo == req.params.idCombo)
-            res.render('detalle', {listLuxury: listLuxury})
         } else {
             res.redirect('/');
         }
     },
     novedades: (req, res) =>{
-        res.render("luxury",{listLuxury : listLuxury });
+        res.render("luxury",{productsLuxury : productsLuxury });
     }
 }
 

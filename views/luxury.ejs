@@ -32,16 +32,16 @@
     <h3>Tus productos favoritos</h3>
     <section class="featured">
 
-        <% listLuxury.forEach(product => { %>
+        <% productsLuxury.forEach(product => { %>
             <article class="product">
                 <a href="/product/detalle/<%= product.idProducto %>">
                     <img src="/images/<%= product.img %>" alt="<%= product.nombre %>">
                 </a>
                 <div class="main-article">
                     <i class="fas fa-plane"></i>
-                    <p class="price">$<%= product.precio %></p>
+                    <p class="price">$<%= product.price %></p>
                     <p class="shipping">Envío Global Gratuito</p> 
-                    <h4 class="description"><%= product.nombre %></h4>
+                    <h4 class="description"><%= product.title %></h4>
                     <form action="/shop" method="post">
                     <button class="buy" type="submit">Comprar</button>
                     </form>

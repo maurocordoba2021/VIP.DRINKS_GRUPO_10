@@ -12,8 +12,8 @@ const usersController ={
         res.render('registro');
     },
     processForm: (req, res, next) =>{
-        let file = req.file
-        let user = req.body  ;
+        let file = req.file;
+        let user = req.body;
         if(!file) {
             const error = new Error("No se encontró imagen")   
             error.httpStatusCode = 400  

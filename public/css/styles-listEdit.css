@@ -14,12 +14,26 @@ body{
     margin: 0%;
     background: #878b8f;
 }
-
+a.admin{
+    padding: 20px;
+    display: block;
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    text-decoration: none;
+    color: tomato;
+    border-bottom: tomato solid 1px;
+}
 div{
     display: block;
 }
 
+section.admin{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
 
+}
 main{
     width: 96%;
     margin: 0 auto;

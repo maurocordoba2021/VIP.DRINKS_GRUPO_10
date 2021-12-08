@@ -4,6 +4,7 @@ const multer = require('multer');
 const path = require("path");
 const adminController = require('../controllers/adminController');
 
+
 // configuración de guardado de archivos
 let storage = multer.diskStorage({
     destination: (req, file, callback)=>{
@@ -28,7 +29,10 @@ router.post('/', adminController.index);
 router.get("/create", adminController.create);
 
 // Procesa formulario de creaciòn
-router.post("/create", fileUpload.array('imgProduct'), adminController.processForm)
+router.post("/create",  fileUpload.single('imgProduct'),adminController.processForm)
+
+
+
 router.post('/editProduct/:id' , adminController.editProduct)
 router.get('/preview', adminController.preview)
 router.get("/listEdit", adminController.listEdit);

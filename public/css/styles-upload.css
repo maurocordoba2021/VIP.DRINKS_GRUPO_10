@@ -29,7 +29,11 @@ form{
    padding: auto;
    background: rgba(0, 0, 0, 0.7);
 }
-
+img.imgProduct{
+    height: 100px;
+    width: 100px;
+    margin-left: 8px;
+}
 .contain-upload-image{
     border: 1px gold dashed;
     width: 100px;
@@ -55,12 +59,6 @@ input.upload-image{
 
 .images {
     display: flex;
-}
-
-.image-upload {
-    height: 100px;
-    width: 100px;
-    margin-left: 8px;
 }
 
 .contain-upload-image:hover  i{

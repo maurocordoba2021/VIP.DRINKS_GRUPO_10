@@ -73,4 +73,4 @@ const listProducts =[{
 
 ]
 
-module.exports = listProducts;
+//module.exports = listProducts;

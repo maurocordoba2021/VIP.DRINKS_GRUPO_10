@@ -75,4 +75,4 @@ const listLuxury=[
     
     ]
     
-    module.exports = listLuxury;
+    //module.exports = listLuxury;

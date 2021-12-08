@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,39 +11,41 @@
 
     <title>Lista de productos</title>
 </head>
+
 <body>
     <main>
-    <h2>Sección administración</h2>
-    <article>
-        <div class= "box-img">
-            <a href="/admin/create">
-                <i class="far fa-plus-square"></i>
-                <h4>Agregar nuevo producto</h4>
-            </a>
-        </div>
-    </article>
-    <%listProducts.forEach(product => {%>
-    <article class="">
-        <div class="box-img">
-            <img src="/images/imgProducts/<%= product.img%>" alt="">
-        </div>
-        <div class="main-product">
-            <h4 class="nameProduct"><%=product.title%></h4>
-    
-            <form action="/admin/create/<%= product.id%>">
-            <button type="post">Editar</button>
-        </form>
-        <form method= "POST" action="/admin/listEdit/<%= product.id%>?_method=delete">
-            <button type="submit">Eliminar producto</button>
-        </form>
-        </div>
-    </article>
-    <%})%>
+        <h2>Sección administración</h2>
+        <article>
+            <div class="box-img">
+                <a href="/admin/create">
+                    <i class="far fa-plus-square"></i>
+                    <h4>Agregar nuevo producto</h4>
+                </a>
+            </div>
+        </article>
+        <%listProducts.forEach(product=> {%>
+            <article class="">
+                <div class="box-img">
+                    <img src="/images/imgProducts/<%= product.img%>" alt="">
+                </div>
+                <div class="main-product">
+                    <h4 class="nameProduct">
+                        <%=product.title%>
+                    </h4>
+
+                    <a href="/admin/editProduct/<%= product.id%>">Editar producto</a>
+                    <form method="POST" action="/admin/listEdit/<%= product.id%>?_method=delete">
+                        <button type="submit">Eliminar producto</button>
+                    </form>
+                </div>
+            </article>
+            <%})%>
 
 
-    
+
 
     </main>
 
 </body>
+
 </html>

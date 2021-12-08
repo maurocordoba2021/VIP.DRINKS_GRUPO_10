@@ -275,5 +275,31 @@
   "shippingCost": "$3211.31",
   "luxury": true,
   "category": "Gin"
+ },
+ {
+  "id": 17,
+  "title": "w",
+  "price": "3",
+  "discount": "3",
+  "shortDescription": "3",
+  "longDescription": "33",
+  "stock": "3",
+  "shippingCost": "3",
+  "luxury": "true",
+  "category": "Whisky",
+  "img": "imgProduct-1638986309786.jpg"
+ },
+ {
+  "id": 18,
+  "title": "HOMER ",
+  "price": "100000",
+  "discount": "33",
+  "shortDescription": "wqsqd snc sd. 3",
+  "longDescription": " jhbhvgvgb , m jbhvgc f h. l,3",
+  "stock": "33",
+  "shippingCost": "3",
+  "luxury": "true",
+  "category": "Whisky",
+  "img": "imgProduct-1638986483494.jpeg"
  }
 ]

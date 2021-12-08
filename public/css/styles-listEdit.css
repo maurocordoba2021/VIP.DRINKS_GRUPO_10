@@ -34,6 +34,10 @@ section.admin{
     border-radius: 5px;
 
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 main{
     width: 96%;
     margin: 0 auto;
@@ -59,7 +63,8 @@ article{
     padding: 5px;
     align-content: stretch;
 }
-button{
+button, 
+a{
     width: 200px;
 }
 .box-img{

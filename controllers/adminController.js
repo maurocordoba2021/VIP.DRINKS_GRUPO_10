@@ -38,15 +38,42 @@ const adminController = {
         res.render("listEdit", { listProducts });
     },
     editProduct: (req, res) => {
-        if (req.params.id) {
-            let product = '';
-            if (searchInArray(listProducts, req.params.id)) {
-                product = searchInArray(listProducts, req.params.id);
-            } else {
-                res.redirect('/admin/create');
-            }
-            res.render('editProduct', { product })
-        }
+        let idProduct = req.params.id;
+        let product= listProducts[idProduct - 1];
+        
+        console.log(product)
+
+        res.render('editProduct', {product});
+    },
+    proccesEdit: (req, res) => {
+        let idProduct = req.params.id;
+        let product= listProducts[idProduct - 1];
+         let productEdited = {
+            id: product.id,
+            title: req.body.title,
+            price: req.body.price,
+            discount: req.body.discount,
+            shortDescription: req.body.shortDescription,
+            longDescription: req.body.longDescription,
+            stock: req.body.stock,
+            shippingCost: req.body.shippingCost,
+            luxury: req.body.luxury,
+            category: req.body.category,
+            img: product.img,
+        };
+        console.log(productEdited);
+
+        let pos = listProducts.indexOf(idProduct);
+        listProducts.splice(pos, 1);
+        
+        listProducts.push(productEdited);
+
+        console.log(listProducts);
+        
+        let nuevaLista = JSON.stringify(listProducts, null, " ");
+        fs.writeFileSync(dirPath, nuevaLista, 'utf-8');
+        
+        res.send('Avanza el proceso de edición')
     },
     delete: (req, res) => {
         let idProduct = req.params.id
@@ -56,16 +83,15 @@ const adminController = {
         listProducts.splice(pos, 1);
 
         let nuevaLista = JSON.stringify(listProducts, null, " ");
-        fs.writeFileSync(dirPath, nuevaLista, 'utf-8')
-        res.render('deletedProduct', {idProduct})
-        // res.send('Se ha eliminado el producto ' + idProduct);
+        fs.writeFileSync(dirPath, nuevaLista, 'utf-8');
+        res.render('deletedProduct', { idProduct });
     },
     preview: (req, res) => {
 
         res.render("preview")
     },
-    listUsers: (req, res)=>{
-        res.send('Acá va a estar el listado de productos!')
+    listUsers: (req, res) => {
+        res.send('Acá va a estar el listado de usuarios!')
     }
 }
 

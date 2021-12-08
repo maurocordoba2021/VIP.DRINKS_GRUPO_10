@@ -275,18 +275,5 @@
   "shippingCost": "$3211.31",
   "luxury": true,
   "category": "Gin"
- },
- {
-  "id": 17,
-  "title": "2",
-  "price": "2",
-  "discount": "2",
-  "shortDescription": "2",
-  "longDescription": "2",
-  "stock": "2",
-  "shippingCost": "2",
-  "luxury": "2",
-  "category": "Whisky",
-  "img": "imgProduct-1638928133495.jpg"
  }
 ]

@@ -13,6 +13,14 @@
 <body>
     <main>
     <h2>Sección administración</h2>
+    <article>
+        <div class= "box-img">
+            <a href="/admin/create">
+                <i class="far fa-plus-square"></i>
+                <h4>Agregar nuevo producto</h4>
+            </a>
+        </div>
+    </article>
     <%listProducts.forEach(product => {%>
     <article class="">
         <div class="box-img">
@@ -24,21 +32,14 @@
             <form action="/admin/create/<%= product.id%>">
             <button type="post">Editar</button>
         </form>
-        <form action="/admin/create/:id?_method=delete">
-            <button type="post">Eliminar producto</button>
+        <form method= "POST" action="/admin/listEdit/<%= product.id%>?_method=delete">
+            <button type="submit">Eliminar producto</button>
         </form>
         </div>
     </article>
     <%})%>
 
-        <article>
-            <div class= "box-img">
-                <a href="/admin/create">
-                    <i class="far fa-plus-square"></i>
-                    <h4>Agregar nuevo producto</h4>
-                </a>
-            </div>
-        </article>
+
     
 
     </main>

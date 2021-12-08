@@ -30,7 +30,7 @@ const adminController = {
         };
         console.log(newProduct);
         listProducts.push(newProduct);
-        let nuevaLista =  JSON.stringify(listProducts, null, " ");
+        let nuevaLista = JSON.stringify(listProducts, null, " ");
         fs.writeFileSync(dirPath, nuevaLista, 'utf-8')
         res.redirect('/admin/listEdit');
     },
@@ -48,8 +48,24 @@ const adminController = {
             res.render('editProduct', { product })
         }
     },
+    delete: (req, res) => {
+        let idProduct = req.params.id
+        console.log(idProduct);
+        let pos = listProducts.indexOf(idProduct);
+
+        listProducts.splice(pos, 1);
+
+        let nuevaLista = JSON.stringify(listProducts, null, " ");
+        fs.writeFileSync(dirPath, nuevaLista, 'utf-8')
+        res.render('deletedProduct', {idProduct})
+        // res.send('Se ha eliminado el producto ' + idProduct);
+    },
     preview: (req, res) => {
+
         res.render("preview")
+    },
+    listUsers: (req, res)=>{
+        res.send('Acá va a estar el listado de productos!')
     }
 }
 

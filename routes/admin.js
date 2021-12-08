@@ -38,5 +38,7 @@ router.get('/preview', adminController.preview)
 router.get("/listEdit", adminController.listEdit);
 router.post("/listEdit", adminController.listEdit);
 
+router.delete("/listEdit/:id", adminController.delete)
 
+router.get('/listUsers', adminController.listUsers);
 module.exports=router;

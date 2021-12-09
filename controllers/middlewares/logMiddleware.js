@@ -1,8 +1,10 @@
 const fs = require('fs');
 
 
- function logMiddleware (req, res, next) {
-     fs.appendFileSync( 'log.txt','Se ingresó en la página ' + req.url);
+const logMiddleware =  (req, res, next) => {
+     if (req){
+     fs.appendFileSync( 'log.txt','Se ingresó en la página ' + req.url + '\n');
+    }
     next();
 }
 

@@ -1,1 +1,4 @@
-Se ingresó en la página /detalle/1
+Se ingresó en la página /
+Se ingresó en la página /recetas
+Se ingresó en la página /product/luxury-offers
+Se ingresó en la página /listProducts

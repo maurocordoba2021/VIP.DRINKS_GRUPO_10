@@ -32,7 +32,11 @@ section.admin{
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 5px;
-
+}
+.title{
+    justify-content: center;
+    display: flex;
+    text-decoration: underline;
 }
 a{
     text-decoration: none;

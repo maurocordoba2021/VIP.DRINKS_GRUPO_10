@@ -8,10 +8,6 @@ const mercadopago = require('mercadopago');
 const dirPath = path.join(__dirname, '../database/products.json');
 let listProducts = JSON.parse(fs.readFileSync(dirPath, 'utf-8'));
 
-const productsLuxury = listProducts.filter(luxury => luxury.luxury == true)
-
-const homeProducts = listProducts.filter(homeproduct => homeproduct.luxury == false)
-
 //Configuración de mercadopago
 mercadopago.configure({
     access_token: 'TEST-2074110728450610-112903-13b9da7ab252d6ee2a360d42bb332ca5-176106233'
@@ -29,8 +25,6 @@ const productController = {
         let product= listProducts[idProduct - 1];
         
         console.log(product)
-
-        
 
         let preference = {
             items: [
@@ -60,11 +54,9 @@ const productController = {
             });
     },
     novedades: (req, res) => {
-        res.render("luxury", { productsLuxury: productsLuxury });
+        let listLuxury = listProducts.filter(product => product.luxury == true)
+        res.render("luxury", { listProducts: listLuxury });
     }
 }
-
-
-
 
 module.exports = productController;

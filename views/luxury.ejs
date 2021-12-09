@@ -32,10 +32,10 @@
     <h3>Tus productos favoritos</h3>
     <section class="featured">
 
-        <% productsLuxury.forEach(product => { %>
+        <% listProducts.forEach(product => { %>
             <article class="product">
-                <a href="/product/detalle/<%= product.idProducto %>">
-                    <img src="/images/<%= product.img %>" alt="<%= product.nombre %>">
+                <a href="/product/detalle/<%= product.id %>">
+                    <img src="/images/imgProducts/<%= product.img %>" alt="<%= product.title %>">
                 </a>
                 <div class="main-article">
                     <i class="fas fa-plane"></i>

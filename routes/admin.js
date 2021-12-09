@@ -38,7 +38,7 @@ router.post("/create",  fileUpload.single('imgProduct'), adminController.process
 router.get('/editProduct/:id' , adminController.editProduct);
 
 // Edita el producto
-router.put('/editProduct/:id' , fileUpload.single('imgEdit'), adminController.proccesEdit);
+router.put('/editProduct/:id' , fileUpload.single('imgEdit'), adminController.processEdit);
 
 
 router.get('/preview', adminController.preview)

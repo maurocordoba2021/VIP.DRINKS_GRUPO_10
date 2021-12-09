@@ -25,7 +25,7 @@
     <h3>Tus productos favoritos</h3>
     <section class="featured">
 
-        <% homeProducts.forEach(product => { %>
+        <% listProducts.forEach(product => { %>
             <article class="product">
                 <a href="/product/detalle/<%= product.id %>">
                     <img src="/images/imgProducts/<%= product.img %>" alt="<%= product.title %>">
@@ -45,64 +45,7 @@
 </section>
 
 <h3>Novedades</h3>
-<section class="novelties">
-                <article>
-                    <a href="/product/detalle">
-                 <img src="/images/imgProducts/champagne-Krug.png" alt="champagne-Krug">
-                    </a>
-                 <div class="main-article"><i class="fas fa-plane"></i>
-                 <p class="price">$120.000</p>
-                 <p class="discount">40% OFF</p>
-                 <h4 class="description">champagne Krug</h4>  
-                 <form action="/shop" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                    </form>    
-                </div>
-                </article> 
-            
-             <article>
-                <a href="/product/detalle">
-                 <img src="/images/imgProducts/champagne-Louis-Roederer.png" alt="champagne-Louis-Roederer">
-                </a>
-                 <div class="main-article"><i class="fas fa-plane"></i>
-                 <p class="price">$148.000</p>
-                 <p class="discount">20% OFF</p>
-                 <h4 class="description">Champagne Louis Roederer</h4>
-                 <form action="/shop" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                    </form>  
-                </div>
-                </article> 
-    
-              <article>
-                <a href="/product/detalle">
-                 <img src="/images/imgProducts/sake-Jumai.png" alt="sake-Jumai">
-                </a>
-                 <div class="main-article"><i class="fas fa-plane"></i>
-                 <p class="price">$11.500</p>
-                 <p class="discount">10% OFF</p>
-                  <h4 class="description">Sake Jumai</h4>
-                  <form action="/shop" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                    </form>  
-                </div>
-                </article> 
-       
-              <article>
-                <a href="/product/detalle">
-                  <img src="/images/imgProducts/ron-Habana-club.jpg" alt="ron-Habana-club">
-                </a>
-                  <div class="main-article"><i class="fas fa-plane"></i>
-                  <p class="price">$105.200</p>
-                  <p class="discount">5% OFF</p>
-                  <h4 class="description">Ron Habana Club</h4>
-                  <form action="/shop" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                    </form>  
-                </div>
-                </article>
 
-</section>
 </div>
 </main>
 <%- include('./partials/footer') %>

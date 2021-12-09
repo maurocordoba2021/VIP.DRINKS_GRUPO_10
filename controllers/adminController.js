@@ -39,42 +39,56 @@ const adminController = {
     },
     editProduct: (req, res) => {
         let idProduct = req.params.id;
-        let product= listProducts[idProduct - 1];
-        
+        let product = listProducts[idProduct - 1];
+
         console.log(product)
 
-        res.render('editProduct', {product});
+        res.render('editProduct', { product });
     },
-    proccesEdit: (req, res) => {
-        let idProduct = req.params.id;
-        let product= listProducts[idProduct - 1];
-         let productEdited = {
-            id: product.id,
-            title: req.body.title,
-            price: req.body.price,
-            discount: req.body.discount,
-            shortDescription: req.body.shortDescription,
-            longDescription: req.body.longDescription,
-            stock: req.body.stock,
-            shippingCost: req.body.shippingCost,
-            luxury: req.body.luxury,
-            category: req.body.category,
-            img: product.img,
-        };
-        console.log(productEdited);
+    processEdit: (req, res) => {
+    // 1) Busco index de un objeto (producto) especifico de nuestra lista sin actualizar usando método findIndex
+    let productIndex = listProducts.findIndex((product => product.id == req.params.id));
+    // 2) Muestro mi producto encontrado antes de actualizar
+    console.log("Antes de la edición: ", listProducts[productIndex])
+    // 3) Validación de Imágen
+        let img
+        if (req.file != undefined) {
+            img = req.file.filename
+        } else {
+            img = listProducts[productIndex].img
+        }
+    // 4) Modifico tipos de datos recibidos
+            // Luxury String a booleano
+            let value = req.body.luxury
+            if (value == "true"){
+                value = true
+            }else{
+                value = false
+            }
+            // ID String a Number
+            let idString = req.params.id;
+            let idNumber = parseInt(idString)
 
-        let pos = listProducts.indexOf(idProduct);
-        listProducts.splice(pos, 1);
-        
-        listProducts.push(productEdited);
+    // 5) Actualizo las propiedades de mi objeto
+    listProducts[productIndex].id = idNumber,
+    listProducts[productIndex].title = req.body.title,
+    listProducts[productIndex].price= req.body.price,
+    listProducts[productIndex].discount = req.body.discount,
+    listProducts[productIndex].shortDescription = req.body.shortDescription,
+    listProducts[productIndex].longDescription = req.body.longDescription,
+    listProducts[productIndex].stock = req.body.stock,
+    listProducts[productIndex].shippingCost = req.body.shippingCost,
+    listProducts[productIndex].luxury = value,
+    listProducts[productIndex].category = req.body.category,
+    listProducts[productIndex].img = img,
+    // 6) Muestro por consola mi producto actualizado
+    console.log("Luego de la edición: ", listProducts[productIndex])
+    // 7) Actualizo JSON
+    let nuevaLista = JSON.stringify(listProducts, null, " ");
+    fs.writeFileSync(dirPath, nuevaLista, 'utf-8');
 
-        console.log(listProducts);
-        
-        let nuevaLista = JSON.stringify(listProducts, null, " ");
-        fs.writeFileSync(dirPath, nuevaLista, 'utf-8');
-        
-        res.send('Avanza el proceso de edición')
-    },
+    res.render("listEdit", { listProducts });
+},
     delete: (req, res) => {
         let idProduct = req.params.id
         console.log(idProduct);

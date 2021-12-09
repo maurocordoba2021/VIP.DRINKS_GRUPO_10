@@ -17,7 +17,7 @@ body{
     font-size: 15px;
     margin: 0%;
     color: whitesmoke;
-    background-color: black;
+    background: black;
     background-size: auto;
 }
 
@@ -29,10 +29,10 @@ main{
 }
 
 .main-recetas{
-margin: o auto;
+margin: 0 auto;
 display: flex;
 width: 90%;
-justify-content: space-around;
+justify-content: space-between;
 }
 
 a{
@@ -65,7 +65,7 @@ transition: 1s all cubic-bezier(0.33, 2.6, 1, 1.35);
     align-items: flex-end;
     text-align: center;
     line-height: 63px;
-    font-size: 30px;
+    font-size: 15px;
     color: whitesmoke;
 }
 
@@ -75,7 +75,7 @@ article.receta:hover .título-receta{
     align-items: flex-end;
     text-align: center;
     line-height: 40px;
-    font-size: 80px;
+    font-size: 20px;
     color: whitesmoke;
 }
 
@@ -103,27 +103,27 @@ article.receta:hover .foto-receta  {
     position: absolute;
     margin: auto;
     box-sizing: border-box;
-    width: 120%;
+    width: 110%;
 }
 
 .descripcion-receta{
     position: absolute;
     z-index: 30;
     color: #0000ff00;
-    background:#0000ff00;
+    background:#22222400;
 }
 
 article.receta:hover .descripcion-receta{
     position:absolute;
     z-index: 30;
     color: whitesmoke;
-    background: #00000042;
+    background: #0000008c;
 }
 
 .fondo-humo{
 z-index: -1;
 box-sizing: border-box;
-width: 100%;
+width: 80%;
 margin-top: -10%;
 }
 
@@ -143,15 +143,15 @@ margin-top: -10%;
 }
 
 .ajuste-tamaño-martini{
-    width: 75%;
+    width: 65%;
 }
 
 .ajuste-tamaño-tequila{
-    width: 75%;
+    width: 65%;
 }
 
 .ajuste-tamaño-bloody{
-    width: 75%;
+    width: 65%;
 }
 
 
@@ -167,7 +167,7 @@ margin-top: -10%;
 
 @media(min-width: 768px){
 article {
-    width: 40%;
+    width: 25%;
 }
 main {
 margin: 0 auto;

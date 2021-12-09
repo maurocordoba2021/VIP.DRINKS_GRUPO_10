@@ -6,12 +6,16 @@ let listProducts = JSON.parse(fs.readFileSync(dirPath, 'utf-8'));
 const homeProducts = listProducts.filter(products => products.luxury == false)
 
 const mainController = {
-    index:  (req, res) => {
-        res.render("home", { listProducts: homeProducts});
+    listProducts:  (req, res) => {
+        res.render("listProducts", { listProducts: homeProducts});
     },
     recetas: (req, res) =>{
+        
         res.render("recipes")
     },
+    index: (req, res) => {
+        res.render("home")
+    }
 }
 
 

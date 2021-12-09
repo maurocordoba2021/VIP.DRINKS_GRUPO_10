@@ -87,8 +87,8 @@ const adminController = {
     let nuevaLista = JSON.stringify(listProducts, null, " ");
     fs.writeFileSync(dirPath, nuevaLista, 'utf-8');
 
-    res.render("listEdit", { listProducts });
-},
+    res.redirect('/admin/listEdit')
+    },
     delete: (req, res) => {
         let idProduct = req.params.id
         console.log(idProduct);

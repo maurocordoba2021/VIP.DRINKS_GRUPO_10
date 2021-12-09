@@ -136,6 +136,19 @@ article{
 }
 
 /* END MAIN */
+/* TRABAJANDO EN ELLO*/
+div.trabajando{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 50px auto;
+}
+img.trabajando{
+    width: 100%;
+}
+
 
 /* START BOTON COMPRAR*/
 form {

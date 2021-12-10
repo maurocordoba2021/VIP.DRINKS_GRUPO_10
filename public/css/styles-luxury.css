@@ -35,7 +35,7 @@ main{
 }
 
 main h3{
-    color: whitesmoke;
+    color: black;
 }
 
 .featured,
@@ -114,7 +114,7 @@ main section article i:hover{
 
 main section h3{
     margin:20px 0px;
-    color: whitesmoke;
+    color: black;
 }
 
 

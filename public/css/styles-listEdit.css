@@ -21,8 +21,8 @@ a.admin{
     margin: 50px auto;
     text-align: center;
     text-decoration: none;
-    color: tomato;
-    border-bottom: tomato solid 1px;
+    color: #df3e22;
+    border-bottom: #df3e22 solid 1px;
 }
 div{
     display: block;
@@ -46,7 +46,7 @@ main{
     width: 96%;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -55,8 +55,11 @@ img{
     width: 100%;
 }
 h2{
+    font-size: xx-large;
+    
     width: 100%;
-    color: tomato;
+    color: #df3e22;
+    border-bottom: solid 2px #df3e22;
 }
 article{
     display: inline-block;
@@ -67,10 +70,7 @@ article{
     padding: 5px;
     align-content: stretch;
 }
-button, 
-a{
-    width: 200px;
-}
+
 .box-img{
     max-width: 200px;
     margin: 0 auto;

@@ -30,6 +30,8 @@ li{
 
 h3{
     color: whitesmoke;
+    font-size: xx-large;
+    font-weight: 300;
 }
 
 /* END CUERPO EN GRAL */
@@ -123,6 +125,7 @@ main section article .main-article:hover i{
 main section h3{
     margin:20px 0px;
     color: whitesmoke;
+ 
 }
 
 article{
@@ -138,12 +141,10 @@ article{
 /* END MAIN */
 /* TRABAJANDO EN ELLO*/
 div.trabajando{
-    width: 300px;
-    height: 200px;
     display: flex;
     align-items: center;
     align-content: center;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 img.trabajando{
     width: 100%;

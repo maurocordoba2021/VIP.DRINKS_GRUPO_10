@@ -7,7 +7,7 @@ const mercadopago = require('mercadopago');
 
 const carController ={
     car: (req, res) =>{
-        res.render("car")
+        res.render("car",{listProducts:homeProducts})
     },
 };
 

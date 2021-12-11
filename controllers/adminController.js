@@ -41,7 +41,7 @@ const adminController = {
         let idProduct = req.params.id;
         let product = listProducts[idProduct - 1];
 
-        console.log(product)
+       
 
         res.render('editProduct', { product });
     },

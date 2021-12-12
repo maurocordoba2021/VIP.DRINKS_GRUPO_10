@@ -15,18 +15,25 @@ const adminController = {
         res.render("create");
     },
     processForm: (req, res) => {
+        let value = req.body.luxury
+            if (value == "true"){
+                value = true
+            }else{
+                value = false
+            }
         let newProduct = {
-            id: listProducts.length + 1,
+            id: parseInt (listProducts.length + 1),
             title: req.body.title,
-            price: req.body.price,
-            discount: req.body.discount,
-            shortDescription: req.body.shortDescription,
+            price: parseInt (req.body.price),
+            discount: parseInt (req.body.discount),
+            shortDescription:[req.body.shortDescription],
             longDescription: req.body.longDescription,
-            stock: req.body.stock,
-            shippingCost: req.body.shippingCost,
-            luxury: req.body.luxury,
+            stock: parseInt (req.body.stock),
+            shippingCost: parseInt (req.body.shippingCost),
+            luxury: value,
             category: req.body.category,
             img: req.file.filename,
+            
         };
         console.log(newProduct);
         listProducts.push(newProduct);

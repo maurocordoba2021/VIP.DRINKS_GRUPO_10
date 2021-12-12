@@ -2,24 +2,6 @@ Se ingresó en la página /
 Se ingresó en la página /recetas
 Se ingresó en la página /product/luxury-offers
 Se ingresó en la página /listProducts
-<<<<<<< HEAD
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-Se ingresó en la página /shop
-=======
 Se ingresó en la página /
 Se ingresó en la página /listProducts
 Se ingresó en la página /
@@ -63,7 +45,6 @@ Se ingresó en la página /listProducts
 Se ingresó en la página /
 Se ingresó en la página /
 Se ingresó en la página /
->>>>>>> b85cfb59d83158895d05ba6dbfd42e84778e2457
 Se ingresó en la página /
 Se ingresó en la página /
 Se ingresó en la página /shop

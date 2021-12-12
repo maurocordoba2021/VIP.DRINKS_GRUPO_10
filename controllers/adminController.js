@@ -68,13 +68,17 @@ const adminController = {
             // ID String a Number
             let idString = req.params.id;
             let idNumber = parseInt(idString)
+            let priceString=req.body.price
+            let priceNumber=parseInt(priceString)
+    
+            
 
     // 5) Actualizo las propiedades de mi objeto
     listProducts[productIndex].id = idNumber,
     listProducts[productIndex].title = req.body.title,
-    listProducts[productIndex].price= req.body.price,
+    listProducts[productIndex].price= priceNumber,
     listProducts[productIndex].discount = req.body.discount,
-    listProducts[productIndex].shortDescription = req.body.shortDescription,
+    listProducts[productIndex].shortDescription = [req.body.shortDescription],
     listProducts[productIndex].longDescription = req.body.longDescription,
     listProducts[productIndex].stock = req.body.stock,
     listProducts[productIndex].shippingCost = req.body.shippingCost,

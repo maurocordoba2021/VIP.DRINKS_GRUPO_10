@@ -279,9 +279,11 @@
  {
   "id": 17,
   "title": "lisa hippie",
-  "price": "100",
+  "price": 100,
   "discount": "10",
-  "shortDescription": "ES MALA EN DEPORTE",
+  "shortDescription": [
+   "ES MALA EN DEPORTE, niña hippie"
+  ],
   "longDescription": "1HACE AMIGOS",
   "stock": "1",
   "shippingCost": "11",

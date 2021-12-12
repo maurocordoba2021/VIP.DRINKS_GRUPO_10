@@ -1,60 +1,64 @@
 <header>
     <nav class="global-nav">
-    <div class="contain-navbar-scroll">
-        <link rel="stylesheet" href="/css/styles-header.css">
-<!--ACÁ EMPIEZA EL MENÚ EMERGENTE-->
+        <div class="contain-navbar-scroll">
+            <link rel="stylesheet" href="/css/styles-header.css">
+            <!--ACÁ EMPIEZA EL MENÚ EMERGENTE-->
 
-        <div id="mySidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">x</a>
-                    <a href="/users/registro">Registrarse</a>
-                    <a href="/users/login">Ingresar</a>
-                    <a href="/shop">Mi Carrito</a>
-                    <a href="/product/luxury-offers">Luxury Offers</a>
-                    <a href="/listProducts">Productos</a>
-                    <a href="/recetas"> Recetas</a>
-                    <a href="/admin"><i class="fas fa-user-tie"></i></a>
-                </div>
-         <div id="main" class="open-btn hamburguer-menu" onclick="openNav()">
-            <i class="fas fa-bars"></i>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">x</a>
+                <a href="/users/registro">Registrarse</a>
+                <a href="/users/login">Ingresar</a>
+                <a href="/shop">Mi Carrito</a>
+                <a href="/product/luxury-offers">Luxury Offers</a>
+                <a href="/listProducts">Productos</a>
+                <a href="/recetas"> Recetas</a>
+                <a href="/admin"><i class="fas fa-user-tie"></i></a>
+            </div>
+            <div id="main" class="open-btn hamburguer-menu" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidebar").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                }
+                function closeNav() {
+                    document.getElementById("mySidebar").style.width = "0"
+                    document.getElementById("main").style.marginLeft = "0";
+                }
+            </script>
+
+            <!-- ACÁ TERMINA EL BOTON DE MENU EMERGENTE-->
+
+            <div class="contain logo-home">
+                <a href="/"><img src="/images/logo-home.png" class="logo-home"></a>
+            </div>
+
         </div>
-
-<script>
-function openNav(){
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-function closeNav(){
-    document.getElementById("mySidebar").style.width = "0"
-    document.getElementById("main").style.marginLeft = "0";
-}
-</script>
-
-<!-- ACÁ TERMINA EL BOTON DE MENU EMERGENTE-->           
-
-        <div class="contain logo-home">
-             <a href="/"><img src="/images/logo-home.png" class="logo-home"></a> 
-        </div>
-      
-    </div>
 
         <div class="navbar-tablet">
             <ul class="nav-center">
-            <li class="nav-option1"><a href="/listProducts">Productos</a></li>
-            <li class="nav-option2"><a href="/product/luxury-offers">Luxury Offers</a></li>
-            <li class="nav-option3"><a href="/recetas">Recetas</a></li>
+                <li class="nav-option1"><a href="/listProducts">Productos</a></li>
+                <li class="nav-option2"><a href="/product/luxury-offers">Luxury Offers</a></li>
+                <li class="nav-option3"><a href="/recetas">Recetas</a></li>
             </ul>
             <div class="prueba">
                 <a href="/"><img src="/images/logo-home.png" class="logo-prueba"></a>
             </div>
             <ul class="nav-rigth">
-        <li><a href="/admin"><i class="fas fa-search"></i></a></li>
-        <li><a href="/users/login"><i class="fas fa-sign-in-alt"></i></a></li>
-        <li><a href="/users/registro"><i class="fas fa-user"></i></a></li>
-        <li><a href="/shop"><i class="fas fa-shopping-cart"></a></i></li>
-            </ul> 
+                <li>
+                    <input type="text" name="search" id="input-search" >
+                    <!-- esto hay que ponerlo en la hoja de estilos (mauro lo hizo asi nomas )-->
+                   <button id="search" type="submit" class=""><i class="fas fa-search"></i></button>
+                </li>
+                <li><a href="/users/login"><i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/users/registro"><i class="fas fa-user"></i></a></li>
+                <li><a href="/shop"><i class="fas fa-shopping-cart"></a></i></li>
+            </ul>
         </div>
 
 
-    
+
     </nav>
 </header>

@@ -1,99 +1,84 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
 <head>
 
     <title>Carrito de compras</title>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/styles-header.css">
-        <link rel="stylesheet" href="css/styles-footer.css">
-        <link rel="stylesheet" href="css/styles-car.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
-        <link rel="icon" href="/images/favicon.ico" type="ico">
-    
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles-header.css">
+    <link rel="stylesheet" href="css/styles-footer.css">
+    <link rel="stylesheet" href="css/styles-car.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico" type="ico">
+
+
 </head>
+
 <body>
     <div class="container-page">
         <%- include('./partials/header') %>
-      
-<main>
 
-<div  class="car">
- <section>
-     <article >
-         <div class="container-img">
-             <img src="/images/imgProducts/whisky-Louis-XIII.png" alt="whisky-Louis-XIII">
-         </div>
-         <div class="main-article">         
-             <h5>Whisky Louis XIII ...</h5>
-         <p>Medida 710ml</p>
+            <main>
 
-         <div class="box">
-            <select name="u" id="u">
-                <option value="1">1</option>
-               
-            </select>
-        <h4 class="price">$ 766.444</h4>
-       </div>
-         </div>
-     
-         <div  class="box-foot">
-             <button class="delete" type="reset">Eliminar</button>
-             <a href="#">Ver más productos</a>
-             <i class="fas fa-ellipsis-v"></i>
-         </div>
-     </article>
+                <div class="car">
+                    <section>
+                        <% listProducts.forEach(product=> { %>
+                        <article>
+                            
+                                <div class="container-img">
+                                    <img src="/images/imgProducts/<%= product.img %>" alt="whisky-Louis-XIII">
+                                </div>
+                                <div class="main-article">
+                                    <h5>
+                                        <%= product.title %>
+                                     </h5>
+                                    <p>Medida 710ml</p>
 
-     <article>
-        <div class="container-img">
-            <img src="/images/imgProducts/champagne-krug-combo1.jpg" alt="champagne-krug-combo1">
-        </div>
-            <div class="main-article">
-        <h5>Champagne Krug Luxury Nº I...</h5>
-        <p>Medida: 710ml</p>
-        <div class="box">
-            <select name="u" id="u">
-                <option value="1">1</option>
-             
-            </select>
-            <h4 class="price">$ 188.020</h4>
-        </div>
+                                    <div class="box">
+                                        <select name="u" id="u">
+                                            <option value="1">1</option>
+
+                                        </select>
+                                        <h4 class="price">$<%= product.price %>
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="box-foot">
+                                    <button class="delete" type="reset">Eliminar</button>
+                                    <a href="#">Ver más productos</a>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                        </article>
+                        <% }) %>
+         
+                    </section>
+                    <section class="total">
+                        <div class="box-foot">
+                            <div class="box-shipping">
+                                <a href="/"> Envío a Calle Falsa 123, S...</a>
+                                <h5 class="shipping-price">$ 0</h5>
+                            </div>
+                            <div class="box total">
+                                <h4 class="total text">Total con envío</h4>
+                                <h4 class="total">$ 95.4632</h4>
+                            </div>
+                            <div class="buy">
+                                <button class="buy" type="submit" class="comprar">Comprar ahora</a></button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </main>
+            <%- include('./partials/footer') %>
     </div>
-       
-       
-        <div class="box-foot">
-            <button class="delete" type="reset">Eliminar</button>
-            <a href="/">Ver más productos del vendedor</a>
-            <i class="fas fa-ellipsis-v"></i>
-        </div>
-    </article>
- </section>
- <section class="total">
-     <div class="box-foot">
-     <div class="box-shipping">
-         <a href="/"> Envío a Calle Falsa 123, S...</a>
-         <h5 class="shipping-price">$ 0</h5>
-     </div>
-     <div class="box total">
-         <h4 class="total text">Total con envío</h4>
-         <h4 class="total">$ 95.4632</h4>
-     </div>
-     <div  class="buy">
-    <button  class="buy" type="submit" class="comprar">Comprar ahora</a></button>
-    </div>
-</div>
-</section>
-</div>
-
-</main>
-<%- include('./partials/footer') %>
-</div>
 </body>
+
 </html>

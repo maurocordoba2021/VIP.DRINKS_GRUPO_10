@@ -17,10 +17,10 @@ const { format } = require("path");
 /* Modularizado de rutas */
 
 app.use(express.static('public'))
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({extended: false}));//Permite capturar info de un formulario via post.
 app.use(express.json());
 app.set('view engine', 'ejs');
-app.use(logMiddleware);
+//app.use(logMiddleware);
 app.use('/shop',shopCar)
 app.use('/users',users)
 app.use('/product',product)

@@ -5,7 +5,7 @@ Se ingresó en la página /listProducts
 Se ingresó en la página /
 Se ingresó en la página /listProducts
 Se ingresó en la página /
-Se ingresó en la página /users/registro
+Se ingresó en la página /users/register
 Se ingresó en la página /recetas
 Se ingresó en la página /product/luxury-offers
 Se ingresó en la página /listProducts
@@ -20,11 +20,11 @@ Se ingresó en la página /listProducts
 Se ingresó en la página /recetas
 Se ingresó en la página /listProducts
 Se ingresó en la página /listProducts
-Se ingresó en la página /users/registro
-Se ingresó en la página /users/registro
+Se ingresó en la página /users/register
+Se ingresó en la página /users/register
 Se ingresó en la página /users/login
 Se ingresó en la página /users/login
-Se ingresó en la página /users/registro
+Se ingresó en la página /users/register
 Se ingresó en la página /admin/
 Se ingresó en la página /favicon.ico
 Se ingresó en la página /admin/listEdit
@@ -193,3 +193,13 @@ Se ingresó en la página /
 Se ingresó en la página /
 Se ingresó en la página /
 Se ingresó en la página /
+Se ingresó en la página /users/register
+Se ingresó en la página /
+Se ingresó en la página /listProducts
+Se ingresó en la página /product/detalle/1
+Se ingresó en la página /shop
+Se ingresó en la página /product/detalle/1
+Se ingresó en la página /product/luxury-offers
+Se ingresó en la página /users/register
+Se ingresó en la página /users/register
+Se ingresó en la página /users/register

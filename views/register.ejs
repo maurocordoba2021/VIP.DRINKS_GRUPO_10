@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>register</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles-forms.css">
+    <link rel="stylesheet" href="/css/styles-header.css">
+    <link rel="stylesheet" href="/css/styles-footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico" type="ico">
+
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+
+
+        <main class="form-register">
+            <section class="register-form">
+                <!--ACÁ VA EL CÓDIGO DEL CUERPO DE LA PÁG-->
+
+                <form 
+                    method="post" 
+                    action="/users/register" 
+                    class="section-register"  
+                    enctype="multipart/form-data" 
+                    id="form">
+                        <h4>Formulario de Registro</h4>
+                    <!--e-mail-->
+                    <label for="email"></label>
+                    <input 
+                        class="controls <%= (locals.errors && errors.email) ? 'is-invalid' : null %>  " 
+                        type="email"
+                        name="email"
+                        value="<%=locals.oldData ? oldData.email : null %>"
+                        id="email"
+                        placeholder="Correo electrónico">
+                    <!--Validación email-->
+                    <% if (locals.errors && errors.email) { %>
+                        <o class= "text-validation">
+                            <%= errors.email.msg %>
+                        </o>
+                        <% } %>
+                    <!--Nombre-->
+                    <label for="userName"></label>
+                    <input 
+                        class="controls <%= locals.errors && errors.userName ? 'is-invalid' : null %>  " 
+                        type="text"
+                        name="userName" 
+                        value= "<%= locals.oldData ? oldData.userName : null %>"
+                        id="userName"
+                        placeholder="Nombre de usuario">
+                        <!--Validación nombres-->
+                        <% if (locals.errors && errors.userName) { %>
+                              <o class= "text-validation">
+                                <%= errors.userName.msg %>
+                               </o>
+                            <% } %>
+                    <label for="password"></label>
+                    <input 
+                        class="controls <%= locals.errors && errors.password ? 'is-invalid' : null %>  " 
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Contraseña">
+                        <% if (locals.errors && errors.password) { %>
+                            <o class= "text-validation">
+                                <%= errors.password.msg %>
+                            </o>
+                            <% } %>
+                                <!--Imágen de usuario-->
+                                <label for="imgUser"></label>
+                                <input type="file" name="imgUser" id="imgUser">
+                                <p class="warnings" id="warnings"></p>
+                                <form method="post" action="/users/register">
+                                    <button type="submit"  class="boton-register">Registrarse</button>
+                                </form>
+                </form>
+                            <!-- <div class="script">
+                                <script>
+                                    const email = document.getElementById("email")
+                                    const username = document.getElementById("nombres")
+                                    const password = document.getElementById("contraseña")
+                                    const password1 = document.getElementById("contraseña1")
+                                    const form = document.getElementById("form")
+                                    const parrafo = document.getElementById("warnings")
+
+                                    form.addEventListener("submit", e => {
+                                        e.preventDefault()
+                                        let warnings = ''
+                                        let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+                                        let entrar = false
+                                        if (username.value.length < 6 && username.value.length !== 0) {
+                                            warnings = warnings + `El nombre de usuario es muy corto <br>`
+                                            entrar = true
+                                        }
+                                        if (username.value.length == 0) {
+                                            warnings = warnings + `Debe ingresar un nombre de usuario <br>`
+                                            entrar = true
+                                        }
+                                        if (!regexEmail.test(email.value)) {
+                                            warnings = warnings + `Debe ingresar un email válido <br>`
+                                            entrar = true
+                                        }
+                                        if (password.value < 6) {
+                                            warnings = warnings + `Debe contener más de 6 caracteres <br>`
+                                            entrar = true
+                                        }
+                                        if (password.value != password1.value) {
+                                            warnings = warnings + `Las contraseñas no coinciden <br>`
+                                            entrar = true
+                                        }
+                                        if (parrafo) {
+                                            parrafo.innerHTML = warnings
+                                        }
+                                        if (username.value && password.value && password1.value && email.value) {
+                                            parrafo.innerHTML = "Formulario enviado con exito!"
+                                            form.reset()
+                                        }
+                                    });
+
+                                </script>
+                            </div> -->
+                            <div class="box-extra">
+                                <p><a href="/users/login">¿Ya tiene una cuenta?</a></p>
+
+
+                                <div class="admin-password">
+                                    <h6>iniciar sesión como administrador</h6>
+                                    <form action="/admin/" method="post">
+                                        <label for="password-admin"></label>
+                                        <input class="controls" type="password" name="contraseña" id="contraseña"
+                                            placeholder="Código de administrador">
+                                        <button class="boton-ingreso" type="submit">Ingresar</button>
+                                    </form>
+                                </div>
+                            </div>
+        </section>
+    </main>
+
+    <%- include('./partials/footer') %>
+        </div>
+</body>
+
+</html>

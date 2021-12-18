@@ -48,3 +48,5 @@ router.post("/register", fileUpload.single('imgUser'), validations, usersControl
 
 
 module.exports=router;
+//git config user.name
+//git config user.email

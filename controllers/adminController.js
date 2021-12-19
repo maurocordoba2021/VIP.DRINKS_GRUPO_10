@@ -47,9 +47,6 @@ const adminController = {
     editProduct: (req, res) => {
         let idProduct = req.params.id;
         let product = listProducts[idProduct - 1];
-
-       
-
         res.render('editProduct', { product });
     },
     processEdit: (req, res) => {

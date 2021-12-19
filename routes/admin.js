@@ -3,21 +3,9 @@ const router=express.Router();
 const multer = require('multer');
 const path = require("path");
 const adminController = require('../controllers/adminController');
+const productsFileUpload = require('../controllers/middlewares/multerProductsMiddleware')
 
 
-// configuración de guardado de archivos
-let storage = multer.diskStorage({
-    destination: (req, file, callback)=>{
-    let fileDestination = path.join(__dirname, '../public/images/imgProducts')
-    callback(null, fileDestination)
-    },
-    filename:(req, file, callback)=>{
-        console.log(file);
-        let fileName = "imgProduct-" + Date.now() + path.extname(file.originalname)
-        callback(null, fileName)
-    },
-});
-const fileUpload = multer({storage});
 
 
 // Muestra Index de Admin
@@ -32,13 +20,13 @@ router.post("/listEdit", adminController.listEdit);
 router.get("/create", adminController.create);
 
 // Procesa formulario de creaciòn
-router.post("/create",  fileUpload.single('imgProduct'), adminController.processForm)
+router.post("/create",  productsFileUpload.single('imgProduct'), adminController.processForm)
 
 // Muestra el formulario de edición
 router.get('/editProduct/:id' , adminController.editProduct);
 
 // Edita el producto
-router.put('/editProduct/:id' , fileUpload.single('imgEdit'), adminController.processEdit);
+router.put('/editProduct/:id' , productsFileUpload.single('imgEdit'), adminController.processEdit);
 
 
 router.get('/preview', adminController.preview)

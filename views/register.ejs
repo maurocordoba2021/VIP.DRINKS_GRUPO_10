@@ -39,7 +39,7 @@
                     <label for="email"></label>
                     <input 
                         class="controls <%= (locals.errors && errors.email) ? 'is-invalid' : null %>  " 
-                        type="email"
+                        type="text"
                         name="email"
                         value="<%=locals.oldData ? oldData.email : null %>"
                         id="email"
@@ -77,13 +77,21 @@
                                 <%= errors.password.msg %>
                             </o>
                             <% } %>
-                                <!--Imágen de usuario-->
-                                <label for="imgUser"></label>
-                                <input type="file" name="imgUser" id="imgUser">
-                                <p class="warnings" id="warnings"></p>
-                                <form method="post" action="/users/register">
-                                    <button type="submit"  class="boton-register">Registrarse</button>
-                                </form>
+                        <!--Imágen de usuario-->
+                        <label for="imgUser"></label>
+                        <input 
+                        type="file" 
+                        name="imgUser" 
+                        id="imgUser">
+                        <% if (locals.errors && errors.imgUser) { %>
+                            <o class= "text-validation">
+                                <%= errors.imgUser.msg %>
+                            </o>
+                            <% } %>
+                        <p class="warnings" id="warnings"></p>
+                        <form method="post" action="/users/register">
+                            <button type="submit"  class="boton-register">Registrarse</button>
+                        </form>
                 </form>
                             <!-- <div class="script">
                                 <script>

@@ -7,27 +7,41 @@
 
 
 /* START CUERPO EN GRAL */
-div{
-    display: block;
-}
-
-
 main{
-    display: flex;
-    width: 100vw;
+    margin-top: 30%;
 }
-
-a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-
 img{
     width: 100%;
+
+}
+img#avatar{
+    background: blue;
+    border-radius: 50%;
 }
 
-li{
+h4.profilename{
+    color: whitesmoke;
+    text-align: center;
+}
+#box-img{
+    margin: 0 auto;
+    max-width: 300px;
+}
+p{
+    color: grey;
+    font-size: medium;
+    text-align: center;
+    margin: 4px auto;
+    margin-top: 20px;
+}
+
+a.link-profile,
+p.subtitle{
+    display: block;
+    color: gold;
     text-decoration: none;
+    text-align: center;
+    margin: 4px auto;
 }
 
 /* END CUERPO EN GRAL */
@@ -45,6 +59,9 @@ li{
 }
 
 @media(min-width: 1024px){
+    main{
+        margin-top: 30%;
+    }
 }
 
 /* END MEDIA QUERIES */

@@ -9,9 +9,7 @@ const bcryptjs = require('bcryptjs');
 
 
 const usersController ={
-    login: (req, res) =>{
-        res.render('login');
-    },
+   
     register: async (req, res) =>{
         res.render('register');
     },
@@ -48,14 +46,53 @@ const usersController ={
         let userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password, 10),
-            imgUser: req.file.originalname
+            imgUser: req.file.filename
         }
 
       let userCreated = Users.create(userToCreate);
         return res.redirect('/users/profile');
     }, 
-    profile: (req, res)=>{
-        res.render('profile');
-    }
+    // START LOGIN
+    login: (req, res) =>{
+        res.render('login');
+    },
+    loginProcess: (req, res) =>{
+      let userToLogin = Users.findByField('email', req.body.email);
+
+      if(userToLogin){
+          let passwordVerify = bcryptjs.compareSync(req.body.password, userToLogin.password);
+          if(passwordVerify){
+              delete userToLogin.password;
+            req.session.userLogged = userToLogin;
+            return res.redirect('/users/profile');
+          }  
+           return res.render('login', {
+            errors: {
+                password: {
+                    msg: 'La contraseña es incorrecta'
+                }
+            }, 
+            oldData: req.body
+        });
+
+  
+      }
+      return res.render('login', {
+          errors: {
+              email: {
+                  msg: 'Las credenciales no son válidas'
+              }
+          }
+      });
+    },
+//START PROFILE
+    profile: async(req, res)=>{
+        return res.render('profile', {
+            user: {
+                imgUser:  req.session.userLogged.imgUser,
+                userName: req.session.userLogged.userName,
+        }});
+
+    },
 }
 module.exports = usersController;

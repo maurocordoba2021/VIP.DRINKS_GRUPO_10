@@ -1,17 +1,19 @@
 const express = require('express');
 const router = express.Router();
 const { error } = require('console');
-
 // Controllers
 const usersController = require('../controllers/usersController')
 
 // Middlewares
 const usersFileUpload = require('../middlewares/multerUsersMiddleware')
 const usersValidations = require('../middlewares/usersValidations')
+const loginValidations = require('../middlewares/loginValidations');
 
 // Routes
 
 router.get("/login", usersController.login);
+router.post("/login",loginValidations, usersController.loginProcess);
+
 
 router.get("/profile", usersController.profile)
 

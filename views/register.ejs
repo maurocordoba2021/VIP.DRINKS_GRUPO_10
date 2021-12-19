@@ -46,9 +46,9 @@
                         placeholder="Correo electrónico">
                     <!--Validación email-->
                     <% if (locals.errors && errors.email) { %>
-                        <o class= "text-validation">
+                        <p class= "text-validation">
                             <%= errors.email.msg %>
-                        </o>
+                        </p>
                         <% } %>
                     <!--Nombre-->
                     <label for="userName"></label>
@@ -61,9 +61,9 @@
                         placeholder="Nombre de usuario">
                         <!--Validación nombres-->
                         <% if (locals.errors && errors.userName) { %>
-                              <o class= "text-validation">
+                              <p class= "text-validation">
                                 <%= errors.userName.msg %>
-                               </o>
+                              </p>
                             <% } %>
                     <label for="password"></label>
                     <input 
@@ -73,9 +73,9 @@
                         id="password"
                         placeholder="Contraseña">
                         <% if (locals.errors && errors.password) { %>
-                            <o class= "text-validation">
+                            <p  class= "text-validatip n">
                                 <%= errors.password.msg %>
-                            </o>
+                            </p>
                             <% } %>
                         <!--Imágen de usuario-->
                         <label for="imgUser"></label>
@@ -84,9 +84,9 @@
                         name="imgUser" 
                         id="imgUser">
                         <% if (locals.errors && errors.imgUser) { %>
-                            <o class= "text-validation">
+                            <p class= "text-validation">
                                 <%= errors.imgUser.msg %>
-                            </o>
+                            </p>
                             <% } %>
                         <p class="warnings" id="warnings"></p>
                         <form method="post" action="/users/register">

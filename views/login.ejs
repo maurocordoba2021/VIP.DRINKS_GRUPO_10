@@ -25,10 +25,34 @@
         
 <main class="login-form">
     <section class="login-form">
-        <form method="post" action="/" typ class="section-login">
+        <form 
+        method="post" 
+        action="/users/login" 
+        class="section-login">
             <h4>Ingresá a tu cuenta</h4>
-            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre de usuario">
-            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña"> 
+
+
+            <input 
+            class="controls" 
+            type="text" 
+            name="email" 
+            id="email" 
+            value="<%=locals.oldData ? oldData.email : null %>"
+            placeholder="Ingrese su correo electrónico">
+
+            <% if (locals.errors && errors.email) { %>
+                <p class= "text-validation">
+                    <%= errors.email.msg %>
+                </p>
+            <% } %>
+
+            <input 
+            class="controls" 
+            type="password" 
+            name="password" 
+            id="password" 
+            placeholder="Ingrese su contraseña"> 
+
             <button type="submit" class="boton-ingreso">Ingresar</button>
             <p><a href="/">¿Olvidaste tu contraseña?</a></p>
         </form>

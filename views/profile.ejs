@@ -1,42 +1,52 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
 <head>
 
-    <title>novedades</title>
+    <title>Perfil</title>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/styles-header.css">
-        <link rel="stylesheet" href="css/styles-footer.css">
-        <link rel="stylesheet" href="css/styles-profile.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
-        <link rel="icon" href="/images/favicon.ico" type="ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles-header.css">
+    <link rel="stylesheet" href="/css/styles-profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico" type="ico">
 
 </head>
+
 <body>
     <%- include('./partials/header') %>
-    
-        
-<main>
+
+
+        <main>
             <!--ACÁ VA EL CÓDIGO DEL CUERPO DE LA PÁG-->
-            <div class="box-img">
-                <img src="/images/imgUsers/userimg-default.png" alt="img-user">
+            <div id="box-img">
+                <% let img=user.imgUser %>
+                    <img  id="avatar" src="/images/imgUsers/<%=img.replace(/['" ]+/g, '' )%>" alt="imgUser"> <%# Quitamos commillas
+                        con replace para no romper la ruta %>
             </div>
             <div>
-                <h4 class="name">Avatar</h4>
+                <h4 class="profilename">¡Hola <%=user.userName%> !</h4>
+                <p class="subtitle">Te estabamos esperando con lo mejor de nuestra tienda: </p>
             </div>
-</main>
-        
-<%- include('./partials/footer') %>
-        
+
+            <p>Hacé tu propio recorrido por nuestra tienda</p>
+            <a class="link-profile" href="/">HOME</a>
+            
+            <p>Haz click aquí para ver nuestros productos destacados</p>
+            <a class="link-profile" href="/listProducts">PRODUCTOS</a>
+            
+            <p>Si sos exigente, aquí están nuestras mejores piezas</p>
+            <a class="link-profile" href="/listLuxury">PRODUCTOS LUXURY</a>
+            
+            <p>Inspirate de las mejores recetas</p>
+            <a class="link-profile" href="/recipes">RECETAS</a>
+        </main>
+
 </body>
+
 </html>

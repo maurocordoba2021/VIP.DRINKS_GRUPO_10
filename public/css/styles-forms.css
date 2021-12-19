@@ -127,6 +127,18 @@ input.is-invalid{
     font-size: small;
 }
 
+
+
+
+h4.profilename{
+    color: whitesmoke;
+}
+#box-img{
+    max-width: 300px;
+    border-radius: 50%;
+    background: blue;
+}
+
 /* START MEDIA QUERIES */
 
 @media(min-width: 0px){

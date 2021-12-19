@@ -14,11 +14,17 @@ const product=require('./routes/product');
 const admin = require('./routes/admin');
 const main =require('./routes/main');
 const { format } = require("path");
+const session = require("express-session");
 /* Modularizado de rutas */
 
 app.use(express.static('public'))
 app.use(express.urlencoded({extended: false}));//Permite capturar info de un formulario via post.
 app.use(express.json());
+app.use(session({
+    secret: "It's a secret",
+    resave: false,
+    saveUninitialized: false,
+}))
 app.set('view engine', 'ejs');
 //app.use(logMiddleware);
 app.use('/shop',shopCar)

@@ -35,7 +35,41 @@
                     enctype="multipart/form-data" 
                     id="form">
                         <h4>Formulario de Registro</h4>
-                    <!--e-mail-->
+              
+                    <!--Nombre-->
+                    <label for="first_name"></label>
+                    <input 
+                        class="controls <%= locals.errors && errors.first_name ? 'is-invalid' : null %>  " 
+                        type="text"
+                        name="first_name" 
+                        value= "<%= locals.oldData ? oldData.first_name : null %>"
+                        id="first_name"
+                        placeholder="Nombre">
+                        <!--Validación nombres-->
+                        <% if (locals.errors && errors.first_name) { %>
+                              <p class= "text-validation">
+                                <%= errors.first_name.msg %>
+                              </p>
+                            <% } %>
+
+
+                               <!--Apellido-->
+                    <label for="last_name"></label>
+                    <input 
+                        class="controls <%= locals.errors && errors.last_name ? 'is-invalid' : null %>  " 
+                        type="text"
+                        name="last_name" 
+                        value= "<%= locals.oldData ? oldData.last_name : null %>"
+                        id="last_name"
+                        placeholder="Apellido">
+                        <!--Validación apellido-->
+                        <% if (locals.errors && errors.last_name) { %>
+                              <p class= "text-validation">
+                                <%= errors.last_name.msg %>
+                              </p>
+                            <% } %>
+
+                                  <!--e-mail-->
                     <label for="email"></label>
                     <input 
                         class="controls <%= (locals.errors && errors.email) ? 'is-invalid' : null %>  " 
@@ -50,21 +84,7 @@
                             <%= errors.email.msg %>
                         </p>
                         <% } %>
-                    <!--Nombre-->
-                    <label for="userName"></label>
-                    <input 
-                        class="controls <%= locals.errors && errors.userName ? 'is-invalid' : null %>  " 
-                        type="text"
-                        name="userName" 
-                        value= "<%= locals.oldData ? oldData.userName : null %>"
-                        id="userName"
-                        placeholder="Nombre de usuario">
-                        <!--Validación nombres-->
-                        <% if (locals.errors && errors.userName) { %>
-                              <p class= "text-validation">
-                                <%= errors.userName.msg %>
-                              </p>
-                            <% } %>
+
                     <label for="password"></label>
                     <input 
                         class="controls <%= locals.errors && errors.password ? 'is-invalid' : null %>  " 
@@ -89,7 +109,8 @@
                             </p>
                             <% } %>
                         <p class="warnings" id="warnings"></p>
-                        <form method="post" action="/users/register">
+
+                      
                             <button type="submit"  class="boton-register">Registrarse</button>
                         </form>
                 </form>

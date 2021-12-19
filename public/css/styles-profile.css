@@ -60,7 +60,7 @@ p.subtitle{
 
 @media(min-width: 1024px){
     main{
-        margin-top: 30%;
+        margin-top: 0;
     }
 }
 

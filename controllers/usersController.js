@@ -13,13 +13,16 @@ const usersController ={
     register: async (req, res) =>{
         res.render('register');
     },
-    processForm: (req, res) =>{
+    processForm: async(req, res) =>{
         let file = req.file;
+    
         let oldData = {
+            first_name: req.body.first_name,
+            last_name: req.body.last_name,
             email: req.body.email,
-            userName: req.body.userName,
             password: req.body.password,
-            imgUser: file
+            imgUser: file,
+            admin: false
         }
         const resultValidation = validationResult(req)
         if (resultValidation.errors.length > 0) {
@@ -50,13 +53,13 @@ const usersController ={
         }
 
       let userCreated = Users.create(userToCreate);
-        return res.redirect('/users/profile');
+       return res.redirect('/users/login');
     }, 
     // START LOGIN
     login: (req, res) =>{
         res.render('login');
     },
-    loginProcess: (req, res) =>{
+    loginProcess: async(req, res) =>{
       let userToLogin = Users.findByField('email', req.body.email);
 
       if(userToLogin){
@@ -89,10 +92,10 @@ const usersController ={
     profile: async(req, res)=>{
         return res.render('profile', {
             user: {
-                imgUser:  req.session.userLogged.imgUser,
-                userName: req.session.userLogged.userName,
+                imgUser: req.session.userLogged.imgUser,
+                first_name: req.session.userLogged.first_name,
+                last_name: req.session.userLogged.last_name
         }});
-
     },
 }
 module.exports = usersController;

@@ -1,12 +1,13 @@
 const express=require('express');
 const router=express.Router();
-const multer = require('multer');
-const path = require("path");
+
+// Controllers
 const adminController = require('../controllers/adminController');
-const productsFileUpload = require('../controllers/middlewares/multerProductsMiddleware')
 
+// Middlewares
+const productsFileUpload = require('../middlewares/multerProductsMiddleware')
 
-
+// Routes
 
 // Muestra Index de Admin
 router.get("/", adminController.index);

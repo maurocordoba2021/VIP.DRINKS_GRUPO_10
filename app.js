@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const logMiddleware = require('./controllers/middlewares/logMiddleware');
+const logMiddleware = require('./middlewares/logMiddleware');
 
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));

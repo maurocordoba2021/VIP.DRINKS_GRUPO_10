@@ -1,6 +1,6 @@
 const multer = require('multer');
 const path = require('path');
-
+const usersValidations = require("./usersValidations")
 
 // USUARIOS -> configuración de guardado de archivos
 

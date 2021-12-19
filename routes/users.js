@@ -13,7 +13,7 @@ const usersValidations = require('../middlewares/usersValidations')
 
 router.get("/login", usersController.login);
 
-router.get("/users/profile", usersController.profile)
+router.get("/profile", usersController.profile)
 
 
 //Muestra el formulario de registro

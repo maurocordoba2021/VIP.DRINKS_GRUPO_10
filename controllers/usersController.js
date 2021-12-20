@@ -59,16 +59,20 @@ const usersController ={
     login: (req, res) =>{
         res.render('login');
     },
-    loginProcess: async(req, res) =>{
+    loginProcess: async(req, res) => {
       let userToLogin = Users.findByField('email', req.body.email);
 
       if(userToLogin){
           let passwordVerify = bcryptjs.compareSync(req.body.password, userToLogin.password);
           if(passwordVerify){
-              delete userToLogin.password;
+            delete userToLogin.password;
             req.session.userLogged = userToLogin;
-            return res.redirect('/users/profile');
-          }  
+
+            if(req.body.remember_user) {
+                res.cookie('userEmail', req.body.email, { maxAge: (1000 +60) * 2 });
+            }
+              return res.redirect('/users/profile');
+          } 
            return res.render('login', {
             errors: {
                 password: {
@@ -76,9 +80,7 @@ const usersController ={
                 }
             }, 
             oldData: req.body
-        });
-
-  
+        });  
       }
       return res.render('login', {
           errors: {
@@ -98,6 +100,7 @@ const usersController ={
         }});
     },
     logout: (req, res) => {
+        res.clearCookie("userEmail")
         req.session.destroy();
         return res.redirect('/');
     }

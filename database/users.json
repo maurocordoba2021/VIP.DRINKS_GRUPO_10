@@ -889,45 +889,5 @@
   "password": "rbsasnC",
   "imgUser": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJpSURBVDjLpZPLS5RhFMZ/7/eNM6Xf6GhYSeU0FUFGdMUWRdIiEqSgqDataldLwU3WXyC0jxYFEUFKbTIkyLCgoIhuRPcGC7LQHPPS5+f7vue0CCa70KLO8nDOj8N5nseoKv9TqV8b7oaJVGlXoVWEZlVQ4a4IfSqczO7SydnzZvYF7oZpUeGMaewomFwzmq4D9Wg8gi89IHnVVRThUO0eHfgN4PrNHs21XAoWHiQOMjwduMn8hpCqyPH2mWNhIU9DwwKSd90knwb21h/Qy2WA7Td1qgyGay5EEozjp4uUhko8vD2GKizJC4Xlgsk0EmbW8OXO4UkR8g0HdTQAUKE9yHdGmgZJivT3FKmpSWhpzbBlm7I0P8HN6wY3/gSfvKFyVWcknnaAAECENlO7GZkuoi5m++5avoMtYcoCsGXrCGoncWP3SeVWIp62sgoiNJGpRuIxXj+uBZMF84s8qqgbZXHdNSDBewplgAqxuuk03lGX30jlvOWYIPx5XzxTnx6h472gigjhjws8RWy8DtJURTHZBSsIUhU/AbxN8J+vYoJKxKewCa9n/6DXjjzApBsJkgHs1w/AbIcqdvwNfL5Iqnot8cggdobesoylS6ZehLfR5nOR2Be4qUHCXBsVuQ2gnmT4FjPvTxPOXYSp3snglSOTzrJs/TEdLhtp+KLZl6rf0T2ncS+EE7jSPXz8AXXTmFSWMLsOzzJKz69Setm3f0On9vxm5aHzZod4TlU1dRTS81YTVAQgDpd4poZe8vFOV9FZjm48rn1/zALA+7MmEk+HCK3e0+xmwFnuOkufs3RtOvGXMP1LfQPtZUr+1SCKsQAAAABJRU5ErkJggg==",
   "admin": true
- },
- {
-  "id": 104,
-  "first_name": "lisa",
-  "last_name": "simpson",
-  "email": "lisa@simpsons.com",
-  "password": "$2a$10$CHFvmupPF2uA7OrjMMyMs.R8Ce6WzJz9.cd3t3Hr7SzCf/AZwAxW.",
-  "imgUser": "imgUser-1639941589420.png"
- },
- {
-  "id": 105,
-  "first_name": "Homer",
-  "last_name": "Simpsons",
-  "email": "homer@simpsons.com",
-  "password": "$2a$10$dqZ5KMQ/depofAtr/nOAOuwkiWcAn7shMyqzKj8K4wLamFKTNaaJC",
-  "imgUser": "imgUser-1639941840857.jpeg"
- },
- {
-  "id": 106,
-  "first_name": "Bart",
-  "last_name": "Simpsons",
-  "email": "bart@simpsons.com",
-  "password": "$2a$10$G7X/k7Wu/O0kuEbs07hTG./KwgOWvgDyvdALTIi3gOOzPLn9uJJV.",
-  "imgUser": "imgUser-1639941910438.jpg"
- },
- {
-  "id": 107,
-  "first_name": "Marge",
-  "last_name": "Simpsons",
-  "email": "marge@simpsons.com",
-  "password": "$2a$10$uPwwymjZqyvg2lPhWuJ6se02AmCCXCXtC1neXFtfnDYhYpRnCWzTm",
-  "imgUser": "imgUser-1640020820209.jpeg"
- },
- {
-  "id": 108,
-  "first_name": "Maggie",
-  "last_name": "Simpsons",
-  "email": "maggie@simpsons.com",
-  "password": "$2a$10$IWlhFtU5EIldof16yUp86OE83qUhy9Ym7.LCl4mHxg6jXzyaSo.Qu",
-  "imgUser": "imgUser-1640021842431.jpg"
  }
 ]

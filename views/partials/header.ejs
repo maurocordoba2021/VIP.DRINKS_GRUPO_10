@@ -52,11 +52,21 @@
                     <!-- esto hay que ponerlo en la hoja de estilos (mauro lo hizo asi nomas )-->
                    <button id="search" type="submit" class=""><i class="fas fa-search"></i></button>
                 </li>
+                <% if (locals.isLogged) { %>
+            
+                <li><a href="/users/profile">
+                    <div class="img-user-nav">
+                        <img src="/images/imgUsers/<%= locals.userLogged.imgUser%>" class="img-user-nav">
+                    </div>
+                    </a></i></li>
+                <li><a href="/shop"><i class="fas fa-shopping-cart"></a></i></li>
+                <li><a href="/users/logout"><i class="fas fa-sign-in-alt"></i></a></i></li>
+
+                <% } else { %>
                 <li><a href="/users/login"><i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="/users/register"><i class="far fa-id-badge"></i></a></li>
-                <li><a href="/shop"><i class="fas fa-shopping-cart"></a></i></li>
-                <li><a href="/users/profile"><i class="fas fa-user"></a></i></li>
-                <li><a href="/users/logout">Salir</a></i></li>
+
+                <% } %>
             </ul>
         </div>
 

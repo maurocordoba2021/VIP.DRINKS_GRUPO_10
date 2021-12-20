@@ -9,7 +9,7 @@ const mainController = {
     listProducts:  (req, res) => {
         res.render("listProducts", { listProducts: homeProducts});
     },
-    recetas: (req, res) =>{
+    recipes: (req, res) =>{
         
         res.render("recipes")
     },

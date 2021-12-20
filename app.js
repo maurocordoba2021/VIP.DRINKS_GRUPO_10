@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const logMiddleware = require('./middlewares/logMiddleware');
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
@@ -27,6 +28,7 @@ app.use(session({
 }))
 app.set('view engine', 'ejs');
 //app.use(logMiddleware);
+app.use(userLoggedMiddleware);
 app.use('/shop',shopCar)
 app.use('/users',users)
 app.use('/product',product)

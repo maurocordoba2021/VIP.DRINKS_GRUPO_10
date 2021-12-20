@@ -6,7 +6,7 @@ const mainController =require('../controllers/mainController')
 router.get("/", mainController.index);
 router.post("/", mainController.index);
 router.get("/listProducts", mainController.listProducts);
-router.get("/recetas", mainController.recetas);
+router.get("/recipes", mainController.recipes);
 
 
 

@@ -31,7 +31,7 @@ https://www.skyyvodka.com/
 Una página que tomamos como referente por los productos que ofrece y cómo se los exibe. De aquí nos inspiramos para el header del sitio.
 
 https://www.jackdaniels.com/es/our-products
-Nos gustó el background oscuro, de acá sacamos la idea sobre recetas, el estilo y  el diseño.
+Nos gustó el background oscuro, de acá sacamos la idea sobre recipes, el estilo y  el diseño.
 
 
 https://havana-club.com/es/ 

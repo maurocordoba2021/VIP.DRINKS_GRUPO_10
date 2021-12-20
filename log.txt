@@ -1,12 +1,12 @@
 Se ingresó en la página /
-Se ingresó en la página /recetas
+Se ingresó en la página /recipes
 Se ingresó en la página /product/luxury-offers
 Se ingresó en la página /listProducts
 Se ingresó en la página /
 Se ingresó en la página /listProducts
 Se ingresó en la página /
 Se ingresó en la página /users/register
-Se ingresó en la página /recetas
+Se ingresó en la página /recipes
 Se ingresó en la página /product/luxury-offers
 Se ingresó en la página /listProducts
 Se ingresó en la página /listProducts
@@ -14,10 +14,10 @@ Se ingresó en la página /listProducts
 Se ingresó en la página /product/luxury-offers
 Se ingresó en la página /product/luxury-offers
 Se ingresó en la página /product/luxury-offers
-Se ingresó en la página /recetas
+Se ingresó en la página /recipes
 Se ingresó en la página /product/luxury-offers
 Se ingresó en la página /listProducts
-Se ingresó en la página /recetas
+Se ingresó en la página /recipes
 Se ingresó en la página /listProducts
 Se ingresó en la página /listProducts
 Se ingresó en la página /users/register
@@ -39,7 +39,7 @@ Se ingresó en la página /
 Se ingresó en la página /listProducts
 Se ingresó en la página /listProducts
 Se ingresó en la página /listProducts
-Se ingresó en la página /recetas
+Se ingresó en la página /recipes
 Se ingresó en la página /product/luxury-offers
 Se ingresó en la página /listProducts
 Se ingresó en la página /

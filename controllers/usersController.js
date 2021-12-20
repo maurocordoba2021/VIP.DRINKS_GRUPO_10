@@ -83,7 +83,7 @@ const usersController ={
       return res.render('login', {
           errors: {
               email: {
-                  msg: 'Las credenciales no son válidas'
+                  msg: 'Las credenciales son inválidas'
               }
           }
       });
@@ -97,5 +97,9 @@ const usersController ={
                 last_name: req.session.userLogged.last_name
         }});
     },
+    logout: (req, res) => {
+        req.session.destroy();
+        return res.redirect('/');
+    }
 }
 module.exports = usersController;

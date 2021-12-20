@@ -913,5 +913,21 @@
   "email": "bart@simpsons.com",
   "password": "$2a$10$G7X/k7Wu/O0kuEbs07hTG./KwgOWvgDyvdALTIi3gOOzPLn9uJJV.",
   "imgUser": "imgUser-1639941910438.jpg"
+ },
+ {
+  "id": 107,
+  "first_name": "Marge",
+  "last_name": "Simpsons",
+  "email": "marge@simpsons.com",
+  "password": "$2a$10$uPwwymjZqyvg2lPhWuJ6se02AmCCXCXtC1neXFtfnDYhYpRnCWzTm",
+  "imgUser": "imgUser-1640020820209.jpeg"
+ },
+ {
+  "id": 108,
+  "first_name": "Maggie",
+  "last_name": "Simpsons",
+  "email": "maggie@simpsons.com",
+  "password": "$2a$10$IWlhFtU5EIldof16yUp86OE83qUhy9Ym7.LCl4mHxg6jXzyaSo.Qu",
+  "imgUser": "imgUser-1640021842431.jpg"
  }
 ]

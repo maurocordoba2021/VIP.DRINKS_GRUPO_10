@@ -39,7 +39,7 @@ const adminController = {
         listProducts.push(newProduct);
         let nuevaLista = JSON.stringify(listProducts, null, " ");
         fs.writeFileSync(dirPath, nuevaLista, 'utf-8')
-        res.redirect('/admin/listEdit');
+       res.redirect('/admin/listEdit');
     },
     listEdit: (req, res) => {
         res.render("listEdit", { listProducts });

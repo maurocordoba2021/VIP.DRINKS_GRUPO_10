@@ -101,7 +101,12 @@ const adminController = {
         let idProduct = req.params.id
         console.log(idProduct);
         let pos = listProducts.indexOf(idProduct);
-
+        //Se agrego al funcion para eliminar la imagen del prducto cuando este se elimina//
+        let imgDelete=listProducts.find((idProduct)=>{
+            return idProduct.img
+        })
+        console.log(imgDelete.img)
+        fs.unlinkSync(path.join(__dirname,"../public/images/imgProducts/"+imgDelete.img))
         listProducts.splice(pos, 1);
 
         let nuevaLista = JSON.stringify(listProducts, null, " ");

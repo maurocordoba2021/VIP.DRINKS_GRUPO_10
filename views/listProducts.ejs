@@ -11,7 +11,7 @@
         <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/styles-header.css">
         <link rel="stylesheet" href="css/styles-footer.css">
-        <link rel="stylesheet" href="css/styles-home.css">
+        <link rel="stylesheet" href="css/styles-listProducts.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 
 <main>
     <div class="products">
-    <h3>Tus productos favoritos</h3>
+    <h3>Productos destacados</h3>
     <section class="featured">
 
         <% listProducts.forEach(product => { %>
@@ -33,7 +33,7 @@
                 <div class="main-article">
                     <i class="fas fa-plane"></i>
                     <p class="price">$<%= product.price %></p>
-                    <p class="shipping">Envío Global Gratuito</p> 
+                    <p class="shipping">Envío Gratuito</p> 
                     <h4 class="description"><%= product.title %></h4>
                     <form action="/detalle/<%= product.id%>" method="get">
                     <button class="buy" type="button">Comprar</button>

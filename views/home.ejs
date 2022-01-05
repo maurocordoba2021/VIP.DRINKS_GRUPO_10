@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Bienvenido a VIP.DRINKS</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina en desarrollo</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,101 @@
     <link rel="stylesheet" href="css/styles-home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Vujahday+Script&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/favicon.ico" type="ico">
 </head>
 <body>
     <%- include('./partials/header') %>
-    <div class="trabajando">
-    <img class="trabajando" src="/images/home-in-progress.png">
-</div>
+<main>
+<section>
+    <div class="banner-img">
+    <img class="banner" src="/images/publicity_brindis.jpeg" alt="banner">
+    </div>
+    <div>
+        <h2 class="subtitle">Bienvenido a VIP.DRINKS </h2>
+        <h3 class="sub-subtitle">Tenemos una amplia variedad de productos de lujo</h3>
+    </div>
+</section>
+<!--el carrusel de productos lo vamos a terminar de realizar correcatamente cuando trabajemos con JS Front-->
+<section class="carrousel-products">
+    <article class="product">
+        <div>
+            <img src="/images/imgProducts/whisky-Louis-XIII.png" alt="">
+        </div>
+        <form action="/product/detalle/6" method="get">
+            <button class="detail" type="submit">Detalle</button>
+            </form>
+    </article>
+</section>
+<section class="nosotros">
+    <div class="banner-img">
+    <img class="banner" src="/images/sobre-nosotros-banner.jpeg" alt="banner">
+    </div>
+    <div>
+        <h2 class="subtitle">Sobre nosotros</h2>
+        <h3 class="sub-subtitle">Quiénes somos</h3>
+        <p class="text">Creamos VIP.DRINKS en 2021 con la misión de brindar a clientes exigentes las bebidas más exclusivas y lujosas del mundo.
+            Somos un grupo de compañeros que aprende y crece con la fuerza de la tecnología de la mano de la mejor educación en Digital House.
+        </p>
+    </div>
+</section>
+<section class="categories">
+    <div>
+        <h2 class="subtitle">Nuestra oferta de productos</h2>
+        <h3 class="sub-subtitle">Descubre lo que tenemos disponible</h3>
+    </div>
+<article class="categories">
+    <a href="/product/luxury-offers">
+    <div>
+        <img src="/images/banner-kits.jpeg" alt="">
+    </div>
+    <div class="main-category">
+        <h2 class="subtitle">Colecciones</h2>
+        <h3 class="sub-subtitle">Ediciones limitadas</h3>
+        <form action="/product/luxury-offers" method="get">
+            <button class="ver-mas" type="submit">
+            Ver más
+            </button>
+        </form>
+    </div>
+</a>
+</article>
+<article class="categories">
+    <a href="/product/listProducts">
+    <div>
+        <img src="/images/banner-botellas.jpeg" alt="">
+    </div>
+    <div class="main-category">
+        <h2 class="subtitle">Botellas</h2>
+        <h3 class="sub-subtitle">Productos destacados</h3>
+        <form action="/product/listProducts" method="get">
+            <button class="ver-mas" type="submit">
+            Ver más
+            </button>
+        </form>
+    </div>
+</a>
+</article>
+<article class="categories">
+    <a href="/recipes">
+    <div>
+        <img src="/images/banner-recipes.jpeg" alt="">
+    </div>
+    <div class="main-category">
+        <h2 class="subtitle">Recetas</h2>
+        <h3 class="sub-subtitle">Ispiración para tí</h3>
+        <form action="/recipes" method="get">
+            <button class="ver-mas" type="submit">
+            Ver más
+            </button>
+        </form>
+    </div>
+</a>
+</article>
+
+</section>
+
+</main>
     <%- include('./partials/footer') %>
 </body>
 </html>

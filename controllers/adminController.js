@@ -32,7 +32,7 @@ const adminController = {
             shippingCost: parseInt (req.body.shippingCost),
             luxury: value,
             category: req.body.category,
-            img: req.file.filename,
+            imgProduct: req.file.filename,
             
         };
         console.log(newProduct);
@@ -55,11 +55,11 @@ const adminController = {
     // 2) Muestro mi producto encontrado antes de actualizar
     console.log("Antes de la edición: ", listProducts[productIndex])
     // 3) Validación de Imágen
-        let img
+        let imgProduct
         if (req.file != undefined) {
             img = req.file.filename
         } else {
-            img = listProducts[productIndex].img
+            imgProduct = listProducts[productIndex].imgProduct
         }
     // 4) Modifico tipos de datos recibidos
             // Luxury String a booleano
@@ -88,7 +88,7 @@ const adminController = {
     listProducts[productIndex].shippingCost = req.body.shippingCost,
     listProducts[productIndex].luxury = value,
     listProducts[productIndex].category = req.body.category,
-    listProducts[productIndex].img = img,
+    listProducts[productIndex].imgProduct = imgProduct,
     // 6) Muestro por consola mi producto actualizado
     console.log("Luego de la edición: ", listProducts[productIndex])
     // 7) Actualizo JSON
@@ -103,10 +103,10 @@ const adminController = {
         let pos = listProducts.indexOf(idProduct);
         //Se agrego al funcion para eliminar la imagen del prducto cuando este se elimina//
         let imgDelete=listProducts.find((idProduct)=>{
-            return idProduct.img
+            return idProduct.imgProduct
         })
-        console.log(imgDelete.img)
-        fs.unlinkSync(path.join(__dirname,"../public/images/imgProducts/"+imgDelete.img))
+        console.log(imgDelete.imgProduct)
+        fs.unlinkSync(path.join(__dirname,"../public/images/imgProducts/"+imgDelete.imgProduct))
         listProducts.splice(pos, 1);
 
         let nuevaLista = JSON.stringify(listProducts, null, " ");

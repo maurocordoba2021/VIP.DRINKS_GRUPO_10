@@ -1,9 +1,9 @@
 
 body{
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Lato', sans-serif;
     margin: 0%;
-    background:#030403;
+    background: white;
 }
 
 /* START NAVBAR TOP*/
@@ -12,7 +12,7 @@ body{
     padding: 10px;
     justify-content: space-between;
     background-color: transparent;
-    background: rgba(0, 0, 0, 0.7);
+    background: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,13 +24,13 @@ body{
 }
 .contain-navbar-scroll i{
     font-size: 30px;
-    color: whitesmoke;
+    color: black;
     padding: 8px;
 }
 .hamburguer-menu{
 display: inline-block;
 font-size: 40px;
-color: whitesmoke;
+color: black;
 border-radius: 5%;
 background-color: transparent;
 }
@@ -43,8 +43,8 @@ li.nav-option1{
 li.nav-option2{
     margin: 0px;
     padding: 0px 5px;
-    border-right: solid 1px white;
-    border-left: solid 1px white;
+    border-right: solid 1px rgb(19, 18, 18);
+    border-left: solid 1px rgb(19, 18, 18);
     cursor: pointer;
 }
 li.nav-option3{
@@ -60,9 +60,7 @@ li.nav-option3{
     color: whitesmoke;
 }
 
-img.logo-home{
-  width: 80px;
-}
+
 
 /* END  NAVBAR TOP*/
 
@@ -75,7 +73,7 @@ img.logo-home{
     z-index: 1;
     top: 0;
     left: 0;
-    background: black;
+    background: rgb(240, 240, 240);
     overflow: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -85,26 +83,27 @@ div#mySidebar{
     display: block;
     text-align: center;
 }
-a.close-btn{
-    position: relative;
-    right: 80px;
-    font-size: 40px;;
-    display: inline-block;
-}
+
 
 .sidebar a{
-    padding: 8px 8px 8px 32px;
+    padding: 8px 16px 8px 16px;
     text-decoration: none;
     font-size: 30px;
-    color: goldenrod;
+    color: rgb(187, 139, 18);
     display: block;
     transition: 0.3s;
+    text-align: initial;
+}
+a.close-btn i{
+    right: 80px;
+    font-size: 40px;
+    display: inline-block;
+    color: black;
 }
 
 .sidebar a:hover{
-    color: #f1f1f1;
+    color: black;
 }
-
 .sidebar .closebtn {
     position: absolute;
     top: 0%;
@@ -122,14 +121,14 @@ a.closebtn{
 .openbtn{
     font-size: 20px;
     cursor: pointer;
-    background-color:#111;
-    color: whitesmoke;
+    background-color: white;
+    color: black;
     padding: 10px 15px;
     border: none;
 }
 
 .openbtn:hover{
-    background-color: #444;
+    background-color: rgb(240, 240, 240);
 }
 
 #main{
@@ -148,7 +147,13 @@ nav.global-nav{
 img.logo-nav{
     display: none;
 }
-
+a{
+    color: black;
+}
+a.logo{
+    font-size: 20px;
+    color: black;
+}
 .navbar-tablet{
 display: flex;
 justify-content: space-between;
@@ -187,12 +192,12 @@ ul.nav-rigth li{
     text-decoration: none;
     display: inline-block;
     font-size: 1em;
-    color:whitesmoke;
+    color:black;
 }
 
 .navbar-tablet ul li i{
     font-size: 1em;
-    color: whitesmoke;
+    color: black;
     margin: 10px;
     cursor: pointer;
 }
@@ -215,14 +220,14 @@ img.logo-prueba{
     height: 100%;
 }
 #search {
-    background-color:black; 
+    background-color:white; 
     border: none;
     cursor: pointer;
     
 }
 #input-search{
     background-color: black;
-    color: whitesmoke;
+    color: black;
     border: solid 1px whitesmoke;
     border-radius: 10px ;
     padding: 3px;
@@ -255,14 +260,14 @@ img.logo-prueba{
     .contain-navbar-scroll{
         display: flex;
         padding: 0% 1%;
-        background:rgba(0, 0, 0, 0.7); 
+        background:white; 
         width: 100%;
         position: relative;
         display: none;
     }
      .navbar-tablet{
         display: flex;
-        background: rgba(0, 0, 0, 0.7); 
+        background: white; 
     }
 }
 

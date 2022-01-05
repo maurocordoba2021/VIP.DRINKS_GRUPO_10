@@ -1,7 +1,6 @@
 /* START UNIVERSAL*/
 *{  
-    margin: 0%;
-    padding: 0%;
+   
     box-sizing: border-box;
     flex-wrap: wrap;
 }
@@ -17,20 +16,24 @@ main{
 
 a{
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
 }
 
-img{
+img.banner{
     width: 100%;
+}
+banner-img{
+ width: 100vw;
 }
 
 li{
     text-decoration: none;
 }
 
-h3{
-    color: whitesmoke;
-    font-size: xx-large;
+h3.sub-subtitle{
+    color: black;
+    font-size: large;
+    font-family: 'Vujahday Script', cursive;
     font-weight: 300;
 }
 
@@ -62,10 +65,10 @@ main section article img {
     width: 100%;
     opacity: 100%;
 }
-main section article img:hover {
+/* main section article img:hover {
     width: 100%;
     opacity: 60%;
-}
+} */
 
 .main-article{
     position: relative;
@@ -133,23 +136,11 @@ article{
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    border-top: 1px solid grey;
     position: relative;
     padding: 15px 15px 5px;
 }
 
 /* END MAIN */
-/* TRABAJANDO EN ELLO*/
-div.trabajando{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    margin: 0 auto;
-}
-img.trabajando{
-    width: 100%;
-}
-
 
 /* START BOTON COMPRAR*/
 form {
@@ -158,24 +149,87 @@ form {
     justify-content: center;
 }
 
-button.buy{
-    background: orange;
-    color: white;
-    border: none;
+button.detail{
+    background: none;
+    color: black;
     padding: 5px;
     margin: 8px 0 0;
-    border-radius: 5px;
     width: 120px;
     transition: all 2s;
+    border: solid 1px gray;
+    cursor: pointer;
 }
 
-button.buy:hover{
+button.detail:hover{
     background: white;
     color: orange;
     border: solid 1px orange;
 }
 
 /* END BOTON COMPRAR*/
+
+/* START CARROUSEL PRODUCTS*/
+section.carrousel-products{
+    display: flex;
+    border-top: 1px solid gray;
+    border-bottom: gray solid 1px;
+    margin-bottom: 10px;
+}
+article.product{
+    max-width: 200px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+section.nosotros{
+    background:rgb(237, 237, 237);
+    padding: 0px, 10px;
+    margin: 8px, 16px,auto; 
+}
+
+section.categories {
+    display: flex;
+    flex-direction: column;
+}
+
+section.categories article {
+    background: none;
+}
+
+article.categories{
+    position: relative;
+    z-index: -1;
+    padding: 0px;
+    margin: 0;
+    border: none;
+    max-height: 200px;
+    cursor: pointer;
+}
+.main-category{
+    position: absolute;
+    left: 36px;
+    top: 36px;
+    z-index: 2;
+    color: white;
+    padding: 6px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.main-category h3{
+    color: white;
+}
+button.ver-mas{
+    background: none;
+    border: solid 2px white;
+    padding: 8px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* END CARROUSEL PRODUCTS*/
+
 
 /* START MEDIA QUERIES */
 

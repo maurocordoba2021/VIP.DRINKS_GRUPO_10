@@ -5,7 +5,7 @@ footer{
     flex-wrap: wrap;
     margin: 0%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: white;
 }
 
 footer img.logo-footer{
@@ -24,25 +24,25 @@ section.container-footer{
 footer article{
     align-items: baseline;
     display: flow-root;
-    color: whitesmoke;
+    color: black;
 }
 
 footer i{
     font-size: 2em;
-    color: whitesmoke;
+    color: black;
 }
 
 .contain-redes-sociales{
     display: flex;
     justify-content: space-around;
-    color: whitesmoke;
+    color: black;
     width: 100%;
     margin: 0 10px;
     font-size: 10px;
 }
 
 h2.header-links{
-    color: whitesmoke;
+    color: black;
     display: inline-block;
     margin: 8%;
 }
@@ -59,7 +59,7 @@ a.link{
 }
 
 .terminos-y-condiciones{
-    color: whitesmoke;
+    color: black;
     font-size: 20px;
     text-decoration: none;
     display: inline-flex;

@@ -19,12 +19,9 @@ main{
 
 a{
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
 }
 
-img{
-    width: 95vw;
-}
 
 li{
     text-decoration: none;
@@ -40,9 +37,9 @@ li{
 
 .section-login h4,
 .section-register h4{
-    font-size: 40px;
+    font-size: 24px;
     text-align: center;
-    color: gold;
+    color: black;
 }
 
 .section-login,
@@ -51,8 +48,7 @@ li{
     padding: 30px;
     margin: auto;
     margin-top: 130px;
-    border-radius: 4px;
-    color:white;
+    color:black;
 }
 
 .controls{
@@ -68,12 +64,13 @@ button.boton-ingreso,
 button.boton-register{
     width: 80%;
     border:none;
-    background-color:gold;
+    background-color: goldenrod;
     padding: 12px;
     color: black;
     margin:16px 0;
     font-size: 20px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 main.login-form{
@@ -86,9 +83,10 @@ form.section-login,
 form.section-register{
     display: flex;
     justify-content: center;
-    max-width: 95%;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
+    max-width: 90%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
 }
 div.admin-password{
     margin: 0 auto;
@@ -102,11 +100,20 @@ div.admin-password{
 }
 h6 .admin-button{
     margin-bottom: 10px auto;
+    cursor: pointer;
 }
 
 input#password-admin{
     border: none;
     background-color: tomato;
+}
+
+input#imgUser{
+    margin-top: 12px;
+}
+
+label.remember{
+    margin-top: 12px;
 }
 .box-extra{
     display: flex;

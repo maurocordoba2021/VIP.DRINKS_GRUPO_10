@@ -1,0 +1,197 @@
+/* START UNIVERSAL*/
+*{
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+/* END UNIVERSAL*/
+
+
+/* START CUERPO EN GRAL */
+div{
+    display: block;
+}
+
+
+main{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    text-decoration: none;
+}
+/* END CUERPO EN GRAL */
+
+
+/* START MAIN */
+
+main{
+    width: 90%;
+    margin: 150px auto 10px;
+}
+
+main h3{
+    color: black;
+}
+
+.featured,
+.novelties{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+
+main section article{
+    display: inline-block;
+    margin: 10px 0px;
+    background: white;
+    border: solid 1px #c4c3c3a6;
+}
+
+main section article img {
+    width: 100%;
+}
+
+.main-article{
+    position: relative;
+    border-top: solid 1px rgba(0, 100, 0, 0.81);
+    padding: 15px;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+    color: darkgreen;
+}
+
+.discount,
+.shipping{
+    width: 70%;
+    color: #666;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.description{
+    color: white;
+    margin-top: 4px;
+}
+
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: -15px;
+    transition: all 540ms;
+}
+
+main section article i:hover{
+    transform: rotateZ(-90deg);
+}
+
+main section h3{
+    margin:20px 0px;
+    color: black;
+}
+
+
+article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+    padding: 15px 15px 5px;
+}
+
+/* END MAIN*/ 
+
+/* ACA COMIENZA EL BOTON COMPRAR*/ 
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+button.buy{
+    background: white;
+    color: black;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 8px 0 0;
+    border-radius: 2px;
+    width: 200px;
+    transition: all 400ms;
+}
+button.buy:hover{
+    background: darkgreen;
+    color: white;
+    border: none;
+
+}
+
+/* END BOTON COMPRAR*/
+
+
+/* START MEDIA QUERIES */
+
+@media(min-width: 0px){
+    .shipping{
+        width: 100%;
+    }
+}
+
+@media(min-height: 450px){
+
+}
+
+@media(min-width: 768px){
+    main{
+        margin: 0 auto;
+    }   
+    article{
+     max-width: 40%;
+    }
+    main section article:hover .description{
+        color:black;
+        width: 100%;
+        justify-content: center;
+    }
+    .discount{
+        width: 50%;
+        text-align: end;
+    }
+    .shipping{
+        width: 100%;
+    }
+}
+@media(min-width: 1024px){
+article{
+    max-width: 22%;
+   }
+}
+
+

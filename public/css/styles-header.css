@@ -1,11 +1,4 @@
 
-body{
-    display: block;
-    font-family:'Lato', sans-serif;
-    margin: 0%;
-    background: white;
-}
-
 /* START NAVBAR TOP*/
 .contain-navbar-scroll{
     display: flex;
@@ -179,6 +172,7 @@ ul.nav-rigth li{
     display: inline-block;
     text-align: center;
     margin: 0px;
+    padding: 5px;
 }
 
 .navbar-tablet ul {

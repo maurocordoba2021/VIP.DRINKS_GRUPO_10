@@ -11,15 +11,7 @@ div{
     display: block;
 }
 
-body{
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin: 0%;
-    color: whitesmoke;
-    background: black;
-    background-size: auto;
-}
+
 
 main{
     display: flex;
@@ -47,7 +39,15 @@ img{
 li{
     text-decoration: none;
 }
-
+body{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0%;
+    color: whitesmoke;
+    background: black;
+    background-size: auto;
+}
 /* END CUERPO EN GRAL */
 
 

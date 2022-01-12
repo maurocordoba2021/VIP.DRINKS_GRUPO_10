@@ -201,10 +201,13 @@ div.search{
 
 
 #search {
-    background-color:none; 
+    background-color: white; 
     border: none;
     cursor: pointer;
-    
+    transition: 100ms ease;
+}
+#search:hover{
+    border-radius: 50px;
 }
 #input-search{
     background-color: none;
@@ -258,6 +261,7 @@ div.search{
      .navbar-tablet{
         display: flex;
         background: white; 
+        padding: 12px;
     }
 }
 

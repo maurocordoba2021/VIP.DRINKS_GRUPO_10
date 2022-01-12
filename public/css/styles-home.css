@@ -22,6 +22,9 @@ a{
 img.banner{
     width: 100%;
 }
+img.banner-tablet{
+    display: none;
+}
 banner-img{
  width: 100vw;
 }
@@ -130,7 +133,10 @@ main section h3{
     color: whitesmoke;
  
 }
-
+.abuot {
+    padding: 16px;
+    margin: 50px 0px;
+}
 article{
     width: 100%;
     display: flex;
@@ -205,6 +211,7 @@ article.categories{
     max-height: 200px;
     cursor: pointer;
 }
+
 .main-category{
     position: absolute;
     left: 36px;
@@ -245,8 +252,15 @@ button.ver-mas{
 @media(min-width: 768px){
     main{
         margin: 0 auto;
+        width: 100%;
     }
-    
+   img.banner{
+       display: none;
+   }
+   img.banner-tablet{
+       display: block;
+       width: 100%;
+   }
     article{
      max-width: 40%;
     }
@@ -257,7 +271,30 @@ button.ver-mas{
         justify-content: center;
         transition: 2s;
     }
-
+    .intro{
+    width: 100%;
+    }
+    article.categories {
+        height: 200px;
+    }
+    main section article img {
+        height: 200px;
+    }
+    .main-category {
+        position: absolute;
+        top: 20px;
+        left: 11px;
+        z-index: 2;
+        color: white;
+        padding: 8px;
+        width: 200px;
+    }
+    section.categories {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }    
     .discount{
         width: 50%;
         text-align: end;

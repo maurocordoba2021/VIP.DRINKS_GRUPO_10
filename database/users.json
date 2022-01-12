@@ -897,5 +897,21 @@
   "email": "lisa@simpsons.com",
   "password": "$2a$10$TIljWsbQIGSVvAPo8YmAneoP7nrGgD.unZQ7w7O3d0G6o.IVFKLUS",
   "imgUser": "imgUser-1641151467878.png"
+ },
+ {
+  "id": 101,
+  "first_name": "Celeste",
+  "last_name": "Troccayoli",
+  "email": "cele@troccayoli.com",
+  "password": "$2a$10$3jJDToW8/z7WomPJx77ETeKUs/0WzOF2Xma7cpYLuPg5AkjDqPQji",
+  "imgUser": "imgUser-1641997912932.jpg"
+ },
+ {
+  "id": 102,
+  "first_name": "Agus",
+  "last_name": "Mestroni",
+  "email": "agus@mestrinu.com",
+  "password": "$2a$10$6x2PZ1YCi1lbV/ySLsHqrORHcfKqSaUZVQJ6yGr2sI9aoi5iDA87O",
+  "imgUser": "imgUser-1641999869313.jpeg"
  }
 ]

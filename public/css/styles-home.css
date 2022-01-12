@@ -38,8 +38,18 @@ h3.sub-subtitle{
     font-size: large;
     font-family: 'Vujahday Script', cursive;
     font-weight: 300;
+    text-align: center;
+    font-size: 30px;
 }
-
+h2.subtitle{
+    font-family: 'Cinzel', serif ;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize
+}
+span.brown-title{
+    color:#d5b38b;
+}
 /* END CUERPO EN GRAL */
 
 /* START MAIN */

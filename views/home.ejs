@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Vujahday+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/favicon.ico" type="ico">
 </head>
 <body>
@@ -26,19 +27,40 @@
     <img class="banner-tablet" src="/images/banner.png" alt="banner">
     </div>
     <div>
-        <h2 class="subtitle">Bienvenido a VIP.DRINKS </h2>
+        <h2 class="subtitle">Bienvenido a <span class="brown-title">VIP.DRINKS</span></h2>
         <h3 class="sub-subtitle">Tenemos una amplia variedad de productos de lujo</h3>
     </div>
 </section>
 <!--el carrusel de productos lo vamos a terminar de realizar correcatamente cuando trabajemos con JS Front-->
 <section class="carrousel-products">
     <article class="product">
-        <div>
-            <img src="/images/imgProducts/whisky-Louis-XIII.png" alt="">
+        <div class="container-products">
+            <div class="home-products">
+                <p class="title-products">Variedades de Whisky</p>
+                <img src="/images/imgProducts/whisky-Louis-XIII.png" alt=""><form action="/product/detalle/5" method="get">
+                    <button class="detail" type="submit">Detalle</button>
+                </form>
+            </div>
+            <div class="home-products">
+                <p class="title-products">Variedades de Espumantes</p>
+                <img src="/images/imgProducts/champagne-Krug.png" alt="">
+                <form action="/product/detalle/1" method="get">
+                    <button class="detail" type="submit">Detalle</button>
+                </form>
+            </div>
+            <div class="home-products">
+                <p class="title-products"> Variedades de Ron</p>
+                <img src="/images/imgProducts/ron-Habana-club.jpg" alt="">
+                <form action="/product/detalle/7" method="get">
+                    <button class="detail" type="submit">Detalle</button>
+                </form>
+            </div>
+            <div class="home-products">
+                <p class="title-products">
+
+                </p>
+            </div>
         </div>
-        <form action="/product/detalle/6" method="get">
-            <button class="detail" type="submit">Detalle</button>
-            </form>
     </article>
 </section>
 <section class="nosotros">

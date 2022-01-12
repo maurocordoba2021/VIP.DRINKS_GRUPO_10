@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>register</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles-header.css">
+    <link rel="stylesheet" href="/css/styles-footer.css">
+    <link rel="stylesheet" href="/css/styles-forms.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico" type="ico">
+
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+
+
+        <main class="form-register">
+            <section class="register-form">
+                <!--ACÁ VA EL CÓDIGO DEL CUERPO DE LA PÁG-->
+
+                <form 
+                    method="post" 
+                    action="/users/processEdit/<%= user.id %> " 
+                    class="section-register"  
+                    enctype="multipart/form-data" 
+                    id="form">
+                        <h4>Edita tu perfil: </h4>
+              
+                    <!--Nombre-->
+                    <label for="first_name"></label>
+                    <input 
+                        class="controls <%= locals.errors && errors.first_name ? 'is-invalid' : null %>  " 
+                        type="text"
+                        name="first_name" 
+                        value= "<%= locals.user? user.first_name : null %>"
+                        id="first_name"
+                        placeholder="Nombre">
+                        <!--Validación nombres-->
+                        <% if (locals.errors && errors.first_name) { %>
+                              <p class= "text-validation">
+                                <%= errors.first_name.msg %>
+                              </p>
+                            <% } %>
+
+
+                               <!--Apellido-->
+                    <label for="last_name"></label>
+                    <input 
+                        class="controls <%= locals.errors && errors.last_name ? 'is-invalid' : null %>  " 
+                        type="text"
+                        name="last_name" 
+                        value= "<%= locals.user ? user.last_name : null %>"
+                        id="last_name"
+                        placeholder="Apellido">
+                        <!--Validación apellido-->
+                        <% if (locals.errors && errors.last_name) { %>
+                              <p class= "text-validation">
+                                <%= errors.last_name.msg %>
+                              </p>
+                            <% } %>
+
+                                  <!--e-mail-->
+                    <label for="email"></label>
+                    <input 
+                        class="controls <%= (locals.errors && errors.email) ? 'is-invalid' : null %>  " 
+                        type="text"
+                        name="email"
+                        value="<%=locals.user ? user.email : null %>"
+                        id="email"
+                        placeholder="Correo electrónico">
+                    <!--Validación email-->
+                    <% if (locals.errors && errors.email) { %>
+                        <p class= "text-validation">
+                            <%= errors.email.msg %>
+                        </p>
+                        <% } %>
+
+                    <label for="password"></label>
+                    <input 
+                        class="controls <%= locals.errors && errors.password ? 'is-invalid' : null %>  " 
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Contraseña">
+                        <% if (locals.errors && errors.password) { %>
+                            <p  class= "text-validatip n">
+                                <%= errors.password.msg %>
+                            </p>
+                            <% } %>
+                        <!--Imágen de usuario-->
+                        <label for="imgUser"></label>
+                        <input 
+                        type="file" 
+                        name="imgUser"
+                        value="<%=locals.user ? user.imgUser : null %>"
+                        id="imgUser">
+                        <% if (locals.errors && errors.imgUser) { %>
+                            <p class= "text-validation">
+                                <%= errors.imgUser.msg %>
+                            </p>
+                            <% } %>
+                        <p class="warnings" id="warnings"></p>
+
+                      
+                            <button type="submit"  class="boton-register">Finalizar</button>
+                        </form>
+                </form>
+               
+        </section>
+    </main>
+
+    <%- include('./partials/footer') %>
+        </div>
+</body>
+
+</html>

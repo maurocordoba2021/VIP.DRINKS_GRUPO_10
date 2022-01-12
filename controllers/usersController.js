@@ -21,7 +21,7 @@ const usersController ={
             last_name: req.body.last_name,
             email: req.body.email,
             password: req.body.password,
-            imgUser: file,
+            imgUser: req.file,
             admin: false
         }
         const resultValidation = validationResult(req)
@@ -94,11 +94,50 @@ const usersController ={
     profile: async(req, res)=>{
         return res.render('profile', {
             user: {
+                id: req.session.userLogged.id,
                 imgUser: req.session.userLogged.imgUser,
                 first_name: req.session.userLogged.first_name,
-                last_name: req.session.userLogged.last_name
+                last_name: req.session.userLogged.last_name,
+                email: req.session.userLogged.email
         }});
     },
+    editUser: (req, res) => {
+        res.render('editUser', {
+            user: {
+                id: req.session.userLogged.id,
+                imgUser: req.session.userLogged.imgUser,
+                first_name: req.session.userLogged.first_name,
+                last_name: req.session.userLogged.last_name,
+                email: req.session.userLogged.email
+        }});
+    },
+    processEdit: (req, res) => {
+// Estoy intentando procesar la edición de los datos personales 
+
+    /*    let userIndex = Users.findByPk(req.params.id)
+        .then(function(){
+            let user = listUser[userIndex]
+            // 3) Validación de Imágen
+                let imgUser
+                if (req.file != undefined) {
+                    imgUser = req.file.filename
+                } else {
+                    imgUser = listUser[user.id].imgUser
+                }
+                user.id = user.id; 
+                user.first_name = req.body.first_name;
+                user.last_name = req.body.last_name;
+                user.email = req.body.email;
+                    
+            // 7) Actualizo JSON
+            let nuevaLista = JSON.stringify(listUser, null, " ");
+            fs.writeFileSync(dirPath, nuevaLista, 'utf-8');
+            return user
+        
+        }) */
+   
+        res.redirect('/users/profile')
+        },
     logout: (req, res) => {
         res.clearCookie("userEmail")
         req.session.destroy();

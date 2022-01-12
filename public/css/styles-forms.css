@@ -39,7 +39,7 @@ li{
 .section-register h4{
     font-size: 24px;
     text-align: center;
-    color: black;
+    color: rgb(20, 20, 20);
 }
 
 .section-login,
@@ -48,7 +48,7 @@ li{
     padding: 30px;
     margin: auto;
     margin-top: 130px;
-    color:black;
+    color:rgb(20, 20, 20);
 }
 
 .controls{
@@ -64,9 +64,9 @@ button.boton-ingreso,
 button.boton-register{
     width: 80%;
     border:none;
-    background-color: goldenrod;
+    background-color: rgb(240, 240, 240);
     padding: 12px;
-    color: black;
+    color: rgb(20, 20, 20);
     margin:16px 0;
     font-size: 20px;
     text-transform: uppercase;
@@ -87,15 +87,16 @@ form.section-register{
     margin-bottom: 10px;
     border-bottom: 1px solid gray;
     border-top: 1px solid gray;
+    transition: all 450ms ease;
 }
 div.admin-password{
     margin: 0 auto;
     text-align: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgb(240, 240, 240);
     width: 300px;
-    border-radius: 5px;
+    border: solid 1px gray;
     padding: 5px;
-    color: white;
+    color: rgb(20, 20, 20);
     font-size: 15px;
 }
 h6 .admin-button{
@@ -122,6 +123,13 @@ label.remember{
     align-items: center;
     margin: 10px auto;
 }
+
+
+button:hover {
+    background: rgb(26, 29, 26);
+    color: white;
+    border: none;
+}
 /* END FORMULARIO*/
 
 /* START FORM VALIDATIONS*/
@@ -138,12 +146,12 @@ input.is-invalid{
 
 
 h4.profilename{
-    color: whitesmoke;
+    color: rgb(20, 20, 20);
 }
 #box-img{
     max-width: 300px;
     border-radius: 50%;
-    background: blue;
+    background: rgb(240, 240, 240);
 }
 
 /* START MEDIA QUERIES */

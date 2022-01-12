@@ -22,6 +22,16 @@ img#avatar{
 h4.profilename{
     color: rgb(37, 37, 37);
     text-align: center;
+    font-size: large;
+    font-family: 'Vujahday Script', cursive;
+    font-weight: 300;
+}
+p.cursive{
+    color: rgb(37, 37, 37);
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Vujahday Script', cursive;
+    font-weight: 300;
 }
 #box-img{
     margin: 0 auto;
@@ -36,16 +46,66 @@ p{
     margin: 4px auto;
     margin-top: 20px;
 }
-
+p.cursive{
+    color: rgb(37, 37, 37);
+    text-align: inherit;
+    font-size: 18px;
+    font-family: 'Vujahday Script', cursive;
+    font-weight: 300;
+}
 a.link-profile,
 p.subtitle{
     display: block;
-    color: rgb(36, 163, 42);
+    color: rgb(187, 139, 18);
     text-decoration: none;
     text-align: center;
     margin: 4px auto;
 }
 
+a.link-profile {
+    width: 120px;
+    padding: 6px;
+    text-align: center;
+    border: gray solid 1px ;
+    background: white;
+    color: rgb(37, 37, 37);
+    transition: ease 450ms all;
+}
+a.link-profile:hover {
+    border: none ;
+    background: rgb(37, 37, 37);
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+button{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border: gray solid 1px ;
+    background: white;
+    color: rgb(37, 37, 37);
+    transition: ease 450ms all;
+}
+button:hover{
+    border: none ;
+    background: rgb(37, 37, 37);
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+section.visit{
+    margin: 24px;
+    padding: 16px;
+    border: gray solid 1px ;
+    background: white;
+    color: rgb(37, 37, 37);
+}
 /* END CUERPO EN GRAL */
 
 

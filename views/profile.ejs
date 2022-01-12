@@ -24,28 +24,46 @@
 
         <main>
             <!--ACÁ VA EL CÓDIGO DEL CUERPO DE LA PÁG-->
-            
+
             <div id="box-img">
                 <% let img=user.imgUser %>
-                    <img  id="avatar" src="/images/imgUsers/<%=img.replace(/['" ]+/g, '' )%>" alt="imgUser"> <%# Quitamos commillas
-                        con replace para no romper la ruta %>
+                    <img id="avatar" src="/images/imgUsers/<%=img.replace(/['" ]+/g, '' )%>" alt="imgUser"> <%# Quitamos
+                        commillas con replace para no romper la ruta %>
             </div>
             <div>
                 <h4 class="profilename">¡ Hola <%=user.first_name%> !</h4>
-                <p class="subtitle">Te estabamos esperando con lo mejor de nuestra tienda: </p>
+
             </div>
 
-            <p>Hacé tu propio recorrido por nuestra tienda</p>
-            <a class="link-profile" href="/">HOME</a>
-            
-            <p>Haz click aquí para ver nuestros productos destacados</p>
-            <a class="link-profile" href="/listProducts">PRODUCTOS</a>
-            
-            <p>¡Te conocemos! Aquí están los preferidos los <%=user.last_name%>.</p>
-            <a class="link-profile" href="/product/luxury-offers">PRODUCTOS LUXURY</a>
-            
-            <p>Inspirate con las mejores recetas aquí</p>
-            <a class="link-profile" href="/recipes">RECETAS</a>
+            <p class="subtitle">Tus datos personales:</p>
+            <p>Nombre: <%=user.first_name%>
+            </p>
+            <p>Apellido: <%=user.last_name%>
+            </p>
+            <p>Correo electrónico: <%=user.email%>
+            </p>
+            <form action="/users/editUser/<%= user.id%> " method="GET">
+            <button>
+            EDITAR MI PERFIL
+        </button>
+    </form>
+            <section class="visit">
+                <p class="subtitle">¡ Te estabamos esperando ! </p>
+
+                <p class="cursive">Recorre nuestra tienda :</p>
+                <a class="link-profile" href="/">Home</a>
+
+                <p class="cursive">Nuestros productos destacados :</p>
+                <a class="link-profile" href="/listProducts">Productos</a>
+
+                <p  class="cursive">Para nuestros clientes más exigentes :</p>
+                <a class="link-profile" href="/product/luxury-offers">Kits Luxury</a>
+
+                <p class="cursive">Inspirate :</p>
+                <a class="link-profile" href="/recipes">Recetas</a>
+            </section>
+
+            <a href="/users/logout">CERRAR SESIÓN</i></a>
         </main>
 
 </body>

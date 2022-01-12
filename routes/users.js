@@ -28,6 +28,12 @@ router.post("/login",loginValidations, usersController.loginProcess);
 // Muestra la vista de perfil con los datos del usuario en SESSION
 router.get("/profile", authMiddleware, usersController.profile);
 
+//Muestra el formulario para la edición de datos personales
+router.get("/editUser/:id", usersController.editUser);
+
+//Procesa la edición de los usuarios
+router.post("/processEdit/:id", usersController.processEdit);
+
 // LOGOUT de usuario
 router.get("/logout", usersController.logout);
 

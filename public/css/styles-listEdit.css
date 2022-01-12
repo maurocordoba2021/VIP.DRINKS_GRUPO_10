@@ -16,7 +16,19 @@ body{
 div{
     display: block;
 }
-
+.box-add{
+    display: flex;
+}
+.box-add:hover a{
+    background:rgb(187, 139, 18);
+}
+article.box-add{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
 section.admin {
     background: white;
     padding: 24px;
@@ -29,9 +41,11 @@ section.admin {
     display: flex;
     text-decoration: none;
 }
-a{
+a {
     text-decoration: none;
     color: black;
+    border: solid 1px gray;
+    padding: 6px;
 }
 a.admin {
     padding: 20px;
@@ -49,7 +63,6 @@ a.admin:hover{
     border: none ;
     background: rgb(37, 37, 37);
     color: rgb(240, 240, 240);
-
 }
 main{
     width: 96%;
@@ -59,7 +72,15 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
 }
-
+a.button{
+    transition: 350ms ease all;
+}
+a.back{
+    border: none;
+}
+a.button:hover{
+    background: rgb(187, 139, 18);
+}
 img{
     width: 100%;
 }
@@ -77,10 +98,30 @@ article{
     padding: 5px;
     align-content: stretch;
 }
-
+article {
+    padding: 12px;
+    border: solid 1px gray;
+}
 .box-img{
     max-width: 200px;
     margin: 0 auto;
+}
+button {
+    background: #c2bfbf;
+    border: solid 1px gray;
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+    transition: 350ms ease all;
+}
+button:hover {
+    background: #751515;
+    border: solid 1px gray;
+    padding: 8px;
+    margin: 8px;
+}
+form{
+    margin-top: 4px;
 }
 
 /* END SECCIÓN DE ARTÍCULOS*/

@@ -5,7 +5,8 @@
             <!--ACÁ EMPIEZA EL MENÚ EMERGENTE-->
 
             <div id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><i class="far fa-times-circle"></i></a>
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><i
+                        class="far fa-times-circle"></i></a>
                 <a href="/users/register">REGISTRARME</a>
                 <a href="/users/login">INGRESAR</a>
                 <a href="/shop">MI CARRITO</a>
@@ -33,44 +34,52 @@
             <!-- ACÁ TERMINA EL BOTON DE MENU EMERGENTE-->
 
             <div class="contain logo-home">
-                <a href="/"><h2 class="logo"> VIP.DRINKS</h2></a>
+                <a href="/">
+                    <h2 class="logo"> VIP.DRINKS</h2>
+                </a>
             </div>
             <div>
-             <a href="/shop"><i class="fas fa-shopping-cart"></i></a>
+                <a href="/shop"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </div>
 
         <div class="navbar-tablet">
-            <ul class="nav-center">
-                <li class="nav-option1"><a href="/listProducts">OFERTAS</a></li>
-                <li class="nav-option2"><a href="/product/luxury-offers">NOVEDADES</a></li>
-                <li class="nav-option3"><a href="/recipes">RECETAS</a></li>
-            </ul>
-            <div class="prueba">
-                <a href="/"><img src="/images/logo-home.png" class="logo-prueba"></a>
+        <div class="contain logo-home">
+            <a href="/">
+                <h2 class="logo"> VIP.DRINKS</h2>
+            </a>
+        </div>
+        <div class="search">
+            <input type="text" name="search" id="input-search">
+            <button id="search" type="submit" class=""><i class="fas fa-search"></i></button>
+        </div>
+        <% if (locals.isLogged) { %>
+        <div class="img-user-nav">
+            <a href="/users/profile"></a>
+            <img src="/images/imgUsers/<%= locals.userLogged.imgUser%>" class="img-user-nav">
+            </a>
+        </div>
+        <% } %>
+        <section class="nav">
+            <div>
+                <ul class="nav-left">
+                    <li class="option"><a href="/listProducts">OFERTAS</a></li>
+                    <li class="option"><a href="/product/luxury-offers">NOVEDADES</a></li>
+                    <li class="option"><a href="/recipes">RECETAS</a></li>
+                </ul>
             </div>
             <ul class="nav-rigth">
-                <li>
-                    <input type="text" name="search" id="input-search" >
-                    <!-- esto hay que ponerlo en la hoja de estilos (mauro lo hizo asi nomas )-->
-                   <button id="search" type="submit" class=""><i class="fas fa-search"></i></button>
-                </li>
-
                 <% if (locals.isLogged) { %>
-                <li><a href="/users/profile">
-                    <div class="img-user-nav">
-                        <img src="/images/imgUsers/<%= locals.userLogged.imgUser%>" class="img-user-nav">
-                    </div>
-                    </a></i></li>
-                <li><a href="/shop">MI CARRITO</a></li>
-                <li><a href="/users/logout">SALIR</a></i></li>
+                    <li class="option"><a href="/shop">CARRITO</a></li>
+                    <li class="option"><a href="/users/logout">SALIR</a></i></li>
 
-                <% } else { %>
-                <li><a href="/users/login">ENTRAR</a></li>
-                <li><a href="/users/register">REGISTRARME</a></li>
+                    <% } else { %>
+                        <li class="option"><a href="/users/login">ENTRAR</a></li>
+                        <li class="option"><a href="/users/register">REGISTRARME</a></li>
 
-                <% } %>
+                        <% } %>
             </ul>
+        </section>
         </div>
 
 

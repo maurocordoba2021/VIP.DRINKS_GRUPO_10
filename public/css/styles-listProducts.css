@@ -147,10 +147,9 @@ button.buy{
     transition: all 400ms;
 }
 button.buy:hover{
-    background: darkgreen;
+    background: rgb(26, 29, 26);
     color: white;
     border: none;
-
 }
 
 /* END BOTON COMPRAR*/

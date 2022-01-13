@@ -913,5 +913,13 @@
   "email": "agus@mestrinu.com",
   "password": "$2a$10$6x2PZ1YCi1lbV/ySLsHqrORHcfKqSaUZVQJ6yGr2sI9aoi5iDA87O",
   "imgUser": "imgUser-1641999869313.jpeg"
+ },
+ {
+  "id": 103,
+  "first_name": "go",
+  "last_name": "go",
+  "email": "prueba123@gmail.com",
+  "password": "$2a$10$2r9lzQJz5fK9mD2OehSLQuz.DYXVyExb2zJSCQNY7Jl9Ik26/o7cK",
+  "imgUser": "imgUser-1642114267981.jpg"
  }
 ]

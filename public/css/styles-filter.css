@@ -1,0 +1,37 @@
+/* START UNIVERSAL*/
+*{  
+   
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+/* END UNIVERSAL*/
+
+/* START CUERPO EN GRAL */
+
+
+body{
+    display: block;
+    width: 100vw;
+    background: black;
+}
+
+.filter{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 400px;
+}
+.button-home{
+        background: white;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        width: 100px;
+        display: inline;
+}
+      

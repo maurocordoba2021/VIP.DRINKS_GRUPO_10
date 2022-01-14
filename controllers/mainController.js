@@ -15,6 +15,9 @@ const mainController = {
     },
     index: (req, res) => {
         res.render("home")
+    },
+    filter: (req, res) => {
+        res.render("filter")
     }
 }
 

@@ -20,6 +20,15 @@ module.exports = function (sequelize, dataTypes) {
 
     let  Payment_method = sequelize.define(alias, cols, config);
 
+    Payment_method.associate=(models)=>{
+        Payment_method.belongsTo(models.Order,{
+            as:"Payment_Order",
+            foreigKey:"idPayment_method"
+        })
+    }
+
+
+
     return  Payment_method
     
 }

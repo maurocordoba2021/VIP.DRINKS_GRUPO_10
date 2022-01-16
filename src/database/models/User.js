@@ -40,7 +40,22 @@ module.exports = function (sequelize, dataTypes) {
         timestamps: false
     }
 
-    let Product = sequelize.define(alias, cols, config);
+    let User = sequelize.define(alias, cols, config);
+
+    User.associate = (models)=>{
+       User.belongsTo(models.Cart,{
+           as:"cart",
+           foreigKey:"Fk_idUser"
+       })  
+
+    }
+
+    User.associate =(models)=>{
+        User.belongsTo(models.Adress),{
+            as:"User_Adress",
+            foreigKey:"Fk_idUser"
+        }
+    }
 
     return Product
     

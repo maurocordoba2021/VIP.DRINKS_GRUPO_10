@@ -6,7 +6,7 @@ module.exports = function (sequelize, dataTypes) {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
-        }, 
+        },
         idUser: {
             type: dataTypes.INTEGER
         },
@@ -38,6 +38,20 @@ module.exports = function (sequelize, dataTypes) {
 
     let Adress = sequelize.define(alias, cols, config);
 
-    return Adress
-    
+    Adress.associate = (models) => {
+        Adress.belongsTo(models.User), {
+            as: "Adress_User",
+            foreigKey: "Fk_idUser"
+        }
+    }
+
+    Adress.associate = (models) => {
+        Adress.belongsTo(models.Order, {
+            as: "Addres_Order",
+            foreigKey: "idAddres"
+        })
+
+        return Adress
+
+    }
 }

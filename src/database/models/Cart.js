@@ -7,10 +7,10 @@ module.exports = function (sequelize, dataTypes) {
             primaryKey: true,
             autoIncrement: true
         },
-        idUser: {
+        Fk_idUser: {
             type: dataTypes.INTEGER
         },
-        idProduct: {
+        Fk_idProduct: {
             type: dataTypes.INTEGER
         },
         quantity: {
@@ -24,8 +24,20 @@ module.exports = function (sequelize, dataTypes) {
         timestamps: false
     }
 
-    let  Cart = sequelize.define(alias, cols, config);
+    let Cart = sequelize.define(alias, cols, config);
+    Cart.associate = (models) => {
+        Cart.belongsTo(models.User, {
+            as: "User",
+            foreigKey:"Fk_idUser"
+        })
+    }
+
+    Cart.associate=(models)=>{
+        Cart.hasMany(models.Product,{
+            as:"Product",
+            foreignKey:"Fk_idProduct"
+        })
+       }
 
     return Cart
-    
 }

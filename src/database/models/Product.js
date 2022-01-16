@@ -52,6 +52,12 @@ let config = {
 
 let Product = sequelize.define(alias, cols, config);
 
+Product.associate=(models)=>{
+ Product.belongsTo(models.Cart,{
+     as:"Cart_Product",
+     foreignKey:"Fk_idProduct"
+ })
+}
 return Product
 
 }

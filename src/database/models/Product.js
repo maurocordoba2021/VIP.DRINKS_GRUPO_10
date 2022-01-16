@@ -52,4 +52,6 @@ let config = {
 
 let Product = sequelize.define(alias, cols, config);
 
+return Product
+
 }

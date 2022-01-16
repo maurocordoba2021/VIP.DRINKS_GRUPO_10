@@ -1,47 +1,43 @@
 module.exports = function (sequelize, dataTypes) {
-    let alias = "User";
+    let alias = "Adress";
 
     let cols = {
-        idUser: {
+        idAdress: {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
+        }, 
+        idUser: {
+            type: dataTypes.INTEGER
         },
-        name: {
+        street: {
             type: dataTypes.STRING
         },
-        surname: {
+        street_number: {
+            type: dataTypes.INTEGER
+        },
+        localty: {
             type: dataTypes.STRING
         },
-        email: {
-            type: dataTypes.STRING
-        },
-        password: {
-            type: dataTypes.STRING
-        },
-        email: {
+        city: {
             type: dataTypes.STRING
         },
         country: {
             type: dataTypes.STRING
         },
-        birthday: {
-            type: dataTypes.DATE
-        },
-        img: {
-            type: dataTypes.STRING
-        },
-        profile: {
+        phone_number: {
             type: dataTypes.INTEGER
         }
     }
+
+
     let config = {
-        tableName: "users",
+        tableName: "adress",
         timestamps: false
     }
 
-    let Product = sequelize.define(alias, cols, config);
+    let Adress = sequelize.define(alias, cols, config);
 
-    return Product
+    return Adress
     
 }

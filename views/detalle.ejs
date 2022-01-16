@@ -42,10 +42,12 @@
                     </div>
                     <div class="box">
                         <h4 class="price">
-                            <%= "$" + product.price%>
+                            <% let n = product.price %> 
+                            <%= "$" + n.toFixed(2)%>
                         </h4>
-                        <p class="off"><%=product.discount%> % OFF</p>
-                        <p class="payment-details">en 12 x <%= "$" + product.price/12 %>
+                        <p class="off"><%=product.discount*100%> % OFF</p>
+                        <%  %> 
+                        <p class="payment-details">en 12 x <%= "$" + (n/12).toFixed(2) %>
                         </p>
                         <a href="/metodos-de-pago">Ver todos los métodos de pago</a>
                     </div>

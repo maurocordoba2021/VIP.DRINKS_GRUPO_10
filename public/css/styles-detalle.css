@@ -16,11 +16,12 @@ main{
 
 a{
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
 }
 
 img{
     width: 100%;
+    border-radius: 10px;
 }
 
 li{
@@ -28,12 +29,12 @@ li{
 }
 
 h3{
-    color: whitesmoke;
+    color: black;
 }
 
 i{
     font-size: 30px;
-    color: whitesmoke;
+    color: black;
     padding: 8px;
 }
 
@@ -52,34 +53,36 @@ section.intereses{
     display: flex;
 }
 .article-detalle{
-    color: whitesmoke;
+    color: black;
     margin-top: 30%;
     width: 90%;
     margin-top: 30%;
     margin: 30% auto 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgb(0 0 0 / 4%);
     padding: 2%;
+    border-radius: 10px;
 }
 
 .selector{
-    background: black;
-    color: whitesmoke;
+    color: black;
+    flex-wrap: nowrap;
+    border-bottom: 1px #8080804f solid;
     margin: 10px 0;
     border-radius: 5px;
     padding: 5px 5px 10px ;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .caracteristica{
     width: 50%;
+    padding-right: 10px
 }
 
 select{
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
-    color: whitesmoke;
-    background:rgba(0, 0, 0, 0.7);
+    color: black;
     text-align: center;
     border: none;
 }
@@ -96,7 +99,7 @@ h4.price{
 }
 
 p.payment-details{
-    color: grey;
+    color: black;
     width: 100%;
 
 }
@@ -104,7 +107,7 @@ p.payment-details{
 .button-stock{
     padding: 1px;
     width: 90px;
-    background-color: orange;
+    background-color: black;
     justify-content: center;
 }
 
@@ -113,10 +116,9 @@ article.caracteristicas{
     padding: 1%;
     display: flex;
     margin: 10px 0;
-    width: 350px;
+    width: 500px;
 }
 .box-search{
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -145,11 +147,19 @@ i {
 
 p.informative{
     font-size: 16px;
-    color: grey;
-    text-align: center;
-    font-weight: 300;
+    color: black;
+    width: 100%;
+    display: flex;
+    margin: 2%
 }
-
+p.informative2{
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    display: flex;
+    margin: 2%;
+    justify-content: space-around;
+}
 h4.title{
     margin-bottom: 10px;
 }
@@ -167,7 +177,7 @@ div.buy{
     border-radius: 7px;
     color: white;
     border: 1px solid;
-    background-color: orange;
+    background-color: black;
     width: 250px;
     margin: 0 auto;
     text-align: center;
@@ -186,8 +196,8 @@ button.add{
     border-radius: 7px;
     width: 250px;
     background: white;
-    color:orange;
-    border: solid 1px orange;
+    color:black;
+    border: solid 1px #8080804f;
     cursor: pointer;
     margin: 0 auto;
 }
@@ -198,7 +208,7 @@ button.add:hover{
 
 p.title-grey{
     display: inline-block;
-    color: grey;
+    color: black;
     text-align: center;
     font-weight: 300;
     font-size: 16px;
@@ -206,7 +216,7 @@ p.title-grey{
 
 i.fas.fa-user-shield{
     font-size: 16px;
-    color: grey;
+    color: black;
 }
 
 .compra-protegida{
@@ -230,7 +240,7 @@ i.fas.fa-user-shield{
 .share i,
 .add-favorite i{
     font-size: 22px;
-    color: orange;
+    color: black;
 }
 
 .add-favorite label,
@@ -249,8 +259,8 @@ i.fas.fa-user-shield{
 section.caracteristicas{
     width: 90%;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.7);
-    color: whitesmoke;
+    background: rgb(0 0 0 / 4%);
+    color: black;
     display: flex;
     padding: 2%;
 }
@@ -262,11 +272,14 @@ article.caracteristicas.simple{
     list-style:none;
     flex-direction: column;
     width: 100%;
-    border: solid 1px #383535;
+    border: solid 1px #8080804f;
 }
 
 .caracteristica-ul {
     list-style: none;
+}
+.contain-caracteristicas{
+    width: 100%;
 }
 
 h4{
@@ -275,7 +288,6 @@ h4{
 }
 .box-link{
     width: 90%;
-    border-bottom: solid 1px #383535;
     padding: 10px;
     margin: 10px auto;
 }
@@ -289,7 +301,6 @@ article.caracteristicas.icons{
     justify-content: space-around;
     width: 100%;
     border-radius: 5px;
-    border: solid 1px #383535;
 }
 .icon-tabla{
     display: flex;
@@ -366,22 +377,25 @@ li.barra-color.green{
     color: #1bad20;
     font-size: x-large;
     font-weight: 300;
-    width: 90px;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
 }
+.quantity{
+    font-weight: bold;
+}
 
 .box-reput.left{
     border-left: none;
+    display: flex;
 }
 
 p.informative-L{
     font-size: small;
     font-weight: 200;
     padding: 15px;
-    border: solid 1px #383535;
-    background: black;
+    border: solid 1px #8080804f;
     border-radius: 5px;
 }
 
@@ -399,7 +413,6 @@ section.medios-de-pago h5{
     border: 1px solid #383535;
     border-radius: 5px;
     padding: 15px;
-    background: black;
 }
 form.search i{
     color: gray;
@@ -448,14 +461,14 @@ section.questions{
 border-radius: 7px;
 color: white;
 border: 1px solid;
-background-color: orange;
+background-color: black;
 }
 
 .button-delete{
     border-radius: 7px;
     background: white;
-    color: orange;
-    border: solid 1px orange;
+    color: black;
+    border: solid 1px #8080804f;
     margin-right: 5px;
 }
 
@@ -463,6 +476,7 @@ background-color: orange;
     display: flex;
     justify-content: space-around;
     margin-bottom: 15px;
+    background: white;
 }
 
 section.valoraciones i{
@@ -488,13 +502,12 @@ h2.valoracion-num{
 
 p.text-valoracion{
     font-size: 16px;
-    color: grey;
+    color: black;
     font-weight: 300;
     padding: 10px;
 }
 
 article.val{
-    border-bottom: solid 1px #383535;
     border-top: solid 1px #383535;
 }
  
@@ -536,17 +549,20 @@ article.val{
     }
     .container-images{
         width: 500px;
+        display: flex;
+        align-content: center;
     }
     .article-detalle{
         display: flex;
         justify-content: space-around;
     }
     .selector{
-        width: 300px;
+        width: 60%;
     }
 
     h3.title-product{
-        width: 100%;
+        width: 94%;
+        padding-bottom: 10px;
     }
     p.informative-L,
     .caracteristicas-container,
@@ -558,8 +574,10 @@ article.val{
     section.main-product{
         max-width: 40%;
         padding-left: 10px;
-        border: grey 1px solid;
+        border: #8080804f 1px solid;
         border-radius: 5px;
+        width: 40%;
+        background: white;
     }
 
 .butns{
@@ -576,13 +594,20 @@ article.val{
         position: relative;
     }
     section.information-seller{
-        border: 1px solid grey;
+        border: 1px solid #8080804f;
         border-radius: 5px;
         max-width: 40%;
+        border: #8080804f 1px solid;
+        background: white;
+    }
+    .caracteristicas.text{
+        border: #8080804f 1px solid;
+        background: white;
     }
     section.caracteristicas h4{
         width: 100%;
         margin: 10px 0 10px 10px;
+        font-weight: bold;
     }
     li.barra-color{
         width: 50px;
@@ -593,25 +618,29 @@ article.val{
     .block-3{
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .block-2{
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .caracteristicas-container {
         display: flex;
+        width: 500px;
+        background: white;
+        border: #8080804f 1px solid;
       
     }
     section.medios-de-pago{
         max-width: 40%;
         padding: 20px 5px;
-        border: solid 1px grey;
+        border: solid 1px #8080804f;
         margin-top: 20px;
         border-radius: 5px;
+        background: white;
     }
    
 }

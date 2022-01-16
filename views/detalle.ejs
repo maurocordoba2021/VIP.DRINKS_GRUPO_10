@@ -14,11 +14,9 @@
     <link rel="icon" href="/images/favicon.ico" type="ico">
 
 </head>
-
+<%- include('./partials/header') %>
 <body>
-    <%- include('./partials/header') %>
         <main>
-
             <article class="article-detalle">
                 <h3 class="title-product">
                     <%= product.title %>
@@ -71,7 +69,7 @@
                             <i class="fas fa-certificate"></i>
                             <p class="title-green">Calidad certificada</p>
                         </div>
-                        <p class="informative">Conocé más de la marca y el product.</p>
+                        <p class="informative">Conocé más de la marca y el producto</p>
                         <a href="/">Conocer más</a>
                     </div>
                     <h4 class="title">Stock disponible: <%=product.stock%>
@@ -177,16 +175,16 @@
 
                         <div class="main-reput">
                             <div class="box-reput left">
-                                <h6>3333</h6>
-                                <p class="informative">Ventas</p>
+                                <h6 class="quantity">3333</h6>
+                                <p class="informative2">Ventas</p>
                             </div>
                             <div class="box-reput">
                                 <h6><i class="fas fa-comments-dollar"></i></h6>
-                                <p class="informative">Buena atención</p>
+                                <p class="informative2">Buena atención</p>
                             </div>
                             <div class="box-reput">
                                 <h6><i class="fas fa-user-clock"></i></h6>
-                                <p class="informative">Envíos a tiempo</p>
+                                <p class="informative2">Envíos a tiempo</p>
                             </div>
                         </div>
                         <div class="box-link">
@@ -294,3 +292,5 @@
 </body>
 
 </html>
+
+

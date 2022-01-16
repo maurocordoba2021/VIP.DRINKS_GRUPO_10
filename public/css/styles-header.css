@@ -35,15 +35,15 @@ background-color: transparent;
 }
 
 li.nav-option1{
-    margin: 0px;
+    margin: 5px;
     padding: 0px 10px;
 }
 li.nav-option2{
-    margin: 0px;
+    margin: px;
     padding: 0px 5px;
 }
 li.nav-option3{
-    margin: 0px;
+    margin: 5px;
     padding: 0px 10px;
 }
 
@@ -144,17 +144,28 @@ margin: 0%;
 width: 100vw;
 height: 60px;
 align-items: center;
+background: white;
 }
-
+.container-nav-left{
+    background: white;
+}
+.nav-left{
+    background: white;
+}
+.nav{
+    background: white;
+}
 ul.nav-center{
 display: flex;
 width: 40%;
 justify-content: start;
+background: white;
 }
 
 ul.nav-rigth{
     width: 40%;
     justify-content: right;
+    background: white;
 }
 
 ul.nav-center li,

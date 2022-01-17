@@ -92,8 +92,8 @@
                         <a href="<%= post.init_point %>" target="_blank">
                             <div class="buy">Comprar ahora</div>
                         </a>
-                        <form action="/shop" method="post">
-                            <button class="add" type="submit"> Agregar al carrito</button>
+                        <form action="/shop/add/<%= product.id %> " method="post">
+                            <button class="add" type="submit">Add to Cart</button>
                         </form>
                     </div>
                     <div class="box-item">
@@ -289,6 +289,7 @@
                         <a href="/">Ver todas las valoraciones</a>
                     </div>
                 </section>
+              
         </main>
         <%- include('./partials/footer') %>
 </body>

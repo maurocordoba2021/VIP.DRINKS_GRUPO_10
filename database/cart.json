@@ -1,0 +1,36 @@
+[
+ 
+    {
+     "id": 2,
+     "title": "Champagne Krug de Cuveé",
+     "price": 750000,
+     "discount": 0.15,
+     "shortDescription": [
+      "Elaboración artesanal y sabor único",
+      "Alrededor de 120 vinos diferentes",
+      "Productos especialmente seleccioandos",
+      "15 años de edad"
+     ],
+     "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+     "imgProduct": "champagne-Krug.png",
+     "stock": 30,
+     "shippingCost": "$3211.31",
+     "luxury": false,
+     "category": "Champagne"
+    },
+    {
+        "id": 16,
+        "title": "Gin Pack JCB",
+        "price": 1550000,
+        "discount": 0.15,
+        "shortDescription": [
+         "lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"
+        ],
+        "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aut impedit minima, at aperiam ut, eligendi quae, dicta illo consequuntur quam. Neque incidunt beatae dolorum consectetur vero reiciendis cum tenetur? Ducimus assumenda nostrum repudiandae possimus, corporis numquam tempora nobis sequi esse, magnam excepturi minus quibusdam quis harum nihil voluptatibus sit rem eligendi rerum! Cum, ullam? Voluptate sunt nulla magni id. e itaque ratione eius ipsa dolorem qui ipsam earum sunt illum. Quaerat eos tenetur fuga quos facere veritatis unde, quis obcaecati perspiciatis consectetur veniam dolorum aspernatur excepturi totam fugiat!Quos consequatur nihil vitae dolorem deserunt repellendus impedit, velit nam ducimus, voluptatem officia reprehenderit. Exercitationem voluptas id atque debitis, consequatur adipisci nihil magnam vitae animi sit reiciendis repellendus earum suscipit! ",
+        "imgProduct": "gin-jcb-combo1.jpg",
+        "stock": 10,
+        "shippingCost": "$3211.31",
+        "luxury": true,
+        "category": "Gin"
+       }
+      ]

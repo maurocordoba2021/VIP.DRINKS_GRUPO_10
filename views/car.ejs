@@ -29,15 +29,15 @@
                 <div class="car">
                     <section>
                         <% listProducts.forEach(product=> { %>
-                        <article>
-                            
+                            <article>
+
                                 <div class="container-img">
                                     <img src="/images/imgProducts/<%= product.imgProduct %>" alt="whisky-Louis-XIII">
                                 </div>
                                 <div class="main-article">
                                     <h5>
                                         <%= product.title %>
-                                     </h5>
+                                    </h5>
                                     <p>Medida 710ml</p>
 
                                     <div class="box">
@@ -55,9 +55,9 @@
                                     <a href="#">Ver más productos</a>
                                     <i class="fas fa-ellipsis-v"></i>
                                 </div>
-                        </article>
-                        <% }) %>
-         
+                            </article>
+                            <% }) %>
+
                     </section>
                     <section class="total">
                         <div class="box-foot">
@@ -79,6 +79,9 @@
             </main>
             <%- include('./partials/footer') %>
     </div>
+
+
+
 </body>
 
 </html>

@@ -43,15 +43,11 @@ module.exports = function (sequelize, dataTypes) {
             as: "Adress_User",
             foreigKey: "Fk_idUser"
         }
-    }
-
-    Adress.associate = (models) => {
         Adress.belongsTo(models.Order, {
             as: "Addres_Order",
             foreigKey: "idAddres"
         })
-
-        return Adress
-
     }
+
+    return Adress
 }

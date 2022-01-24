@@ -42,14 +42,13 @@ module.exports = function (sequelize, dataTypes) {
             as:"Order_User",
             foreigKey:"idUser"
         })
-    }
-
-    Order.associate=(models)=>{
         Order.belongsTo(models.Payment,{
             as:"Order_Payment",
             foreigKey:"idPayment_method"
         })
     }
+
+   
 
     return Order
     

@@ -30,14 +30,13 @@ module.exports = function (sequelize, dataTypes) {
             as: "User",
             foreigKey:"Fk_idUser"
         })
-    }
-
-    Cart.associate=(models)=>{
         Cart.hasMany(models.Product,{
             as:"Product",
             foreignKey:"Fk_idProduct"
         })
-       }
+    }
+
+    
 
     return Cart
 }

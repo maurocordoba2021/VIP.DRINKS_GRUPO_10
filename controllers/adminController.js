@@ -4,8 +4,8 @@ const fs = require("fs");
 const multer = require('multer');
 const dirPath = path.join(__dirname, '../database/products.json');
 let listProducts = JSON.parse(fs.readFileSync(dirPath, 'utf-8'));
-
-
+const db = require('../src/database/models');
+const sequelize = db.sequelize;
 
 const adminController = {
     index: (req, res) => {

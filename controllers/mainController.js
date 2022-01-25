@@ -5,7 +5,7 @@ const dirPath = path.join(__dirname, '../database/products.json');
 let listProducts = JSON.parse(fs.readFileSync(dirPath, 'utf-8'));
 const homeProducts = listProducts.filter(products => products.luxury == false)
 
-const db = require('../database/models');
+const db = require('../src/database/models');
 const sequelize = db.sequelize;
 
 const mainController = {

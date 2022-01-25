@@ -4,7 +4,9 @@ let listUserJSON = require('../database/users.json');
 let listUser = listUserJSON.parse;
 const { validationResult } = require("express-validator")
 const fs = require("fs");
-const Users = require('../models/Users');
+
+const db = require('../src/database/models');
+const sequelize = db.sequelize;
 const bcryptjs = require('bcryptjs');
 
 

@@ -57,14 +57,14 @@
                         <input type="text" name="title" id="title">
                     </div>
                     <div class="box">
+                        <h3>Tamaño</h3>
+                        <label for="measure"></label>
+                        <input type="number" name="measure" id="measure">
+                    </div>
+                    <div class="box">
                         <h3>Precio $</h3>
                         <label for="price"></label>
                         <input type="number" name="price" id="price">
-                    </div>
-                    <div class="box">
-                        <h3>Descuento %</h3>
-                        <label for="discount"></label>
-                        <input type="number" name="discount" id="discount">
                     </div>
                     <div class="box">
                         <h3>Descripción Corta</h3>
@@ -77,21 +77,20 @@
                         <textarea name="longDescription" id="longDescription" cols="20" rows="8"></textarea>
                     </div>
                     <div class="box">
-                        <h3>Stock</h3>
-                        <label for="stock"></label>
-                        <input type="number" name="stock" id="stock">
+                        <h3>Marca</h3>
+                        <label for="brand"></label>
+                        <input type="text" name="brand" id="brand">
+                    </div>
+                 
+                    <div class="box">
+                        <h3>Descuento</h3>
+                        <label for="discount"></label>
+                        <input type="number" name="discount" id="discount">
                     </div>
                     <div class="box">
-                        <h3>Costo de envío $</h3>
-                        <label for="shippingCost"></label>
-                        <input type="number" name="shippingCost" id="shippingCost">
-                    </div>
-                    <div class="box">
-                        <h3>¿Es un producto Luxury?</h3>
-                        <select name="luxury" id="luxury">
-                            <option name="Luxury" value="true">Si</option>
-                            <option name="Luxury" value="false">No</option>
-                        </select>
+                        <h3>Rating</h3>
+                        <label for="rating"></label>
+                        <input type="number" name="rating" id="rating">
                     </div>
                     <div class="box">
                         <h3>Categoría</h3>
@@ -104,8 +103,18 @@
                             <option name="category" value="Sake">Sake</option>
                         </select>
                     </div>
-
-
+                    <div class="box">
+                        <h3>¿Es un producto Luxury?</h3>
+                        <select name="luxury" id="luxury">
+                            <option name="Luxury" value="true">Si</option>
+                            <option name="Luxury" value="false">No</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <h3>Stock</h3>
+                        <label for="stock"></label>
+                        <input type="number" name="stock" id="stock">
+                    </div>
                     <div class="contain-buttons">
                         <button type="reset" class="cancel">Cancelar</button>
                         <form method="post" action="/admin/create">

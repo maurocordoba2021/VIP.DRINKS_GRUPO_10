@@ -2,7 +2,7 @@ module.exports = function (sequelize, dataTypes) {
 let alias = "Product";
 
 let cols = {
-    idProduct:  {
+    idProducts:  {
         type :  dataTypes.INTEGER, 
         primaryKey: true,
         autoIncrement: true
@@ -11,10 +11,10 @@ let cols = {
         type: dataTypes.STRING
     }, 
     measure: {
-        type: dataTypes.INTEGER
+        type: dataTypes.STRING
     }, 
     price: {
-        type: dataTypes.DECIMAL(10,2)
+        type: dataTypes.DECIMAL(5.2)
     }, 
     short_description: {
         type: dataTypes.STRING
@@ -25,24 +25,21 @@ let cols = {
     brand: {
         type: dataTypes.STRING
     }, 
-    stock: {
-        type: dataTypes.STRING
-    }, 
     discount: {
-        type: dataTypes.STRING
+        type: dataTypes.DECIMAL(1.2)
     }, 
     rating: {
-        type: dataTypes.DOUBLE
+        type: dataTypes.INTEGER
     },
-    category: {
+    img: {
         type: dataTypes.STRING
-    }, 
-    sub_category: {
-        type: dataTypes.STRING
-    }, 
+    },  
     luxury: {
         type: dataTypes.STRING
-    }
+    },
+    stock: {
+        type: dataTypes.STRING
+    },
 
 }
 let config = {
@@ -53,10 +50,18 @@ let config = {
 let Product = sequelize.define(alias, cols, config);
 
 Product.associate=(models)=>{
- Product.belongsTo(models.Cart,{
-     as:"Cart_Product",
-     foreignKey:"Fk_idProduct"
+ Product.belongsTo(models.Categorie,{
+     as:"Categories",
+     foreignKey:"categories_idcategories"
  })
+
+    Product.belongsToMany(models.User,{
+        as:"Product_user",
+        through:"products_has_users",
+        foreignKey:"products_idproducts",
+        otherKey:"users_idusers",
+        timestamps:false
+    })
 }
 return Product
 

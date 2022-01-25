@@ -12,12 +12,11 @@ module.exports = function (sequelize, dataTypes) {
         },
         surname: {
             type: dataTypes.STRING
-        },
-        email: {
-            type: dataTypes.STRING
-        },
+        },   
         password: {
             type: dataTypes.STRING
+        },img:{
+            type:dataTypes.STRING
         },
         email: {
             type: dataTypes.STRING
@@ -43,19 +42,14 @@ module.exports = function (sequelize, dataTypes) {
     let User = sequelize.define(alias, cols, config);
 
     User.associate = (models)=>{
-       User.belongsTo(models.Cart,{
-           as:"cart",
-           foreigKey:"Fk_idUser"
-       })
-       User.belongsTo(models.Adress),{
-        as:"User_Adress",
-        foreigKey:"Fk_idUser"
-    }  
+        User.belongsToMany(models.Product,{
+            as:"User_Product",
+            through:"products_has_users",
+            foreignKey:"users_idusers",
+            otherKey:"products_idproducts",
+            timestamps:false
+        })
 
     }
-
-   
-
-    return Product
-    
+    return User   
 }

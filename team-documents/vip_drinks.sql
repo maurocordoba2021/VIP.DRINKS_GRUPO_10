@@ -51,7 +51,7 @@ CREATE TABLE `products` (
   `idproducts` int NOT NULL AUTO_INCREMENT,
   `title` varchar(200) DEFAULT NULL,
   `measure` varchar(100) DEFAULT NULL,
-  `price` int DEFAULT NULL,
+  `price` decimal(5,0) DEFAULT NULL,
   `short_description` varchar(150) DEFAULT NULL,
   `long_description` text,
   `brand` varchar(100) DEFAULT NULL,
@@ -59,11 +59,11 @@ CREATE TABLE `products` (
   `rating` int DEFAULT NULL,
   `img` varchar(200) DEFAULT NULL,
   `luxury` varchar(45) DEFAULT NULL,
+  `stock` int DEFAULT NULL,
   `categories_idcategories` int NOT NULL,
   PRIMARY KEY (`idproducts`),
   UNIQUE KEY `idproducts_UNIQUE` (`idproducts`),
-  KEY `fk_products_categories1_idx` (`categories_idcategories`),
-  CONSTRAINT `fk_products_categories1` FOREIGN KEY (`categories_idcategories`) REFERENCES `categories` (`idcategories`)
+  KEY `fk_products_categories1_idx` (`categories_idcategories`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -142,4 +142,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-24 20:21:11
+-- Dump completed on 2022-01-25 12:20:12

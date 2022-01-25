@@ -1,55 +1,61 @@
 <!DOCTYPE html>
-    <html lang="en">
-   
+<html lang="en">
+
 <head>
-  
+
     <title>Bienvenidx a VIP DRINKS</title>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/styles-header.css">
-        <link rel="stylesheet" href="css/styles-footer.css">
-        <link rel="stylesheet" href="css/styles-listProducts.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
-        <link rel="icon" href="/images/favicon.ico" type="ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles-header.css">
+    <link rel="stylesheet" href="css/styles-footer.css">
+    <link rel="stylesheet" href="css/styles-listProducts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico" type="ico">
 </head>
+
 <body>
     <%- include('./partials/header') %>
 
-<main>
-    <div class="products">
-    <h3>Productos destacados</h3>
-    <section class="featured">
+        <main>
+            <div class="products">
+                <h3>Productos destacados</h3>
+                <section class="featured">
 
-        <% listProducts.forEach(product => { %>
-            <article class="product">
-                <a href="/product/detalle/<%= product.id %>">
-                    <img src="/images/imgProducts/<%= product.imgProduct %>" alt="<%= product.title %>">
-                </a>
-                <div class="main-article">
-                    <i class="fas fa-plane"></i>
-                    <p class="price">$<%= product.price %></p>
-                    <p class="shipping">Envío Gratuito</p> 
-                    <h4 class="description"><%= product.title %></h4>
-                    <form action="/detalle/<%= product.id%>" method="get">
-                    <button class="buy" type="button">Comprar</button>
-                    </form>
-                </div> 
-            </article>
-            <% }) %>
-   
-</section>
+                    <% listProducts.forEach(product=> { %>
+                        <article class="product">
+                            <a href="/product/detalle/<%= product.id %>">
+                                <img src="/images/imgProducts/<%= product.imgProduct %>" alt="<%= product.title %>">
+                            </a>
+                            <div class="main-article">
+                                <i class="fas fa-plane"></i>
+                                <p class="price">$<%= product.price %>
+                                </p>
+                                <p class="shipping">Envío Gratuito</p>
+                                <h4 class="description">
+                                    <%= product.title %>
+                                </h4>
+                                <form action="/detalle/<%= product.id%>" method="get">
+                                    <button class="buy" type="button">Comprar</button>
+                                </form>
 
-</div>
-</main>
-<%- include('./partials/footer') %>
+                                <form action="/shop/add/<%= product.id %> " method="post">
+                                    <button class="buy" type="submit">Add to Cart</button>
+                                </form>
+                            </div>
+                        </article>
+                        <% }) %>
+
+                </section>
+
+            </div>
+        </main>
+        <%- include('./partials/footer') %>
 
 </body>
 
 </html>
-
-

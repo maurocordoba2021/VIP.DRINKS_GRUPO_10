@@ -4,7 +4,8 @@ const products = require('../database/products.json')
 const productsLuxury = products.filter(luxury => luxury.luxury == true)
 const homeProducts = products.filter(homeproduct => homeproduct.luxury == false)
 const mercadopago = require('mercadopago');
-
+const db = require('../src/database/models');
+const sequelize = db.sequelize;
 let idProductsAdded = []
 
 const carController ={

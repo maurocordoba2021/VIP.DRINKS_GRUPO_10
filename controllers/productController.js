@@ -3,6 +3,8 @@ const { url } = require('inspector');
 const fs = require("fs");
 const path = require('path');
 const mercadopago = require('mercadopago');
+const db = require('../src/database/models');
+const sequelize = db.sequelize;
 
 //Importamos JSON DB
 const dirPath = path.join(__dirname, '../database/products.json');

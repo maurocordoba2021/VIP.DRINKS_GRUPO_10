@@ -12,7 +12,11 @@ const adminController = {
         res.render("admin");
     },
     create: (req, res) => {
-        res.render("create");
+        db.Categorie.findAll()
+            .then((category)=>{
+                res.render("create",{category:category});
+            })
+        
     },
     processForm: (req, res) => {
         let value = req.body.luxury
@@ -21,36 +25,67 @@ const adminController = {
             }else{
                 value = false
             }
-        let newProduct = {
-            id: parseInt (listProducts.length + 1),
+            db.Product.create({
             title: req.body.title,
-            price: parseInt (req.body.price),
-            discount: parseInt (req.body.discount),
-            shortDescription:[req.body.shortDescription],
+            price: req.body.price,
+            discount: req.body.discount,
+            shortDescription:req.body.shortDescription,
             longDescription: req.body.longDescription,
-            stock: parseInt (req.body.stock),
-            shippingCost: parseInt (req.body.shippingCost),
+            stock:req.body.stock,
             luxury: value,
             category: req.body.category,
-            imgProduct: req.file.filename,
-            
-        };
-        console.log(newProduct);
-        listProducts.push(newProduct);
-        let nuevaLista = JSON.stringify(listProducts, null, " ");
-        fs.writeFileSync(dirPath, nuevaLista, 'utf-8')
+            img: req.file.filename,
+            measure:req.body.measure,
+            brand:req.body.brand,
+            rating:req.body.rating
+
+            })
+
        res.redirect('/admin/listEdit');
     },
     listEdit: (req, res) => {
-        res.render("listEdit", { listProducts });
+        db.Product.findAll()
+        .then(Product=>{
+            res.render("listEdit",{listProducts:Product})
+        })
+        .catch(error=>{
+            console.log (error)
+        })
+        
     },
     editProduct: (req, res) => {
-        let idProduct = req.params.id;
-        let product = listProducts[idProduct - 1];
-        res.render('editProduct', { product });
+        let product=db.Product.findByPk(req.params.id)
+        console.log(product.idProducts)
+        let category=db.Categorie.findAll()
+            Promise.all([product,category])
+            .then(([product,category])=>{
+                res.render("editProduct",{product:product,category:category})
+            })
+      
     },
     processEdit: (req, res) => {
-    // 1) Busco index de un objeto (producto) especifico de nuestra lista sin actualizar usando método findIndex
+        
+        
+        db.Product.update({
+            title: req.body.title,
+            price: req.body.price,
+            discount: req.body.discount,
+            shortDescription:req.body.shortDescription,
+            longDescription: req.body.longDescription,
+            stock:req.body.stock,
+            luxury: req.body.luxury,
+            category: req.body.category,
+            img: req.body.filename,
+            measure:req.body.measure,
+            brand:req.body.brand,
+            rating:req.body.rating
+        },{
+            where:{
+                idProducts:req.params.id
+            }
+        })
+        res.redirect('/admin/listEdit')
+   /*  // 1) Busco index de un objeto (producto) especifico de nuestra lista sin actualizar usando método findIndex
     let productIndex = listProducts.findIndex((product => product.id == req.params.id));
     // 2) Muestro mi producto encontrado antes de actualizar
     console.log("Antes de la edición: ", listProducts[productIndex])
@@ -95,7 +130,7 @@ const adminController = {
     let nuevaLista = JSON.stringify(listProducts, null, " ");
     fs.writeFileSync(dirPath, nuevaLista, 'utf-8');
 
-    res.redirect('/admin/listEdit')
+    res.redirect('/admin/listEdit') */
     },
     delete: (req, res) => {
         let idProduct = req.params.id

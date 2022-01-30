@@ -28,7 +28,7 @@ CREATE TABLE `categories` (
   PRIMARY KEY (`idcategories`),
   UNIQUE KEY `idcategories_UNIQUE` (`idcategories`),
   UNIQUE KEY `name_UNIQUE` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +64,7 @@ CREATE TABLE `products` (
   PRIMARY KEY (`idproducts`),
   UNIQUE KEY `idproducts_UNIQUE` (`idproducts`),
   KEY `fk_products_categories1_idx` (`categories_idcategories`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +91,7 @@ CREATE TABLE `products_has_users` (
   KEY `fk_products_has_users_products_idx` (`products_idproducts`),
   CONSTRAINT `fk_products_has_users_products` FOREIGN KEY (`products_idproducts`) REFERENCES `products` (`idproducts`),
   CONSTRAINT `fk_products_has_users_users1` FOREIGN KEY (`users_idusers`) REFERENCES `users` (`idusers`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,7 +121,7 @@ CREATE TABLE `users` (
   `birthday` varchar(100) DEFAULT NULL,
   `profile` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idusers`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

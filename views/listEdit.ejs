@@ -26,15 +26,15 @@
         <%listProducts.forEach(product=> {%>
             <article class="">
                 <div class="box-img">
-                    <img src="/images/imgProducts/<%= product.imgProduct%>" alt="">
+                    <img src="/images/imgProducts/<%= product.img%>" alt="">
                 </div>
                 <div class="main-product">
                     <h4 class="nameProduct">
                         <%=product.title%>
                     </h4>
 
-                    <a class="button" href="/admin/editProduct/<%= product.id%>">Editar producto</a>
-                    <form method="POST" action="/admin/listEdit/<%= product.id%>?_method=delete">
+                    <a class="button" href="/admin/editProduct/<%= product.idProducts%>">Editar producto</a>
+                    <form method="POST" action="/admin/listEdit/<%= product.idProducts%>?_method=delete">
                         <button type="submit">Eliminar producto</button>
                     </form>
                 </div>

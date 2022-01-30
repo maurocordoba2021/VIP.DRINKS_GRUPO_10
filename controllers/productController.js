@@ -7,23 +7,27 @@ const db = require('../src/database/models');
 const sequelize = db.sequelize;
 
 //Importamos JSON DB
-const dirPath = path.join(__dirname, '../database/products.json');
-let listProducts = JSON.parse(fs.readFileSync(dirPath, 'utf-8'));
+/* const dirPath = path.join(__dirname, '../database/products.json');
+let listProducts = JSON.parse(fs.readFileSync(dirPath, 'utf-8')); */
 
 //Configuración de mercadopago
 mercadopago.configure({
     access_token: 'TEST-2074110728450610-112903-13b9da7ab252d6ee2a360d42bb332ca5-176106233'
 });
 
-function searchInArray(array, value) {
+/* function searchInArray(array, value) {
     const prod = array.find((product) => product.id == value);
     return prod;
-}
+} */
 
 const productController = {
     detalle: (req, res) => {
-
-        let idProduct = req.params.id;
+        
+        db.Product.findByPk(req.params.id)
+            .then(product=>{
+                res.render('detalle',{product:product})
+            })
+        /* let idProduct = req.params.id;
         let product= listProducts[idProduct - 1];
         
         console.log(product)
@@ -36,9 +40,9 @@ const productController = {
                     quantity: 1,
                 }
             ]
-        };
+        }; */
 
-        mercadopago.preferences.create(preference)
+        /* mercadopago.preferences.create(preference)
             .then(function (response) {
                 res.render('detalle', {
                     post: {
@@ -53,7 +57,7 @@ const productController = {
                 });
             }).catch(function (error) {
                 console.log(error);
-            });
+            }); */
     },
     novedades: (req, res) => {
         let listLuxury = listProducts.filter(product => product.luxury == true)

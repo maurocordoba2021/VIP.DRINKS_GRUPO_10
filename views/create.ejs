@@ -19,120 +19,120 @@
 
 <body>
 
-        <main>
-            <form action="/admin/create" method="post" enctype="multipart/form-data">
-                <h1>Carga un nuevo producto</h1>
-                <section class="images">
-                    <div class="contain-upload-image">
-                        <input class="upload-image" id="file" name="imgProduct" type="file">
-                        <label class="icon-upload" for="file">
-                            <h3><i class="fas fa-plus"></i></h3>
-                        </label>
-                    </div>
-                    <div class="preview" id="preview"></div>
+    <main>
+        <form action="/admin/create" method="post" enctype="multipart/form-data">
+            <h1>Carga un nuevo producto</h1>
+            <section class="images">
+                <div class="contain-upload-image">
+                    <input class="upload-image" id="file" name="imgProduct" type="file">
+                    <label class="icon-upload" for="file">
+                        <h3><i class="fas fa-plus"></i></h3>
+                    </label>
+                </div>
+                <div class="preview" id="preview"></div>
 
 
-                    <script>
-                        document.getElementById('file').onchange = function (i) {
-                            for (let i = 0; i < this.files.length; i++) {
-                                let reader = new FileReader();
-                                reader.onload = function (e) {
-                                    let img = document.createElement('img');
-                                    img.classList.add('imgProduct');
-                                    img.src = e.target.result;
-                                    document.getElementById('preview').appendChild(img);
-                                }
-                                reader.readAsDataURL(this.files[i]);
+                <script>
+                    document.getElementById('file').onchange = function (i) {
+                        for (let i = 0; i < this.files.length; i++) {
+                            let reader = new FileReader();
+                            reader.onload = function (e) {
+                                let img = document.createElement('img');
+                                img.classList.add('img');
+                                img.src = e.target.result;
+                                document.getElementById('preview').appendChild(img);
                             }
+                            reader.readAsDataURL(this.files[i]);
                         }
-                    </script>
+                    }
+                </script>
 
 
 
-                </section>
-                <section>
-                    <div class="box">
-                        <h3>Nombre del artículo</h3>
-                        <label for="title"></label>
-                        <input type="text" name="title" id="title">
-                    </div>
-                    <div class="box">
-                        <h3>Tamaño</h3>
-                        <label for="measure"></label>
-                        <input type="number" name="measure" id="measure">
-                    </div>
-                    <div class="box">
-                        <h3>Precio $</h3>
-                        <label for="price"></label>
-                        <input type="number" name="price" id="price">
-                    </div>
-                    <div class="box">
-                        <h3>Descripción Corta</h3>
-                        <label for="shortDescription"></label>
-                        <textarea name="shortDescription" id="shortDescription" cols="10" rows="4"></textarea>
-                    </div>
-                    <div class="box">
-                        <h3>Descripción Larga</h3>
-                        <label for="longDescription"></label>
-                        <textarea name="longDescription" id="longDescription" cols="20" rows="8"></textarea>
-                    </div>
-                    <div class="box">
-                        <h3>Marca</h3>
-                        <label for="brand"></label>
-                        <input type="text" name="brand" id="brand">
-                    </div>
-                 
-                    <div class="box">
-                        <h3>Descuento</h3>
-                        <label for="discount"></label>
-                        <input type="number" name="discount" id="discount">
-                    </div>
-                    <div class="box">
-                        <h3>Rating</h3>
-                        <label for="rating"></label>
-                        <input type="number" name="rating" id="rating">
-                    </div>
-                    <div class="box">
-                        <h3>Categoría</h3>
-                        <select name="category" id="category">
-                            <option name="category" value="Whisky">Whisky</option>
-                            <option name="category" value="Vodka">Vodka</option>
-                            <option name="category" value="Champagne">Champagne</option>
-                            <option name="category" value="Tequila">Tequila</option>
-                            <option name="category" value="Ron">Ron</option>
-                            <option name="category" value="Sake">Sake</option>
-                        </select>
-                    </div>
-                    <div class="box">
-                        <h3>¿Es un producto Luxury?</h3>
-                        <select name="luxury" id="luxury">
-                            <option name="Luxury" value="true">Si</option>
-                            <option name="Luxury" value="false">No</option>
-                        </select>
-                    </div>
-                    <div class="box">
-                        <h3>Stock</h3>
-                        <label for="stock"></label>
-                        <input type="number" name="stock" id="stock">
-                    </div>
-                    <div class="contain-buttons">
-                        <button type="reset" class="cancel">Cancelar</button>
-                        <form method="post" action="/admin/create">
-                            <button type="submit" class="upload">Publicar</button>
-                        </form>
-                    </div>
+            </section>
+            <section>
+                <div class="box">
+                    <h3>Nombre del artículo</h3>
+                    <label for="title"></label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div class="box">
+                    <h3>Tamaño</h3>
+                    <label for="measure"></label>
+                    <input type="number" name="measure" id="measure">
+                </div>
+                <div class="box">
+                    <h3>Precio $</h3>
+                    <label for="price"></label>
+                    <input type="number" name="price" id="price">
+                </div>
+                <div class="box">
+                    <h3>Descripción Corta</h3>
+                    <label for="shortDescription"></label>
+                    <textarea name="shortDescription" id="shortDescription" cols="10" rows="4"></textarea>
+                </div>
+                <div class="box">
+                    <h3>Descripción Larga</h3>
+                    <label for="longDescription"></label>
+                    <textarea name="longDescription" id="longDescription" cols="20" rows="8"></textarea>
+                </div>
+                <div class="box">
+                    <h3>Marca</h3>
+                    <label for="brand"></label>
+                    <input type="text" name="brand" id="brand">
+                </div>
 
-                </section>
+                <div class="box">
+                    <h3>Descuento</h3>
+                    <label for="discount"></label>
+                    <input type="number" name="discount" id="discount">
+                </div>
+                <div class="box">
+                    <h3>Rating</h3>
+                    <label for="rating"></label>
+                    <input type="number" name="rating" id="rating">
+                </div>
+                <div class="box">
+                    <h3>Categoría</h3>
+                    <select name="category" id="category" required>
+                        <option value="" disabled selected>- select category- </option>
+                        <% category.forEach(category=> { %>
+                            <option value="<%= category.id %>">
+                                <%= category.name %>
+                            </option>
+                            <% }); %>
+                    </select>
+                </div>
+                <div class="box">
+                    <h3>¿Es un producto Luxury?</h3>
+                    <select name="luxury" id="luxury">
+                        <option name="Luxury" value="true">Si</option>
+                        <option name="Luxury" value="false">No</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <h3>Stock</h3>
+                    <label for="stock"></label>
+                    <input type="number" name="stock" id="stock">
+                </div>
+                <div class="contain-buttons">
+                    <button type="reset" class="cancel">Cancelar</button>
+                    <form method="post" action="/admin/create">
+                        <button type="submit" class="upload">Publicar</button>
+                    </form>
+                </div>
 
-                <section class="">
-                    <p>Los artículos tienen que estar certificados validando su autenticidad.</p>
-                    <p>Los artículos como animales, drogas, armas, falsificaciones y otros que infringen derechos de
-                        propiedad intelectual no estan permitidos.</p>
-                </section>
+            </section>
 
-            </form>
+            <section class="">
+                <p>Los artículos tienen que estar certificados validando su autenticidad.</p>
+                <p>Los artículos como animales, drogas, armas, falsificaciones y otros que infringen derechos de
+                    propiedad intelectual no estan permitidos.</p>
+            </section>
 
-        </main>
+        </form>
+
+    </main>
 
 
 </body>

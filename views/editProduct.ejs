@@ -21,7 +21,7 @@
         <main>
     
                 <h2>Editar el producto <%=product.title%></h2>
-            <form action="/admin/editProduct/<%=product.id%>?_method=put" method="post" enctype="multipart/form-data">
+            <form action="/admin/editProduct/<%=product.idProducts%>?_method=put" method="post" enctype="multipart/form-data">
                 <h1>Carga un nuevo producto</h1>
                 <section class="images">
                     <div class="contain-upload-image">
@@ -31,7 +31,7 @@
                         </label>
                     </div>
                     <div class="preview edit" id="preview">
-                        <img class ="imgProduct"src="/images/imgProducts/<%=product.imgProduct%>" alt="<%=product.imgProduct%>">
+                        <img class ="imgProduct"src="/images/imgProducts/<%=product.img%>" alt="<%=product.img%>">
                     </div>
 
 

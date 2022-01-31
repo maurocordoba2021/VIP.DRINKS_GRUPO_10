@@ -42,12 +42,12 @@
                     </div>
                     <div class="box">
                         <h4 class="price">
-                            <% let n = product.price %> 
-                            <%= "$" + n.toFixed(2)%>
+                            <%= product.price %> 
+                      
                         </h4>
                         <p class="off"><%=product.discount*100%> % OFF</p>
                         <%  %> 
-                        <p class="payment-details">en 12 x <%= "$" + (n/12).toFixed(2) %>
+                        <p class="payment-details">en 12 x <%= "$" %>
                         </p>
                         <a href="/metodos-de-pago">Ver todos los métodos de pago</a>
                     </div>
@@ -89,7 +89,7 @@
                     </div>
                     <div>
                      <div class="butns">
-                        <a href="<%= post.init_point %>" target="_blank">
+                       
                             <div class="buy">Comprar ahora</div>
                         </a>
                         <form action="/shop/add/<%= product.id %> " method="post">
@@ -120,14 +120,14 @@
                         <div class="contain-caracteristicas">
                             <article class="caracteristicas simple">
                                 <ul class="caracteristica-ul">
-                                    <% product.shortDescription.forEach(description=> {%>
+                                   
 
 
                                         <li>
-                                            <%= description %>
+                                            <%= product. short_description %>
                                         </li>
 
-                                        <%})%>
+                                        
                                 </ul>
                             </article>
 

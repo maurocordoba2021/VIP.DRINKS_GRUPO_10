@@ -40,6 +40,10 @@ let cols = {
     stock: {
         type: dataTypes.STRING
     },
+    categories_idcategories:{
+        type:dataTypes.BIGINT(10)
+    }
+    
 
 }
 let config = {

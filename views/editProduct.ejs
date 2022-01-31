@@ -70,12 +70,12 @@
                     <div class="box">
                         <h3>Descripción Corta</h3>
                         <label for="shortDescription"></label>
-                        <textarea name="shortDescription" id="shortDescription" cols="10" rows="4" value="<%=product.shortDescription%>"><%=product.shortDescription%></textarea>
+                        <textarea name="shortDescription" id="shortDescription" cols="10" rows="4" value="<%=product.short_description%>"><%=product.short_description%></textarea>
                     </div>
                     <div class="box">
                         <h3>Descripción Larga</h3>
                         <label for="longDescription"></label>
-                        <textarea name="longDescription" id="longDescription" cols="20" rows="8"  value="<%=product.longDescription%>"><%=product.longDescription%></textarea>
+                        <textarea name="longDescription" id="longDescription" cols="20" rows="8"  value="<%=product.long_description%>"><%=product.long_description%></textarea>
                     </div>
                     <div class="box">
                         <h3>Stock</h3>
@@ -96,13 +96,13 @@
                     </div>
                     <div class="box">
                         <h3>Categoría</h3>
-                        <select name="category" id="category">
-                            <option name="category" value="Whisky">Whisky</option>
-                            <option name="category" value="Vodka">Vodka</option>
-                            <option name="category" value="Champagne">Champagne</option>
-                            <option name="category" value="Tequila">Tequila</option>
-                            <option name="category" value="Ron">Ron</option>
-                            <option name="category" value="Sake">Sake</option>
+                        <select name="categories_idcategories" id="category" required>
+                            <option value="" disabled selected>- select category- </option>
+                            <% category.forEach(category=> { %>
+                                <option value="<%= category.idcategories %>">
+                                    <%= category.name %>
+                                </option>
+                                <% }); %>
                         </select>
                     </div>
 

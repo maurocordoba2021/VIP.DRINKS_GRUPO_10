@@ -59,7 +59,7 @@
                 <div class="box">
                     <h3>Tamaño</h3>
                     <label for="measure"></label>
-                    <input type="number" name="measure" id="measure">
+                    <input type="text" name="measure" id="measure">
                 </div>
                 <div class="box">
                     <h3>Precio $</h3>
@@ -94,10 +94,10 @@
                 </div>
                 <div class="box">
                     <h3>Categoría</h3>
-                    <select name="category" id="category" required>
+                    <select name="categories_idcategories" id="category" required>
                         <option value="" disabled selected>- select category- </option>
                         <% category.forEach(category=> { %>
-                            <option value="<%= category.id %>">
+                            <option value="<%= category.idcategories %>">
                                 <%= category.name %>
                             </option>
                             <% }); %>

@@ -23,8 +23,9 @@ const usersController ={
             last_name: req.body.last_name,
             email: req.body.email,
             password: req.body.password,
+            birthday: req.body.birthday,
+            profile: req.profile,
             imgUser: req.file,
-            admin: false
         }
         const resultValidation = validationResult(req)
         if (resultValidation.errors.length > 0) {

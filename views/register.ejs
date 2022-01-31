@@ -37,6 +37,7 @@
                         <h4>Formulario de Registro</h4>
               
                     <!--Nombre-->
+                    <h5>Nombre: </h5>
                     <label for="first_name"></label>
                     <input 
                         class="controls <%= locals.errors && errors.first_name ? 'is-invalid' : null %>  " 
@@ -54,6 +55,7 @@
 
 
                                <!--Apellido-->
+                               <h5>Apellido: </h5>
                     <label for="last_name"></label>
                     <input 
                         class="controls <%= locals.errors && errors.last_name ? 'is-invalid' : null %>  " 
@@ -70,6 +72,7 @@
                             <% } %>
 
                                   <!--e-mail-->
+                                  <h5>Correo electrónico:  </h5>
                     <label for="email"></label>
                     <input 
                         class="controls <%= (locals.errors && errors.email) ? 'is-invalid' : null %>  " 
@@ -85,6 +88,23 @@
                         </p>
                         <% } %>
 
+                        <h5>Fecha de nacimiento: </h5>
+                        <input 
+                        class="controls <%= (locals.errors && errors.email) ? 'is-invalid' : null %>  " 
+                        type="date"
+                        name="birthday"
+                        id="birthday"
+                        >
+
+                        <h5>Perfil: </h5>
+                        <label for="profile"></label>
+                        <input name="profile" type="radio" value="vendedor">
+                        vendedor
+                        <label for="profile"></label>
+                        <input name="profile" type="radio" value="comprador">
+                        comprador
+
+                        <h5>Contraseña: </h5>
                     <label for="password"></label>
                     <input 
                         class="controls <%= locals.errors && errors.password ? 'is-invalid' : null %>  " 
@@ -97,6 +117,19 @@
                                 <%= errors.password.msg %>
                             </p>
                             <% } %>
+
+                            <h5>Confirmar contraseña: </h5>
+                            <label for="password_confirm"></label>
+                            <input 
+                                class="controls <%= locals.errors && errors.password ? 'is-invalid' : null %>  " 
+                                type="password"
+                                name="password_confirm"
+                                placeholder="Confirmar contraseña">
+                                <% if (locals.errors && errors.password) { %>
+                                    <p  class= "text-validatip n">
+                                        <%= errors.password.msg %>
+                                    </p>
+                                    <% } %>
                         <!--Imágen de usuario-->
                         <label for="imgUser"></label>
                         <input 

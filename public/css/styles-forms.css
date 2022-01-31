@@ -26,7 +26,12 @@ a{
 li{
     text-decoration: none;
 }
-
+h5 {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+    font-weight: 800;
+}
 /* END CUERPO EN GRAL */
 
 /* START FORMULARIO*/
@@ -55,7 +60,6 @@ li{
     width: 100%;
     padding: 10px;
     border-radius: 4px;
-    margin-top: 16px;
     border: 1px solid;
     font-size:18px;
 }

@@ -10,24 +10,36 @@ const sequelize = db.sequelize;
 const bcryptjs = require('bcryptjs');
 
 
-const usersController ={
-   
-    register: async (req, res) =>{
+const usersController = {
+
+    register: async (req, res) => {
         res.render('register');
     },
-    processForm: async(req, res) =>{
-        let file = req.file;
+    processForm: async (req, res) => {
+        db.User.create({
+                name: req.body.name,
+                surname: req.body.surname,
+                password: req.body.password,
+                img: req.file.filename,
+                email: req.body.email,
+                birthday: req.body.birthday,
+                profile: req.body.profile
+            })
+
+            
+            res.redirect("/users/login")
+         /* let file = req.file;
     
         let oldData = {
-            first_name: req.body.first_name,
-            last_name: req.body.last_name,
+            name: req.body.name,
+            surname: req.body.surname,
             email: req.body.email,
             password: req.body.password,
             birthday: req.body.birthday,
             profile: req.profile,
-            imgUser: req.file,
-        }
-        const resultValidation = validationResult(req)
+            img: req.file,
+        } */
+        /* const resultValidation = validationResult(req)
         if (resultValidation.errors.length > 0) {
         return  res.render('register', {
                errors: resultValidation.mapped(), // -> convierte array en objeto literal
@@ -52,95 +64,97 @@ const usersController ={
         let userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password, 10),
-            imgUser: req.file.filename
+            img: req.file.filename
         }
 
       let userCreated = Users.create(userToCreate);
-       return res.redirect('/users/login');
-    }, 
+       return res.redirect('/users/login');  */
+    },
     // START LOGIN
-    login: (req, res) =>{
+    login: (req, res) => {
         res.render('login');
     },
-    loginProcess: async(req, res) => {
-      let userToLogin = Users.findByField('email', req.body.email);
+    loginProcess: async (req, res) => {
+        let userToLogin = Users.findByField('email', req.body.email);
 
-      if(userToLogin){
-          let passwordVerify = bcryptjs.compareSync(req.body.password, userToLogin.password);
-          if(passwordVerify){
-            delete userToLogin.password;
-            req.session.userLogged = userToLogin;
+        if (userToLogin) {
+            let passwordVerify = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            if (passwordVerify) {
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
 
-            if(req.body.remember_user) {
-                res.cookie('userEmail', req.body.email, { maxAge: (1000 +60) * 2 });
-            }
-              return res.redirect('/users/profile');
-          } 
-           return res.render('login', {
-            errors: {
-                password: {
-                    msg: 'La contraseña es incorrecta'
+                if (req.body.remember_user) {
+                    res.cookie('userEmail', req.body.email, { maxAge: (1000 + 60) * 2 });
                 }
-            }, 
-            oldData: req.body
-        });  
-      }
-      return res.render('login', {
-          errors: {
-              email: {
-                  msg: 'Las credenciales son inválidas'
-              }
-          }
-      });
+                return res.redirect('/users/profile');
+            }
+            return res.render('login', {
+                errors: {
+                    password: {
+                        msg: 'La contraseña es incorrecta'
+                    }
+                },
+                oldData: req.body
+            });
+        }
+        return res.render('login', {
+            errors: {
+                email: {
+                    msg: 'Las credenciales son inválidas'
+                }
+            }
+        });
     },
-//START PROFILE
-    profile: async(req, res)=>{
+    //START PROFILE
+    profile: async (req, res) => {
         return res.render('profile', {
             user: {
                 id: req.session.userLogged.id,
-                imgUser: req.session.userLogged.imgUser,
-                first_name: req.session.userLogged.first_name,
-                last_name: req.session.userLogged.last_name,
+                img: req.session.userLogged.img,
+                name: req.session.userLogged.name,
+                surname: req.session.userLogged.surname,
                 email: req.session.userLogged.email
-        }});
+            }
+        });
     },
     editUser: (req, res) => {
         res.render('editUser', {
             user: {
                 id: req.session.userLogged.id,
-                imgUser: req.session.userLogged.imgUser,
-                first_name: req.session.userLogged.first_name,
-                last_name: req.session.userLogged.last_name,
+                img: req.session.userLogged.img,
+                name: req.session.userLogged.name,
+                surname: req.session.userLogged.surname,
                 email: req.session.userLogged.email
-        }});
+            }
+        });
     },
     processEdit: (req, res) => {
-// Estoy intentando procesar la edición de los datos personales 
+        // Estoy intentando procesar la edición de los datos personales 
 
-    /*    let userIndex = Users.findByPk(req.params.id)
-        .then(function(){
-            let user = listUser[userIndex]
-            // 3) Validación de Imágen
-                let imgUser
-                if (req.file != undefined) {
-                    imgUser = req.file.filename
-                } else {
-                    imgUser = listUser[user.id].imgUser
-                }
-                user.id = user.id; 
-                user.first_name = req.body.first_name;
-                user.last_name = req.body.last_name;
-                user.email = req.body.email;
-                    
-            // 7) Actualizo JSON
-            let nuevaLista = JSON.stringify(listUser, null, " ");
-            fs.writeFileSync(dirPath, nuevaLista, 'utf-8');
-            return user
-        
-        }) */
-   
+        /*    let userIndex = Users.findByPk(req.params.id)
+            .then(function(){
+                let user = listUser[userIndex]
+                // 3) Validación de Imágen
+                    let img
+                    if (req.file != undefined) {
+                        img = req.file.filename
+                    } else {
+                        img = listUser[user.id].img
+                    }
+                    user.id = user.id; 
+                    user.name = req.body.name;
+                    user.surname = req.body.surname;
+                    user.email = req.body.email;
+                        
+                // 7) Actualizo JSON
+                let nuevaLista = JSON.stringify(listUser, null, " ");
+                fs.writeFileSync(dirPath, nuevaLista, 'utf-8');
+                return user
+            
+            }) */
+
         res.redirect('/users/profile')
-        },
+    },
     logout: (req, res) => {
         res.clearCookie("userEmail")
         req.session.destroy();

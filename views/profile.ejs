@@ -26,19 +26,19 @@
             <!--ACÁ VA EL CÓDIGO DEL CUERPO DE LA PÁG-->
 
             <div id="box-img">
-                <% let img=user.imgUser %>
-                    <img id="avatar" src="/images/imgUsers/<%=img.replace(/['" ]+/g, '' )%>" alt="imgUser"> <%# Quitamos
+                <% let img=user.img %>
+                    <img id="avatar" src="/images/imgs/<%=img.replace(/['" ]+/g, '' )%>" alt="img"> <%# Quitamos
                         commillas con replace para no romper la ruta %>
             </div>
             <div>
-                <h4 class="profilename">¡ Hola <%=user.first_name%> !</h4>
+                <h4 class="profilename">¡ Hola <%=user.name%> !</h4>
 
             </div>
 
             <p class="subtitle">Tus datos personales:</p>
-            <p>Nombre: <%=user.first_name%>
+            <p>Nombre: <%=user.name%>
             </p>
-            <p>Apellido: <%=user.last_name%>
+            <p>Apellido: <%=user.surname%>
             </p>
             <p>Correo electrónico: <%=user.email%>
             </p>

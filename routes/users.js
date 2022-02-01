@@ -17,7 +17,7 @@ const loginValidations = require('../middlewares/loginValidations');
 router.get("/register", guestMiddleware,usersController.register);
 
 //Procesa el formulario de registro, redirecciona a LOGIN
-router.post("/register", usersFileUpload.single('imgUser'), usersValidations, usersController.processForm) // Procesar formulario de registro
+router.post("/register", usersFileUpload.single('img'), usersValidations, usersController.processForm) // Procesar formulario de registro
 
 //Muestra el formulario de LOGIN
 router.get("/login", guestMiddleware, usersController.login);

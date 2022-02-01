@@ -38,36 +38,36 @@
               
                     <!--Nombre-->
                     <h5>Nombre: </h5>
-                    <label for="first_name"></label>
+                    <label for="name"></label>
                     <input 
-                        class="controls <%= locals.errors && errors.first_name ? 'is-invalid' : null %>  " 
+                        class="controls <%= locals.errors && errors.name ? 'is-invalid' : null %>  " 
                         type="text"
-                        name="first_name" 
-                        value= "<%= locals.oldData ? oldData.first_name : null %>"
-                        id="first_name"
+                        name="name" 
+                        value= "<%= locals.oldData ? oldData.name : null %>"
+                        id="name"
                         placeholder="Nombre">
                         <!--Validación nombres-->
-                        <% if (locals.errors && errors.first_name) { %>
+                        <% if (locals.errors && errors.name) { %>
                               <p class= "text-validation">
-                                <%= errors.first_name.msg %>
+                                <%= errors.name.msg %>
                               </p>
                             <% } %>
 
 
                                <!--Apellido-->
                                <h5>Apellido: </h5>
-                    <label for="last_name"></label>
+                    <label for="surname"></label>
                     <input 
-                        class="controls <%= locals.errors && errors.last_name ? 'is-invalid' : null %>  " 
+                        class="controls <%= locals.errors && errors.surname ? 'is-invalid' : null %>  " 
                         type="text"
-                        name="last_name" 
-                        value= "<%= locals.oldData ? oldData.last_name : null %>"
-                        id="last_name"
+                        name="surname" 
+                        value= "<%= locals.oldData ? oldData.surname : null %>"
+                        id="surname"
                         placeholder="Apellido">
                         <!--Validación apellido-->
-                        <% if (locals.errors && errors.last_name) { %>
+                        <% if (locals.errors && errors.surname) { %>
                               <p class= "text-validation">
-                                <%= errors.last_name.msg %>
+                                <%= errors.surname.msg %>
                               </p>
                             <% } %>
 
@@ -131,14 +131,14 @@
                                     </p>
                                     <% } %>
                         <!--Imágen de usuario-->
-                        <label for="imgUser"></label>
+                        <label for="img"></label>
                         <input 
                         type="file" 
-                        name="imgUser" 
-                        id="imgUser">
-                        <% if (locals.errors && errors.imgUser) { %>
+                        name="img" 
+                        id="img">
+                        <% if (locals.errors && errors.img) { %>
                             <p class= "text-validation">
-                                <%= errors.imgUser.msg %>
+                                <%= errors.img.msg %>
                             </p>
                             <% } %>
                         <p class="warnings" id="warnings"></p>

@@ -1,12 +1,10 @@
 const express = require('express');
 const path = require('path');
-let listUserJSON = require('../database/users.json');
-let listUser = listUserJSON.parse;
 const { validationResult } = require("express-validator")
 const fs = require("fs");
-
 const db = require('../src/database/models');
 const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 const bcryptjs = require('bcryptjs');
 
 
@@ -16,6 +14,14 @@ const usersController = {
         res.render('register');
     },
     processForm: async (req, res) => {
+       
+        const resultValidation = validationResult(req);
+        let userExist = await db.User.findOne({
+            where: {
+                email: { [Op.like]: req.body.email }
+            }
+        })
+        if (!resultValidation.errors.length && !userExist) {
         db.User.create({
                 name: req.body.name,
                 surname: req.body.surname,
@@ -24,11 +30,32 @@ const usersController = {
                 email: req.body.email,
                 birthday: req.body.birthday,
                 profile: req.body.profile
+            }).then(function(user) {
+                req.session.userLogged = user;
+                res.redirect("/users/profile")
             })
+        } else {
+            if (userExist) {
+                return res.render('/users/register', {
+                    errors: {
+                        email: {
+                            msg: 'Este email ya está registrado'
+                        }
+                    },
+                    oldData: req.body
+            })} else {
 
-            
+                return res.render('/users/register', {
+                    errors: resultValidation.mapped(),
+                    oldData: req.body
+                });
+            }
+        }
+    }
+
+         /*    
             res.redirect("/users/login")
-         /* let file = req.file;
+          let file = req.file;
     
         let oldData = {
             name: req.body.name,
@@ -38,8 +65,8 @@ const usersController = {
             birthday: req.body.birthday,
             profile: req.profile,
             img: req.file,
-        } */
-        /* const resultValidation = validationResult(req)
+        } 
+         const resultValidation = validationResult(req)
         if (resultValidation.errors.length > 0) {
         return  res.render('register', {
                errors: resultValidation.mapped(), // -> convierte array en objeto literal
@@ -47,9 +74,9 @@ const usersController = {
            });
         } 
 
-        let userInDB = Users.findByField('email', req.body.email);
+        let userInDB = db.User.findOne('email', req.body.email);
 
-        // return res.send(userInDB);
+         return res.send(userInDB);
 
         if(userInDB){
             return  res.render('register', {
@@ -68,8 +95,8 @@ const usersController = {
         }
 
       let userCreated = Users.create(userToCreate);
-       return res.redirect('/users/login');  */
-    },
+       return res.redirect('/users/login'); 
+    }, */,
     // START LOGIN
     login: (req, res) => {
         res.render('login');

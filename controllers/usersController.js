@@ -52,51 +52,7 @@ const usersController = {
             }
         }
     }
-
-         /*    
-            res.redirect("/users/login")
-          let file = req.file;
-    
-        let oldData = {
-            name: req.body.name,
-            surname: req.body.surname,
-            email: req.body.email,
-            password: req.body.password,
-            birthday: req.body.birthday,
-            profile: req.profile,
-            img: req.file,
-        } 
-         const resultValidation = validationResult(req)
-        if (resultValidation.errors.length > 0) {
-        return  res.render('register', {
-               errors: resultValidation.mapped(), // -> convierte array en objeto literal
-               oldData: oldData,
-           });
-        } 
-
-        let userInDB = db.User.findOne('email', req.body.email);
-
-         return res.send(userInDB);
-
-        if(userInDB){
-            return  res.render('register', {
-               errors: {
-                   email: {
-                       msg: 'Este email ya está registrado'
-                   }
-               }
-            });
-        }
-
-        let userToCreate = {
-            ...req.body,
-            password: bcryptjs.hashSync(req.body.password, 10),
-            img: req.file.filename
-        }
-
-      let userCreated = Users.create(userToCreate);
-       return res.redirect('/users/login'); 
-    }, */,
+,
     // START LOGIN
     login: (req, res) => {
         res.render('login');

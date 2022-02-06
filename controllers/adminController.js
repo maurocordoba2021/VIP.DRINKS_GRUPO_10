@@ -133,7 +133,20 @@ const adminController = {
     res.redirect('/admin/listEdit') */
     },
     delete: (req, res) => {
-        let idProduct = req.params.id
+        db.Product.destroy({
+            where:{
+                idProducts:req.params.id
+            }
+        })
+        db.Product.findAll()
+        .then(Product=>{
+            res.render("listEdit",{listProducts:Product})
+        })
+        .catch(error=>{
+            console.log (error)
+        })
+        
+        /* let idProduct = req.params.id
         console.log(idProduct);
         let pos = listProducts.indexOf(idProduct);
         //Se agrego al funcion para eliminar la imagen del prducto cuando este se elimina//
@@ -145,8 +158,8 @@ const adminController = {
         listProducts.splice(pos, 1);
 
         let nuevaLista = JSON.stringify(listProducts, null, " ");
-        fs.writeFileSync(dirPath, nuevaLista, 'utf-8');
-        res.render('deletedProduct', { idProduct });
+        fs.writeFileSync(dirPath, nuevaLista, 'utf-8'); */
+      
     },
     preview: (req, res) => {
 

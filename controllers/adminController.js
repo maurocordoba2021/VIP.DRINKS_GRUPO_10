@@ -138,13 +138,14 @@ const adminController = {
                 idProducts:req.params.id
             }
         })
-        db.Product.findAll()
+        .then(db.Product.findAll()
         .then(Product=>{
             res.render("listEdit",{listProducts:Product})
         })
         .catch(error=>{
             console.log (error)
-        })
+        }))
+        
         
         /* let idProduct = req.params.id
         console.log(idProduct);

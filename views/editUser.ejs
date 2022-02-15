@@ -28,99 +28,98 @@
             <section class="register-form">
                 <!--ACÁ VA EL CÓDIGO DEL CUERPO DE LA PÁG-->
 
-                <form 
-                    method="post" 
-                    action="/users/processEdit/<%= user.id %> " 
-                    class="section-register"  
-                    enctype="multipart/form-data" 
-                    id="form">
-                        <h4>Edita tu perfil: </h4>
-              
+                <form method="post" action="/users/processEdit/<%= user.idUsers %> " class="section-register"
+                    enctype="multipart/form-data" id="form">
+                    <h4>Edita tu perfil: </h4>
+
                     <!--Nombre-->
                     <label for="name"></label>
-                    <input 
-                        class="controls <%= locals.errors && errors.name ? 'is-invalid' : null %>  " 
-                        type="text"
-                        name="name" 
-                        value= "<%= locals.user? user.name : null %>"
-                        id="name"
-                        placeholder="Nombre">
-                        <!--Validación nombres-->
-                        <% if (locals.errors && errors.name) { %>
-                              <p class= "text-validation">
-                                <%= errors.name.msg %>
-                              </p>
-                            <% } %>
-
-
-                               <!--Apellido-->
-                    <label for="surname"></label>
-                    <input 
-                        class="controls <%= locals.errors && errors.surname ? 'is-invalid' : null %>  " 
-                        type="text"
-                        name="surname" 
-                        value= "<%= locals.user ? user.surname : null %>"
-                        id="surname"
-                        placeholder="Apellido">
-                        <!--Validación apellido-->
-                        <% if (locals.errors && errors.surname) { %>
-                              <p class= "text-validation">
-                                <%= errors.surname.msg %>
-                              </p>
-                            <% } %>
-
-                                  <!--e-mail-->
-                    <label for="email"></label>
-                    <input 
-                        class="controls <%= (locals.errors && errors.email) ? 'is-invalid' : null %>  " 
-                        type="text"
-                        name="email"
-                        value="<%=locals.user ? user.email : null %>"
-                        id="email"
-                        placeholder="Correo electrónico">
-                    <!--Validación email-->
-                    <% if (locals.errors && errors.email) { %>
-                        <p class= "text-validation">
-                            <%= errors.email.msg %>
+                    <input class="controls <%= locals.errors && errors.name ? 'is-invalid' : null %>  " type="text"
+                        name="name" value="<%= locals.user? user.name : null %>" id="name" placeholder="Nombre">
+                    <!--Validación nombres-->
+                    <% if (locals.errors && errors.name) { %>
+                        <p class="text-validation">
+                            <%= errors.name.msg %>
                         </p>
                         <% } %>
 
-                    <label for="password"></label>
-                    <input 
-                        class="controls <%= locals.errors && errors.password ? 'is-invalid' : null %>  " 
-                        type="password"
-                        name="password"
-                        id="password"
-                        placeholder="Contraseña">
-                        <% if (locals.errors && errors.password) { %>
-                            <p  class= "text-validatip n">
-                                <%= errors.password.msg %>
-                            </p>
-                            <% } %>
-                        <!--Imágen de usuario-->
-                        <label for="img"></label>
-                        <input 
-                        type="file" 
-                        name="img"
-                        value="<%=locals.user ? user.img : null %>"
-                        id="img">
-                        <% if (locals.errors && errors.img) { %>
-                            <p class= "text-validation">
-                                <%= errors.img.msg %>
-                            </p>
-                            <% } %>
-                        <p class="warnings" id="warnings"></p>
 
-                      
-                            <button type="submit"  class="boton-register">Finalizar</button>
-                        </form>
+                            <!--Apellido-->
+                            <label for="surname"></label>
+                            <input class="controls <%= locals.errors && errors.surname ? 'is-invalid' : null %>  "
+                                type="text" name="surname" value="<%= locals.user ? user.surname : null %>" id="surname"
+                                placeholder="Apellido">
+                            <!--Validación apellido-->
+                            <% if (locals.errors && errors.surname) { %>
+                                <p class="text-validation">
+                                    <%= errors.surname.msg %>
+                                </p>
+                                <% } %>
+
+                                    <!--e-mail-->
+                                    <label for="email"></label>
+                                    <input
+                                        class="controls <%= (locals.errors && errors.email) ? 'is-invalid' : null %>  "
+                                        type="text" name="email" value="<%=locals.user ? user.email : null %>"
+                                        id="email" placeholder="Correo electrónico">
+                                    <!--Validación email-->
+                                    <% if (locals.errors && errors.email) { %>
+                                        <p class="text-validation">
+                                            <%= errors.email.msg %>
+                                        </p>
+                                        <% } %>
+
+                                            <label for="password2"></label>
+                                            <input class="controls" type="password" name="password" id="password2"
+                                                placeholder="contraseña actual">
+
+                                            <label for="password"></label>
+                                            <input
+                                                class="controls <%= locals.errors && errors.password ? 'is-invalid' : null %>  "
+                                                type="password" name="password" id="password"
+                                                placeholder="Nueva contraseña">
+                                            <% if (locals.errors && errors.password) { %>
+                                                <p class="text-validatip n">
+                                                    <%= errors.password.msg %>
+                                                </p>
+                                                <% } %>
+
+                                                    <h5>Fecha de nacimiento: </h5>
+                                                    <input
+                                                        class="controls <%= (locals.errors && errors.email) ? 'is-invalid' : null %>  "
+                                                        type="date" name="birthday" id="birthday"
+                                                        value="<%=locals.user ? user.birthday : null %>">
+
+                                                        <h5>Perfil: </h5>
+                                                        <label for="profile"></label>
+                                                        <input name="profile" type="radio" value="vendedor">
+                                                        vendedor
+                                                        <label for="profile"></label>
+                                                        <input name="profile" type="radio" value="comprador">
+                                                        comprador                                
+
+                                                    <!--Imágen de usuario-->
+                                                    <label for="img"></label>
+                                                    <input type="file" name="img"
+                                                        value="<%=locals.user ? user.img : null %>" id="img">
+                                                    <% if (locals.errors && errors.img) { %>
+                                                        <p class="text-validation">
+                                                            <%= errors.img.msg %>
+                                                        </p>
+                                                        <% } %>
+                                                            <p class="warnings" id="warnings"></p>
+
+
+                                                            <button type="submit"
+                                                                class="boton-register">Finalizar</button>
                 </form>
-               
-        </section>
-    </main>
+                </form>
 
-    <%- include('./partials/footer') %>
-        </div>
+            </section>
+        </main>
+
+        <%- include('./partials/footer') %>
+            </div>
 </body>
 
 </html>

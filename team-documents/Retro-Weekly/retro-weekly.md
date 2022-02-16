@@ -129,6 +129,63 @@ Instalar sequelize y configurar srcsequelize.
 
 --------------------------------------------------------------------------------------------------------
 
+#Sprint 5 
+
+Retro:
+
+● Comenzar a hacer: 
+
+Reacondicionamiento en rutas y controladores.
+
+
+● Hacer más:
+
+Interactuar mas entre el grupo,aportar ideas o inspiraciones a los demas participantes
+Mas participacion en clases para despejar dudas o pedir ayuda con la implementacion de alguna funcion.
+
+● Continuar haciendo:
+Continuar cumpliendo en tiempo y forma con los objetivos planteados en cada entrega del proyecto.
+
+
+●Hacer menos: 
+
+Esperar que el grupo esté completo para trabajar en el código.
+
+● Dejar de hacer:
+
+No dejar la estetica del sitio en segundo plano.Lo hemos hecho en el sprint anterior para focalizar la atension en cuestiones estructurales.Sin embargo,hemos advertido que una pagina que funciona bien por detras pero no luce de la mejor manera no es atractiva para los usuarios.
+Al estar realizando un curso de desarrollo web-fullstack debemos demostrar solidez tanto en el front-end como en el back-end
+
+Weekly's summary:
+
+ please find below the summary of all the weekly's meetings developed during the 4th Sprint. We have consolidated the main issues and we have reached out to the following conclutions:
+
+● Qué hizo durante el sprint 
+
+*Tablero de trabajo.
+*Weekly
+*Implementar la entiad de *usuario
+*Retrospectiva
+*Implementar registro de *Usuario
+*Implementar logi de usuario.
+*Implementar funcion de recordar usuario.
+*Implementar rutas de huspedes y usuarios
+
+ compromiso con el proyecto, autonomìa, compañerismo y el mayor logro a nivel grupal fue lograr integrar la API de mercadopago al proyecto. Surgen pivots al paso de las semanas con temas de estructuras y estética, en los cuales actuamos de manera grupal y también de manera autónoma para agilizar los tiempos ya que el grupo es flexible en volver atrás y volver a empezar cuando resulta necesario. Al estar conectados en Discord podemos hablarnos directamente para solucionar inprevistos y ver desde otra perspectiva el código del compañero y destrabar problemas con más velocidad que en los sprints anteriores.
+
+● Si se encontró con algún impedimento.
+Edicion de perfil no reconocia el id del producto enviado por el formulario.
+La search-bar no se encuentra en funcionamiento
+
+
+● Qué va a hacer en el proximo sprint.
+Comenzar a diagramar la base de datos y completar los campos de las tablas  que seran utilizada en el futuro.
+Actualizar controladores y metodos de los mismos.
+Realizar un minimo de 10 commits por sprint por persona.
+Crear modelos y configurar tipos de datos que utilizan las tablas.
+Instalar sequelize y configurar srcsequelize.
+
+
 
 
 

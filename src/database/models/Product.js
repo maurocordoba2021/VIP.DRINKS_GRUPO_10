@@ -37,9 +37,7 @@ let cols = {
     luxury: {
         type: dataTypes.STRING
     },
-    stock: {
-        type: dataTypes.STRING
-    },
+    
     categories_idcategories:{
         type:dataTypes.BIGINT(10)
     }

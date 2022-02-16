@@ -118,7 +118,7 @@ const usersController = {
                 user.update({
                     name: req.body.name,
                     surname: req.body.surname,
-                    password: bcryptjs.hashSync(req.body.password, genSaltSync(10)),
+                    password: bcryptjs.hashSync(req.body.password,10),
                     img: req.file.filename,
                     email: req.body.email,
                     birthday: req.body.birthday,

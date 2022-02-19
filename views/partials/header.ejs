@@ -43,8 +43,10 @@
             </a>
         </div>
         <div class="search">
-            <input type="text" name="search" id="input-search">
-            <button id="search" type="submit" class=""><i class="fas fa-search"></i></button>
+            <form action="/search" method="get">
+                <input type="text" name="search" id="input-search">
+                <button id="search" type="submit" class=""><i class="fas fa-search"></i></button>
+            </form>
         </div>
         <% if (locals.isLogged) { %>
         <div class="img-user-nav">

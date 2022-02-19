@@ -7,6 +7,7 @@ const homeProducts = listProducts.filter(products => products.luxury == false) *
  
 const db = require('../src/database/models');
 const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 
 const mainController = {
     listProducts:  (req, res) => {
@@ -31,6 +32,16 @@ const mainController = {
     },
     filter: (req, res) => {
         res.render("filter")
+    },
+    search: (req, res) => {
+        db.Product.findAll({
+            where: {
+                title: {[Op.like]: "%" + req.query.search + "%"}
+            }
+            
+        }).then(resultado =>{
+            res.render("listProducts",{listProducts:resultado})
+        })
     }
 }
 

@@ -60,8 +60,13 @@ const productController = {
             }); */
     },
     novedades: (req, res) => {
-        let listLuxury = listProducts.filter(product => product.luxury == true)
-        res.render("luxury", { listProducts: listLuxury });
+        db.Product.findAll()
+        .then(Product=>{
+            res.render("luxury",{listProducts:Product})
+        })
+        .catch(error=>{
+            console.log (error)
+        })
     }
 }
 

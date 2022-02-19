@@ -60,7 +60,11 @@ const productController = {
             }); */
     },
     novedades: (req, res) => {
-        db.Product.findAll()
+        db.Product.findAll({
+            where: {
+                luxury: "true"
+            }
+        })
         .then(Product=>{
             res.render("luxury",{listProducts:Product})
         })

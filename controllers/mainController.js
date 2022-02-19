@@ -10,7 +10,11 @@ const sequelize = db.sequelize;
 
 const mainController = {
     listProducts:  (req, res) => {
-        db.Product.findAll()
+        db.Product.findAll({
+            where: {
+                luxury: "false"
+            }
+        })
         .then(Product=>{
             res.render("listProducts",{listProducts:Product})
         })

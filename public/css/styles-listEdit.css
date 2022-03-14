@@ -40,12 +40,11 @@ section.admin {
     justify-content: center;
     display: flex;
     text-decoration: none;
+    color: black;
 }
 a {
     text-decoration: none;
     color: black;
-    border: solid 1px gray;
-    padding: 6px;
 }
 a.admin {
     padding: 20px;
@@ -57,12 +56,10 @@ a.admin {
     color: black;
     border: solid gray 1px;
     cursor: pointer;
-    transition: 200ms all ease;
+    transition: 200ms all ease
 }
 a.admin:hover{
-    border: none ;
-    background: rgb(37, 37, 37);
-    color: rgb(240, 240, 240);
+    color: #d5b38b
 }
 main{
     width: 96%;
@@ -70,16 +67,61 @@ main{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row
 }
-a.button{
-    transition: 350ms ease all;
+
+.container-buttons{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
+.boton{
+    width: 250px;
+    height: 50px;
+}
+
+button.edit-button {
+    border: none;
+    color: black;
+    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+button.boton.container-button {
+    background: none;
+    border: solid 1px;
+}
+.edit-button:hover {
+    background-position: 0;
+  }
+.delete-button {
+    font-size: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: solid 1px crimson;
+    background: white;
+    color: black;
+    background-image: -webkit-linear-gradient(45deg, crimson 50%, transparent 50%);
+    background-image: linear-gradient(45deg, crimson 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.delete-button:hover {
+    background-position: 0;
+}
+
 a.back{
     border: none;
+    justify-content: center;
 }
-a.button:hover{
-    background: rgb(187, 139, 18);
+a.back:hover{
+    border: none;
+    color: #d5b38b;
 }
 img{
     width: 100%;
@@ -87,7 +129,7 @@ img{
 h2{
     font-size: xx-large;
     width: 100%;
-    color: rgb(187, 139, 18);
+    color: black
 }
 article{
     display: inline-block;
@@ -106,20 +148,7 @@ article {
     max-width: 200px;
     margin: 0 auto;
 }
-button {
-    background: #c2bfbf;
-    border: solid 1px gray;
-    padding: 8px;
-    margin: 8px;
-    cursor: pointer;
-    transition: 350ms ease all;
-}
-button:hover {
-    background: #751515;
-    border: solid 1px gray;
-    padding: 8px;
-    margin: 8px;
-}
+
 form{
     margin-top: 4px;
 }

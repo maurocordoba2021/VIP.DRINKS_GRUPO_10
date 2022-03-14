@@ -1,17 +1,22 @@
-I'm 25 years old and I'm from Buenos Aires. I am currently studying Full Stack Web Programming at Digital House.
- 
-I decided to enter the world of software and digitalization to change my life and the lives of those around me. I firmly believe that evolution is achieved through continuous, agile and autonomous learning using the tools provided by the IT revolution.
+¡Hola! Somos el grupo 10 de Full Stack TN-23
+Nos presentamos:
 
-I am interested in being part of an organization focused on speed, efficiency and customer satisfaction. But I value even more that they empower skills and offer growth opportunities to their members.
- 
-My plan is to study Artificial Intelligence at the same pace as technology and, of course, to discover with a team the best and innovative ways to apply it in the daily lives of users.
- 
-Besides literature, I am fascinated by neural processes. That's why I study Organizational Neuroscience at the National Technological University (UTN). And I would like to investigate the human-machine connection.
- 
-The biggest challenge I faced (and still face) is the scarcity of economic resources in which I grew up. My conviction, perseverance and determination (coupled with many people who believe in me) have helped me overcome all the obstacles along the way. From the lack of a place to sleep to getting a computer to create my own website.
- 
-Today I feel ready for a company to exploit all the potential I acquired and have to offer. My time, my skills and my insatiable thirst for knowledge.
- 
-I direct my career with clear objectives: AI, Neuroscience, Software and Data Science.
- 
-Working with the best for me, is the next dream to fulfill.
+--> Mi nombre es Agustín Mestroni, tengo 24 años, soy fanático de Gimnasia Esgrima La Plata y me gusta tocar la guitarra.
+
+--> Yo soy Celeste Troccayoli, tengo 25 y me gusta leer.
+
+--> Mi nombre es Mauro Echeverria, tengo 24 años, me gustan los simpsons.
+
+--> Mi nombre es 
+Valentino Oviedo, tengo 19 años, soy estudiante de ingenieria en informatica y fanatico de independiente.
+
+Vamos a realizar un E-Commers de bebidas. Nuestro público objetivo son hombres y mujeres mayores de 18 años con un nivel socioeconómico ABC 1, caracterizados por consumir marcas premium e importadas. Personas que les guste salir a divertirse, juntarse con amigos y también fanáticos del fútbol.
+Nuestras referencias son: https://www.jagermeister.com/es-ES/ De Jagger nos gusto la estética y adoptamos de su web los tonos oscuros y la temática.
+https://www.absolut.com/ar/ Nos gustó por la estetica, la paleta de colores y lafuncionalidad fluida del sitio.
+https://luigibosca.com/ (estetica)
+https://www.skyyvodka.com/ Una página que tomamos como referente por los productos que ofrece y cómo se los exibe. De aquí nos inspiramos para el header del sitio.
+https://www.jackdaniels.com/es/our-products Nos gustó el background oscuro, de acá sacamos la idea sobre recetas, el estilo y el diseño.
+https://havana-club.com/es/ De Habana Club nos traemos la animación de los productos destacados y el botón de compra que sigue el scrol del usuario.
+https://www.bacardi.com/lm/es/ (productos)
+https://www.puroescabio.com.ar/ Tomamos esta pagina para la estructura general del formulario de registro.
+Elegimos estas páginas como inspiración de nuestro sitio web ya que consideramos que cumplen con nuestro modelo de comercio, la meta, la experiencia de usuario, las caracteristicas y funcionalidades que deseamos implementar en nuestro proyecto.

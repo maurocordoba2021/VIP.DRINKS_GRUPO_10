@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Bienvenido a VIP.DRINKS</title>
     <meta charset="UTF-8">
@@ -14,124 +15,133 @@
     <link rel="stylesheet" href="css/styles-home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Vujahday+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Vujahday+Script&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="/images/favicon.ico" type="ico">
 </head>
+
 <body>
     <%- include('./partials/header') %>
-<main>
-<section>
-    <div class="banner-img">
-    <img class="banner" src="/images/publicity_brindis.jpeg" alt="banner">
-    <img class="banner-tablet" src="/images/banner.png" alt="banner">
-    </div>
-    <div>
-        <h2 class="subtitle">Bienvenido a <span class="brown-title">VIP.DRINKS</span></h2>
-        <h3 class="sub-subtitle">Tenemos una amplia variedad de productos de lujo</h3>
-    </div>
-</section>
-<!--el carrusel de productos lo vamos a terminar de realizar correcatamente cuando trabajemos con JS Front-->
-<section class="carrousel-products">
-    <article class="product">
-        <div class="container-products">
-            <div class="home-products">
-                <p class="title-products">Variedades de Whisky</p>
-                <img src="/images/imgProducts/whisky-Louis-XIII.png" alt=""><form action="/product/detalle/5" method="get">
-                    <button class="detail" type="submit">Detalle</button>
-                </form>
-            </div>
-            <div class="home-products">
-                <p class="title-products">Variedades de Espumantes</p>
-                <img src="/images/imgProducts/champagne-Krug.png" alt="">
-                <form action="/product/detalle/1" method="get">
-                    <button class="detail" type="submit">Detalle</button>
-                </form>
-            </div>
-            <div class="home-products">
-                <p class="title-products"> Variedades de Ron</p>
-                <img src="/images/imgProducts/ron-Habana-club.jpg" alt="">
-                <form action="/product/detalle/7" method="get">
-                    <button class="detail" type="submit">Detalle</button>
-                </form>
-            </div>
-            <div class="home-products">
-                <p class="title-products">
+        <main>
+            <section>
+                <div class="banner-img">
+                    <img class="banner" src="/images/publicity_brindis.jpeg" alt="banner">
+                    <img class="banner-tablet" src="/images/banner.png" alt="banner">
+                </div>
+                <div>
+                    <h2 class="subtitle">Bienvenido a <span class="brown-title">VIP.DRINKS</span></h2>
+                    <h3 class="sub-subtitle">Tenemos una amplia variedad de productos de lujo</h3>
+                </div>
+            </section>
+            <!--el carrusel de productos lo vamos a terminar de realizar correcatamente cuando trabajemos con JS Front-->
+            <section class="carrousel-products">
+                <article class="product">
+                    <div class="container-products">
+                        <div class="home-products">
+                            <p class="title-products">Variedades de Whisky</p>
+                            <img src="/images/imgProducts/whisky-Louis-XIII.png" alt="">
+                            <form action="/product/detalle/5" method="get">
+                                <button class="detail" type="submit">Detalle</button>
+                            </form>
+                        </div>
+                        <div class="home-products">
+                            <p class="title-products">Variedades de Espumantes</p>
+                            <img src="/images/imgProducts/champagne-Krug.png" alt="">
+                            <form action="/product/detalle/1" method="get">
+                                <button class="detail" type="submit">Detalle</button>
+                            </form>
+                        </div>
+                        <div class="home-products">
+                            <p class="title-products"> Variedades de Ron</p>
+                            <img src="/images/imgProducts/ron-Habana-club.jpg" alt="">
+                            <form action="/product/detalle/7" method="get">
+                                <button class="detail" type="submit">Detalle</button>
+                            </form>
+                        </div>
+                        <div class="home-products">
+                            <p class="title-products">
 
-                </p>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="nosotros">
+                <div class="banner-img">
+                    <img class="banner" src="/images/sobre-nosotros-banner.jpeg" alt="banner">
+                </div>
+                <div class="abuot">
+                    <h2 class="subtitle">Sobre nosotros</h2>
+                    <h3 class="sub-subtitle">Quiénes somos</h3>
+                    <p class="text">Creamos VIP.DRINKS en 2021 con la misión de brindar a clientes exigentes las bebidas
+                        más exclusivas y lujosas del mundo.
+                        Somos un grupo de compañeros que aprende y crece con la fuerza de la tecnología de la mano de la
+                        mejor educación en Digital House.
+                    </p>
+                </div>
+            </section>
+            <div class="intro">
+                <h2 class="subtitle">Nuestra oferta de productos</h2>
+
+
+                <h3 class="sub-subtitle">Descubre lo que tenemos disponible : </h3>
             </div>
-        </div>
-    </article>
-</section>
-<section class="nosotros">
-    <div class="banner-img">
-    <img class="banner" src="/images/sobre-nosotros-banner.jpeg" alt="banner">
-    </div>
-    <div class="abuot">
-        <h2 class="subtitle">Sobre nosotros</h2>
-        <h3 class="sub-subtitle">Quiénes somos</h3>
-        <p class="text">Creamos VIP.DRINKS en 2021 con la misión de brindar a clientes exigentes las bebidas más exclusivas y lujosas del mundo.
-            Somos un grupo de compañeros que aprende y crece con la fuerza de la tecnología de la mano de la mejor educación en Digital House.
-        </p>
-    </div>
-</section>
-<div class="intro">
-    <h2 class="subtitle">Nuestra oferta de productos</h2>
-    <h3 class="sub-subtitle">Descubre lo que tenemos disponible : </h3>
-</div>
-<section class="categories">
-<article class="categories">
-    <a href="/product/luxury-offers">
-    <div>
-        <img src="/images/banner-kits.jpeg" alt="">
-    </div>
-    <div class="main-category">
-        <h2 class="subtitle">Colecciones</h2>
-        <h3 class="sub-subtitle">Ediciones limitadas</h3>
-        <form action="/product/luxury-offers" method="get">
-            <button class="ver-mas" type="submit">
-           <a href="/product/luxury-offers"> Ver más</a>
-            </button>
-        </form>
-    </div>
-</a>
-</article>
-<article class="categories">
-    <a href="/product/listProducts">
-    <div>
-        <img src="/images/banner-botellas.jpeg" alt="">
-    </div>
-    <div class="main-category">
-        <h2 class="subtitle">Botellas</h2>
-        <h3 class="sub-subtitle">Productos destacados</h3>
-        <form action="/product/listProducts" method="get">
-            <button class="ver-mas" type="submit">
-            Ver más
-            </button>
-        </form>
-    </div>
-</a>
-</article>
-<article class="categories">
-    <a href="/recipes">
-    <div>
-        <img src="/images/banner-recipes.jpeg" alt="">
-    </div>
-    <div class="main-category">
-        <h2 class="subtitle">Recetas</h2>
-        <h3 class="sub-subtitle">Ispiración para tí</h3>
-        <form action="/recipes" method="get">
-            <button class="ver-mas" type="submit">
-            Ver más
-            </button>
-        </form>
-    </div>
-</a>
-</article>
+            <section class="categories">
+                <article class="categories">
+                    <a href="/product/luxury-offers">
+                        <div>
+                            <img src="/images/banner-kits.jpeg" alt="">
+                        </div>
+                        <div class="main-category">
+                            <h2 class="subtitle">Colecciones</h2>
+                            <h3 class="sub-subtitle">Ediciones limitadas</h3>
+                            <form action="/product/luxury-offers" method="get">
+                                <button class="ver-mas" type="submit">
+                                    <a href="/product/luxury-offers"> Ver más</a>
+                                </button>
+                            </form>
+                        </div>
+                    </a>
+                </article>
+                <article class="categories">
+                    <a href="/product/listProducts">
+                        <div>
+                            <img src="/images/banner-botellas.jpeg" alt="">
+                        </div>
+                        <div class="main-category">
+                            <h2 class="subtitle">Botellas</h2>
+                            <h3 class="sub-subtitle">Productos destacados</h3>
+                            <form action="/product/listProducts" method="get">
+                                <button class="ver-mas" type="submit">
+                                    Ver más
+                                </button>
+                            </form>
+                        </div>
+                    </a>
+                </article>
+                <article class="categories">
+                    <a href="/recipes">
+                        <div>
+                            <img src="/images/banner-recipes.jpeg" alt="">
+                        </div>
+                        <div class="main-category">
+                            <h2 class="subtitle">Recetas</h2>
+                            <h3 class="sub-subtitle">Ispiración para tí</h3>
+                            <form action="/recipes" method="get">
+                                <button class="ver-mas" type="submit">
+                                    Ver más
+                                </button>
+                            </form>
+                        </div>
+                    </a>
+                </article>
 
-</section>
+            </section>
 
-</main>
-    <%- include('./partials/footer') %>
+        </main>
+        <%- include('./partials/footer') %>
 </body>
+
 </html>

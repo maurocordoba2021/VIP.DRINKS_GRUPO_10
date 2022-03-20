@@ -14,7 +14,7 @@
 
 <body>
     <main>
-        <h2>Sección administración</h2>
+        <h2 class="title">Administración de productos</h2>
         <article class="box-add">
             <div class="box-add">
                 <a href="/admin/create">
@@ -29,19 +29,28 @@
                     <img src="/images/imgProducts/<%= product.img%>" alt="">
                 </div>
                 <div class="main-product">
+
+                    
                     <h4 class="nameProduct">
                         <%=product.title%>
                     </h4>
 
-                    <a class="button" href="/admin/editProduct/<%= product.idProducts%>">Editar producto</a>
+                <div class="container-buttons">
+                    <button class="boton container-button">
+                    <a class="edit-button" href="/admin/editProduct/<%= product.idProducts%>">Editar producto</a>
+                    </button>
+
+
                     <form method="POST" action="/admin/listEdit/<%= product.idProducts%>?_method=delete">
-                        <button type="submit">Eliminar producto</button>
+                        <button class="boton delete-button" type="submit">Eliminar producto</button>
                     </form>
                 </div>
+
+              
             </article>
             <%})%>
 
-<h2><a class="back" href="/">Volver al inicio</a></h2>
+<h2><a class="back" href="/"> Volver al inicio </a></h2>
 
 
     </main>

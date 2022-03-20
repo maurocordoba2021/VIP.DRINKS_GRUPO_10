@@ -3,7 +3,8 @@ const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 
 
-apiProduct = {list:(req,res)=>{
+apiProduct = {
+    list:(req,res)=>{
     db.Categorie.findAll({
         include:['categorie_product']
     })
@@ -59,7 +60,37 @@ apiProduct = {list:(req,res)=>{
         res.json(respuesta)
     })    
     })
+     .catch(function(error){
+        res.json({status:800})
+    }) 
+}, detail:(req,res)=>{
+    db.Product.findByPk(req.params.id, {
+        include:["Categories"]
+    })
+    .then(product=>{
+        let respuesta = {
+            meta:{
+                status: 200,
+                url: "/api/products/" + product.idProducts
+            },
+            data: {
+                idProducts: product.idProducts,
+                name:product.title,
+                measure:product.measure,
+                price:product.price,
+                short_description: product.short_description,
+                long_description:product.long_description,
+                brand:product.brand,
+                discount: product.discount,
+                image: "/images/imgProducts/" + product.img,       
+                 Categories:{name:product.Categories.name} 
+                }
+            }
+        
+        res.json(respuesta)
+    })
     .catch(function(error){
+        console.log(error)
         res.json({status:800})
     })
 }
@@ -71,20 +102,3 @@ module.exports = apiProduct
 
 
 
-
-
-list: (req, res) => {
-    db.Categorie.findAll()
-        .then(Categorie => {
-
-            console.log(Categorie)
-            let array = []
-            for (let i = 0; i < Categorie.length; i++) {
-                array.push({
-                    nombre: Categorie[i].dataValues.name,
-                    total: Categorie[i].dataValues.idcategories
-                })
-            }
-            return res.json({array})
-        }) 
-        }

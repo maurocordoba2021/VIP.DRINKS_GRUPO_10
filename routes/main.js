@@ -12,6 +12,7 @@ router.get("/listProducts", mainController.listProducts);
 router.get("/recipes", mainController.recipes);
 router.get("/search", mainController.search);
 router.get("/apiProduct",apiProduct.list);
+router.get("/apiProduct/:id",apiProduct.detail);
 
 
 

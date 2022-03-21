@@ -4,19 +4,17 @@
             <link rel="stylesheet" href="/css/styles-header.css">
             <!--ACÁ EMPIEZA EL MENÚ EMERGENTE-->
 
-
-
             <% if (locals.isLogged) { %>
 
                 <div id="mySidebar" class="sidebar">
                     <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><i
                             class="far fa-times-circle"></i></a>
-                    <a href="/shop">MI CARRITO</a>
-                    <a href="/product/luxury-offers">KITS</a>
-                    <a href="/listProducts">PRODUCTOS</a>
-                    <a href="/recipes">RECETAS</a>
+                    <a href="/shop">Mi Carrito</a>
+                    <a href="/product/luxury-offers">Novedades</a>
+                    <a href="/listProducts">Productos</a>
+                    <a href="/recipes">Recetas</a>
                     <a href="/admin"><i class="fas fa-user-tie"></i></a>
-                    <a href="/users/logout">CERRAR SESIÓN</i></a>
+                    <a href="/users/logout">Cerrar Sesión</i></a>
                 </div>
                 <div id="main" class="open-btn hamburguer-menu" onclick="openNav()">
                     <i class="fas fa-bars"></i>
@@ -57,9 +55,13 @@
                     <h2 class="logo"> VIP.DRINKS</h2>
                 </a>
             </div>
+
+            <% if (locals.isLogged) { %>
             <div>
                 <a href="/shop"><i class="fas fa-shopping-cart"></i></a>
             </div>
+            <% } %>
+        
         </div>
 
         <div class="navbar-tablet">

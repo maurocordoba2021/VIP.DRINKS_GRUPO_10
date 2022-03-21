@@ -3,6 +3,7 @@ const router = express.Router();
 const { error } = require('console');
 // Controllers
 const usersController = require('../controllers/usersController')
+const usersApiController=require('../controllers/usersApiController')
 
 // Middlewares
 const authMiddleware = require('../middlewares/authMiddleware');
@@ -10,6 +11,7 @@ const guestMiddleware = require('../middlewares/guestMiddleware');
 const usersFileUpload = require('../middlewares/multerUsersMiddleware')
 const usersValidations = require('../middlewares/usersValidations')
 const loginValidations = require('../middlewares/loginValidations');
+const { route } = require('./main');
 
 // Routes
 
@@ -37,6 +39,8 @@ router.post("/processEdit/:id", usersController.processEdit);
 // LOGOUT de usuario
 router.get("/logout", usersController.logout);
 
+router.get("/apiUser",usersApiController.list)
+router.get("/apiUser/:id",usersApiController.detail)
 
 
 

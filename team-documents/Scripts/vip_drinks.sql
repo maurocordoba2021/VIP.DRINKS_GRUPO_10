@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `vip_drinks` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
-USE `vip_drinks`;
+CREATE DATABASE  IF NOT EXISTS `celetroccayoli_vipdrinks` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `celetroccayoli_vipdrinks`;
 -- MySQL dump 10.13  Distrib 5.7.24, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: vip_drinks

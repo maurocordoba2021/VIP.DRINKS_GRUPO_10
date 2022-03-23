@@ -42,8 +42,11 @@ app.use((req, res, next) => {
     res.status(404).render("not-found")
 });
 
+
+let port = process.env.PORT || 3003;
+
 //CORRIENDO EL SERVIDOR 
-app.listen(3000, () => { console.log("----->>>>>   Servidor corriendo en el puerto 3000    <<<<<-----"); });
+app.listen(port, () => { console.log("----->>>>>   Servidor corriendo en el puerto 3003    <<<<<-----"); });
 
 
 

@@ -6,10 +6,25 @@ a{
 }
 
 /* START NAVBAR TOP*/
-.contain-navbar-scroll{
+.contain-navbar-scroll {
     display: flex;
     padding: 10px;
     justify-content: space-between;
+    background-color: transparent;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    line-height: 3rem;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    z-index: 1;
+}
+.contain-navbar-scroll-unlogged {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-start;
     background-color: transparent;
     background: white;
     position: fixed;
@@ -239,6 +254,9 @@ div.search{
     ul.footer-tablet{
         display: none;
     }
+    h2.logo{
+        display: none;
+    }
 }
 
 @media(min-width: 450px){
@@ -247,6 +265,9 @@ div.search{
     }
     .sidebar a{
         font-size: 18px;;
+    }
+    .h2.logo{
+        display: none;
     }
 }
 

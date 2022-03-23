@@ -14,7 +14,7 @@ body{
     display: block;
     font-family: 'Lato', sans-serif;
     margin: 0%;
-    background:#36131e;
+    background: white;
 }
 
 main{
@@ -27,9 +27,9 @@ form{
     width: 90%;
    margin: 0 auto;
    padding: auto;
-   background: rgba(0, 0, 0, 0.7);
+   background: white
 }
-img.imgProduct{
+img.img{
     height: 100px;
     width: 100px;
     margin-left: 8px;
@@ -38,9 +38,10 @@ img.imgProduct{
     width: 100px;
     height: 100px;
     display: flex;
+    border: solid black 1px;
     justify-content: center;
     align-content: center;
-    background-color: black;
+    background-color: whitesmoke;
     transition: ease 450ms all;
     cursor: pointer;
 }
@@ -51,6 +52,7 @@ img.imgProduct{
     display: flex;
     justify-content: center;
     align-content: center;
+    color: #d5b38b;
 }
 input.upload-image{
     display: none;
@@ -61,17 +63,17 @@ input.upload-image{
 }
 
 .contain-upload-image:hover  i{
-    color: gold;
+    color: white;
 }
 
 h1{
     text-align: center;
     margin: 10px 0;
-    color: gold;
+    color: black;
 }
 
 h3{
-    color: whitesmoke;
+    color: black;
     font-weight: 200;
     margin: 10px 0;
 }
@@ -81,8 +83,8 @@ select#category,
 select#luxury,
 textarea{
     width: 100%;
-    border: none;
-    background: black;
+    border: 1px black solid;
+    background: white;
     font-size: 1em;
     color: whitesmoke;
     border-radius: 10px;

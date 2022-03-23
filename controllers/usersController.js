@@ -135,7 +135,7 @@ const usersController = {
     logout: (req, res) => {
         res.clearCookie("userEmail")
         req.session.destroy();
-        return res.redirect('/');
+        return res.redirect('/home');
     }
 }
 module.exports = usersController;

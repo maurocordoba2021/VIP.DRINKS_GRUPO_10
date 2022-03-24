@@ -7,7 +7,11 @@ footer{
     width: 100%;
     background-color: #eeecec8c;
 }
-
+footer.recipes{
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
 footer img.logo-footer{
     width: 70px;
     position: absolute;
@@ -85,6 +89,7 @@ a.link{
     ul.footer-tablet{
         display: none;
     }
+    
 }
 
 @media(min-height: 450px){
@@ -100,6 +105,9 @@ a.link{
     }
     footer p.text {
         font-size: 0.8em;
+    }
+    footer.recipes{
+        display: block;
     }
 }
 

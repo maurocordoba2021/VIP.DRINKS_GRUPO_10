@@ -5,7 +5,7 @@ const mainController =require('../controllers/mainController')
 const carController =require('../controllers/carController')
 const apiProduct=require('../controllers/apiProduct')
 
-router.get("/", mainController.filter)
+router.get("/", mainController.index)
 router.get("/home", mainController.index);
 router.post("/", mainController.index);
 router.get("/listProducts", mainController.listProducts);

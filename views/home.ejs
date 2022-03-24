@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/styles-header.css">
     <link rel="stylesheet" href="css/styles-footer.css">
     <link rel="stylesheet" href="css/styles-home.css">
+    <link rel="stylesheet" href="css/styles-listProducts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Vujahday+Script&display=swap"
@@ -35,39 +36,6 @@
                     <h3 class="sub-subtitle">Tenemos una amplia variedad de productos de lujo</h3>
                 </div>
             </section>
-            <!--el carrusel de productos lo vamos a terminar de realizar correcatamente cuando trabajemos con JS Front-->
-            <section class="carrousel-products">
-                <article class="product">
-                    <div class="container-products">
-                        <div class="home-products">
-                            <p class="title-products">Variedades de Whisky</p>
-                            <img src="/images/imgProducts/whisky-Louis-XIII.png" alt="">
-                            <form action="/product/detalle/5" method="get">
-                                <button class="detail" type="submit">Detalle</button>
-                            </form>
-                        </div>
-                        <div class="home-products">
-                            <p class="title-products">Variedades de Espumantes</p>
-                            <img src="/images/imgProducts/champagne-Krug.png" alt="">
-                            <form action="/product/detalle/1" method="get">
-                                <button class="detail" type="submit">Detalle</button>
-                            </form>
-                        </div>
-                        <div class="home-products">
-                            <p class="title-products"> Variedades de Ron</p>
-                            <img src="/images/imgProducts/ron-Habana-club.jpg" alt="">
-                            <form action="/product/detalle/7" method="get">
-                                <button class="detail" type="submit">Detalle</button>
-                            </form>
-                        </div>
-                        <div class="home-products">
-                            <p class="title-products">
-
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </section>
             <section class="nosotros">
                 <div class="banner-img">
                     <img class="banner" src="/images/sobre-nosotros-banner.jpeg" alt="banner">
@@ -88,57 +56,31 @@
 
                 <h3 class="sub-subtitle">Descubre lo que tenemos disponible : </h3>
             </div>
-            <section class="categories">
-                <article class="categories">
-                    <a href="/product/luxury-offers">
-                        <div>
-                            <img src="/images/banner-kits.jpeg" alt="">
-                        </div>
-                        <div class="main-category">
-                            <h2 class="subtitle">Colecciones</h2>
-                            <h3 class="sub-subtitle">Ediciones limitadas</h3>
-                            <form action="/product/luxury-offers" method="get">
-                                <button class="ver-mas" type="submit">
-                                    <a href="/product/luxury-offers"> Ver más</a>
-                                </button>
-                            </form>
-                        </div>
-                    </a>
-                </article>
-                <article class="categories">
-                    <a href="/product/listProducts">
-                        <div>
-                            <img src="/images/banner-botellas.jpeg" alt="">
-                        </div>
-                        <div class="main-category">
-                            <h2 class="subtitle">Botellas</h2>
-                            <h3 class="sub-subtitle">Productos destacados</h3>
-                            <form action="/product/listProducts" method="get">
-                                <button class="ver-mas" type="submit">
-                                    Ver más
-                                </button>
-                            </form>
-                        </div>
-                    </a>
-                </article>
-                <article class="categories">
-                    <a href="/recipes">
-                        <div>
-                            <img src="/images/banner-recipes.jpeg" alt="">
-                        </div>
-                        <div class="main-category">
-                            <h2 class="subtitle">Recetas</h2>
-                            <h3 class="sub-subtitle">Ispiración para tí</h3>
-                            <form action="/recipes" method="get">
-                                <button class="ver-mas" type="submit">
-                                    Ver más
-                                </button>
-                            </form>
-                        </div>
-                    </a>
-                </article>
+            <section class="featured">
 
-            </section>
+                <% listProducts.forEach(product=> { %>
+                    <article class="product">
+                         <a href="/product/detalle/<%= product.idProducts %>">
+                            <img src="/images/imgProducts/<%= product.img %>" alt="<%= product.title %>">
+                        </a> 
+                        <div class="main-article">
+                            <i class="fas fa-plane"></i>
+                            <p class="price">$<%= product.price %>
+                            </p>
+                            <p class="shipping">Envío Gratuito</p>
+                            <h4 class="description">
+                                <%= product.title %>
+                            </h4>
+                            <form action="/detalle/<%= product.id%>" method="get">
+                                <button class="buy" type="button">Comprar</button>
+                            </form>
+
+                            <form action="/shop/add/<%= product.id %> " method="post">
+                                <button class="buy" type="submit">Add to Cart</button>
+                            </form>
+                        </div>
+                    </article>
+                    <% }) %>
 
         </main>
         <%- include('./partials/footer') %>

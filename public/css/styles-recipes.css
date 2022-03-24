@@ -45,7 +45,6 @@ body{
     font-size: 15px;
     margin: 0%;
     color: whitesmoke;
-    background: black;
     background-size: auto;
 }
 /* END CUERPO EN GRAL */
@@ -68,7 +67,10 @@ transition: 1s all cubic-bezier(0.33, 2.6, 1, 1.35);
     font-size: 15px;
     color: whitesmoke;
 }
-
+article.receta {
+    background-color: black;
+    padding: 24px;
+}
 article.receta:hover .título-receta{
     position: relative; 
     display: block;
@@ -121,10 +123,9 @@ article.receta:hover .descripcion-receta{
 }
 
 .fondo-humo{
-z-index: -1;
+z-index: 0;
 box-sizing: border-box;
 width: 80%;
-margin-top: -10%;
 }
 
 .ingredientes{

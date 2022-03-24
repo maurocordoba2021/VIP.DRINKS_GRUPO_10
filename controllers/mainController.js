@@ -28,10 +28,17 @@ const mainController = {
         res.render("recipes")
     },
     index: (req, res) => {
-        res.render("home")
-    },
-    filter: (req, res) => {
-        res.render("filter")
+        db.Product.findAll({
+            where: {
+                luxury: "false"
+            }
+        })
+        .then(Product=>{
+            res.render("home",{listProducts:Product})
+        })
+        .catch(error=>{
+            console.log (error)
+        })
     },
     search: (req, res) => {
         db.Product.findAll({

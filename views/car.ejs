@@ -42,16 +42,17 @@
 
                                     <div class="box">
                                         <select name="u" id="u">
-                                            <option value="1">1</option>
-
+                                            <option value="1">1 x $<%= product.price %></option>
+                                            <option value="2">2 x $<%= product.price*2 %></option>
+                                            <option value="3">3 x $<%= product.price*3 %></option>
+                                            <option value="0">Prefiero no comprar</option>
                                         </select>
-                                        <h4 class="price">$<%= product.price %>
-                                        </h4>
+                                        
                                     </div>
                                 </div>
 
                                 <div class="box-foot">
-                                    <button class="delete" type="reset">Eliminar</button>
+                                    <button class="delete" type="reset">Ver detalle</button>
                                     <a href="#">Ver más productos</a>
                                     <i class="fas fa-ellipsis-v"></i>
                                 </div>
@@ -63,15 +64,18 @@
                         <div class="box-foot">
                             <div class="box-shipping">
                                 <a href="/"> Envío a Calle Falsa 123, S...</a>
-                                <h5 class="shipping-price">$ 0</h5>
+                                <h5 class="shipping-price">Le enviaremos un email con el total de su compra</h5>
                             </div>
                             <div class="box total">
                                 <h4 class="total text">Total con envío</h4>
                                 <h4 class="total">$ 95.4632</h4>
                             </div>
                             <div class="buy">
-                                <button class="buy" type="submit" class="comprar">Comprar ahora</a></button>
+                                <button class="buy" type="submit" onclick="alert ('Le hemos enviado un email para que finalice su compra')" class="comprar">Comprar ahora</a></button>
+                                
                             </div>
+                     
+
                         </div>
                     </section>
                 </div>

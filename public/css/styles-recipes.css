@@ -176,4 +176,8 @@ margin: 0 auto;
 }
     
 @media(min-width: 1024px){
+    main.recipes {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        }
 }

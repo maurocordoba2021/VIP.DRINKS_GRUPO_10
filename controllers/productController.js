@@ -71,6 +71,9 @@ const productController = {
         .catch(error=>{
             console.log (error)
         })
+    },
+    cart: (req, res) =>{
+        res.render("home", {listProducts:Product})
     }
 }
 

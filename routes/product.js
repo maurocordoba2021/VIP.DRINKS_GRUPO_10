@@ -20,7 +20,9 @@ router.get("/detalle/:id", productController.detalle)
 
 router.get("/luxury-offers", productController.novedades);
 
-router.get("/last",Last.last)
+router.get("/last",Last.last);
+
+router.get('/cart',  productController.cart)
 
 
 

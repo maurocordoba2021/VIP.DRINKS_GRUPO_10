@@ -38,11 +38,8 @@
                     <p class="price">$<%= product.price %></p>
                     <p class="shipping">Envío Global Gratuito</p> 
                     <h4 class="description"><%= product.title %></h4>
-                    <form action="/shop" method="post">
-                    <button class="buy" type="submit">Comprar</button>
-                    </form>
-                    <form action="/shop/add/<%= product.id %> " method="post">
-                        <button class="buy" type="submit">Add to Cart</button>
+                    <form class="buy" >
+                        <a href="/shop">Add to Cart</a>
                     </form>
                 </div> 
             </article>

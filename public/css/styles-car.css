@@ -199,17 +199,17 @@ div.buy{
     align-content: center;
     width: 100%;
 }
-button.buy{
+form.buy{
     padding: 10px;
     border-radius: 7px;
     color: white;
     border: 1px solid;
     background:black;
-    width: 250px;
     margin: 0 auto;
     text-align: center;
     cursor: pointer;
     transition: all 500ms ease;
+    font-size: 14px;
 }
 button.buy:hover{
     background-color: rgb(42, 200, 82);

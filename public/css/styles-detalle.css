@@ -299,8 +299,8 @@ h4{
 article.caracteristicas.icons{
     display: flex;
     justify-content: space-around;
-    width: 100%;
     border-radius: 5px;
+    width: 70%;
 }
 .icon-tabla{
     display: flex;
@@ -516,10 +516,25 @@ article.val{
 /* START MEDIA QUERIES */
 
 @media(min-width: 0px){
+    section.caracteristicas{
+        width: 80%;
+    }
+    
+    article.caracteristicas.simple,
+    .contain-logos-cripto{
+        width: 60%;
+    }
+    .contain-logos-cripto{
+        margin-left: 0px;
+    }
+    ul.barra-reput,
+    .main-reput{
+        display: none;
+    }
 }
 
 @media(min-height: 425px){
-   
+  
     
 }
 
@@ -541,6 +556,7 @@ article.val{
         width: 90%;
     
     }
+
   
 
 @media(min-width: 1024px){

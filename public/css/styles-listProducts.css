@@ -136,15 +136,15 @@ form {
     justify-content: center;
 }
 
-button.buy{
+form.buy{
     background: white;
     color: black;
     border: 1px solid black;
     padding: 15px;
     margin: 8px 0 0;
     border-radius: 2px;
-    width: 200px;
     transition: all 400ms;
+    font-size: 14px;
 }
 button.buy:hover{
     background: rgb(26, 29, 26);

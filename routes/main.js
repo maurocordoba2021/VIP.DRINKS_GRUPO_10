@@ -16,4 +16,5 @@ router.get("/apiProduct/:id",apiProduct.detail);
 
 
 
+
 module.exports=router;

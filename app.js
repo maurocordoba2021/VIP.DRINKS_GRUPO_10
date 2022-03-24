@@ -4,7 +4,9 @@ const path = require("path");
 const logMiddleware = require('./middlewares/logMiddleware');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 const methodOverride = require('method-override');
+const cors=require('cors')
 app.use(methodOverride('_method'));
+
 
 
 /* Require de Middlewares */
@@ -18,6 +20,7 @@ const session = require("express-session");
 const cookies = require('cookie-parser');
 
 /* MIDDLEWARES DE APP */
+app.use(cors())
 app.use(express.static('public'))
 app.use(express.urlencoded({extended: false}));//Permite capturar info de un formulario via post.
 app.use(express.json());
